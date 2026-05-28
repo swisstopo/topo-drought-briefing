@@ -44,6 +44,23 @@ class RegionReport:
 
 
 @dataclass
+class CantonReport:
+    canton_id: int
+    canton_name_de: str
+    canton_name_fr: str
+    data_timestamp: datetime
+    source: Literal["api", "fixture"]
+    regions: list[RegionReport]
+    max_warnlevel: int                                  # 1-5
+    max_warnlevel_info_de: str
+    max_warnlevel_info_fr: str
+    n_regions_by_precip_index: dict[int, int]           # e.g. {1: 4, 2: 2}
+    n_regions_by_soil_moisture_index: dict[int, int]
+    n_regions_by_hydro_index: dict[int, int]
+    quality: QualityReport
+
+
+@dataclass
 class WarnkarteEntry:
     drought_region_id: int
     warnlevel: int          # 1-5 (BAFU Gefahrenstufe)
