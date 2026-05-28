@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"drought_region_id": 34, "name_de": "Berner Mittelland"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7.02, 46.83], [7.78, 46.83], [7.78, 47.09], [7.02, 47.09], [7.02, 46.83]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"drought_region_id": 33, "name_de": "Unteres Emmental"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7.72, 46.89], [8.14, 46.89], [8.14, 47.18], [7.72, 47.18], [7.72, 46.89]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"drought_region_id": 38, "name_de": "Oberes Emmental"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7.70, 46.66], [8.20, 46.66], [8.20, 46.94], [7.70, 46.94], [7.70, 46.66]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"drought_region_id": 37, "name_de": "Oberaargau"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7.66, 47.08], [8.16, 47.08], [8.16, 47.38], [7.66, 47.38], [7.66, 47.08]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"drought_region_id": 35, "name_de": "Westliches Berner Oberland"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7.04, 46.38], [7.68, 46.38], [7.68, 46.88], [7.04, 46.88], [7.04, 46.38]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"drought_region_id": 41, "name_de": "Östliches Berner Oberland"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[7.66, 46.34], [8.52, 46.34], [8.52, 46.76], [7.66, 46.76], [7.66, 46.34]]]
+      }
+    }
+  ]
+}
