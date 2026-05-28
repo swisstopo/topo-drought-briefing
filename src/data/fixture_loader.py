@@ -16,6 +16,7 @@ Date format in data: DD.MM.YYYY
 from __future__ import annotations
 
 import io
+import logging
 import re
 import zipfile
 from datetime import datetime
@@ -31,14 +32,21 @@ from config.settings import (
 )
 from src.models import DataBundle
 
+logger = logging.getLogger(__name__)
+
 
 def _read_csv_from_zip(zip_path: Path, filename: str) -> tuple[pd.DataFrame, list[str]]:
+    if not zip_path.exists():
+        raise FileNotFoundError(
+            f"Fixture ZIP not found: {zip_path}. "
+            "Ensure data/ directory contains the bundled files."
+        )
     with zipfile.ZipFile(zip_path) as z:
         with z.open(filename) as f:
             raw = f.read().decode("utf-8", errors="replace")
     lines = raw.splitlines()
-    comment_lines = [l for l in lines if l.startswith("#")]
-    data_lines = [l for l in lines if not l.startswith("#") and l.strip()]
+    comment_lines = [line for line in lines if line.startswith("#")]
+    data_lines = [line for line in lines if not line.startswith("#") and line.strip()]
     df = pd.read_csv(io.StringIO("\n".join(data_lines)), sep=";")
     return df, comment_lines
 
@@ -49,6 +57,8 @@ def _parse_timestamp(comment_lines: list[str]) -> datetime:
         if m:
             d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
             return datetime(y, mo, d)
+    logger.warning("Could not parse data_timestamp from comment lines; using today's date. "
+                   "Staleness checks may be inaccurate.")
     return datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 
 
