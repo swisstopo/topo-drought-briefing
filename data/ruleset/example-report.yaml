@@ -1,0 +1,326 @@
+id: example-report
+title: Example drought bulletin template
+description: |
+  Weekly bulletin per drought region. Uses the recommended terminology from the
+  BAFU/MeteoSchweiz reference document (U8YQGX7S.pdf).
+  Rule: the terms "Trockenheit" / "trocken" are reserved for the lead block and
+  the CDI description. For the contributing factors (precipitation, surface/ground
+  water, soil moisture) use the "deficit" terminology instead.
+
+# ---------------------------------------------------------------------------
+# External data sources.
+# Resolved per region at render time and exposed to sections under their key
+# (e.g. {{ warnkarte.warnlevel }}).
+# ---------------------------------------------------------------------------
+data_sources:
+
+  warnkarte:
+    type: rest_api
+    provider: "BAFU"
+    title: "Drought warning map"
+    url: "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte/{drought_region_id}"
+    response_path: "feature.attributes"
+    fields:
+      warnlevel: "warnlevel"       # 1-5, matches the BAFU "Gefahrenstufe" scale
+      info_de:   "info_de"         # plain-text label, e.g. "Mässige Gefahr"
+      info_fr:   "info_fr"
+      info_it:   "info_it"
+      valid_from: "valid_from"
+    description: |
+      Returns the current, official danger level per region (idn = drought_region_id).
+      Single source of truth for the action recommendations — do not derive from CSV.
+
+  trockenheitsdaten_numerisch:
+    type: stac_collection
+    provider: "BAFU"
+    title: "Drought data (numeric)"
+    landing_page: "https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.trockenheitsdaten-numerisch"
+    description: |
+      Time series of all variables shown on the BAFU drought platform: precipitation
+      sums and SPI, soil moisture, hydro index, CDI, etc., broken down by drought
+      region and measurement station.
+    datasets_used:
+      - weekly_current_regions       # current indices & sums per region
+      - weekly_forecast_regions      # weekly forecast (p10/p50/p90) per region
+      - monthly_historic_regions     # long-term comparison (from 1991)
+      - daily_reference_stations     # reference thresholds per station and day of year
+      - weekly_current_stations      # current station measurements (discharge / water level)
+      - regions                      # region master data (drought_region_id ↔ name)
+      - stations                     # station master data
+
+# ---------------------------------------------------------------------------
+# External references (for the source list in the report).
+# ---------------------------------------------------------------------------
+references:
+  terminologie_bafu:
+    title: "Recommended terminology for drought bulletins"
+    url: "https://s3.govtech.digisus-lab.ch/govtech/uploads/14/L2SYQ/U8YQGX7S.pdf"
+    provider: "BAFU / MeteoSchweiz"
+  handlungsempfehlungen_bafu:
+    title: "Drought warnings and behavioural recommendations"
+    url: "https://www.trockenheit.admin.ch/de/trockenheit/trockenheitswarnungen-und-verhaltensempfehlungen"
+    provider: "BAFU"
+
+# ---------------------------------------------------------------------------
+# Nomenclature: maps an index level (1-5) to a localized text snippet.
+# The `field` / `fields` keys point to columns in weekly_current_regions /
+# monthly_current_regions / weekly_forecast_regions.
+# ---------------------------------------------------------------------------
+nomenclature:
+
+  cdi:
+    field: cdi
+    scope: "Use only in the lead block and in the CDI description."
+    adjective:
+      1: { de: "nicht trocken",   fr: "pas sec",          it: "non secco" }
+      2: { de: "leicht trocken",  fr: "légèrement sec",   it: "leggeremente secco" }
+      3: { de: "trocken",         fr: "sec",              it: "secco" }
+      4: { de: "sehr trocken",    fr: "très sec",         it: "molto secco" }
+      5: { de: "extrem trocken",  fr: "extrêmement sec",  it: "estremamente secco" }
+    noun:
+      1: { de: "keine Trockenheit",       fr: "pas de sécheresse",   it: "nessuna siccità" }
+      2: { de: "leichte Trockenheit",     fr: "sécheresse légère",   it: "siccità leggera" }
+      3: { de: "erhebliche Trockenheit",  fr: "sécheresse modérée",  it: "siccità moderata" }
+      4: { de: "grosse Trockenheit",      fr: "sécheresse élevée",   it: "siccità elevata" }
+      5: { de: "extreme Trockenheit",     fr: "sécheresse extrême",  it: "siccità estrema" }
+
+  niederschlag:
+    fields: [precip_1m_index, precip_3m_index, precip_24m_index]
+    noun:
+      1: { de: "kein oder geringes Niederschlagsdefizit", fr: "pas de déficit pluviométrique",      it: "deficit di precipitazioni nullo o trascurabile" }
+      2: { de: "ein leichtes Niederschlagsdefizit",           fr: "léger déficit pluviométrique",       it: "leggero deficit di precipitazioni" }
+      3: { de: "ein erhebliches Niederschlagsdefizit",        fr: "déficit pluviométrique modéré",      it: "notevole deficit di precipitazioni" }
+      4: { de: "ein grosses Niederschlagsdefizit",            fr: "déficit pluviométrique élevé",       it: "grande deficit di precipitazioni" }
+      5: { de: "ein extremes Niederschlagsdefizit",           fr: "déficit pluviométrique extrême",     it: "estremo deficit di precipitazioni" }
+
+  hydro:
+    field: hydro_index
+    note: "For groundwater, do not use the '-defizit' wording."
+    adjective:
+      1: { de: "—",                                       fr: "—",                                   it: "—" }
+      2: { de: "leicht niedrige Abflüsse/Wasserstände",   fr: "niveaux d'eau légèrement bas",        it: "livelli dell'acqua/portata leggermente bassi" }
+      3: { de: "niedrige Abflüsse/Wasserstände",          fr: "niveaux d'eau bas",                   it: "livelli d'acqua/portata bassi" }
+      4: { de: "sehr niedrige Abflüsse/Wasserstände",     fr: "niveaux d'eau très bas",              it: "livelli d'acqua/portata molto bassi" }
+      5: { de: "extrem niedrige Abflüsse/Wasserstände",   fr: "niveaux d'eau extrêmement bas",       it: "livelli dell'acqua/portata estremamente bassi" }
+    noun:
+      1: { de: "kein oder geringes Abflussdefizit",       fr: "pas de déficit d'écoulement",         it: "nessun o scarso deficit di portata" }
+      2: { de: "ein leichtes Abflussdefizit",                 fr: "léger déficit d'écoulement",          it: "leggero deficit di portata" }
+      3: { de: "ein erhebliches Abflussdefizit",              fr: "déficit d'écoulement modéré",         it: "notevole deficit di portata" }
+      4: { de: "ein grosses Abflussdefizit",                  fr: "déficit d'écoulement élevé",          it: "grande deficit di portata" }
+      5: { de: "ein extremes Abflussdefizit",                 fr: "déficit d'écoulement extrême",        it: "deficit di portata estremo" }
+
+  bodenfeuchte:
+    field: soil_moisture_index
+    noun:
+      1: { de: "kein oder geringes Bodenfeuchtedefizit",  fr: "pas de déficit d'humidité du sol",    it: "nessun o scarso deficit di umidità del suolo" }
+      2: { de: "ein leichtes Bodenfeuchtedefizit",            fr: "léger déficit d'humidité du sol",     it: "leggero deficit di umidità del suolo" }
+      3: { de: "ein erhebliches Bodenfeuchtedefizit",         fr: "déficit d'humidité du sol modéré",    it: "notevole deficit di umidità del suolo" }
+      4: { de: "ein grosses Bodenfeuchtedefizit",             fr: "déficit d'humidité du sol élevé",     it: "grande deficit di umidità del suolo" }
+      5: { de: "ein extremes Bodenfeuchtedefizit",            fr: "déficit d'humidité du sol extrême",   it: "estremo deficit di umidità del suolo" }
+
+# ---------------------------------------------------------------------------
+# Reusable trend logic. Typically compares the forecast (p50) against the
+# current value. Since the index runs from "1 = no deficit ... 5 = extreme",
+# an increase of the level means the deficit is getting worse.
+# ---------------------------------------------------------------------------
+trend:
+  defizit:
+    rule: "delta = forecast - current"
+    stable_tolerance: 0          # |delta| <= tolerance -> stable
+    # Pure infinitives, so all variants fit the same sentence slot.
+    # Usage: "Das <Subjekt> wird ... voraussichtlich {{ trend.defizit.X.de }}."
+    increase: { de: "zunehmen",            fr: "augmenter",     it: "aumentare" }
+    decrease: { de: "abnehmen",            fr: "diminuer",      it: "diminuire" }
+    stable:   { de: "unverändert bleiben", fr: "rester stable", it: "rimanere stabile" }
+
+# ---------------------------------------------------------------------------
+# Action recommendations per BAFU Gefahrenstufe (CDI 1-5).
+# Source: https://www.trockenheit.admin.ch/de/trockenheit/trockenheitswarnungen-und-verhaltensempfehlungen
+# Note: BAFU does not publish dedicated recommendations for levels 3 and 5 —
+# these fall back to the next lower level (3 -> 2, 5 -> 4).
+# ---------------------------------------------------------------------------
+handlungsempfehlungen:
+  source_ref: references.handlungsempfehlungen_bafu   # single source of truth: see references block above
+  by_gefahrenstufe:
+    1:
+      empfehlungen:
+        de:
+          - "Es sind keine besonderen Massnahmen zur Vorbeugung von Trockenheit erforderlich."
+    2:
+      empfehlungen:
+        de:
+          - "Informieren Sie sich auf www.trockenheit.ch über die aktuelle Lage in Ihrer Region."
+          - "Informieren Sie sich über mögliche Einschränkungen der Wassernutzung."
+          - "Gehen Sie sparsam mit den Wasserressourcen um."
+    3:
+      fallback: 2   # BAFU does not publish dedicated recommendations for level 3
+    4:
+      empfehlungen:
+        de:
+          - "Informieren Sie sich über mögliche Anweisungen der lokalen Behörden betreffend Verbote und Einschränkungen der Wassernutzung und beachten Sie diese."
+          - "Gehen Sie sparsam mit den Wasserressourcen um."
+          - "Halten Sie sich an die Anweisungen und Verbote der lokalen Behörden bezüglich Waldbrandgefahr."
+    5:
+      fallback: 4   # BAFU does not publish dedicated recommendations for level 5
+
+# ---------------------------------------------------------------------------
+# Lead block: current warning level as a coloured box directly below the title.
+# Visually analogous to the BAFU drought platform
+# (e.g. https://www.trockenheit.admin.ch/de/regionen/31-oestlicher-jura/aktuelle-lage).
+# ---------------------------------------------------------------------------
+lead:
+  warnstufe:
+    headline:
+      de: "{{ warnkarte.info_de }}, Stufe {{ warnkarte.warnlevel }}"
+      fr: "{{ warnkarte.info_fr }}, niveau {{ warnkarte.warnlevel }}"
+      it: "{{ warnkarte.info_it }}, livello {{ warnkarte.warnlevel }}"
+    meta:
+      de: "Gültig ab {{ format_date(warnkarte.valid_from, 'DD.MM.YYYY') }}"
+      fr: "Valable à partir du {{ format_date(warnkarte.valid_from, 'DD.MM.YYYY') }}"
+      it: "Valido dal {{ format_date(warnkarte.valid_from, 'DD.MM.YYYY') }}"
+    farben_pro_stufe:
+      1: { hintergrund: "#6bbd50", text: "#ffffff", label: "grün" }
+      2: { hintergrund: "#f7e84c", text: "#1a1a1a", label: "gelb" }
+      3: { hintergrund: "#ff8c00", text: "#ffffff", label: "orange" }
+      4: { hintergrund: "#e02020", text: "#ffffff", label: "rot" }
+      5: { hintergrund: "#8b0000", text: "#ffffff", label: "dunkelrot" }
+    placeholders:
+      - id: warnkarte_lead
+        source: warnkarte
+        fetched_from: data_sources.warnkarte
+        description: "Provides warnlevel, info_de/fr/it and valid_from for the lead block."
+
+# ---------------------------------------------------------------------------
+# Report sections. Placeholders in {{ ... }} are resolved at render time.
+# Supported expressions:
+#   - {{ dataset.column }}                            raw value from CSV / API response
+#   - {{ resolved_entity.field }}                     e.g. region.name_de (see join in placeholders)
+#   - {{ nomenclature.<key>.<form>[<value>].<lang> }} text snippet by index level
+#   - {{ trend(<expr>, "<key>").<lang> }}             trend term depending on the sign
+#   - {{ format_date(<iso_date>, "<pattern>") }}      date formatting
+#   - {{#each <collection> }} … {{ this.x }} {{/each}}  iteration (Handlebars-style)
+# ---------------------------------------------------------------------------
+sections:
+
+  - id: allgemeine-lage
+    title: { de: "Allgemeine Lage", fr: "Situation générale", it: "Situazione generale" }
+    locale: de
+    template: |
+      In den vergangenen 30 Tagen sind in der Region {{ region.name_de }} rund {{ weekly_current_regions.precip_sum_1m }} mm Niederschlag gefallen (3-Monats-Summe: {{ weekly_current_regions.precip_sum_3m }} mm). Die Region weist damit aktuell {{ nomenclature.niederschlag.noun[weekly_current_regions.precip_1m_index].de }} auf. Das Niederschlagsdefizit wird in der kommenden Woche voraussichtlich {{ trend(weekly_forecast_regions.precip_1m_index_p50 - weekly_current_regions.precip_1m_index, "defizit").de }}.
+
+      An den Abflussmessstationen in der Region liegt der Abfluss aktuell an {{ abfluss.n_unter_threshold }} von {{ abfluss.n_total }} Stationen unter dem Tagesschwellenwert (threshold1) der Referenzperiode. An {{ abfluss.n_unter_q347 }} Stationen wird zusätzlich der Q347 unterschritten (Niedrigwasser).
+
+      An den Seepegelmessstationen in der Region liegt der Wasserstand aktuell an {{ seen.n_unter_threshold }} von {{ seen.n_total }} Stationen unter dem Tagesschwellenwert (threshold1) der Referenzperiode.
+
+      Es besteht zurzeit {{ nomenclature.bodenfeuchte.noun[weekly_current_regions.soil_moisture_index].de }}. Die Bodenfeuchte kann innerhalb der Region je nach Standort, Bodenart und Nutzung allerdings stark variieren.
+    placeholders:
+      # `region` is the resolved region entity (join: regions.drought_region_id
+      # = weekly_current_regions.drought_region_id), not the raw `regions` dataset.
+      - id: region_name
+        source: regions.name_de
+        join: weekly_current_regions.drought_region_id = regions.drought_region_id
+        renders_as: "region.name_de"
+      - id: niederschlag_1m_summe
+        source: weekly_current_regions.precip_sum_1m
+        format: "original"  # keep original precision (e.g. 115.3)
+        unit: mm
+      - id: niederschlag_3m_summe
+        source: weekly_current_regions.precip_sum_3m
+        format: "original"
+        unit: mm
+      - id: aktuelle_niederschlagslage
+        source: weekly_current_regions.precip_1m_index
+        resolver: nomenclature.niederschlag.noun
+      - id: trend_niederschlagsdefizit
+        expression: weekly_forecast_regions.precip_1m_index_p50 - weekly_current_regions.precip_1m_index
+        resolver: trend.defizit
+      - id: aktuelle_bodenfeuchte
+        source: weekly_current_regions.soil_moisture_index
+        resolver: nomenclature.bodenfeuchte.noun
+      - id: abfluss
+        type: aggregate
+        description: |
+          Aggregate across all discharge stations in the region.
+          The station-to-region mapping is provided externally by the renderer.
+        source:
+          dataset: weekly_current_stations
+          filter:
+            label: "Abfluss"
+            region: "{{ aktuelle_region }}"  # resolved externally
+        reference:
+          dataset: daily_reference_stations
+          join:
+            hydro_station_id: hydro_station_id
+            doy: "doy(weekly_current_stations.measured_at)"
+        outputs:
+          n_total: "count(stations)"
+          n_unter_threshold: "count(stations where weekly_current_stations.value < daily_reference_stations.threshold1)"
+          n_unter_q347: "count(stations where weekly_current_stations.value < daily_reference_stations.q347)"
+        comparison: "strictly less than (<)"
+
+      - id: seen
+        type: aggregate
+        description: |
+          Aggregate across all lake-level stations in the region
+          (label="Wasserstand", unit="masl" — lake level in metres above sea level).
+        source:
+          dataset: weekly_current_stations
+          filter:
+            label: "Wasserstand"
+            unit: "masl"
+            region: "{{ aktuelle_region }}"  # resolved externally
+        reference:
+          dataset: daily_reference_stations
+          join:
+            hydro_station_id: hydro_station_id
+            doy: "doy(weekly_current_stations.measured_at)"
+        outputs:
+          n_total: "count(stations)"
+          n_unter_threshold: "count(stations where weekly_current_stations.value < daily_reference_stations.threshold1)"
+        comparison: "strictly less than (<)"
+    notes:
+      - "Paragraph order follows the drought cascade: atmosphere → hydrosphere → pedosphere."
+      - "Terminology: see references.terminologie_bafu."
+
+  - id: handlungsoptionen
+    title: { de: "Handlungsoptionen", fr: "Options d'action", it: "Opzioni d'azione" }
+    locale: de
+    template: |
+      {{#each handlungsempfehlungen.by_gefahrenstufe[warnkarte.warnlevel].empfehlungen.de}}
+      - {{ this }}
+      {{/each}}
+    placeholders:
+      - id: aktuelle_warnstufe
+        source: warnkarte.warnlevel
+        fetched_from: data_sources.warnkarte
+        resolver: handlungsempfehlungen.by_gefahrenstufe
+        fallback_rule: "If the recommendation list is missing, fall back to the .fallback level (3 -> 2, 5 -> 4)."
+      - id: warnstufe_klartext
+        source: warnkarte.info_de
+        fetched_from: data_sources.warnkarte
+        description: "Plain-text label provided by the API, e.g. 'Mässige Gefahr'."
+    notes:
+      - "The warning level is fetched live from the BAFU warning map (API), not derived from the CSV dataset."
+      - "Recommendation texts are taken verbatim from trockenheit.admin.ch."
+      - "Levels 3 and 5 fall back to 2 and 4 respectively — BAFU does not publish dedicated recommendations for them."
+
+  - id: datenquellen
+    title: { de: "Datenquellen", fr: "Sources de données", it: "Fonti dei dati" }
+    locale: de
+    template: |
+      {{#each data_sources}}
+      - {{ this.title }} ({{ this.provider }}) — {{ this.landing_page or this.url }}
+      {{/each}}
+      {{#each references}}
+      - {{ this.title }} ({{ this.provider }}) — {{ this.url }}
+      {{/each}}
+    placeholders:
+      - id: datenquellen_liste
+        source: data_sources
+        description: "All external data sources declared in data_sources, rendered as title + provider + URL."
+      - id: referenzen_liste
+        source: references
+        description: "All external documents declared in references (terminology, recommendations etc.)."
+    notes:
+      - "The section automatically renders every top-level entry in data_sources and references."
+      - "No local file paths — web links only (landing_page for STAC collections, url for APIs / documents)."
