@@ -161,7 +161,7 @@ with export_placeholder:
 
     st.info("💡 PDF: Datei → Drucken → Als PDF speichern (Ctrl+P)")
     st.download_button(
-        label="⬇ HTML exportieren",
+        label=t("btn_html", lang),
         data=html_str.encode("utf-8"),
         file_name=f"trockenheit_{report.region_name_de.replace(' ', '_')}_{report.data_timestamp.strftime('%Y%m%d')}.html",
         mime="text/html",
