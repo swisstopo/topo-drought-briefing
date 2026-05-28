@@ -225,6 +225,30 @@ sections:
       - id: max_warnlevel_summary
         source: canton.max_warnlevel
 
+  - id: regionen
+    title:
+      de: "Allgemeine Lage nach Regionen"
+      fr: "Situation par région"
+    template:
+      de: |
+        {{#each canton.regions}}
+        ### {{ this.region_name_de }}
+
+        In den vergangenen 30 Tagen sind in der Region {{ this.region_name_de }} rund {{ this.precip_sum_1m }} mm Niederschlag gefallen (3-Monats-Summe: {{ this.precip_sum_3m }} mm). Die Region weist damit aktuell {{ nomenclature.niederschlag.noun[this.precip_1m_index].de }} auf. Es besteht zurzeit {{ nomenclature.bodenfeuchte.noun[this.soil_moisture_index].de }}.
+
+        {{/each}}
+      fr: |
+        {{#each canton.regions}}
+        ### {{ this.region_name_de }}
+
+        Au cours des 30 derniers jours, environ {{ this.precip_sum_1m }} mm de précipitations sont tombés dans la région {{ this.region_name_de }} (cumul sur 3 mois : {{ this.precip_sum_3m }} mm). La région présente actuellement {{ nomenclature.niederschlag.noun[this.precip_1m_index].fr }}. Concernant l'humidité du sol, il y a actuellement {{ nomenclature.bodenfeuchte.noun[this.soil_moisture_index].fr }}.
+
+        {{/each}}
+    placeholders:
+      - id: region_loop
+        source: canton.regions
+        description: "Iterate over each region in the canton, render per-region paragraph."
+
   - id: handlungsoptionen
     title: { de: "Handlungsoptionen", fr: "Options d'action", it: "Opzioni d'azione" }
     locale: de
