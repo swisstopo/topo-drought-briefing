@@ -205,84 +205,25 @@ lead:
 sections:
 
   - id: allgemeine-lage
-    title: { de: "Allgemeine Lage", fr: "Situation générale", it: "Situazione generale" }
-    locale: de
-    template: |
-      In den vergangenen 30 Tagen sind in der Region {{ region.name_de }} rund {{ weekly_current_regions.precip_sum_1m }} mm Niederschlag gefallen (3-Monats-Summe: {{ weekly_current_regions.precip_sum_3m }} mm). Die Region weist damit aktuell {{ nomenclature.niederschlag.noun[weekly_current_regions.precip_1m_index].de }} auf. Das Niederschlagsdefizit wird in der kommenden Woche voraussichtlich {{ trend(weekly_forecast_regions.precip_1m_index_p50 - weekly_current_regions.precip_1m_index, "defizit").de }}.
-
-      An den Abflussmessstationen in der Region liegt der Abfluss aktuell an {{ abfluss.n_unter_threshold }} von {{ abfluss.n_total }} Stationen unter dem Tagesschwellenwert (threshold1) der Referenzperiode. An {{ abfluss.n_unter_q347 }} Stationen wird zusätzlich der Q347 unterschritten (Niedrigwasser).
-
-      An den Seepegelmessstationen in der Region liegt der Wasserstand aktuell an {{ seen.n_unter_threshold }} von {{ seen.n_total }} Stationen unter dem Tagesschwellenwert (threshold1) der Referenzperiode.
-
-      Es besteht zurzeit {{ nomenclature.bodenfeuchte.noun[weekly_current_regions.soil_moisture_index].de }}. Die Bodenfeuchte kann innerhalb der Region je nach Standort, Bodenart und Nutzung allerdings stark variieren.
+    title:
+      de: "Allgemeine Lage"
+      fr: "Situation générale"
+    template:
+      de: |
+        Im Kanton {{ canton.canton_name_de }} weisen aktuell {{ canton.n_regions_by_precip_index.get(2, 0) + canton.n_regions_by_precip_index.get(3, 0) + canton.n_regions_by_precip_index.get(4, 0) + canton.n_regions_by_precip_index.get(5, 0) }} von {{ canton.regions|length }} Warnregionen ein Niederschlagsdefizit auf.
+        Bei der Bodenfeuchte weisen {{ canton.n_regions_by_soil_moisture_index.get(2, 0) + canton.n_regions_by_soil_moisture_index.get(3, 0) + canton.n_regions_by_soil_moisture_index.get(4, 0) + canton.n_regions_by_soil_moisture_index.get(5, 0) }} von {{ canton.regions|length }} Warnregionen ein Defizit auf.
+        Die höchste Gefahrenstufe im Kanton ist Stufe {{ canton.max_warnlevel }} ({{ canton.max_warnlevel_info_de }}).
+      fr: |
+        Dans le canton de {{ canton.canton_name_fr }}, {{ canton.n_regions_by_precip_index.get(2, 0) + canton.n_regions_by_precip_index.get(3, 0) + canton.n_regions_by_precip_index.get(4, 0) + canton.n_regions_by_precip_index.get(5, 0) }} régions d'alerte sur {{ canton.regions|length }} présentent actuellement un déficit pluviométrique.
+        Concernant l'humidité du sol, {{ canton.n_regions_by_soil_moisture_index.get(2, 0) + canton.n_regions_by_soil_moisture_index.get(3, 0) + canton.n_regions_by_soil_moisture_index.get(4, 0) + canton.n_regions_by_soil_moisture_index.get(5, 0) }} régions sur {{ canton.regions|length }} présentent un déficit.
+        Le niveau d'alerte le plus élevé du canton est le niveau {{ canton.max_warnlevel }} ({{ canton.max_warnlevel_info_fr }}).
     placeholders:
-      # `region` is the resolved region entity (join: regions.drought_region_id
-      # = weekly_current_regions.drought_region_id), not the raw `regions` dataset.
-      - id: region_name
-        source: regions.name_de
-        join: weekly_current_regions.drought_region_id = regions.drought_region_id
-        renders_as: "region.name_de"
-      - id: niederschlag_1m_summe
-        source: weekly_current_regions.precip_sum_1m
-        format: "original"  # keep original precision (e.g. 115.3)
-        unit: mm
-      - id: niederschlag_3m_summe
-        source: weekly_current_regions.precip_sum_3m
-        format: "original"
-        unit: mm
-      - id: aktuelle_niederschlagslage
-        source: weekly_current_regions.precip_1m_index
-        resolver: nomenclature.niederschlag.noun
-      - id: trend_niederschlagsdefizit
-        expression: weekly_forecast_regions.precip_1m_index_p50 - weekly_current_regions.precip_1m_index
-        resolver: trend.defizit
-      - id: aktuelle_bodenfeuchte
-        source: weekly_current_regions.soil_moisture_index
-        resolver: nomenclature.bodenfeuchte.noun
-      - id: abfluss
-        type: aggregate
-        description: |
-          Aggregate across all discharge stations in the region.
-          The station-to-region mapping is provided externally by the renderer.
-        source:
-          dataset: weekly_current_stations
-          filter:
-            label: "Abfluss"
-            region: "{{ aktuelle_region }}"  # resolved externally
-        reference:
-          dataset: daily_reference_stations
-          join:
-            hydro_station_id: hydro_station_id
-            doy: "doy(weekly_current_stations.measured_at)"
-        outputs:
-          n_total: "count(stations)"
-          n_unter_threshold: "count(stations where weekly_current_stations.value < daily_reference_stations.threshold1)"
-          n_unter_q347: "count(stations where weekly_current_stations.value < daily_reference_stations.q347)"
-        comparison: "strictly less than (<)"
-
-      - id: seen
-        type: aggregate
-        description: |
-          Aggregate across all lake-level stations in the region
-          (label="Wasserstand", unit="masl" — lake level in metres above sea level).
-        source:
-          dataset: weekly_current_stations
-          filter:
-            label: "Wasserstand"
-            unit: "masl"
-            region: "{{ aktuelle_region }}"  # resolved externally
-        reference:
-          dataset: daily_reference_stations
-          join:
-            hydro_station_id: hydro_station_id
-            doy: "doy(weekly_current_stations.measured_at)"
-        outputs:
-          n_total: "count(stations)"
-          n_unter_threshold: "count(stations where weekly_current_stations.value < daily_reference_stations.threshold1)"
-        comparison: "strictly less than (<)"
-    notes:
-      - "Paragraph order follows the drought cascade: atmosphere → hydrosphere → pedosphere."
-      - "Terminology: see references.terminologie_bafu."
+      - id: precip_index_summary
+        source: canton.n_regions_by_precip_index
+      - id: soil_moisture_summary
+        source: canton.n_regions_by_soil_moisture_index
+      - id: max_warnlevel_summary
+        source: canton.max_warnlevel
 
   - id: handlungsoptionen
     title: { de: "Handlungsoptionen", fr: "Options d'action", it: "Opzioni d'azione" }
