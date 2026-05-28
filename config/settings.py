@@ -51,7 +51,7 @@ CDI_COLOURS: Final[dict[int, str]] = {
     5: "#2c3e50",
 }
 
-STAC_BASE_URL: Final[str] = "https://data.geo.admin.ch/api/stac/v0.9"
+STAC_BASE_URL: Final[str] = "https://data.geo.admin.ch/api/stac/v1"
 STAC_COLLECTION: Final[str] = "ch.bafu.trockenheitsdaten-numerisch"
 
 CURRENT_ZIP_NAME: Final[str] = (
