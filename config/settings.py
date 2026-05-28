@@ -15,6 +15,15 @@ BERNE_REGION_NAMES: Final[dict[int, str]] = {
     41: "Östliches Berner Oberland",
 }
 
+BERNE_REGION_NAMES_FR: Final[dict[int, str]] = {
+    33: "Basse-Emmental",
+    34: "Mittelland bernois",
+    35: "Oberland bernois occidental",
+    37: "Haute-Argovie",
+    38: "Haute-Emmental",
+    41: "Oberland bernois oriental",
+}
+
 CDI_LABELS: Final[dict[int, str]] = {
     0: "Keine Trockenheit",
     1: "Leichte Trockenheit",
@@ -22,6 +31,15 @@ CDI_LABELS: Final[dict[int, str]] = {
     3: "Schwere Trockenheit",
     4: "Extreme Trockenheit",
     5: "Ausserordentliche Trockenheit",
+}
+
+CDI_LABELS_FR: Final[dict[int, str]] = {
+    0: "Pas de sécheresse",
+    1: "Sécheresse légère",
+    2: "Sécheresse notable",
+    3: "Sécheresse sévère",
+    4: "Sécheresse extrême",
+    5: "Sécheresse exceptionnelle",
 }
 
 CDI_COLOURS: Final[dict[int, str]] = {
