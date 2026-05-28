@@ -1,17 +1,13 @@
 # src/export/report.py
 from __future__ import annotations
 
-import base64
+import html
 
 import plotly.io as pio
 
 from config.settings import CDI_COLOURS
 from src.i18n.strings import get_cdi_labels, get_region_names, t
 from src.models import BriefingDocument, RegionReport
-
-
-def _map_to_b64(png_bytes: bytes) -> str:
-    return base64.b64encode(png_bytes).decode()
 
 
 _CSS = """
@@ -35,6 +31,12 @@ h1 { font-size: 22px; color: #1a1a2e; margin-bottom: 4px; }
 .quality-bar { background: #f5f5f5; border-radius: 6px; padding: 10px 16px;
                font-size: 11px; color: #666; margin-top: 24px; }
 .quality-bar strong { color: #333; }
+
+@media print {
+    body { background: white; }
+    .page { padding: 0; max-width: 100%; }
+    .visuals { page-break-inside: avoid; }
+}
 """
 
 
@@ -42,7 +44,7 @@ def to_html(
     doc: BriefingDocument,
     report: RegionReport,
     chart_fig=None,
-    map_png: bytes | None = None,
+    map_obj=None,
     lang: str = "de",
 ) -> str:
     cdi_colour = CDI_COLOURS.get(report.cdi, "#cccccc")
@@ -69,15 +71,16 @@ def to_html(
         chart_html = pio.to_html(chart_fig, full_html=False, include_plotlyjs="inline")
 
     map_html = ""
-    if map_png is not None:
-        b64 = _map_to_b64(map_png)
-        map_html = f'<img src="data:image/png;base64,{b64}" alt="CDI-Karte">'
+    if map_obj is not None:
+        folium_raw_html = map_obj.get_root().render()
+        escaped_folium = html.escape(folium_raw_html)
+        map_html = f'<iframe srcdoc="{escaped_folium}" style="width:100%; height:400px; border:none; border-radius:8px;"></iframe>'
 
     quality_colour = {"ok": "#2ecc71", "warning": "#f1c40f", "error": "#e74c3c"}.get(
         report.quality.overall, "#ccc"
     )
 
-    html = f"""<!DOCTYPE html>
+    html_str = f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
 <meta charset="UTF-8">
@@ -147,4 +150,4 @@ def to_html(
 </div>
 </body>
 </html>"""
-    return html
+    return html_str

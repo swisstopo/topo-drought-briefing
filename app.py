@@ -157,8 +157,7 @@ with st.expander(t("quality_expander", lang)):
 
 # ── Export buttons ─────────────────────────────────────────────────────────
 with export_placeholder:
-    # Pass None for map_png since we dropped backend PNG generation
-    html_str = to_html(doc, report, chart_fig=fig, map_png=None)
+    html_str = to_html(doc, report, chart_fig=fig, map_obj=folium_map, lang=lang)
 
     st.info("💡 PDF: Datei → Drucken → Als PDF speichern (Ctrl+P)")
     st.download_button(
