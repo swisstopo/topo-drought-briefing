@@ -1,25 +1,5 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
-## Commands
-
-```bash
-# Run the app
-uv run streamlit run app.py
-
-# Run all tests
-uv run pytest tests/ -v
-
-# Run a single test
-uv run pytest tests/test_aggregation.py::test_region_report_basic_fields -v
-
-# Add a dependency
-uv add <package>
-
-# Add a dev dependency
-uv add --dev <package>
-```
 
 ## Architecture
 
@@ -34,16 +14,15 @@ Pipeline-first: **DataBundle → RegionReport → BriefingDocument → UI/Export
 - `indicators.py` holds pure helpers: `compute_pct_critical`, `compute_percentile`, `compute_trend`.
 
 **Briefing layer** (`src/briefing/`):
-- `text_blocks.py` holds nested dicts `LAGE_BLOCKS[mode][cdi_level]`, `ENTWICKLUNG_BLOCKS`, `EINORDNUNG_BLOCKS`, `DATENGRUNDLAGE_BLOCKS` — all German with proper umlauts (ä, ö, ü, ß).
 - `template.py::build_briefing()` fills slots via `.format(**kwargs)`. Uses `_safe_num()` to replace NaN with 0.0 before formatting — VHI is NaN for some regions (e.g. region 37 Oberaargau).
 
 **Viz layer** (`src/viz/`):
-- `maps.py` has two paths: `build_map()` returns a folium map (interactive, Streamlit only), `build_export_map()` returns PNG bytes via matplotlib/geopandas (folium can't produce PNG).
+- `maps.py` has two paths: `build_map()` returns a folium map (interactive, Streamlit only).
 - `charts.py` produces a Plotly dual-axis figure: CDI bars (left) + SPI-3m line (right), 52 weeks.
 
 **Export layer** (`src/export/report.py`):
 - `to_html()` produces a self-contained HTML string with inline CSS, embedded chart PNG (via kaleido), and the static map PNG. No external URLs — required for government infra.
-- `to_pdf()` passes the HTML string to WeasyPrint.
+
 
 **Quality layer** (`src/quality/checks.py`):
 - `run_quality_checks()` returns a `QualityReport` with staleness (>14 days = error), coverage, missing columns, and IQR×3 outlier flags. Attached to every `RegionReport`.
