@@ -31,6 +31,34 @@ def test_parse_response_extracts_attributes():
     )
 
 
+def test_parse_response_clips_warnlevel():
+    sample_too_low = {
+        "feature": {
+            "attributes": {
+                "idn": 34,
+                "warnlevel": 0,
+                "info_de": "x", "info_fr": "x", "info_it": "x",
+                "valid_from": "2026/05/28 00:00:00+00",
+            }
+        }
+    }
+    entry = _parse_response(sample_too_low)
+    assert entry.warnlevel == 1  # clipped to minimum
+
+    sample_too_high = {
+        "feature": {
+            "attributes": {
+                "idn": 34,
+                "warnlevel": 9,
+                "info_de": "x", "info_fr": "x", "info_it": "x",
+                "valid_from": "2026/05/28 00:00:00+00",
+            }
+        }
+    }
+    entry = _parse_response(sample_too_high)
+    assert entry.warnlevel == 5  # clipped to maximum
+
+
 @responses.activate
 def test_fetch_for_regions_live_path():
     base = "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte"

@@ -28,9 +28,11 @@ _FIXTURE_PATH = Path(__file__).resolve().parents[2] / "data" / "warnkarte_fixtur
 def _parse_response(payload: dict) -> WarnkarteEntry:
     """Convert the API JSON shape into a WarnkarteEntry."""
     attrs = payload["feature"]["attributes"]
+    raw_warnlevel = int(attrs["warnlevel"])
+    warnlevel = max(1, min(5, raw_warnlevel))
     return WarnkarteEntry(
         drought_region_id=int(attrs["idn"]),
-        warnlevel=int(attrs["warnlevel"]),
+        warnlevel=warnlevel,
         info_de=str(attrs["info_de"]),
         info_fr=str(attrs["info_fr"]),
         info_it=str(attrs["info_it"]),

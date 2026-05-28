@@ -17,7 +17,7 @@ if str(_REPO_ROOT) not in sys.path:
 
 import requests
 
-from config.settings import BERNE_REGION_IDS
+from config.settings import CANTON_TO_REGIONS
 
 URL = "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte/{rid}"
 FIXTURE = Path(__file__).resolve().parents[1] / "data" / "warnkarte_fixture.json"
@@ -25,7 +25,8 @@ FIXTURE = Path(__file__).resolve().parents[1] / "data" / "warnkarte_fixture.json
 
 def main() -> None:
     out: dict[str, dict] = {}
-    for rid in sorted(BERNE_REGION_IDS):
+    all_region_ids = sorted({r for regions in CANTON_TO_REGIONS.values() for r in regions})
+    for rid in all_region_ids:
         resp = requests.get(URL.format(rid=rid), timeout=10)
         resp.raise_for_status()
         attrs = resp.json()["feature"]["attributes"]

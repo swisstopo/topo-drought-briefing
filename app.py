@@ -51,8 +51,8 @@ def _warnstufe_palette(level: int) -> tuple[str, str]:
 
 # ── Sidebar ────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.title("💧 Trockenheitsbriefing")
-    st.caption("Kanton Bern · trockenheit.admin.ch")
+    st.title(t("sidebar_title", lang))
+    st.caption(t("sidebar_caption", lang))
     st.divider()
 
     lang = st.radio(
@@ -95,7 +95,7 @@ doc = render_briefing(canton, rs, locale=lang)
 
 # ── Header / Lead box ──────────────────────────────────────────────────────
 canton_label = canton.canton_name_de if lang == "de" else canton.canton_name_fr
-st.title(f"Trockenheitsbriefing {canton_label}")
+st.title(f"{t('export_doc_title', lang)} {canton_label}")
 bg, text_colour = _warnstufe_palette(canton.max_warnlevel)
 st.markdown(
     f"""<div style="background:{bg};border-radius:8px;padding:18px;color:{text_colour};">

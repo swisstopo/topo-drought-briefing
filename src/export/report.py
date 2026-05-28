@@ -44,7 +44,7 @@ def to_html(
         sections_html = "\n".join(
             f'<section>'
             f'<h2>{html.escape(sec.title.get(doc.locale, sec.title.get("de", sec.id)))}</h2>'
-            f'<div>{doc.sections[sec.id]}</div>'
+            f'<div>{html.escape(doc.sections[sec.id])}</div>'
             f'</section>'
             for sec in ruleset.sections
             if sec.id in doc.sections
