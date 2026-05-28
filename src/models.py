@@ -44,6 +44,15 @@ class RegionReport:
 
 
 @dataclass
+class MapSpec:
+    id: str
+    title_de: str
+    title_fr: str
+    source: str            # path expression into CantonReport, e.g. "canton.regions[*].cdi"
+    style: str             # renderer hint, e.g. "choropleth_warnregionen"
+
+
+@dataclass
 class BriefingDocument:
     sections: dict[str, str]   # keys: "lage", "entwicklung", "einordnung", "datengrundlage"
     report: RegionReport
