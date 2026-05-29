@@ -34,3 +34,16 @@ def test_measured_at_is_datetime():
     bundle = load()
     import pandas as pd
     assert pd.api.types.is_datetime64_any_dtype(bundle.current_df["measured_at"])
+
+
+def test_load_populates_station_data():
+    bundle = load()
+    assert not bundle.current_stations_df.empty
+    assert not bundle.reference_stations_df.empty
+    assert bundle.station_region_map  # non-empty dict
+    # IDs are strings (leading-zero IDs like "0078" must survive)
+    ids = set(bundle.current_stations_df["hydro_station_id"])
+    assert "0078" in ids  # leading zero preserved
+    assert all(isinstance(k, str) for k in list(bundle.station_region_map)[:5])
+    for col in ("doy", "threshold1", "q347", "label"):
+        assert col in bundle.reference_stations_df.columns
