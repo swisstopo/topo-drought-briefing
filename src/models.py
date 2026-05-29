@@ -7,6 +7,14 @@ import pandas as pd
 
 
 @dataclass
+class HydroStationReport:
+    station_id: str
+    current_value: float
+    threshold1: float
+    min_value: float
+
+
+@dataclass
 class DataBundle:
     current_df: pd.DataFrame
     historic_df: pd.DataFrame
@@ -14,6 +22,8 @@ class DataBundle:
     data_timestamp: datetime
     source: Literal["api", "fixture"]
     forecast_df: pd.DataFrame = field(default_factory=pd.DataFrame)
+    current_stations_df: pd.DataFrame = field(default_factory=pd.DataFrame)
+    reference_stations_df: pd.DataFrame = field(default_factory=pd.DataFrame)
 
 
 @dataclass
@@ -52,6 +62,7 @@ class RegionReport:
     warnlevel_info_de: str = ""
     warnlevel_info_fr: str = ""
     cdi_forecast_week2: int | None = None
+    hydro_stations: list[HydroStationReport] = field(default_factory=list)
 
 
 @dataclass
@@ -65,7 +76,7 @@ class CantonReport:
     max_warnlevel: int                                  # 1-5
     max_warnlevel_info_de: str
     max_warnlevel_info_fr: str
-    n_regions_by_precip_index: dict[int, int]           # e.g. {1: 4, 2: 2}
+    n_regions_by_precip_index: dict[int, int]           
     n_regions_by_soil_moisture_index: dict[int, int]
     n_regions_by_hydro_index: dict[int, int]
     quality: QualityReport
@@ -86,8 +97,8 @@ class MapSpec:
     id: str
     title_de: str
     title_fr: str
-    source: str            # path expression into CantonReport, e.g. "canton.regions[*].cdi"
-    style: str             # renderer hint, e.g. "choropleth_warnregionen"
+    source: str             
+    style: str              
 
 
 @dataclass

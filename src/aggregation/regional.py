@@ -1,14 +1,16 @@
 # src/aggregation/regional.py
 from __future__ import annotations
 
+import json
 import math
 from datetime import datetime, timedelta
+from pathlib import Path
 
 import pandas as pd
 
 from config.settings import REGION_NAMES_DE
 from src.aggregation.indicators import compute_pct_critical, compute_percentile, compute_trend
-from src.models import DataBundle, RegionReport, WarnkarteEntry
+from src.models import DataBundle, RegionReport, WarnkarteEntry, HydroStationReport
 from src.quality.checks import run_quality_checks
 
 
@@ -96,6 +98,48 @@ def compute_region_report(
         warnlevel_info_de = ""
         warnlevel_info_fr = ""
 
+    # --- Hydro Station Processing ---
+    hydro_reports = []
+    mapping_file = Path("data/station_region_mapping.json")
+    
+    if mapping_file.exists():
+        with open(mapping_file, "r") as f:
+            station_map = json.load(f)
+            
+        region_stations = [st_id for st_id, r_id in station_map.items() if int(r_id) == region_id]
+        curr_st = bundle.current_stations_df
+        ref_st = bundle.reference_stations_df
+        
+        if region_stations and not curr_st.empty and not ref_st.empty:
+            # Filter for region stations AND "Abfluss" only
+            mask = (curr_st["hydro_station_id"].astype(str).isin(region_stations)) & (curr_st["label"] == "Abfluss")
+            reg_curr = curr_st[mask]
+            
+            for st_id, group in reg_curr.groupby("hydro_station_id"):
+                latest = group.sort_values("measured_at").iloc[-1]
+                val = _safe(latest.get("value"))
+                date = latest.get("measured_at")
+                
+                if pd.isna(date) or math.isnan(val):
+                    continue
+                    
+                doy = date.dayofyear
+                ref_mask = (ref_st["hydro_station_id"].astype(str) == str(st_id)) & (ref_st["doy"] == doy)
+                ref_row = ref_st[ref_mask]
+                
+                t1 = float('nan')
+                min_val = float('nan')
+                if not ref_row.empty:
+                    t1 = _safe(ref_row.iloc[0].get("threshold1"))
+                    min_val = _safe(ref_row.iloc[0].get("min"))
+                    
+                hydro_reports.append(HydroStationReport(
+                    station_id=str(st_id),
+                    current_value=val,
+                    threshold1=t1,
+                    min_value=min_val
+                ))
+
     return RegionReport(
         region_id=region_id,
         region_name_de=REGION_NAMES_DE.get(region_id, f"Region {region_id}"),
@@ -120,6 +164,7 @@ def compute_region_report(
         warnlevel_info_de=warnlevel_info_de,
         warnlevel_info_fr=warnlevel_info_fr,
         cdi_forecast_week2=cdi_forecast_week2,
+        hydro_stations=hydro_reports,
     )
 
 

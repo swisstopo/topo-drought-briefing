@@ -97,7 +97,8 @@ def _parse_timestamp(comment_lines: list[str]) -> datetime:
 
 def _parse_dates(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
-    df["measured_at"] = pd.to_datetime(df["measured_at"], format="%d.%m.%Y", errors="coerce")
+    if "measured_at" in df.columns:
+        df["measured_at"] = pd.to_datetime(df["measured_at"], format="%d.%m.%Y", errors="coerce")
     return df
 
 
@@ -116,10 +117,16 @@ def _fetch_from_stac() -> DataBundle:
     forecast_raw, _ = _parse_csv_from_zip_bytes(
         current_zip_bytes, "weekly_forecast_regions.csv"
     )
+    current_stations_df, _ = _parse_csv_from_zip_bytes(
+        current_zip_bytes, "weekly_current_stations.csv"
+    )
+    
     historic_zip_bytes = _download_zip_bytes(_find_asset_href_in_items(items, "historic"))
     historic_df, _ = _parse_csv_from_zip_bytes(historic_zip_bytes, "weekly_historic_regions.csv")
+    
     reference_zip_bytes = _download_zip_bytes(_find_asset_href_in_items(items, "reference"))
     reference_df, _ = _parse_csv_from_zip_bytes(reference_zip_bytes, "regions.csv")
+    reference_stations_df, _ = _parse_csv_from_zip_bytes(reference_zip_bytes, "daily_reference_stations.csv")
 
     data_timestamp = _parse_timestamp(comment_lines)
 
@@ -133,6 +140,8 @@ def _fetch_from_stac() -> DataBundle:
         historic_df=_parse_dates(historic_df),
         reference_df=reference_df,
         forecast_df=forecast_df,
+        current_stations_df=_parse_dates(current_stations_df),
+        reference_stations_df=reference_stations_df,
         data_timestamp=data_timestamp,
         source="api",
     )

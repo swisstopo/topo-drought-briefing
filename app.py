@@ -207,20 +207,24 @@ elif view_tab == "regions":
         # 2. Region Name
         name = get_region_names(lang).get(r.region_id, r.region_name_de)
         
-        # 3. Situation (Deep Links)
-        cdi_label = get_cdi_labels(lang).get(r.cdi, t("unknown", lang))
-        spi_val = f"{r.spi_3m:.2f}" if not math.isnan(r.spi_3m) else "–"
-        soil_val = f"{r.soil_moisture_pct:.0f}%" if not math.isnan(r.soil_moisture_pct) else "–"
-        
-        base_url = f"https://www.trockenheit.admin.ch/{lang}/regionen/{r.region_id}/aktuelle-lage"
-        
-        situation = (
-            f"<b><a href='{base_url}' target='_blank' style='text-decoration:none; color:#1a1a1a;'>CDI {r.cdi} ({cdi_label}) ↗</a></b><br/>"
-            f"<span style='color:#555; line-height: 1.5;'>"
-            f"<a href='{base_url}#precipitation' target='_blank' style='text-decoration:none; color:#555;'>{t('metric_spi', lang)}: {spi_val} ↗</a><br/>"
-            f"<a href='{base_url}#moisture' target='_blank' style='text-decoration:none; color:#555;'>{t('metric_soil', lang)}: {soil_val} ↗</a>"
-            f"</span>"
-        )
+        # 3. Situation (Hydro Station Data)
+        if r.hydro_stations:
+            hydro_lines = []
+            for hs in r.hydro_stations:
+                val_str = f"{hs.current_value:.1f}" if not math.isnan(hs.current_value) else "–"
+                t1_str = f"{hs.threshold1:.1f}" if not math.isnan(hs.threshold1) else "–"
+                min_str = f"{hs.min_value:.1f}" if not math.isnan(hs.min_value) else "–"
+                
+                hydro_lines.append(
+                    f"<b>Station {hs.station_id}</b><br/>"
+                    f"<span style='color:#555; font-size:13px; line-height: 1.3;'>"
+                    f"Abfluss: {val_str}<br/>"
+                    f"T1: {t1_str} | Min: {min_str}"
+                    f"</span>"
+                )
+            situation = "<br/><br/>".join(hydro_lines)
+        else:
+            situation = "<span style='color:#999; font-size: 13px;'>Keine Stationen/Daten</span>"
         
         # 4. Allgemeine Lage (Narrative)
         narrative_text = regional_narratives.get(r.region_name_de, "–")
@@ -255,7 +259,6 @@ elif view_tab == "regions":
             )
             
         st.markdown("<hr style='margin-top: 10px; margin-bottom: 10px; border-top: 1px solid #eee;'/>", unsafe_allow_html=True)
-
 
 # ── Global Footer (Applies to both tabs) ───────────────────────────────────
 st.divider()

@@ -82,17 +82,23 @@ def to_html(
                 
                 name = html.escape(region_names.get(r.region_id, r.region_name_de))
                 
-                c_label = html.escape(cdi_labels.get(r.cdi, t("unknown", doc.locale)))
-                spi_val = f"{r.spi_3m:.2f}" if not math.isnan(r.spi_3m) else "–"
-                soil_val = f"{r.soil_moisture_pct:.0f}%" if not math.isnan(r.soil_moisture_pct) else "–"
-                
-                situation = (
-                    f"<b>CDI {r.cdi} ({c_label})</b><br/>"
-                    f"<span style='color:#555; line-height: 1.5;'>"
-                    f"{html.escape(t('metric_spi', doc.locale))}: {spi_val}<br/>"
-                    f"{html.escape(t('metric_soil', doc.locale))}: {soil_val}"
-                    f"</span>"
-                )
+                # New Hydro Station Export
+                if r.hydro_stations:
+                    hydro_lines = []
+                    for hs in r.hydro_stations:
+                        val_str = f"{hs.current_value:.1f}" if not math.isnan(hs.current_value) else "–"
+                        t1_str = f"{hs.threshold1:.1f}" if not math.isnan(hs.threshold1) else "–"
+                        min_str = f"{hs.min_value:.1f}" if not math.isnan(hs.min_value) else "–"
+                        hydro_lines.append(
+                            f"<b>Station {html.escape(hs.station_id)}</b><br/>"
+                            f"<span style='color:#555; font-size:12px; line-height: 1.3;'>"
+                            f"Abfluss: {val_str}<br/>"
+                            f"T1: {t1_str} | Min: {min_str}"
+                            f"</span>"
+                        )
+                    situation = "<br/><br/>".join(hydro_lines)
+                else:
+                    situation = "<span style='color:#999; font-size: 13px;'>Keine Stationen/Daten</span>"
                 
                 narrative = regional_narratives.get(r.region_name_de, "–")
                 

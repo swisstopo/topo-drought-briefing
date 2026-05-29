@@ -1,14 +1,6 @@
 # src/data/fixture_loader.py
 """
-Reads the three bundled ZIP fixtures from data/ into a DataBundle.
-
-ZIP files expected (relative to project root):
-  data/trockenheitsdaten-numerisch_current__*.zip
-    → weekly_current_regions.csv
-  data/trockenheitsdaten-numerisch_historic__*.zip
-    → weekly_historic_regions.csv
-  data/trockenheitsdaten-numerisch_reference__*.zip
-    → regions.csv
+Reads the bundled ZIP fixtures from data/ into a DataBundle.
 
 CSV format: semicolon-separated; comment lines start with '#'.
 Date format in data: DD.MM.YYYY
@@ -64,7 +56,8 @@ def _parse_timestamp(comment_lines: list[str]) -> datetime:
 
 def _parse_dates(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
-    df["measured_at"] = pd.to_datetime(df["measured_at"], format="%d.%m.%Y", errors="coerce")
+    if "measured_at" in df.columns:
+        df["measured_at"] = pd.to_datetime(df["measured_at"], format="%d.%m.%Y", errors="coerce")
     return df
 
 
@@ -81,14 +74,24 @@ def load() -> DataBundle:
     forecast_raw, _ = _read_csv_from_zip(
         DATA_DIR / CURRENT_ZIP_NAME, "weekly_forecast_regions.csv"
     )
+    current_stations_df, _ = _read_csv_from_zip(
+        DATA_DIR / CURRENT_ZIP_NAME, "weekly_current_stations.csv"
+    )
+    reference_stations_df, _ = _read_csv_from_zip(
+        DATA_DIR / REFERENCE_ZIP_NAME, "daily_reference_stations.csv"
+    )
+    
     forecast_df = forecast_raw.copy()
     forecast_df["valid_at"] = pd.to_datetime(forecast_df["valid_at"], format="%d.%m.%Y", errors="coerce")
     data_timestamp = _parse_timestamp(comment_lines)
+    
     return DataBundle(
         current_df=_parse_dates(current_df),
         historic_df=_parse_dates(historic_df),
         reference_df=reference_df,
         forecast_df=forecast_df,
+        current_stations_df=_parse_dates(current_stations_df),
+        reference_stations_df=reference_stations_df,
         data_timestamp=data_timestamp,
         source="fixture",
     )
