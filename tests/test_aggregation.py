@@ -86,3 +86,13 @@ def test_region_report_has_new_fields_from_fixture():
     assert 1 <= report.hydro_index <= 5
     # Forecast week 2 may be None if data is shorter than 14 days
     assert report.cdi_forecast_week2 is None or 1 <= report.cdi_forecast_week2 <= 5
+
+
+def test_vhi_value_param_overrides_row_vhi(bundle):
+    report = compute_region_report(34, bundle, vhi_value=42.5)
+    assert report.vhi == pytest.approx(42.5)
+
+
+def test_vhi_delta_is_zero_when_vhi_value_provided(bundle):
+    report = compute_region_report(34, bundle, vhi_value=42.5)
+    assert report.vhi_delta == 0.0
