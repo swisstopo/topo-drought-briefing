@@ -31,11 +31,13 @@ Pipeline-first: **DataBundle → CantonReport → BriefingDocument → UI/Export
 - `stac_client.py` is the public entry point (`load()`). It tries a live STAC fetch but `_fetch_from_stac()` raises `NotImplementedError` intentionally, so it always falls back to fixture data via `fixture_loader.load()`.
 - `fixture_loader.py` reads three bundled ZIPs from `data/` (semicolon-separated CSVs, `#`-prefixed comment lines). Parses the data timestamp from comment headers. Returns a `DataBundle`.
 - `warnkarte_client.py::fetch_for_regions()` fetches official BAFU warning levels per region from the geo.admin.ch REST API. Falls back to `data/warnkarte_fixture.json` on any network or HTTP error. Refresh the fixture via `scripts/refresh_warnkarte_fixture.py`.
+- `vhi_client.py::fetch_for_regions()` fetches VHI (Vegetation Health Index) per region from the SwissEO REST endpoint. Falls back to `data/vhi_fixture.csv` on any error. Returns `{region_id: vhi_mean}`. The VHI value is passed as `vhi_value` override into `compute_region_report()` — it does not come from the CDI CSV.
 
 **Aggregation layer** (`src/aggregation/`):
-- `regional.py::compute_region_report()` filters `current_df` to rows where `cdi.notna()` before taking the latest row — the fixture has trailing NaN rows dated 2026-05-25 that must be excluded.
+- `regional.py::compute_region_report()` filters `current_df` to rows where `cdi.notna()` before taking the latest row — the fixture has trailing NaN rows dated 2026-05-25 that must be excluded. Accepts optional `vhi_value` override (from `vhi_client`) and `warnkarte_entry`; if no warnkarte entry, falls back to `max(cdi, 1)`.
 - `canton.py::compute_canton_report()` calls `compute_region_report()` for every region in `CANTON_TO_REGIONS[canton_id]`, folds the results into a `CantonReport`, and merges per-region `QualityReport`s via `_fold_quality()` (worst-case wins).
 - `indicators.py` holds pure helpers: `compute_pct_critical`, `compute_percentile`, `compute_trend`.
+- Forecast: `DataBundle.forecast_df` feeds `_compute_cdi_forecast_week2()` in `regional.py`, which finds the CDI forecast row closest to today+14d (within 5 days). Stored as `RegionReport.cdi_forecast_week2` (int or None).
 
 **Briefing layer** (`src/briefing/`):
 - `renderer.py::load_ruleset()` loads and validates `data/ruleset/canton-bulletin.yaml` via Pydantic (`schemas.py::RulesetSchema`).
