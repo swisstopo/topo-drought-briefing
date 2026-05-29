@@ -16,6 +16,7 @@ def compute_region_report(
     region_id: int,
     bundle: DataBundle,
     warnkarte_entry: WarnkarteEntry | None = None,
+    vhi_value: float | None = None,
 ) -> RegionReport:
     # --- Current snapshot (latest row for this region) ---
     current = bundle.current_df[bundle.current_df["drought_region_id"] == region_id]
@@ -40,20 +41,18 @@ def compute_region_report(
     cdi = int(row["cdi"]) if not pd.isna(row["cdi"]) else 0
     spi_3m = _safe(row["spi_3m"])
     soil_moisture_pct = _safe(row["soil_moisture_ufc"])
-    vhi = _safe(row["vhi"])
+    vhi = float(vhi_value) if vhi_value is not None else _safe(row["vhi"])
 
     # --- Trends vs prior week ---
     if prior_row is not None:
         prior_cdi = int(prior_row["cdi"]) if not pd.isna(prior_row["cdi"]) else cdi
         prior_spi = _safe(prior_row["spi_3m"])
-        prior_vhi = _safe(prior_row["vhi"])
         cdi_trend = compute_trend(cdi, prior_cdi)
         spi_3m_delta = spi_3m - prior_spi if not math.isnan(spi_3m) and not math.isnan(prior_spi) else 0.0
-        vhi_delta = vhi - prior_vhi if not math.isnan(vhi) and not math.isnan(prior_vhi) else 0.0
     else:
         cdi_trend = 0
         spi_3m_delta = 0.0
-        vhi_delta = 0.0
+    vhi_delta = 0.0
 
     # --- 52-week pct_critical from historic ---
     pct_critical = compute_pct_critical(bundle.historic_df, region_id)

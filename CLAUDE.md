@@ -44,6 +44,7 @@ Pipeline-first: **DataBundle → CantonReport → BriefingDocument → UI/Export
 
 **Viz layer** (`src/viz/`):
 - `maps.py::build_canton_map()` returns a folium map coloured by CDI/warnlevel per region (interactive, Streamlit only).
+- `maps.py::build_export_map()` renders the same map as static PNG bytes via matplotlib/geopandas — used by the HTML export pipeline.
 - `charts.py` produces a Plotly dual-axis figure: CDI bars (left) + SPI-3m line (right), 52 weeks.
 
 **Export layer** (`src/export/report.py`):
@@ -59,10 +60,12 @@ Pipeline-first: **DataBundle → CantonReport → BriefingDocument → UI/Export
 ## Key Models (`src/models.py`)
 
 All pipeline stages are typed dataclasses:
-- `DataBundle` — raw DataFrames (current, historic, reference, forecast) + source tag.
+- `DataBundle` — raw DataFrames (current, historic, reference, forecast) + source tag. `forecast_df` defaults to an empty DataFrame.
+- `QualityReport` — per-dataset health: `data_age_days`, `coverage_pct`, `missing_columns`, `outlier_flags`, `is_stale`, `overall` (ok/warning/error).
 - `RegionReport` — per-region indicators: CDI, SPI, soil moisture, VHI, precip sums, index levels (1–5), warnlevel, quality.
 - `CantonReport` — aggregated canton view: list of `RegionReport`, max warnlevel, region counts by index, folded quality.
 - `WarnkarteEntry` — BAFU warning level (1–5) + bilingual info text + `valid_from` date.
+- `MapSpec` — descriptor for a map panel: `id`, bilingual titles, `source` (path expression into CantonReport), `style` (renderer hint, e.g. `"choropleth_warnregionen"`).
 - `BriefingDocument` — rendered section strings, lead headline/meta, `MapSpec` list, locale.
 
 ## Deployment

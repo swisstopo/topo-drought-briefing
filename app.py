@@ -52,6 +52,11 @@ def _warnstufe_palette(level: int) -> tuple[str, str]:
     }
     return palette.get(level, ("#cccccc", "#1a1a1a"))
 
+DROUGHT_LEGEND = {
+    "de": ["Nicht trocken", "Leicht trocken", "Trocken", "Sehr trocken", "Extrem trocken"],
+    "fr": ["Pas sec", "Légèrement sec", "Sec", "Très sec", "Extrêmement sec"],
+}
+DROUGHT_COLOURS = ["#97E8CB", "#F9E5AE", "#F1B981", "#D18C47", "#8A5A42"]
 
 # ── Sidebar ────────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -127,12 +132,36 @@ if view_tab == "canton":
 
     st.divider()
 
-    map_cols = st.columns(2)
-    for col, map_spec in zip(map_cols, doc.lead_maps):
-        with col:
-            st.subheader(map_spec.title_de if lang == "de" else map_spec.title_fr)
-            m = build_canton_map(canton, map_spec)
-            st.components.v1.html(m._repr_html_(), height=300)
+# ── Two side-by-side maps ──────────────────────────────────────────────────
+map_cols = st.columns(2)
+for col, map_spec in zip(map_cols, doc.lead_maps):
+    with col:
+        st.subheader(map_spec.title_de if lang == "de" else map_spec.title_fr)
+        m = build_canton_map(canton, map_spec)
+        st.components.v1.html(m._repr_html_(), height=250)
+
+DROUGHT_LEGEND = {
+    "de": ["Nicht trocken", "Leicht trocken", "Trocken", "Sehr trocken", "Extrem trocken"],
+    "fr": ["Pas sec", "Légèrement sec", "Sec", "Très sec", "Extrêmement sec"],
+}
+DROUGHT_COLOURS = ["#97E8CB", "#F9E5AE", "#F1B981", "#D18C47", "#8A5A42"]
+
+labels = DROUGHT_LEGEND[lang]
+items_html = "".join(
+    f"""<span style="display:inline-flex;align-items:center;margin-right:18px;white-space:nowrap;">
+        <span style="display:inline-block;width:14px;height:14px;background:{colour};
+                     border-radius:2px;margin-right:6px;flex-shrink:0;"></span>
+        <span style="font-size:13px;">{label}</span>
+    </span>"""
+    for colour, label in zip(DROUGHT_COLOURS, labels)
+)
+ 
+st.markdown(
+    f'<div style="display:flex;flex-wrap:wrap;align-items:center;'
+    f'margin-top:-2rem;padding:0;gap:4px;">'
+    f'{items_html}</div>',
+    unsafe_allow_html=True,
+)
 
     st.divider()
 

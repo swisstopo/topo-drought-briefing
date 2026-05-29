@@ -1,6 +1,9 @@
 # tests/test_canton.py
 from datetime import datetime
 
+import pytest
+import responses
+
 from src.aggregation.canton import _fold_quality, compute_canton_report
 from src.data.stac_client import load as load_data
 from src.models import QualityReport, WarnkarteEntry
@@ -78,3 +81,31 @@ def test_fold_quality_max_age():
 def test_fold_quality_mean_coverage():
     folded = _fold_quality([_q("ok", coverage=0.6), _q("ok", coverage=1.0)])
     assert folded.coverage_pct == 0.8
+
+
+_VHI_URL = (
+    "https://data.geo.admin.ch/ch.swisstopo.swisseo_vhi_v100"
+    "/swisseo_vhi_v100"
+    "/ch.swisstopo.swisseo_vhi_v100_current_vegetation-warnregions.csv"
+)
+_VHI_CSV = (
+    "REGION_NR,vhi_mean,availability_percentage\n"
+    "33,55.0,99.9\n34,60.0,96.8\n35,70.0,80.5\n"
+    "37,45.0,99.9\n38,80.0,95.0\n41,65.0,77.6\n"
+)
+
+
+@responses.activate
+def test_canton_report_uses_swisseo_vhi():
+    responses.add(
+        responses.GET,
+        _VHI_URL,
+        body=_VHI_CSV,
+        status=200,
+        content_type="text/csv",
+    )
+    bundle = load_data()
+    warnkarte = {rid: _make_warnkarte(rid, 2) for rid in [33, 34, 35, 37, 38, 41]}
+    canton = compute_canton_report(canton_id=2, bundle=bundle, warnkarte_data=warnkarte)
+    region_34 = next(r for r in canton.regions if r.region_id == 34)
+    assert region_34.vhi == pytest.approx(60.0)

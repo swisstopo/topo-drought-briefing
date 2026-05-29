@@ -5,6 +5,7 @@ from collections import Counter
 
 from config.settings import CANTON_NAMES, CANTON_TO_REGIONS
 from src.aggregation.regional import compute_region_report
+from src.data import vhi_client
 from src.models import CantonReport, DataBundle, QualityReport, WarnkarteEntry
 
 
@@ -20,8 +21,14 @@ def compute_canton_report(
         )
 
     region_ids = sorted(CANTON_TO_REGIONS[canton_id])
+    vhi_data = vhi_client.fetch_for_regions(list(region_ids))
     region_reports = [
-        compute_region_report(rid, bundle, warnkarte_entry=warnkarte_data.get(rid))
+        compute_region_report(
+            rid,
+            bundle,
+            warnkarte_entry=warnkarte_data.get(rid),
+            vhi_value=vhi_data.get(rid),
+        )
         for rid in region_ids
     ]
 

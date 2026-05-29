@@ -43,6 +43,13 @@ CDI_COLOURS: Final[dict[int, str]] = {
 STAC_BASE_URL: Final[str] = "https://data.geo.admin.ch/api/stac/v1"
 STAC_COLLECTION: Final[str] = "ch.bafu.trockenheitsdaten-numerisch"
 
+VHI_URL: Final[str] = (
+    "https://data.geo.admin.ch/ch.swisstopo.swisseo_vhi_v100"
+    "/swisseo_vhi_v100"
+    "/ch.swisstopo.swisseo_vhi_v100_current_vegetation-warnregions.csv"
+)
+VHI_FIXTURE: Final[Path] = DATA_DIR / "vhi_fixture.csv"
+
 CURRENT_ZIP_NAME: Final[str] = (
     "trockenheitsdaten-numerisch_current__trockenheitsdaten-numerisch_current.csv.zip"
 )

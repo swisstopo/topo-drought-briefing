@@ -219,6 +219,8 @@ __marimo__/
 
 # Entpackte Trockenheitsdaten-CSVs (aus den ZIPs in data/ ableitbar)
 data/*.csv
+# Allow fixture files
+!data/*_fixture.csv
 
 # Rendered example reports
 data/ruleset/example-region-*.html

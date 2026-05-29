@@ -1,0 +1,716 @@
+[
+  {
+    "NAME": "Zürich",
+    "KANTONSNUM": 1,
+    "MAPGEO": "&center=2691805,1252035&z=9",
+    "warnregionen": [
+      {
+        "REGION_NR": 42,
+        "Name": "östliches Mittelland"
+      },
+      {
+        "REGION_NR": 39,
+        "Name": "Freiamt"
+      },
+      {
+        "REGION_NR": 43,
+        "Name": "Zürichseebecken"
+      },
+      {
+        "REGION_NR": 47,
+        "Name": "Alpstein"
+      }
+    ]
+  },
+  {
+    "NAME": "Bern",
+    "KANTONSNUM": 2,
+    "MAPGEO": "&center=2614322,1185492&z=8",
+    "warnregionen": [
+      {
+        "REGION_NR": 31,
+        "Name": "östlicher Jura"
+      },
+      {
+        "REGION_NR": 32,
+        "Name": "Balsthal"
+      },
+      {
+        "REGION_NR": 33,
+        "Name": "Unteres Emmental"
+      },
+      {
+        "REGION_NR": 34,
+        "Name": "Berner Mittelland"
+      },
+      {
+        "REGION_NR": 35,
+        "Name": "Westliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 36,
+        "Name": "Greyerzerland"
+      },
+      {
+        "REGION_NR": 37,
+        "Name": "Oberaargau"
+      },
+      {
+        "REGION_NR": 38,
+        "Name": "Oberes Emmental"
+      },
+      {
+        "REGION_NR": 40,
+        "Name": "westliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 41,
+        "Name": "Östliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      },
+      {
+        "REGION_NR": 53,
+        "Name": "Freiberge"
+      },
+      {
+        "REGION_NR": 54,
+        "Name": "westlicher Jura"
+      },
+      {
+        "REGION_NR": 55,
+        "Name": "westliches Mittelland"
+      },
+      {
+        "REGION_NR": 59,
+        "Name": "nördliches Wallis"
+      },
+      {
+        "REGION_NR": 61,
+        "Name": "Goms"
+      }
+    ]
+  },
+  {
+    "NAME": "Luzern",
+    "KANTONSNUM": 3,
+    "MAPGEO": "&center=2651011,1213189&z=9",
+    "warnregionen": [
+      {
+        "REGION_NR": 33,
+        "Name": "Unteres Emmental"
+      },
+      {
+        "REGION_NR": 37,
+        "Name": "Oberaargau"
+      },
+      {
+        "REGION_NR": 38,
+        "Name": "Oberes Emmental"
+      },
+      {
+        "REGION_NR": 40,
+        "Name": "westliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 41,
+        "Name": "Östliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 39,
+        "Name": "Freiamt"
+      },
+      {
+        "REGION_NR": 44,
+        "Name": "östliche Zentralschweiz"
+      }
+    ]
+  },
+  {
+    "NAME": "Uri",
+    "KANTONSNUM": 4,
+    "MAPGEO": "&center=2690888,1180766&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 40,
+        "Name": "westliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 41,
+        "Name": "Östliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 44,
+        "Name": "östliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      },
+      {
+        "REGION_NR": 46,
+        "Name": "Surselva"
+      },
+      {
+        "REGION_NR": 48,
+        "Name": "Glarner Alpen"
+      },
+      {
+        "REGION_NR": 61,
+        "Name": "Goms"
+      },
+      {
+        "REGION_NR": 63,
+        "Name": "Nordtessin"
+      }
+    ]
+  },
+  {
+    "NAME": "Schwyz",
+    "KANTONSNUM": 5,
+    "MAPGEO": "&center=2700121,1213143&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 40,
+        "Name": "westliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 43,
+        "Name": "Zürichseebecken"
+      },
+      {
+        "REGION_NR": 44,
+        "Name": "östliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      },
+      {
+        "REGION_NR": 48,
+        "Name": "Glarner Alpen"
+      }
+    ]
+  },
+  {
+    "NAME": "Obwalden",
+    "KANTONSNUM": 6,
+    "MAPGEO": "&center=2661368,1189331&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 40,
+        "Name": "westliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 41,
+        "Name": "Östliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      }
+    ]
+  },
+  {
+    "NAME": "Nidwalden",
+    "KANTONSNUM": 7,
+    "MAPGEO": "&center=2673622,1197753&z=8",
+    "warnregionen": [
+      {
+        "REGION_NR": 40,
+        "Name": "westliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 41,
+        "Name": "Östliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      }
+    ]
+  },
+  {
+    "NAME": "Glarus",
+    "KANTONSNUM": 8,
+    "MAPGEO": "&center=2723793,1204621&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 43,
+        "Name": "Zürichseebecken"
+      },
+      {
+        "REGION_NR": 44,
+        "Name": "östliche Zentralschweiz"
+      },
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      },
+      {
+        "REGION_NR": 46,
+        "Name": "Surselva"
+      },
+      {
+        "REGION_NR": 48,
+        "Name": "Glarner Alpen"
+      }
+    ]
+  },
+  {
+    "NAME": "Zug",
+    "KANTONSNUM": 9,
+    "MAPGEO": "&center=2683318,1223503&z=9",
+    "warnregionen": [
+      {
+        "REGION_NR": 39,
+        "Name": "Freiamt"
+      },
+      {
+        "REGION_NR": 43,
+        "Name": "Zürichseebecken"
+      },
+      {
+        "REGION_NR": 44,
+        "Name": "östliche Zentralschweiz"
+      }
+    ]
+  },
+  {
+    "NAME": "Fribourg",
+    "KANTONSNUM": 10,
+    "MAPGEO": "&center=2572115,1174216&z=8",
+    "warnregionen": [
+      {
+        "REGION_NR": 34,
+        "Name": "Berner Mittelland"
+      },
+      {
+        "REGION_NR": 35,
+        "Name": "Westliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 36,
+        "Name": "Greyerzerland"
+      },
+      {
+        "REGION_NR": 55,
+        "Name": "westliches Mittelland"
+      },
+      {
+        "REGION_NR": 56,
+        "Name": "Genferseebecken"
+      },
+      {
+        "REGION_NR": 57,
+        "Name": "Chablais"
+      }
+    ]
+  },
+  {
+    "NAME": "Solothurn",
+    "KANTONSNUM": 11,
+    "MAPGEO": "&center=2615182,1239271&z=9",
+    "warnregionen": [
+      {
+        "REGION_NR": 31,
+        "Name": "östlicher Jura"
+      },
+      {
+        "REGION_NR": 32,
+        "Name": "Balsthal"
+      },
+      {
+        "REGION_NR": 33,
+        "Name": "Unteres Emmental"
+      },
+      {
+        "REGION_NR": 37,
+        "Name": "Oberaargau"
+      }
+    ]
+  },
+  {
+    "NAME": "Basel-Stadt",
+    "KANTONSNUM": 12,
+    "MAPGEO": "&center=2613294,1268258&z=9",
+    "warnregionen": [
+      {
+        "REGION_NR": 31,
+        "Name": "östlicher Jura"
+      }
+    ]
+  },
+  {
+    "NAME": "Basel-Landschaft",
+    "KANTONSNUM": 13,
+    "MAPGEO": "&center=2619880,1255694&z=9",
+    "warnregionen": [
+      {
+        "REGION_NR": 31,
+        "Name": "östlicher Jura"
+      },
+      {
+        "REGION_NR": 32,
+        "Name": "Balsthal"
+      }
+    ]
+  },
+  {
+    "NAME": "Schaffhausen",
+    "KANTONSNUM": 14,
+    "MAPGEO": "&center=2686530,1285410&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 42,
+        "Name": "östliches Mittelland"
+      }
+    ]
+  },
+  {
+    "NAME": "Appenzell Ausserrhoden",
+    "KANTONSNUM": 15,
+    "MAPGEO": "&center=2745764,1247937&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 47,
+        "Name": "Alpstein"
+      },
+      {
+        "REGION_NR": 51,
+        "Name": "Rheintal"
+      }
+    ]
+  },
+  {
+    "NAME": "Appenzell Innerrhoden",
+    "KANTONSNUM": 16,
+    "MAPGEO": "&center=2749513,1242583&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 47,
+        "Name": "Alpstein"
+      },
+      {
+        "REGION_NR": 51,
+        "Name": "Rheintal"
+      }
+    ]
+  },
+  {
+    "NAME": "St. Gallen",
+    "KANTONSNUM": 17,
+    "MAPGEO": "&center=2739059,1233041&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 42,
+        "Name": "östliches Mittelland"
+      },
+      {
+        "REGION_NR": 43,
+        "Name": "Zürichseebecken"
+      },
+      {
+        "REGION_NR": 46,
+        "Name": "Surselva"
+      },
+      {
+        "REGION_NR": 47,
+        "Name": "Alpstein"
+      },
+      {
+        "REGION_NR": 48,
+        "Name": "Glarner Alpen"
+      },
+      {
+        "REGION_NR": 51,
+        "Name": "Rheintal"
+      },
+      {
+        "REGION_NR": 52,
+        "Name": "Prättigau"
+      }
+    ]
+  },
+  {
+    "NAME": "Graubünden",
+    "KANTONSNUM": 18,
+    "MAPGEO": "&center=2767576,1169561&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      },
+      {
+        "REGION_NR": 46,
+        "Name": "Surselva"
+      },
+      {
+        "REGION_NR": 48,
+        "Name": "Glarner Alpen"
+      },
+      {
+        "REGION_NR": 49,
+        "Name": "nördliches Mittelbünden"
+      },
+      {
+        "REGION_NR": 50,
+        "Name": "südliches Mittelbünden"
+      },
+      {
+        "REGION_NR": 51,
+        "Name": "Rheintal"
+      },
+      {
+        "REGION_NR": 52,
+        "Name": "Prättigau"
+      },
+      {
+        "REGION_NR": 63,
+        "Name": "Nordtessin"
+      },
+      {
+        "REGION_NR": 64,
+        "Name": "Östliches Tessin"
+      },
+      {
+        "REGION_NR": 66,
+        "Name": "Bündner Südtäler"
+      },
+      {
+        "REGION_NR": 67,
+        "Name": "Oberengadin"
+      },
+      {
+        "REGION_NR": 68,
+        "Name": "Unterengadin"
+      }
+    ]
+  },
+  {
+    "NAME": "Aargau",
+    "KANTONSNUM": 19,
+    "MAPGEO": "&center=2654219,1251244&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 31,
+        "Name": "östlicher Jura"
+      },
+      {
+        "REGION_NR": 32,
+        "Name": "Balsthal"
+      },
+      {
+        "REGION_NR": 33,
+        "Name": "Unteres Emmental"
+      },
+      {
+        "REGION_NR": 37,
+        "Name": "Oberaargau"
+      },
+      {
+        "REGION_NR": 42,
+        "Name": "östliches Mittelland"
+      },
+      {
+        "REGION_NR": 39,
+        "Name": "Freiamt"
+      }
+    ]
+  },
+  {
+    "NAME": "Thurgau",
+    "KANTONSNUM": 20,
+    "MAPGEO": "&center=2724478,1269984&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 42,
+        "Name": "östliches Mittelland"
+      },
+      {
+        "REGION_NR": 47,
+        "Name": "Alpstein"
+      }
+    ]
+  },
+  {
+    "NAME": "Ticino",
+    "KANTONSNUM": 21,
+    "MAPGEO": "&center=2705583,1128054&z=9",
+    "warnregionen": [
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      },
+      {
+        "REGION_NR": 46,
+        "Name": "Surselva"
+      },
+      {
+        "REGION_NR": 49,
+        "Name": "nördliches Mittelbünden"
+      },
+      {
+        "REGION_NR": 50,
+        "Name": "südliches Mittelbünden"
+      },
+      {
+        "REGION_NR": 61,
+        "Name": "Goms"
+      },
+      {
+        "REGION_NR": 62,
+        "Name": "Westliches Tessin"
+      },
+      {
+        "REGION_NR": 63,
+        "Name": "Nordtessin"
+      },
+      {
+        "REGION_NR": 64,
+        "Name": "Östliches Tessin"
+      },
+      {
+        "REGION_NR": 65,
+        "Name": "Sottoceneri"
+      }
+    ]
+  },
+  {
+    "NAME": "Vaud",
+    "KANTONSNUM": 22,
+    "MAPGEO": "&center=2540140,1157945&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 36,
+        "Name": "Greyerzerland"
+      },
+      {
+        "REGION_NR": 54,
+        "Name": "westlicher Jura"
+      },
+      {
+        "REGION_NR": 55,
+        "Name": "westliches Mittelland"
+      },
+      {
+        "REGION_NR": 56,
+        "Name": "Genferseebecken"
+      },
+      {
+        "REGION_NR": 57,
+        "Name": "Chablais"
+      },
+      {
+        "REGION_NR": 59,
+        "Name": "nördliches Wallis"
+      }
+    ]
+  },
+  {
+    "NAME": "Valais",
+    "KANTONSNUM": 23,
+    "MAPGEO": "&center=2612816,1117582&z=9",
+    "warnregionen": [
+      {
+        "REGION_NR": 35,
+        "Name": "Westliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 36,
+        "Name": "Greyerzerland"
+      },
+      {
+        "REGION_NR": 41,
+        "Name": "Östliches Berner Oberland"
+      },
+      {
+        "REGION_NR": 45,
+        "Name": "Urner Alpen"
+      },
+      {
+        "REGION_NR": 56,
+        "Name": "Genferseebecken"
+      },
+      {
+        "REGION_NR": 57,
+        "Name": "Chablais"
+      },
+      {
+        "REGION_NR": 58,
+        "Name": "Walliser Südalpen"
+      },
+      {
+        "REGION_NR": 59,
+        "Name": "nördliches Wallis"
+      },
+      {
+        "REGION_NR": 60,
+        "Name": "Vispertäler"
+      },
+      {
+        "REGION_NR": 61,
+        "Name": "Goms"
+      },
+      {
+        "REGION_NR": 62,
+        "Name": "Westliches Tessin"
+      },
+      {
+        "REGION_NR": 63,
+        "Name": "Nordtessin"
+      }
+    ]
+  },
+  {
+    "NAME": "Neuchâtel",
+    "KANTONSNUM": 24,
+    "MAPGEO": "&center=2549904,1205161&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 32,
+        "Name": "Balsthal"
+      },
+      {
+        "REGION_NR": 53,
+        "Name": "Freiberge"
+      },
+      {
+        "REGION_NR": 54,
+        "Name": "westlicher Jura"
+      },
+      {
+        "REGION_NR": 55,
+        "Name": "westliches Mittelland"
+      }
+    ]
+  },
+  {
+    "NAME": "Genève",
+    "KANTONSNUM": 25,
+    "MAPGEO": "&center=2499254,1119621&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 56,
+        "Name": "Genferseebecken"
+      }
+    ]
+  },
+  {
+    "NAME": "Jura",
+    "KANTONSNUM": 26,
+    "MAPGEO": "&center=2579009,1244286&z=10",
+    "warnregionen": [
+      {
+        "REGION_NR": 31,
+        "Name": "östlicher Jura"
+      },
+      {
+        "REGION_NR": 53,
+        "Name": "Freiberge"
+      }
+    ]
+  }
+]
