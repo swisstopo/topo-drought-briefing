@@ -9,6 +9,7 @@ import pandas as pd
 @dataclass
 class HydroStationReport:
     station_id: str
+    station_name: str
     current_value: float
     threshold1: float
     min_value: float

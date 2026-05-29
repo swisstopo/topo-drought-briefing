@@ -120,6 +120,12 @@ def compute_region_report(
                 val = _safe(latest.get("value"))
                 date = latest.get("measured_at")
                 
+                # Extract the station name safely
+                st_name_raw = latest.get("station_name")
+                if pd.isna(st_name_raw) or not st_name_raw:
+                    st_name_raw = latest.get("name", f"Station {st_id}")
+                st_name = str(st_name_raw)
+                
                 if pd.isna(date) or math.isnan(val):
                     continue
                     
@@ -135,6 +141,7 @@ def compute_region_report(
                     
                 hydro_reports.append(HydroStationReport(
                     station_id=str(st_id),
+                    station_name=st_name, 
                     current_value=val,
                     threshold1=t1,
                     min_value=min_val

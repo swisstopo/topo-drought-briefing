@@ -228,7 +228,7 @@ elif view_tab == "regions":
                 min_str = f"{hs.min_value:.1f}" if not math.isnan(hs.min_value) else "–"
                 
                 hydro_lines.append(
-                    f"<b>Station {hs.station_id}</b><br/>"
+                    f"<b>{hs.station_name} ({hs.station_id})</b><br/>" 
                     f"<span style='color:#555; font-size:13px; line-height: 1.3;'>"
                     f"Abfluss: {val_str}<br/>"
                     f"T1: {t1_str} | Min: {min_str}"
