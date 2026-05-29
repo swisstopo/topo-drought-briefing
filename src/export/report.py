@@ -97,8 +97,11 @@ def to_html(
                         val_str = f"{hs.current_value:.1f}" if not math.isnan(hs.current_value) else "–"
                         t1_str = f"{hs.threshold1:.1f}" if not math.isnan(hs.threshold1) else "–"
                         min_str = f"{hs.min_value:.1f}" if not math.isnan(hs.min_value) else "–"
+                        
+                        header_text = hs.station_name if str(hs.station_id) in hs.station_name else f"{hs.station_name} ({hs.station_id})"
+                        
                         hydro_lines.append(
-                            f"<b>{html.escape(hs.station_name)} ({html.escape(hs.station_id)})</b><br/>"
+                            f"<b>{html.escape(header_text)}</b><br/>"
                             f"<span style='color:#555; font-size:12px; line-height: 1.3;'>"
                             f"Abfluss: {val_str}<br/>"
                             f"T1: {t1_str} | Min: {min_str}"
