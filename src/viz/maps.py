@@ -37,7 +37,7 @@ import requests
 from pyproj import Transformer
 from shapely.geometry import box, mapping, shape
 
-from config.settings import CDI_COLOURS
+from config.settings import CANTON_CENTER_POINTS, CDI_COLOURS
 from src.models import CantonReport, MapSpec, RegionReport
 
 # ---------------------------------------------------------------------------
@@ -54,12 +54,7 @@ DROUGHT_TIME  = "1"   # time=1 → current situation
 # Canton boundary: identify endpoint uses this layer
 LAYER_CANTONS = "ch.swisstopo.swissboundaries3d-kanton-flaeche.fill"
 
-# A point guaranteed to be inside canton Bern (LV95 / EPSG:2056)
-# Used for the identify call – change if targeting a different canton
-CANTON_IDENTIFY_POINTS = {
-    2: (2600000, 1200000),   # Bern – Belpberg area
-}
-CANTON_IDENTIFY_DEFAULT = (2600000, 1200000)
+CANTON_IDENTIFY_DEFAULT = (2614322, 1185492)  # central Bern LV95 – fallback only
 
 CANTON_BUFFER_M = 5_000   # metres – zoom bbox buffer only, polygon is exact
 
@@ -84,7 +79,7 @@ def _fetch_canton_geometry(canton_id: int = 2) -> tuple[gpd.GeoDataFrame, list[f
     gdf    : GeoDataFrame (EPSG:4326) – actual canton polygon
     bounds : [lon_min, lat_min, lon_max, lat_max] – buffered bbox for zoom
     """
-    px, py = CANTON_IDENTIFY_POINTS.get(canton_id, CANTON_IDENTIFY_DEFAULT)
+    px, py = CANTON_CENTER_POINTS.get(canton_id, CANTON_IDENTIFY_DEFAULT)
     geom = None
 
     try:

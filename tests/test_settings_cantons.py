@@ -80,3 +80,31 @@ def test_all_region_sets_nonempty():
 def test_all_region_sets_are_frozensets():
     for canton_id, regions in CANTON_TO_REGIONS.items():
         assert isinstance(regions, frozenset), f"Canton {canton_id} regions is not frozenset"
+
+
+# ── maps.py uses CANTON_CENTER_POINTS ─────────────────────────────────────
+
+from unittest.mock import MagicMock, patch
+
+
+def test_fetch_canton_geometry_uses_correct_center_for_zurich():
+    """_fetch_canton_geometry must use CANTON_CENTER_POINTS[1] for Zürich."""
+    from src.viz.maps import _fetch_canton_geometry
+
+    captured = []
+
+    def fake_get(url, timeout=None):
+        captured.append(url)
+        mock_resp = MagicMock()
+        mock_resp.raise_for_status.return_value = None
+        mock_resp.json.return_value = {"results": []}  # empty → fallback bbox
+        return mock_resp
+
+    with patch("src.viz.maps.requests.get", side_effect=fake_get):
+        _fetch_canton_geometry(canton_id=1)
+
+    assert len(captured) == 1
+    px, py = CANTON_CENTER_POINTS[1]  # (2691805, 1252035)
+    assert f"geometry={px},{py}" in captured[0], (
+        f"Expected geometry={px},{py} in URL but got: {captured[0]}"
+    )
