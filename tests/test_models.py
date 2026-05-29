@@ -1,7 +1,32 @@
 # tests/test_models.py
 from datetime import datetime
 
-from src.models import CantonReport, MapSpec, QualityReport, RegionReport, WarnkarteEntry
+import pandas as pd
+
+from src.models import (
+    CantonReport,
+    DataBundle,
+    DischargeStats,
+    MapSpec,
+    QualityReport,
+    RegionReport,
+    WarnkarteEntry,
+)
+
+
+def test_discharge_stats_dataclass():
+    s = DischargeStats(n_total=4, n_low=2, n_very_low=1, pct_low=50)
+    assert s.n_total == 4 and s.n_low == 2 and s.n_very_low == 1 and s.pct_low == 50
+
+
+def test_databundle_station_fields_default_empty():
+    b = DataBundle(
+        current_df=pd.DataFrame(), historic_df=pd.DataFrame(),
+        reference_df=pd.DataFrame(), data_timestamp=datetime(2026, 5, 26), source="fixture",
+    )
+    assert b.current_stations_df.empty
+    assert b.reference_stations_df.empty
+    assert b.station_region_map == {}
 
 
 def test_map_spec_construction():

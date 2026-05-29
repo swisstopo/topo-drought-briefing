@@ -133,6 +133,10 @@ REFERENCE_ZIP_NAME: Final[str] = (
     "trockenheitsdaten-numerisch_reference__trockenheitsdaten-numerisch_reference.csv.zip"
 )
 
+CURRENT_STATIONS_CSV: Final[str] = "weekly_current_stations.csv"
+REFERENCE_STATIONS_CSV: Final[str] = "daily_reference_stations.csv"
+STATION_REGION_MAP_NAME: Final[str] = "station_region_mapping.json"
+
 GEOJSON_FIXTURE: Final[Path] = DATA_DIR / "berne_warnregionen.geojson"
 
 CANTON_NAMES: Final[dict[int, dict[str, str]]] = {

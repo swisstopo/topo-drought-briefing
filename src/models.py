@@ -14,6 +14,9 @@ class DataBundle:
     data_timestamp: datetime
     source: Literal["api", "fixture"]
     forecast_df: pd.DataFrame = field(default_factory=pd.DataFrame)
+    current_stations_df: pd.DataFrame = field(default_factory=pd.DataFrame)
+    reference_stations_df: pd.DataFrame = field(default_factory=pd.DataFrame)
+    station_region_map: dict[str, int] = field(default_factory=dict)
 
 
 @dataclass
@@ -24,6 +27,14 @@ class QualityReport:
     outlier_flags: list[str]
     is_stale: bool
     overall: Literal["ok", "warning", "error"]
+
+
+@dataclass
+class DischargeStats:
+    n_total: int      # discharge stations with a usable reference row
+    n_low: int        # current value < threshold1
+    n_very_low: int   # current value < q347 (subset of n_low)
+    pct_low: int      # round(n_low / n_total * 100); 0 when n_total == 0
 
 
 @dataclass
