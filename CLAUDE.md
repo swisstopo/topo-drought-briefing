@@ -34,7 +34,7 @@ Pipeline-first: **DataBundle → CantonReport → BriefingDocument → UI/Export
 - `vhi_client.py::fetch_for_regions()` fetches VHI (Vegetation Health Index) per region from the SwissEO REST endpoint. Falls back to `data/vhi_fixture.csv` on any error. Returns `{region_id: vhi_mean}`. The VHI value is passed as `vhi_value` override into `compute_region_report()` — it does not come from the CDI CSV.
 
 **Aggregation layer** (`src/aggregation/`):
-- `regional.py::compute_region_report()` filters `current_df` to rows where `cdi.notna()` before taking the latest row — the fixture has trailing NaN rows dated 2026-05-25 that must be excluded. Accepts optional `vhi_value` override (from `vhi_client`) and `warnkarte_entry`; if no warnkarte entry, falls back to `max(cdi, 1)`.
+- `regional.py::compute_region_report()` filters `current_df` to rows where `cdi.notna()` before taking the latest row — the fixture has trailing all-NaN placeholder rows that must be excluded. Accepts optional `vhi_value` override (from `vhi_client`) and `warnkarte_entry`; if no warnkarte entry, falls back to `max(cdi, 1)`. Also calls `_compute_hydro_stations()` (private helper in the same file) which builds `list[HydroStationReport]` from `bundle.station_region_map` and the station DataFrames — no JSON file is loaded at this stage.
 - `canton.py::compute_canton_report()` calls `compute_region_report()` for every region in `CANTON_TO_REGIONS[canton_id]`, folds the results into a `CantonReport`, and merges per-region `QualityReport`s via `_fold_quality()` (worst-case wins).
 - `stations.py::compute_discharge_stats(region_ids, bundle)` counts discharge stations with low/very-low flow. Filters `current_stations_df` to `label == "Abfluss"` and the target regions (via `bundle.station_region_map`), joins to `reference_stations_df` on `(hydro_station_id, doy)` to get `threshold1` (low) and `q347` (very low). Returns a `DischargeStats`. Refresh `station_region_mapping.json` via `scripts/extract_station_mappings.py`.
 - `indicators.py` holds pure helpers: `compute_pct_critical`, `compute_percentile`, `compute_trend`.
@@ -66,9 +66,10 @@ Pipeline-first: **DataBundle → CantonReport → BriefingDocument → UI/Export
 
 All pipeline stages are typed dataclasses:
 - `DataBundle` — raw DataFrames (current, historic, reference, forecast) + station DataFrames (`current_stations_df`, `reference_stations_df`) + `station_region_map: dict[str, int]` (hydro_station_id → region_id) + source tag. Station fields and `station_region_map` default to empty.
-- `DischargeStats` — discharge health for a region set: `n_total`, `n_low` (below threshold1), `n_very_low` (below q347), `pct_low`.
+- `HydroStationReport` — per-station discharge snapshot for display: `station_id`, `station_name`, `current_value`, `threshold1`, `min_value` (all floats, NaN-safe).
+- `DischargeStats` — aggregate discharge health for a region set: `n_total`, `n_low` (below threshold1), `n_very_low` (below q347), `pct_low`.
 - `QualityReport` — per-dataset health: `data_age_days`, `coverage_pct`, `missing_columns`, `outlier_flags`, `is_stale`, `overall` (ok/warning/error).
-- `RegionReport` — per-region indicators: CDI (0–5), SPI, soil moisture, VHI, precip sums, sub-index levels (precip_1m_index / soil_moisture_index / hydro_index, each 1–5), warnlevel, forecast fields (`cdi_forecast_week2`, `precip_1m_index_forecast`, `soil_moisture_index_forecast`), deficit deltas (`precip_deficit_delta`, `soil_moisture_deficit_delta`), `discharge: DischargeStats`, quality.
+- `RegionReport` — per-region indicators: CDI (0–5), SPI, soil moisture, VHI, precip sums, sub-index levels (precip_1m_index / soil_moisture_index / hydro_index, each 1–5), warnlevel, forecast fields (`cdi_forecast_week2`, `precip_1m_index_forecast`, `soil_moisture_index_forecast`), deficit deltas (`precip_deficit_delta`, `soil_moisture_deficit_delta`), `discharge: DischargeStats` (aggregate counts), `hydro_stations: list[HydroStationReport]` (per-station detail for the UI table), quality.
 - `CantonReport` — aggregated canton view: list of `RegionReport`, max warnlevel, region counts by index, folded quality, canton-level aggregates (`n_regions_dry`, `cdi_min_dry`, `cdi_max_dry`, `cdi_situation_delta`, `mean_precip_sum_1m/3m`, `n_regions_with_precip/soil_moisture_deficit`, `discharge: DischargeStats`).
 - `WarnkarteEntry` — BAFU warning level (1–5) + bilingual info text + `valid_from` date.
 - `MapSpec` — descriptor for a map panel: `id`, bilingual titles, `source` (path expression into CantonReport), `style` (renderer hint, e.g. `"choropleth_warnregionen"`).
@@ -110,6 +111,8 @@ The canton view uses a three-block structure:
 1. Full-width warnlevel badge (+ optional banner links)
 2. Two equal columns: left = `allgemeine-lage` section text; right = map switcher + CDI legend
 3. Full-width remaining sections (`handlungsoptionen`, `datenquellen`, weiterführende Links)
+
+The regionale lage table (regions view) is a 5-column layout: Warnstufe badge | Region name (hyperlinked) | Situation | Allgemeine Lage | Expert notes. The **Situation** column iterates `r.hydro_stations` to show per-station Abfluss value, T1 threshold, and historic minimum; falls back to a "Keine Stationen/Daten" placeholder when the list is empty.
 
 The map switcher is `st.radio(horizontal=True)` keyed on `selected_canton_id`. It renders only the active `MapSpec` — `st.tabs()` was deliberately avoided because Leaflet maps inside hidden tabs initialise at 0×0 and never recover when the tab is shown.
 
