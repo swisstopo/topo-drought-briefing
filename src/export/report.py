@@ -90,25 +90,15 @@ def to_html(
                 
                 name_html = f"<a href='{region_url}' target='_blank' style='color: inherit; text-decoration: underline;'>{html.escape(name_raw)}</a>"
                 
-                # New Hydro Station Export
-                if r.hydro_stations:
-                    hydro_lines = []
-                    for hs in r.hydro_stations:
-                        val_str = f"{hs.current_value:.1f}" if not math.isnan(hs.current_value) else "–"
-                        t1_str = f"{hs.threshold1:.1f}" if not math.isnan(hs.threshold1) else "–"
-                        min_str = f"{hs.min_value:.1f}" if not math.isnan(hs.min_value) else "–"
-                        
-                        header_text = hs.station_name if str(hs.station_id) in hs.station_name else f"{hs.station_name} ({hs.station_id})"
-                        abfluss_label = html.escape(t("metric_abfluss", doc.locale))
-                        
-                        hydro_lines.append(
-                            f"<b>{html.escape(header_text)}</b><br/>"
-                            f"<span style='color:#555; font-size:12px; line-height: 1.3;'>"
-                            f"{abfluss_label}: {val_str}<br/>"
-                            f"T1: {t1_str} | Min: {min_str}"
-                            f"</span>"
-                        )
-                    situation = "<br/><br/>".join(hydro_lines)
+                # Discharge stats summary
+                ds = r.discharge
+                if ds.n_total > 0:
+                    situation = (
+                        f"<span style='font-size:13px;'>"
+                        f"{ds.n_low}/{ds.n_total} Stationen tief"
+                        f"<br/><span style='color:#555;'>{ds.n_very_low} sehr tief</span>"
+                        f"</span>"
+                    )
                 else:
                     situation = "<span style='color:#999; font-size: 13px;'>Keine Stationen/Daten</span>"
                 
