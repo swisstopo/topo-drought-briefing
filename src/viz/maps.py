@@ -38,7 +38,7 @@ from pyproj import Transformer
 from shapely.geometry import box, mapping, shape
 
 from config.settings import CDI_COLOURS
-from src.models import RegionReport
+from src.models import CantonReport, MapSpec, RegionReport
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -249,6 +249,11 @@ def build_map(
     ).add_to(m)
 
     return m
+
+
+def build_canton_map(canton: CantonReport, map_spec: MapSpec) -> folium.Map:
+    """Render an interactive folium map for the given CantonReport and MapSpec."""
+    return build_map(canton_id=canton.canton_id)
 
 
 # ---------------------------------------------------------------------------

@@ -56,13 +56,14 @@ def _fetch_all_items(items_url: str) -> list[dict]:
     return items
 
 
-def _find_asset_href(assets: dict, keyword: str) -> str:
-    for key, asset in assets.items():
-        if keyword in key:
-            href = asset.get("href", "")
-            if href:
-                return href
-    raise RuntimeError(f"No asset containing '{keyword}' found in STAC item")
+def _find_asset_href_in_items(items: list[dict], keyword: str) -> str:
+    for item in items:
+        for key, asset in item.get("assets", {}).items():
+            if keyword in key:
+                href = asset.get("href", "")
+                if href:
+                    return href
+    raise RuntimeError(f"No asset containing '{keyword}' found in any STAC item")
 
 
 def _download_zip_bytes(url: str) -> bytes:
@@ -82,13 +83,6 @@ def _parse_csv_from_zip_bytes(zip_bytes: bytes, filename: str) -> tuple[pd.DataF
     data_lines = [line for line in lines if not line.startswith("#") and line.strip()]
     df = pd.read_csv(io.StringIO("\n".join(data_lines)), sep=";")
     return df, comment_lines
-
-
-def _download_and_parse_zip(url: str) -> tuple[pd.DataFrame, list[str]]:
-    zip_bytes = _download_zip_bytes(url)
-    with zipfile.ZipFile(io.BytesIO(zip_bytes)) as z:
-        csv_name = next(n for n in z.namelist() if n.endswith(".csv"))
-    return _parse_csv_from_zip_bytes(zip_bytes, csv_name)
 
 
 def _parse_timestamp(comment_lines: list[str]) -> datetime:
@@ -115,21 +109,17 @@ def _fetch_from_stac() -> DataBundle:
     if not items:
         raise RuntimeError("STAC collection returned no items")
 
-    latest_item = max(
-        items,
-        key=lambda x: x.get("properties", {}).get("datetime", ""),
-    )
-    assets = latest_item.get("assets", {})
-
-    current_zip_bytes = _download_zip_bytes(_find_asset_href(assets, "current"))
+    current_zip_bytes = _download_zip_bytes(_find_asset_href_in_items(items, "current"))
     current_df, comment_lines = _parse_csv_from_zip_bytes(
         current_zip_bytes, "weekly_current_regions.csv"
     )
     forecast_raw, _ = _parse_csv_from_zip_bytes(
         current_zip_bytes, "weekly_forecast_regions.csv"
     )
-    historic_df, _ = _download_and_parse_zip(_find_asset_href(assets, "historic"))
-    reference_df, _ = _download_and_parse_zip(_find_asset_href(assets, "reference"))
+    historic_zip_bytes = _download_zip_bytes(_find_asset_href_in_items(items, "historic"))
+    historic_df, _ = _parse_csv_from_zip_bytes(historic_zip_bytes, "weekly_historic_regions.csv")
+    reference_zip_bytes = _download_zip_bytes(_find_asset_href_in_items(items, "reference"))
+    reference_df, _ = _parse_csv_from_zip_bytes(reference_zip_bytes, "regions.csv")
 
     data_timestamp = _parse_timestamp(comment_lines)
 
