@@ -88,6 +88,15 @@ def test_region_report_has_new_fields_from_fixture():
     assert report.cdi_forecast_week2 is None or 1 <= report.cdi_forecast_week2 <= 5
 
 
+def test_region_report_deficit_deltas_and_discharge(bundle):
+    from src.models import DischargeStats
+    report = compute_region_report(34, bundle)
+    assert isinstance(report.precip_deficit_delta, int)
+    assert isinstance(report.soil_moisture_deficit_delta, int)
+    assert isinstance(report.discharge, DischargeStats)
+    assert report.discharge.n_total >= 0
+
+
 def test_vhi_value_param_overrides_row_vhi(bundle):
     report = compute_region_report(34, bundle, vhi_value=42.5)
     assert report.vhi == pytest.approx(42.5)

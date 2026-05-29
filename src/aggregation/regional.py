@@ -8,6 +8,7 @@ import pandas as pd
 
 from config.settings import REGION_NAMES_DE
 from src.aggregation.indicators import compute_pct_critical, compute_percentile, compute_trend
+from src.aggregation.stations import compute_discharge_stats
 from src.models import DataBundle, RegionReport, WarnkarteEntry
 from src.quality.checks import run_quality_checks
 
@@ -87,6 +88,17 @@ def compute_region_report(
         else 1
     )
     cdi_forecast_week2 = _compute_cdi_forecast_week2(bundle, region_id)
+    precip_1m_index_forecast = _forecast_week2_value(bundle, region_id, "precip_1m_index_p50")
+    soil_moisture_index_forecast = _forecast_week2_value(bundle, region_id, "soil_moisture_index_p50")
+    precip_deficit_delta = (
+        precip_1m_index_forecast - precip_1m_index
+        if precip_1m_index_forecast is not None else 0
+    )
+    soil_moisture_deficit_delta = (
+        soil_moisture_index_forecast - soil_moisture_index
+        if soil_moisture_index_forecast is not None else 0
+    )
+    discharge = compute_discharge_stats([region_id], bundle)
     if warnkarte_entry is not None:
         warnlevel = warnkarte_entry.warnlevel
         warnlevel_info_de = warnkarte_entry.info_de
@@ -120,13 +132,18 @@ def compute_region_report(
         warnlevel_info_de=warnlevel_info_de,
         warnlevel_info_fr=warnlevel_info_fr,
         cdi_forecast_week2=cdi_forecast_week2,
+        precip_1m_index_forecast=precip_1m_index_forecast,
+        soil_moisture_index_forecast=soil_moisture_index_forecast,
+        precip_deficit_delta=precip_deficit_delta,
+        soil_moisture_deficit_delta=soil_moisture_deficit_delta,
+        discharge=discharge,
     )
 
 
-def _compute_cdi_forecast_week2(bundle: DataBundle, region_id: int) -> int | None:
-    """Return the CDI forecast for valid_at ≈ today + 14 d. None if forecast horizon is shorter."""
+def _forecast_week2_value(bundle: DataBundle, region_id: int, column: str) -> int | None:
+    """Return the week-2 (~+14d) p50 value of `column` for a region, or None."""
     forecast = bundle.forecast_df
-    if forecast.empty:
+    if forecast.empty or column not in forecast.columns:
         return None
     target_date = bundle.data_timestamp + timedelta(days=14)
     region_forecast = forecast[forecast["drought_region_id"] == region_id]
@@ -137,6 +154,11 @@ def _compute_cdi_forecast_week2(bundle: DataBundle, region_id: int) -> int | Non
     closest = region_forecast.sort_values("delta").iloc[0]
     if closest["delta"] > pd.Timedelta(days=5):
         return None
-    if pd.isna(closest.get("cdi_p50")):
+    if pd.isna(closest.get(column)):
         return None
-    return int(closest["cdi_p50"])
+    return int(closest[column])
+
+
+def _compute_cdi_forecast_week2(bundle: DataBundle, region_id: int) -> int | None:
+    """Return the CDI forecast for valid_at ≈ today + 14 d. None if forecast horizon is shorter."""
+    return _forecast_week2_value(bundle, region_id, "cdi_p50")

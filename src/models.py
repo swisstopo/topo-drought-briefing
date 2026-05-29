@@ -63,6 +63,11 @@ class RegionReport:
     warnlevel_info_de: str = ""
     warnlevel_info_fr: str = ""
     cdi_forecast_week2: int | None = None
+    precip_1m_index_forecast: int | None = None
+    soil_moisture_index_forecast: int | None = None
+    precip_deficit_delta: int = 0
+    soil_moisture_deficit_delta: int = 0
+    discharge: DischargeStats = field(default_factory=lambda: DischargeStats(0, 0, 0, 0))
 
 
 @dataclass
