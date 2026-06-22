@@ -302,7 +302,7 @@ sections:
         {{#each canton.regions}}
         ### {{ this.region_name_de }}
 
-        In den vergangenen 30 Tagen sind in der Region {{ this.region_name_de }} rund {{ this.precip_sum_1m }} mm Niederschlag gefallen (3-Monats-Summe: {{ this.precip_sum_3m }} mm). Die Region weist damit aktuell {{ nomenclature.niederschlag.noun[this.precip_1m_index].de }} auf. Das Defizit wird in nächster Zeit tendenziell {{ trend(this.precip_deficit_delta, "defizit") }}.
+        In den vergangenen 30 Tagen sind in der Region {{ this.region_name_de }} rund {{ this.precip_sum_1m|round|int }} mm Niederschlag gefallen (3-Monats-Summe: {{ this.precip_sum_3m|round|int }} mm). Die Region weist damit aktuell {{ nomenclature.niederschlag.noun[this.precip_1m_index].de }} auf. Das Defizit wird in nächster Zeit tendenziell {{ trend(this.precip_deficit_delta, "defizit") }}.
 
         {{#if this.discharge.n_total}}{{ this.discharge.pct_low }} % der Abflussmessstationen weisen aktuell einen niedrigen Abfluss (7-Tages-Mittel) auf. Davon {{ plural(this.discharge.n_very_low, "liegt", "liegen") }} {{ this.discharge.n_very_low }} {{ plural(this.discharge.n_very_low, "Station", "Stationen") }} im sehr niedrigen Bereich.{{/if}}{{#if not this.discharge.n_total}}In dieser Region liegen keine Abflussmessstationen vor.{{/if}}
 
@@ -313,7 +313,7 @@ sections:
         {{#each canton.regions}}
         ### {{ this.region_name_de }}
 
-        Au cours des 30 derniers jours, environ {{ this.precip_sum_1m }} mm de précipitations sont tombés dans la région {{ this.region_name_de }} (cumul sur 3 mois : {{ this.precip_sum_3m }} mm). La région présente actuellement {{ nomenclature.niederschlag.noun[this.precip_1m_index].fr }}. Le déficit va probablement {{ trend(this.precip_deficit_delta, "defizit") }} prochainement.
+        Au cours des 30 derniers jours, environ {{ this.precip_sum_1m|round|int }} mm de précipitations sont tombés dans la région {{ this.region_name_de }} (cumul sur 3 mois : {{ this.precip_sum_3m|round|int }} mm). La région présente actuellement {{ nomenclature.niederschlag.noun[this.precip_1m_index].fr }}. Le déficit va probablement {{ trend(this.precip_deficit_delta, "defizit") }} prochainement.
 
         {{#if this.discharge.n_total}}{{ this.discharge.pct_low }} % des stations de mesure du débit présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, {{ this.discharge.n_very_low }} {{ plural(this.discharge.n_very_low, "station se situe", "stations se situent") }} dans la plage très basse.{{/if}}{{#if not this.discharge.n_total}}Cette région ne dispose d'aucune station de mesure du débit.{{/if}}
 
