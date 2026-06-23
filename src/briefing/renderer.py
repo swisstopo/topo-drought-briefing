@@ -102,6 +102,65 @@ def _plural(n: int, singular: str, plural: str) -> str:
     return singular if n == 1 else plural
 
 
+def _make_region_phrase(locale: str):
+    """
+    Return a callable region_phrase(n, total, noun_de, noun_fr) that converts a
+    raw count into natural language:
+      all   → "alle Regionen" / "toutes les régions"
+      most  → "die Mehrzahl der …" / "la majorité des …"
+      half  → "die Hälfte der …" / "la moitié des …"
+      few   → "wenige …" / "quelques …"
+      one   → "1 von {total} …" / "1 … sur {total}"
+      none  → "keine …" / "aucune …"
+    """
+    def region_phrase(
+        n: int,
+        total: int,
+        noun_de: str = "Regionen",
+        noun_fr: str = "régions",
+    ) -> str:
+        n = int(n)
+        total = int(total)
+        noun = noun_de if locale == "de" else noun_fr
+        if total == 0 or n == 0:
+            return ("keine " + noun_de) if locale == "de" else ("aucune " + noun)
+        if n == total:
+            return ("alle " + noun) if locale == "de" else ("toutes les " + noun)
+        if n * 2 > total:          # strict majority
+            return ("die Mehrzahl der " + noun) if locale == "de" else ("la majorité des " + noun)
+        if n * 2 == total:         # exactly half
+            return ("die Hälfte der " + noun) if locale == "de" else ("la moitié des " + noun)
+        if n > 1:                  # small minority
+            return ("wenige " + noun) if locale == "de" else ("quelques " + noun)
+        # n == 1
+        noun_fr_sg = noun_fr.rstrip("s") or noun_fr
+        return f"1 von {total} {noun_de}" if locale == "de" else f"1 {noun_fr_sg} sur {total}"
+    return region_phrase
+
+
+def _make_pct_stations(locale: str):
+    """
+    Return a callable pct_stations(pct, noun_de, noun_fr) that converts a
+    station percentage into natural language:
+      100 % → "alle Abflussmessstationen" / "toutes les stations de mesure du débit"
+        0 % → "keine der …"              / "aucune des …"
+      other → "X % der …"               / "X % des …"
+    """
+    def pct_stations(
+        pct: float,
+        noun_de: str = "Abflussmessstationen",
+        noun_fr: str = "stations de mesure du débit",
+    ) -> str:
+        pct_i = int(round(float(pct)))
+        noun = noun_de if locale == "de" else noun_fr
+        if pct_i >= 100:
+            return ("alle " + noun) if locale == "de" else ("toutes les " + noun)
+        if pct_i == 0:
+            return ("keine der " + noun) if locale == "de" else ("aucune des " + noun)
+        return f"{pct_i}\xa0% der {noun}" if locale == "de" else f"{pct_i}\xa0% des {noun}"
+    return pct_stations
+
+
 def _make_deficit_range_resolver(indicators, locale: str):
     def deficit_range(min_idx, max_idx, key):
         spec = indicators[key]
@@ -142,6 +201,8 @@ def render_briefing(
         ruleset.nomenclature.indicators, locale
     )
     env.globals["plural"] = _plural
+    env.globals["region_phrase"] = _make_region_phrase(locale)
+    env.globals["pct_stations"] = _make_pct_stations(locale)
     env.globals["nomenclature"] = ruleset.nomenclature.indicators
     # Resolve fallback chains so the template never sees None.empfehlungen
     resolved_he = type(ruleset.handlungsempfehlungen).model_construct(

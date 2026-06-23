@@ -169,6 +169,8 @@ main{padding:2rem 0 3rem}
 
 /* Footer + quality */
 .site-footer{background:var(--white);border-top:1px solid var(--border);padding:1.25rem 0;font-size:.8rem;color:var(--muted)}
+.site-footer p{margin:0}
+.site-footer .impressum{margin-top:.6rem;font-size:.72rem;line-height:1.5;border-top:1px solid var(--border);padding-top:.6rem}
 .quality-bar{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem}
 .banner-links{margin-bottom:1rem;font-size:.85rem}
 .banner-links a{margin-right:.75rem}
@@ -199,6 +201,11 @@ main{padding:2rem 0 3rem}
 .canton-rec-print{display:none}
 .map-print-label{display:none}
 
+/* Map + Allgemeine Lage side-by-side grid */
+.map-lage-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;align-items:stretch;margin-bottom:1.25rem}
+@media(max-width:700px){.map-lage-grid{grid-template-columns:1fr}}
+.map-lage-grid .map-card,.map-lage-grid .lage-card{margin-bottom:0;height:100%}
+
 /* Map card */
 .map-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem;box-shadow:var(--shadow)}
 .map-card h2{font-size:1rem;font-weight:700;color:var(--blue);padding-bottom:.6rem;margin-bottom:.9rem;border-bottom:2px solid var(--bg)}
@@ -228,7 +235,8 @@ main{padding:2rem 0 3rem}
   /* Swap textarea for its sibling div so all text is visible (no scroll cutoff) */
   .canton-rec{display:none!important}
   .canton-rec-print{display:block!important;white-space:pre-wrap;word-break:break-word;font-size:.82rem;color:var(--text);padding:.35rem 0;min-height:1em}
-  .card,.map-card{box-shadow:none;break-inside:avoid}
+  .card,.map-card,.lage-card{box-shadow:none;break-inside:avoid}
+  .map-lage-grid{grid-template-columns:7fr 3fr}
   .site-footer{display:none}
   .quality-bar{break-before:page}
   /* Preserve background colours in print (H) */
@@ -349,10 +357,9 @@ _JS = """\
     _setMapPrintLabel();
     var active = document.querySelector('.map-frame-active');
     if (active) {
-      /* A4 content width ≈ 680 px at 96 dpi with standard margins.
-         Use the smaller of the current card width and 680 px. */
-      var card = active.closest('.map-card') || active.parentNode;
-      var printW = Math.min(card ? card.offsetWidth : 680, 680);
+      /* Map column is 30 % of A4 content width in print.
+         A4 content ≈ 680 px at 96 dpi → 30 % ≈ 204 px. */
+      var printW = Math.round(680 * 0.30);
       active.style.width  = printW + 'px';
       active.style.height = '260px';
       /* Let the browser apply the new dimensions, then tell Leaflet */
@@ -557,6 +564,17 @@ def _parse_regionen(section_text: str) -> dict[str, str]:
     return result
 
 
+def _fmt_q(q: float) -> str:
+    """Format a discharge value (m³/s) with magnitude-appropriate precision."""
+    if q > 20:
+        return f"{q:.0f}"
+    if q > 5:
+        return f"{q:.1f}"
+    if q > 1:
+        return f"{q:.2f}"
+    return f"{q:.3f}"
+
+
 def _station_details_html(r: RegionReport, locale: str) -> str:
     """Per-station discharge details for the Situation column."""
     stations = [s for s in r.hydro_stations if not math.isnan(s.current_value)]
@@ -581,12 +599,12 @@ def _station_details_html(r: RegionReport, locale: str) -> str:
     parts: list[str] = []
     for s in stations:
         name = _html.escape(s.station_name if s.station_name else f"Station {s.station_id}")
-        t1_str = f"{s.threshold1:.1f}" if not math.isnan(s.threshold1) else "–"
-        mn_str = f"{s.min_value:.1f}" if not math.isnan(s.min_value) else "–"
+        t1_str = _fmt_q(s.threshold1) if not math.isnan(s.threshold1) else "–"
+        mn_str = _fmt_q(s.min_value) if not math.isnan(s.min_value) else "–"
         parts.append(
             f'<div style="font-size:.82rem;margin-bottom:.55rem;">'
             f"<b>{name}</b><br/>"
-            f"{lbl_q}: {s.current_value:.1f} m³/s<br/>"
+            f"{lbl_q}: {_fmt_q(s.current_value)} m³/s<br/>"
             f"{lbl_t1}: {t1_str} m³/s<br/>"
             f"{lbl_mn}: {mn_str} m³/s"
             f"</div>"
@@ -779,11 +797,33 @@ def _region_table_html(doc, canton: CantonReport, sec_title: str, locale: str) -
     )
 
 
-def _sections_html(doc, canton: CantonReport, ruleset, locale: str) -> str:
+def _allgemeine_lage_html(doc_de, doc_fr, ruleset) -> str:
+    """Render the allgemeine-lage section as a bilingual card for the grid layout."""
+    sec = next((s for s in ruleset.sections if s.id == "allgemeine-lage"), None)
+    text_de = doc_de.sections.get("allgemeine-lage", "")
+    text_fr = doc_fr.sections.get("allgemeine-lage", "")
+    if not (sec and (text_de or text_fr)):
+        return ""
+    title_de = _html.escape(sec.title.get("de", "Allgemeine Lage"))
+    title_fr = _html.escape(sec.title.get("fr", "Situation générale"))
+    return (
+        f'<div class="lage-card card">'
+        f'<h2 class="lang-de">{title_de}</h2>'
+        f'<h2 class="lang-fr">{title_fr}</h2>'
+        f'<div class="card-text lang-de">{_html.escape(text_de)}</div>'
+        f'<div class="card-text lang-fr">{_html.escape(text_fr)}</div>'
+        f"</div>"
+    )
+
+
+def _sections_html(
+    doc, canton: CantonReport, ruleset, locale: str,
+    skip: frozenset[str] = frozenset(),
+) -> str:
     """Render all briefing sections for the given locale using CSS card classes."""
     parts: list[str] = []
     for sec in ruleset.sections:
-        if sec.id not in doc.sections:
+        if sec.id in skip or sec.id not in doc.sections:
             continue
         sec_title = sec.title.get(locale, sec.title.get("de", sec.id))
         if sec.id == "regionen":
@@ -810,26 +850,32 @@ def _load_sources(sources_path: Path) -> list[dict]:
 
 
 def _sources_card_html(sources: list[dict]) -> str:
-    """Render the data sources as a footer card visible in both languages."""
+    """Render data sources as a bilingual card (DE / FR toggled by JS)."""
     if not sources:
         return ""
-    def _src_item(src: dict) -> str:
-        title = _html.escape(src["title"])
-        provider = src.get("provider", "")
-        label = f'{title} ({_html.escape(provider)})' if provider else title
-        return (
-            f'<li>'
-            f'<a href="{_html.escape(src["url"])}" target="_blank" rel="noopener">{label}</a>'
-            f'</li>'
-        )
-    items = "".join(_src_item(s) for s in sources if s.get("url") and s.get("title"))
+
+    def _item(src: dict, lang: str) -> str:
+        title_raw = src.get("title", "")
+        if isinstance(title_raw, dict):
+            title = _html.escape(title_raw.get(lang) or title_raw.get("de", ""))
+        else:
+            title = _html.escape(str(title_raw))
+        provider = _html.escape(src.get("provider", ""))
+        label = f"{title}: {provider}" if provider else title
+        url = _html.escape(src.get("url", ""))
+        return f'<li><a href="{url}" target="_blank" rel="noopener">{label}</a></li>'
+
+    valid = [s for s in sources if s.get("url") and s.get("title")]
+    items_de = "".join(_item(s, "de") for s in valid)
+    items_fr = "".join(_item(s, "fr") for s in valid)
     return (
         f'<div class="card" style="margin-top:1.5rem;">'
         f'<h2>'
         f'<span class="lang-de">Datenquellen</span>'
         f'<span class="lang-fr">Sources de donn&eacute;es</span>'
         f"</h2>"
-        f"<ul style='list-style:none;'>{items}</ul>"
+        f'<ul class="lang-de further-links">{items_de}</ul>'
+        f'<ul class="lang-fr further-links">{items_fr}</ul>'
         f"</div>"
     )
 
@@ -848,16 +894,24 @@ def _banner_html(doc_de, doc_fr) -> str:
 
 
 def _further_links_html(doc_de, doc_fr) -> str:
-    parts: list[str] = []
-    for locale, doc in (("de", doc_de), ("fr", doc_fr)):
-        if not doc.weiterfuehrende_links:
-            continue
-        items = "".join(
+    """Render weiterfuehrende_links as a bilingual card with heading."""
+    def _items(doc) -> str:
+        return "".join(
             f'<li><a href="{_html.escape(lk["url"])}">{_html.escape(lk["label"])}</a></li>'
-            for lk in doc.weiterfuehrende_links
+            for lk in (doc.weiterfuehrende_links or [])
         )
-        parts.append(f'<div class="further-links lang-{locale}"><ul>{items}</ul></div>')
-    return "\n".join(parts)
+    items_de = _items(doc_de)
+    items_fr = _items(doc_fr)
+    if not items_de and not items_fr:
+        return ""
+    return (
+        f'<div class="card">'
+        f'<h2 class="lang-de">Weiterf&uuml;hrende Links</h2>'
+        f'<h2 class="lang-fr">Liens compl&eacute;mentaires</h2>'
+        f'<ul class="lang-de further-links">{items_de}</ul>'
+        f'<ul class="lang-fr further-links">{items_fr}</ul>'
+        f"</div>"
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -893,10 +947,20 @@ def _footer_html() -> str:
     return """\
 <footer class="site-footer">
   <div class="container">
-    <span class="lang-de">Quelle: BAFU / MeteoSchweiz &middot;
-      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></span>
-    <span class="lang-fr">Source: OFEV / M&eacute;t&eacute;oSuisse &middot;
-      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></span>
+    <p class="lang-de">Quelle: BAFU / MeteoSchweiz &middot;
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+    <p class="lang-fr">Source: OFEV / M&eacute;t&eacute;oSuisse &middot;
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+    <p class="impressum lang-de">Impressum: Automatisiertes Trockenheitsbriefing f&uuml;r Schweizer Beh&ouml;rden &ndash;
+      von offenen Bundesdaten zum ver&ouml;ffentlichungsfertigen Bericht in Sekundenschnelle.
+      Entwickelt am GovTech Hackathon 2026 in Zusammenarbeit mit swisstopo, BAFU (FOEN) und MeteoSchweiz.
+      Team: David Oesch &middot; Joan Sturm &middot; Fabia Huesler &middot; Christopher Boodnee &middot;
+      Lea Stauber &middot; Benjamin Meyer &middot; Luca Huesler &middot; Simon Jaun &middot; Chantal Camenisch</p>
+    <p class="impressum lang-fr">Impressum&nbsp;: Bulletin de s&eacute;cheresse automatis&eacute; pour les autorit&eacute;s suisses &ndash;
+      des donn&eacute;es ouvertes de la Conf&eacute;d&eacute;ration au rapport pr&ecirc;t &agrave; publier en quelques secondes.
+      D&eacute;velopp&eacute; lors du GovTech Hackathon 2026 en collaboration avec swisstopo, l&rsquo;OFEV (BAFU) et M&eacute;t&eacute;oSuisse.
+      &Eacute;quipe&nbsp;: David Oesch &middot; Joan Sturm &middot; Fabia Huesler &middot; Christopher Boodnee &middot;
+      Lea Stauber &middot; Benjamin Meyer &middot; Luca Huesler &middot; Simon Jaun &middot; Chantal Camenisch</p>
   </div>
 </footer>"""
 
@@ -956,13 +1020,16 @@ Bulletin s&eacute;cheresse {_html.escape(canton.canton_name_fr)}</title>
 
   {_banner_html(doc_de, doc_fr)}
 
-  {_map_section_html(canton, has_maps)}
+  <div class="map-lage-grid">
+    {_allgemeine_lage_html(doc_de, doc_fr, ruleset)}
+    {_map_section_html(canton, has_maps)}
+  </div>
 
   <div class="lang-de">
-    {_sections_html(doc_de, canton, ruleset, "de")}
+    {_sections_html(doc_de, canton, ruleset, "de", skip=frozenset({"allgemeine-lage", "datenquellen"}))}
   </div>
   <div class="lang-fr">
-    {_sections_html(doc_fr, canton, ruleset, "fr")}
+    {_sections_html(doc_fr, canton, ruleset, "fr", skip=frozenset({"allgemeine-lage", "datenquellen"}))}
   </div>
 
   {_further_links_html(doc_de, doc_fr)}

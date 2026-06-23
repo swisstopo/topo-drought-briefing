@@ -1,28 +1,38 @@
 # config/sources.yaml
 #
-# Data sources displayed in the "Data sources" section of every canton page.
+# Data sources displayed in the "Datenquellen / Sources de données" card
+# on every canton page.  Both German (de) and French (fr) titles are required.
+#
 # To add, remove, or update a source: edit this file and re-run
-# scripts/generate_site.py. No Python code change is required.
+# scripts/generate_site.py.  No Python code change is required.
 #
 # Fields per entry:
-#   title    – Short descriptive title shown as the link text.
-#   url      – Permalink to the resource (must be a complete URL).
-#   provider – Organisation that publishes the resource.
+#   title    – Dict with keys de / fr: the link text in each language.
+#   url      – Permalink to the resource (complete URL).
+#   provider – Organisation that publishes the resource (shown after colon).
 
 data_sources:
 
-  - title: "Drought warning map"
+  - title:
+      de: "Trockenheitswarnkarte"
+      fr: "Carte d'alerte à la sécheresse"
     url: "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte"
     provider: "BAFU"
 
-  - title: "Drought data (numeric)"
+  - title:
+      de: "Trockenheitsdaten (numerisch)"
+      fr: "Données de sécheresse (numériques)"
     url: "https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.trockenheitsdaten-numerisch"
     provider: "BAFU"
 
-  - title: "Recommended terminology for drought bulletins"
+  - title:
+      de: "Terminologie für Trockenheitsbulletins"
+      fr: "Terminologie pour les bulletins de sécheresse"
     url: "https://s3.govtech.digisus-lab.ch/govtech/uploads/14/L2SYQ/U8YQGX7S.pdf"
     provider: "BAFU / MeteoSchweiz"
 
-  - title: "Drought warnings and behavioural recommendations"
+  - title:
+      de: "Trockenheitswarnungen und Verhaltensempfehlungen"
+      fr: "Avertissements de sécheresse et recommandations comportementales"
     url: "https://www.trockenheit.admin.ch/de/trockenheit/trockenheitswarnungen-und-verhaltensempfehlungen"
     provider: "BAFU"

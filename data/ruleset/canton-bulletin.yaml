@@ -270,21 +270,21 @@ sections:
       fr: "Situation générale"
     template:
       de: |
-        Im Kanton {{ canton.canton_name_de }} sind aktuell {{ canton.n_regions_dry }} von {{ canton.regions|length }} Regionen trocken{{#if canton.cdi_min_dry}} ({{ deficit_range(canton.cdi_min_dry, canton.cdi_max_dry, "cdi") }}){{/if}}. Die Situation {{ trend(canton.cdi_situation_delta, "situation") }}.
+        Im Kanton {{ canton.canton_name_de }} sind aktuell {{ region_phrase(canton.n_regions_dry, canton.regions|length) }} trocken{{#if canton.cdi_min_dry}} ({{ deficit_range(canton.cdi_min_dry, canton.cdi_max_dry, "cdi") }}){{/if}}. Die Situation {{ trend(canton.cdi_situation_delta, "situation") }}.
 
         In den vergangenen 30 Tagen sind durchschnittlich rund {{ canton.mean_precip_sum_1m|round|int }} mm Niederschlag gefallen (3-Monats-Summe: {{ canton.mean_precip_sum_3m|round|int }} mm). Im langjährigen Vergleich bedeutet dies regional {{ deficit_range(canton.precip_index_min, canton.precip_index_max, "niederschlag") }}.
 
-        {{#if canton.discharge.n_total}}{{ canton.discharge.pct_low }} % der Abflussmessstationen im Kanton weisen aktuell einen niedrigen Abfluss (7-Tages-Mittel) auf. Davon {{ plural(canton.discharge.n_very_low, "liegt", "liegen") }} {{ canton.discharge.n_very_low }} {{ plural(canton.discharge.n_very_low, "Station", "Stationen") }} im sehr niedrigen Bereich.{{/if}}{{#if not canton.discharge.n_total}}Im Kanton liegen keine Abflussmessstationen vor.{{/if}}
+        {{#if canton.discharge.n_total}}{{ pct_stations(canton.discharge.pct_low) }} im Kanton weisen aktuell einen niedrigen Abfluss (7-Tages-Mittel) auf. Davon {{ plural(canton.discharge.n_very_low, "liegt", "liegen") }} {{ canton.discharge.n_very_low }} {{ plural(canton.discharge.n_very_low, "Station", "Stationen") }} im sehr niedrigen Bereich.{{/if}}{{#if not canton.discharge.n_total}}Im Kanton liegen keine Abflussmessstationen vor.{{/if}}
 
-        Bei der Bodenfeuchte weisen {{ canton.n_regions_with_soil_moisture_deficit }} von {{ canton.regions|length }} Warnregionen ein Defizit auf.
+        Bei der Bodenfeuchte weisen {{ region_phrase(canton.n_regions_with_soil_moisture_deficit, canton.regions|length, "Warnregionen") }} ein Defizit auf.
       fr: |
-        Dans le canton de {{ canton.canton_name_fr }}, {{ canton.n_regions_dry }} régions sur {{ canton.regions|length }} sont actuellement en situation de sécheresse{{#if canton.cdi_min_dry}} ({{ deficit_range(canton.cdi_min_dry, canton.cdi_max_dry, "cdi") }}){{/if}}. La situation {{ trend(canton.cdi_situation_delta, "situation") }}.
+        Dans le canton de {{ canton.canton_name_fr }}, {{ region_phrase(canton.n_regions_dry, canton.regions|length) }} sont actuellement en situation de sécheresse{{#if canton.cdi_min_dry}} ({{ deficit_range(canton.cdi_min_dry, canton.cdi_max_dry, "cdi") }}){{/if}}. La situation {{ trend(canton.cdi_situation_delta, "situation") }}.
 
         Au cours des 30 derniers jours, il est tombé en moyenne environ {{ canton.mean_precip_sum_1m|round|int }} mm de précipitations (cumul sur 3 mois : {{ canton.mean_precip_sum_3m|round|int }} mm). En comparaison pluriannuelle, cela représente régionalement {{ deficit_range(canton.precip_index_min, canton.precip_index_max, "niederschlag") }}.
 
-        {{#if canton.discharge.n_total}}{{ canton.discharge.pct_low }} % des stations de mesure du débit du canton présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, {{ canton.discharge.n_very_low }} {{ plural(canton.discharge.n_very_low, "station se situe", "stations se situent") }} dans la plage très basse.{{/if}}{{#if not canton.discharge.n_total}}Le canton ne dispose d'aucune station de mesure du débit.{{/if}}
+        {{#if canton.discharge.n_total}}{{ pct_stations(canton.discharge.pct_low) }} du canton présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, {{ canton.discharge.n_very_low }} {{ plural(canton.discharge.n_very_low, "station se situe", "stations se situent") }} dans la plage très basse.{{/if}}{{#if not canton.discharge.n_total}}Le canton ne dispose d'aucune station de mesure du débit.{{/if}}
 
-        Concernant l'humidité du sol, {{ canton.n_regions_with_soil_moisture_deficit }} régions sur {{ canton.regions|length }} présentent un déficit.
+        Concernant l'humidité du sol, {{ region_phrase(canton.n_regions_with_soil_moisture_deficit, canton.regions|length) }} présentent un déficit.
     placeholders:
       - id: precip_index_summary
         source: canton.n_regions_by_precip_index
@@ -304,7 +304,7 @@ sections:
 
         In den vergangenen 30 Tagen sind in der Region {{ this.region_name_de }} rund {{ this.precip_sum_1m|round|int }} mm Niederschlag gefallen (3-Monats-Summe: {{ this.precip_sum_3m|round|int }} mm). Die Region weist damit aktuell {{ nomenclature.niederschlag.noun[this.precip_1m_index].de }} auf. Das Defizit wird in nächster Zeit tendenziell {{ trend(this.precip_deficit_delta, "defizit") }}.
 
-        {{#if this.discharge.n_total}}{{ this.discharge.pct_low }} % der Abflussmessstationen weisen aktuell einen niedrigen Abfluss (7-Tages-Mittel) auf. Davon {{ plural(this.discharge.n_very_low, "liegt", "liegen") }} {{ this.discharge.n_very_low }} {{ plural(this.discharge.n_very_low, "Station", "Stationen") }} im sehr niedrigen Bereich.{{/if}}{{#if not this.discharge.n_total}}In dieser Region liegen keine Abflussmessstationen vor.{{/if}}
+        {{#if this.discharge.n_total}}{{ pct_stations(this.discharge.pct_low) }} weisen aktuell einen niedrigen Abfluss (7-Tages-Mittel) auf. Davon {{ plural(this.discharge.n_very_low, "liegt", "liegen") }} {{ this.discharge.n_very_low }} {{ plural(this.discharge.n_very_low, "Station", "Stationen") }} im sehr niedrigen Bereich.{{/if}}{{#if not this.discharge.n_total}}In dieser Region liegen keine Abflussmessstationen vor.{{/if}}
 
         Es besteht zurzeit {{ nomenclature.bodenfeuchte.noun[this.soil_moisture_index].de }}. Das Defizit wird in nächster Zeit tendenziell {{ trend(this.soil_moisture_deficit_delta, "defizit") }}.
 
@@ -315,7 +315,7 @@ sections:
 
         Au cours des 30 derniers jours, environ {{ this.precip_sum_1m|round|int }} mm de précipitations sont tombés dans la région {{ this.region_name_de }} (cumul sur 3 mois : {{ this.precip_sum_3m|round|int }} mm). La région présente actuellement {{ nomenclature.niederschlag.noun[this.precip_1m_index].fr }}. Le déficit va probablement {{ trend(this.precip_deficit_delta, "defizit") }} prochainement.
 
-        {{#if this.discharge.n_total}}{{ this.discharge.pct_low }} % des stations de mesure du débit présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, {{ this.discharge.n_very_low }} {{ plural(this.discharge.n_very_low, "station se situe", "stations se situent") }} dans la plage très basse.{{/if}}{{#if not this.discharge.n_total}}Cette région ne dispose d'aucune station de mesure du débit.{{/if}}
+        {{#if this.discharge.n_total}}{{ pct_stations(this.discharge.pct_low) }} présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, {{ this.discharge.n_very_low }} {{ plural(this.discharge.n_very_low, "station se situe", "stations se situent") }} dans la plage très basse.{{/if}}{{#if not this.discharge.n_total}}Cette région ne dispose d'aucune station de mesure du débit.{{/if}}
 
         Concernant l'humidité du sol, il y a actuellement {{ nomenclature.bodenfeuchte.noun[this.soil_moisture_index].fr }}. Le déficit va probablement {{ trend(this.soil_moisture_deficit_delta, "defizit") }} prochainement.
 

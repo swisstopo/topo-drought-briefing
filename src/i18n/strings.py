@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 from config.settings import (
-    BERNE_REGION_NAMES,
     CDI_LABELS,
     CDI_LABELS_FR,
     REGION_NAMES_DE,

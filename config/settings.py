@@ -28,15 +28,6 @@ CANTON_CENTER_POINTS: Final[dict[int, tuple[int, int]]] = {
     for entry in _KANTONE
 }
 
-BERNE_REGION_NAMES: Final[dict[int, str]] = {
-    33: "Unteres Emmental",
-    34: "Berner Mittelland",
-    35: "Westliches Berner Oberland",
-    37: "Oberaargau",
-    38: "Oberes Emmental",
-    41: "Östliches Berner Oberland",
-}
-
 # German names for all 38 Swiss drought warning regions, derived from JSON.
 REGION_NAMES_DE: Final[dict[int, str]] = {
     r["REGION_NR"]: r["Name"]
@@ -137,7 +128,6 @@ CURRENT_STATIONS_CSV: Final[str] = "weekly_current_stations.csv"
 REFERENCE_STATIONS_CSV: Final[str] = "daily_reference_stations.csv"
 STATION_REGION_MAP_NAME: Final[str] = "station_region_mapping.json"
 
-GEOJSON_FIXTURE: Final[Path] = DATA_DIR / "berne_warnregionen.geojson"
 
 CANTON_ABBREV: Final[dict[int, str]] = {
     1: "ZH", 2: "BE", 3: "LU", 4: "UR", 5: "SZ", 6: "OW", 7: "NW",

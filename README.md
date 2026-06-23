@@ -91,6 +91,37 @@ The pipeline falls back to fixture data automatically. The published site will s
 
 ---
 
+### How to manage "Weiterführende Links" per canton (US-05)
+
+Every canton page has a "Weiterführende Links / Liens complémentaires" section. The links are defined in `data/ruleset/canton-bulletin.yaml` under the `weiterfuehrende_links` key.
+
+**To add a link that appears on every canton page:**
+
+```yaml
+weiterfuehrende_links:
+  - label:
+      de: "Link-Titel auf Deutsch"
+      fr: "Titre du lien en français"
+    url: "https://example.com/page"
+```
+
+**To add a link that appears only for a specific canton** (using the BFS canton number):
+
+```yaml
+weiterfuehrende_links:
+  - label:
+      de: "Grundwasserdaten Kanton Bern"
+      fr: "Données des eaux souterraines canton de Berne"
+    url:
+      2: "https://www.bvd.be.ch/..."   # 2 = Bern
+```
+
+The BFS numbers for all 26 cantons are listed in `config/settings.py` under `CANTON_ABBREV`.
+
+Links where the URL is not defined for the current canton are automatically hidden for that canton.
+
+---
+
 ### How to access the drought briefings as a public user (US-04)
 
 The website is accessible at the GitHub Pages URL for this repository.
@@ -140,6 +171,7 @@ Requirements: Python 3.11 or later, and the `uv` package manager.
 ```
 uv sync
 uv run pytest tests/ -v
+uv run python scripts/download.py
 uv run python scripts/aggregate.py
 uv run python scripts/generate_site.py
 ```
@@ -173,6 +205,6 @@ To propose a change to thresholds or texts: create a branch, edit the relevant Y
 
 ## Team
 
-David Oesch, Joan Sturm, Fabia Huesler, Christopher Boodnee, Lea Stauber, Benjamin Meyer, Luca Huesler, Simon Jaun, Chantal Camenisch.
+Fabia Huesler, Christopher Boodnee, Lea Stauber, Benjamin Meyer, Luca Huesler, Simon Jaun, Chantal Camenisch, David Oesch, Joan Sturm, 
 
 Built at GovTech Hackathon 2026 in partnership with swisstopo, BAFU, and MeteoSwiss.
