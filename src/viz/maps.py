@@ -1,44 +1,31 @@
 # src/viz/maps.py
 """
-Two map renderers:
-  build_map()        -> interactive folium.Map for Streamlit (st_folium)
-  build_export_map() -> static PNG bytes via matplotlib/geopandas (for PDF export)
+Interactive Folium map for the static site generator.
+  build_map(canton_id, wms_time) -> folium.Map
 
 Data sources:
   - Background relief:  ch.swisstopo.swissalti3d-reliefschattierung  (WMS)
-  - Drought index:      ch.bafu.trockenheitsindex                     (WMS, time=1)
+  - Drought index:      ch.bafu.trockenheitsindex                     (WMS)
   - Canton polygon:     ch.swisstopo.swissboundaries3d-kanton-flaeche.fill
-                        fetched via identify endpoint (point-in-polygon, EPSG:2056)
+                        fetched via identify endpoint (EPSG:2056)
 
-Opacity design
---------------
-Relief always shines through.
-  Inside canton polygon:  OPACITY_INSIDE  (more prominent)
-  Outside canton polygon: OPACITY_OUTSIDE (faded context)
-
-Folium approximation (Leaflet cannot clip WMS tiles):
-  Layer A: drought at OPACITY_OUTSIDE  everywhere
-  Layer B: drought at (OPACITY_INSIDE – OPACITY_OUTSIDE)  everywhere
-  Mask:    world.difference(canton) as black GeoJSON at same delta opacity
+Opacity design (Folium approximation — Leaflet cannot clip WMS tiles):
+  Layer A: drought at OPACITY_OUTSIDE everywhere
+  Layer B: drought at (OPACITY_INSIDE – OPACITY_OUTSIDE) everywhere
+  Mask:    world minus canton polygon as black GeoJSON at same delta opacity
            → cancels Layer B outside the canton
   Net:  inside  = A + B = OPACITY_INSIDE
         outside = A     = OPACITY_OUTSIDE
 """
 from __future__ import annotations
 
-import io
-from typing import Optional
-
 import folium
 import geopandas as gpd
-import matplotlib.pyplot as plt
-import numpy as np
 import requests
 from pyproj import Transformer
 from shapely.geometry import box, mapping, shape
 
-from config.settings import CANTON_CENTER_POINTS, CDI_COLOURS
-from src.models import CantonReport, MapSpec, RegionReport
+from config.settings import CANTON_CENTER_POINTS
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -135,22 +122,11 @@ def _fetch_canton_geometry(canton_id: int = 2) -> tuple[gpd.GeoDataFrame, list[f
     return gdf, [lon_min, lat_min, lon_max, lat_max]
 
 
-def _lv95_bbox(lon_min, lat_min, lon_max, lat_max):
-    x_min, y_min = _to_lv95.transform(lon_min, lat_min)
-    x_max, y_max = _to_lv95.transform(lon_max, lat_max)
-    return x_min, y_min, x_max, y_max
-
-
 # ---------------------------------------------------------------------------
 # Interactive map (folium)
 # ---------------------------------------------------------------------------
 
-def build_map(
-    selected_report: Optional[RegionReport] = None,
-    all_reports: Optional[list[RegionReport]] = None,
-    canton_id: int = 2,
-    wms_time: str = "1",
-) -> folium.Map:
+def build_map(canton_id: int = 2, wms_time: str = "1") -> folium.Map:
     """
     Layer stack (bottom → top):
       1. Relief shading          – opaque WMS base layer
@@ -243,112 +219,3 @@ def build_map(
     ).add_to(m)
 
     return m
-
-
-def build_canton_map(canton: CantonReport, map_spec: MapSpec) -> folium.Map:
-    """Render an interactive folium map for the given CantonReport and MapSpec."""
-    wms_time = "2" if "forecast" in map_spec.id else "1"
-    return build_map(canton_id=canton.canton_id, wms_time=wms_time)
-
-
-# ---------------------------------------------------------------------------
-# Static export map (matplotlib + WMS GetMap)
-# ---------------------------------------------------------------------------
-
-def build_export_map(
-    selected_report: Optional[RegionReport] = None,
-    all_reports: Optional[list[RegionReport]] = None,
-    canton_id: int = 2,
-) -> bytes:
-    """
-    Static PNG for PDF export.
-    Pixel-level alpha: OPACITY_INSIDE inside canton, OPACITY_OUTSIDE outside.
-    """
-    canton_gdf, bounds_wgs84 = _fetch_canton_geometry(canton_id)
-    canton_gdf_lv95 = canton_gdf.to_crs("EPSG:2056")
-
-    lon_min, lat_min, lon_max, lat_max = bounds_wgs84
-    x_min, y_min, x_max, y_max = _lv95_bbox(lon_min, lat_min, lon_max, lat_max)
-    bbox_lv95 = f"{x_min},{y_min},{x_max},{y_max}"
-    img_w, img_h = 1200, 900
-    extent = [x_min, x_max, y_min, y_max]
-
-    def _get_wms(layer: str, time: str | None = None) -> np.ndarray | None:
-        url = (
-            f"{SWISSTOPO_WMS}?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap"
-            f"&LAYERS={layer}&STYLES=default"
-            f"&CRS=EPSG:2056&BBOX={bbox_lv95}"
-            f"&WIDTH={img_w}&HEIGHT={img_h}"
-            f"&FORMAT=image/png&TRANSPARENT=TRUE"
-        )
-        if time is not None:
-            url += f"&time={time}"
-        try:
-            r = requests.get(url, timeout=30)
-            r.raise_for_status()
-            from PIL import Image
-            return np.array(Image.open(io.BytesIO(r.content)).convert("RGBA"))
-        except Exception as exc:
-            print(f"[maps] WMS GetMap failed for {layer}: {exc}")
-            return None
-
-    relief_arr  = _get_wms(LAYER_RELIEF)
-    drought_arr = _get_wms(LAYER_DROUGHT, time="1")
-
-    fig, ax = plt.subplots(figsize=(12, 9), facecolor="#0d1117")
-    ax.set_facecolor("#0d1117")
-    ax.set_aspect("equal")
-
-    # ── Relief background ─────────────────────────────────────────────────────
-    if relief_arr is not None:
-        ax.imshow(relief_arr, extent=extent, origin="upper", zorder=1)
-
-    if drought_arr is not None:
-        # Build a per-pixel inside-canton boolean mask
-        from matplotlib.path import Path as MplPath
-
-        canton_geom = canton_gdf_lv95.geometry.iloc[0]
-
-        def _to_mpl_path(geom) -> MplPath:
-            polys = [geom] if geom.geom_type == "Polygon" else list(geom.geoms)
-            verts, codes = [], []
-            for poly in polys:
-                for ring in [poly.exterior] + list(poly.interiors):
-                    xy = np.array(ring.coords)
-                    verts.append(xy)
-                    codes += ([MplPath.MOVETO]
-                               + [MplPath.LINETO] * (len(xy) - 2)
-                               + [MplPath.CLOSEPOLY])
-            return MplPath(np.concatenate(verts), np.array(codes))
-
-        mpl_path = _to_mpl_path(canton_geom)
-
-        xs = np.linspace(x_min, x_max, img_w)
-        ys = np.linspace(y_max, y_min, img_h)   # origin="upper" → decreasing y
-        grid_x, grid_y = np.meshgrid(xs, ys)
-        pts = np.column_stack([grid_x.ravel(), grid_y.ravel()])
-        inside_mask = mpl_path.contains_points(pts).reshape(img_h, img_w)
-
-        drought_float = drought_arr.astype(float)
-        alpha = drought_float[..., 3].copy()
-        alpha[inside_mask]  *= OPACITY_INSIDE
-        alpha[~inside_mask] *= OPACITY_OUTSIDE
-        drought_float[..., 3] = alpha
-        ax.imshow(drought_float.astype(np.uint8), extent=extent, origin="upper", zorder=2)
-
-    # ── Canton border ─────────────────────────────────────────────────────────
-    canton_gdf_lv95.boundary.plot(
-        ax=ax, color="#e8a020", linewidth=2.0, linestyle="--", zorder=5,
-    )
-
-    ax.set_xlim(x_min, x_max)
-    ax.set_ylim(y_min, y_max)
-    ax.set_axis_off()
-    ax.set_title("Trockenheitsindex – Kanton Bern", color="white", fontsize=11, pad=8)
-    plt.tight_layout(pad=0.3)
-
-    buf = io.BytesIO()
-    fig.savefig(buf, format="png", dpi=150, bbox_inches="tight", facecolor="#0d1117")
-    plt.close(fig)
-    buf.seek(0)
-    return buf.read()

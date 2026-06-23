@@ -218,8 +218,9 @@ main{padding:2rem 0 3rem}
   .site-header{position:static}
   .header-actions{display:none!important}
   .lang-toggle{display:none!important}
-  /* Show the first map iframe; hide radio controls (no interaction needed in print) */
-  .map-frame{display:block!important;height:260px}
+  /* Show only the active map iframe; hide radio controls */
+  .map-frame{display:none!important}
+  .map-frame-active{display:block!important;height:260px;width:100%}
   .map-controls{display:none!important}
   /* Swap textarea for its sibling div so all text is visible (no scroll cutoff) */
   .canton-rec{display:none!important}
@@ -268,18 +269,34 @@ _JS = """\
 
   /* ---- map radio toggle: switch between CDI1 / CDI2 iframes ---- */
   function initMapToggle() {
+    /* Mark the initially-checked frame as active (for print CSS) */
+    var checked = document.querySelector('.map-radio-btn:checked');
+    if (checked) {
+      var init = document.getElementById(checked.value);
+      if (init) init.classList.add('map-frame-active');
+    }
     document.querySelectorAll('.map-radio-btn').forEach(function (radio) {
       radio.addEventListener('change', function () {
         var container = this.closest('.map-card');
         if (!container) return;
         container.querySelectorAll('.map-frame').forEach(function (f) {
           f.style.display = 'none';
+          f.classList.remove('map-frame-active');
         });
         var target = document.getElementById(this.value);
-        if (target) target.style.display = 'block';
+        if (target) { target.style.display = 'block'; target.classList.add('map-frame-active'); }
       });
     });
   }
+
+  /* ---- before print: notify active iframe so Leaflet can refit to A4 width ---- */
+  window.addEventListener('beforeprint', function () {
+    var active = document.querySelector('.map-frame-active');
+    if (active) {
+      try { active.contentWindow.dispatchEvent(new Event('beforeprint')); } catch (e) {}
+      try { active.contentWindow.postMessage('drought:beforeprint', '*'); } catch (e) {}
+    }
+  });
 
   /* ---- canton recommendation textareas (no persistence — always start empty) ---- */
   function initCantonRecs() {
@@ -537,23 +554,38 @@ def _generate_map_files(canton: CantonReport, out_dir: Path) -> bool:
         return False
 
 
-_LEAFLET_BEFOREPRINT_SCRIPT = (
-    "<script>"
-    "window.addEventListener('beforeprint',function(){"
-    # Leaflet map variables are named map_<hex> by Folium; call invalidateSize on all
-    "Object.keys(window).forEach(function(k){"
-    "if(k.startsWith('map_')&&window[k]&&typeof window[k].invalidateSize==='function'){"
-    "window[k].invalidateSize(true);"
-    "}"
-    "});"
-    "});"
-    "</script>"
+_FIT_BOUNDS_RE = re.compile(
+    r"\.fitBounds\(\s*"
+    r"(\[\s*\[\s*[\d.\-]+\s*,\s*[\d.\-]+\s*\]\s*,\s*\[\s*[\d.\-]+\s*,\s*[\d.\-]+\s*\]\s*\])"
 )
 
 
 def _inject_print_resize(html: str) -> str:
-    """Inject a beforeprint handler into a Folium HTML string so Leaflet recenters on print."""
-    return html.replace("</body>", _LEAFLET_BEFOREPRINT_SCRIPT + "</body>", 1)
+    """
+    Inject beforeprint + message handlers into a Folium HTML string.
+    Parses the fitBounds coordinates so Leaflet re-fits to the canton on print.
+    """
+    m = _FIT_BOUNDS_RE.search(html)
+    bounds_literal = m.group(1) if m else "null"
+    script = (
+        "<script>"
+        "(function(){"
+        f"var _b={bounds_literal};"
+        "function _fit(){"
+        "Object.keys(window).forEach(function(k){"
+        "if(k.startsWith('map_')&&window[k]&&typeof window[k].invalidateSize==='function'){"
+        "window[k].invalidateSize(true);"
+        "if(_b)window[k].fitBounds(_b,{animate:false,padding:[10,10]});"
+        "}"
+        "});"
+        "}"
+        "window.addEventListener('beforeprint',_fit);"
+        # parent page also sends postMessage when printing
+        "window.addEventListener('message',function(e){if(e.data==='drought:beforeprint')_fit();});"
+        "}());"
+        "</script>"
+    )
+    return html.replace("</body>", script + "</body>", 1)
 
 
 def _map_section_html(canton: CantonReport, has_maps: bool) -> str:
@@ -699,16 +731,16 @@ def _sources_card_html(sources: list[dict]) -> str:
     """Render the data sources as a footer card visible in both languages."""
     if not sources:
         return ""
-    items = "".join(
-        f'<li>'
-        f'<a href="{_html.escape(src["url"])}" target="_blank" rel="noopener">'
-        f'{_html.escape(src["title"])}'
-        f"</a>"
-        f' &mdash; {_html.escape(src.get("provider", ""))}'
-        f"</li>"
-        for src in sources
-        if src.get("url") and src.get("title")
-    )
+    def _src_item(src: dict) -> str:
+        title = _html.escape(src["title"])
+        provider = src.get("provider", "")
+        label = f'{title} ({_html.escape(provider)})' if provider else title
+        return (
+            f'<li>'
+            f'<a href="{_html.escape(src["url"])}" target="_blank" rel="noopener">{label}</a>'
+            f'</li>'
+        )
+    items = "".join(_src_item(s) for s in sources if s.get("url") and s.get("title"))
     return (
         f'<div class="card" style="margin-top:1.5rem;">'
         f'<h2>'
