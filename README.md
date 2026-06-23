@@ -1,11 +1,13 @@
-# Drought Briefing
+# Drought Briefing BETA
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing) [![Daily Drought Briefing Update](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml/badge.svg)](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml) [![GitHub commit](https://img.shields.io/github/last-commit/swisstopo/topo-drought-briefing)](https://github.com/swisstopo/topo-drought-briefing/commits/main)
 
 Automated drought situation reports for Swiss authorities.
 
 The system downloads federal open data every day, applies drought rules, and publishes a static website.
 No server is needed. Everything runs on GitHub.
 
-Live site: published via GitHub Pages (see Settings > Pages in this repository).
+Live site: [swisstopo.github.io/topo-drought-briefing](https://swisstopo.github.io/topo-drought-briefing): published via GitHub Pages (see Settings > Pages in this repository).
 
 ---
 
@@ -119,6 +121,10 @@ weiterfuehrende_links:
 The BFS numbers for all 26 cantons are listed in `config/settings.py` under `CANTON_ABBREV`.
 
 Links where the URL is not defined for the current canton are automatically hidden for that canton.
+
+### You need other Changes to make?
+
+Then type your question [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing)
 
 ---
 

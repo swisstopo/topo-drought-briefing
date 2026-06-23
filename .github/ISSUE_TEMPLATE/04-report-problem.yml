@@ -1,0 +1,79 @@
+name: Report a problem on the website
+description: Something looks wrong, is missing, or does not match expectations on the published website.
+title: "[PROBLEM] "
+labels: ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for reporting this.**
+        Please be as specific as possible — the more detail you give, the faster we can fix it.
+
+  - type: input
+    id: page_url
+    attributes:
+      label: Which page has the problem?
+      description: Paste the URL of the page where you noticed the problem.
+      placeholder: "https://swisstopo.github.io/topo-drought-briefing/..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - Wrong value or number displayed
+        - Wrong text or translation
+        - Missing data (something that should be there is not)
+        - Wrong warning level shown
+        - Visual / layout problem
+        - Link is broken
+        - Other (describe below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_you_see
+    attributes:
+      label: What do you currently see?
+      description: Describe exactly what is wrong. Copy the wrong text or number if possible.
+      placeholder: |
+        Example: The CDI value for canton Bern shows 0.85 but the BAFU portal shows 0.42 for the same date.
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_expected
+    attributes:
+      label: What should it show instead?
+      placeholder: |
+        Example: It should show 0.42, matching the value on the BAFU drought portal.
+    validations:
+      required: true
+
+  - type: input
+    id: date_observed
+    attributes:
+      label: When did you notice this?
+      description: Date and time if you remember (helps us check which data run was affected).
+      placeholder: "Example: 2026-06-20, around 09:00"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional but very helpful)
+      description: Drag and drop a screenshot here if you have one.
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else we should know?
+    validations:
+      required: false

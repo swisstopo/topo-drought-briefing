@@ -1,0 +1,75 @@
+name: Change a text or translation
+description: Request a change to bulletin text, recommendation text, or a UI label in German, French, or Italian.
+title: "[TEXT] "
+labels: ["text", "translation"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **No coding needed — just copy and paste the text you want changed.**
+        All texts live in `data/ruleset/canton-bulletin.yaml` or `src/i18n/strings.py`.
+        If you are not sure which file, describe the text and where you see it — that is enough.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which language?
+      options:
+        - German (DE)
+        - French (FR)
+        - Italian (IT)
+        - All languages
+    validations:
+      required: true
+
+  - type: dropdown
+    id: text_type
+    attributes:
+      label: What kind of text is it?
+      options:
+        - Recommendation / action text (Handlungsempfehlung)
+        - Bulletin / situation description text
+        - Warning level label (e.g. "Warnung", "Vorwarnung")
+        - UI label (button, table header, section title)
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where do you see this text?
+      description: Name the page, section, or warning level where the text appears. A URL is perfect.
+      placeholder: "Example: Canton page Bern, warning level 3, recommendations section — or paste the URL"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_text
+    attributes:
+      label: Current text (copy-paste exactly as it appears)
+      description: Copy the text word for word so we can find it without ambiguity.
+      placeholder: "Example: Bei Trockenheit empfehlen wir den Einsatz zu reduzieren."
+    validations:
+      required: true
+
+  - type: textarea
+    id: new_text
+    attributes:
+      label: New text you are requesting
+      description: Write the replacement text in full. If it should change in multiple languages, add each one.
+      placeholder: |
+        DE: Bei erhöhter Trockenheit empfehlen wir, den Wassereinsatz deutlich zu reduzieren.
+        FR: En cas de sécheresse accrue, nous recommandons de réduire nettement l'utilisation de l'eau.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should this be changed?
+      placeholder: "Example: The current text is outdated following the 2025 terminology review."
+    validations:
+      required: true

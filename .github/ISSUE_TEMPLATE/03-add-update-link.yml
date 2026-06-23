@@ -1,0 +1,85 @@
+name: Add or update a link (Weiterführende Links)
+description: Request to add, change, or remove a link in the "Weiterführende Links / Liens complémentaires" section on a canton page.
+title: "[LINK] "
+labels: ["content", "links"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **No coding needed.**
+        Links are defined in `data/ruleset/canton-bulletin.yaml` under `weiterfuehrende_links`.
+        Fill in the fields below and we will make the change.
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: What do you want to do?
+      options:
+        - Add a new link
+        - Update an existing link (change URL or label)
+        - Remove a link
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Which cantons should this link appear on?
+      options:
+        - All cantons
+        - One specific canton (name it below)
+        - Several specific cantons (list them below)
+    validations:
+      required: true
+
+  - type: input
+    id: cantons
+    attributes:
+      label: Canton name(s) — if not all cantons
+      description: Write the canton name(s) in full. Example — Bern, Zürich
+      placeholder: "Example: Bern"
+    validations:
+      required: false
+
+  - type: input
+    id: label_de
+    attributes:
+      label: Link title in German
+      placeholder: "Example: Grundwasserdaten Kanton Bern"
+    validations:
+      required: true
+
+  - type: input
+    id: label_fr
+    attributes:
+      label: Link title in French
+      placeholder: "Example: Données des eaux souterraines canton de Berne"
+    validations:
+      required: false
+
+  - type: input
+    id: label_it
+    attributes:
+      label: Link title in Italian (optional)
+      placeholder: "Example: Dati delle acque sotterranee cantone di Berna"
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: The full web address the link should point to.
+      placeholder: "https://example.admin.ch/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why is this link useful for users?
+      placeholder: "Example: Users in Bern frequently ask for the cantonal groundwater monitoring page."
+    validations:
+      required: false
