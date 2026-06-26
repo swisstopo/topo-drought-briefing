@@ -195,6 +195,7 @@ def render_briefing(
         autoescape=False,
     )
     env.filters["format_date"] = _format_date
+    env.filters["ucfirst"] = lambda s: (s[0].upper() + s[1:]) if s else s
     env.globals["format_date"] = _format_date
     env.globals["trend"] = _make_trend_resolver(ruleset.trend, locale)
     env.globals["deficit_range"] = _make_deficit_range_resolver(
