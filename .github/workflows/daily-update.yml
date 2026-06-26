@@ -6,7 +6,7 @@ name: Daily Drought Briefing Update
 
 on:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '21 * * * *'
   workflow_dispatch:
 
 permissions:

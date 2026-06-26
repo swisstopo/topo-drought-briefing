@@ -111,49 +111,6 @@ BAFU only publishes explicit recommendations for levels 1, 2 and 4. Levels 3 and
 
 `example-region-34.html` is a rendered example report for region 34 (Berner Mittelland), data as of 28.05.2026. The aggregate blocks are marked as placeholders because the station mapping is not resolved in this example.
 
-## Integration branch (INT) and preview deployment
-
-Changes to rules and templates should **not** go directly to `main`. Use the `INT` branch as a shared staging area:
-
-```
-your-branch  →  INT  →  main
-   (PR)         (PR, squash merge)
-```
-
-### Workflow
-
-1. Create a branch from `INT` (not from `main`) and make your changes.
-2. Open a pull request targeting `INT`.
-3. Every push to `INT` automatically deploys a preview to:
-   **`https://swisstopo.github.io/topo-drought-briefing/int/`**
-4. Review the preview. If the output looks correct, open a pull request from `INT` → `main` and merge it with **squash merge** to keep the main history clean.
-
-### Why squash merge?
-
-During integration, `INT` may accumulate many small commits ("fix typo", "try again", etc.). Squash merge collapses them into one clean commit on `main`, so the production history stays readable.
-
-### Who can do what
-
-| Role | What you can do |
-|---|---|
-| Maintainer (all team members) | push branches, open PRs, merge PRs into INT |
-| Administrator (Joan, David) | merge INT → main, change repo settings |
-
-### Preview URL vs. production URL
-
-| Branch | URL |
-|---|---|
-| `main` | `https://swisstopo.github.io/topo-drought-briefing/` |
-| `INT` | `https://swisstopo.github.io/topo-drought-briefing/int/` |
-
-Both are served from the same repository — no second repo needed.
-
-> **One-time setup (administrators only):** After the first run of either workflow, go to  
-> *Settings → Pages → Source* and set it to **"Deploy from a branch: `gh-pages`"**.  
-> The `gh-pages` branch is created automatically by the workflow on first deploy.
-
----
-
 ## Open points
 
 - **Aggregate mapping:** the station-to-region assignment must be provided by the renderer — format and location to be defined.
