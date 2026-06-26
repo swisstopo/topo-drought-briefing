@@ -1,4 +1,4 @@
-# Drought Briefing BETA INT TESTING
+# Drought Briefing BETA 
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing) [![Daily Drought Briefing Update](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml/badge.svg)](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml) [![GitHub commit](https://img.shields.io/github/last-commit/swisstopo/topo-drought-briefing)](https://github.com/swisstopo/topo-drought-briefing/commits/main)
 
@@ -138,6 +138,49 @@ The website is accessible at the GitHub Pages URL for this repository.
 4. Switch between German and French using the DE / FR buttons in the top right corner.
 5. To save a PDF, use your browser's print function (Ctrl+P or Cmd+P) and choose "Save as PDF".
 6. To share a link in a specific language, click "Link kopieren" / "Copier le lien" in the header. The link includes the language parameter.
+
+---
+
+## Integration branch (INT) and preview deployment
+
+Changes should **not** go directly to `main`. Use the `INT` branch as a shared staging area:
+
+```
+your-branch  →  INT  →  main
+   (PR)         (PR, squash merge)
+```
+
+### Workflow
+
+1. Create a branch from `INT` (not from `main`) and make your changes.
+2. Open a pull request targeting `INT`.
+3. Every push to `INT` automatically deploys a preview to:
+   **`https://swisstopo.github.io/topo-drought-briefing/int/`**
+4. Review the preview. If the output looks correct, open a pull request from `INT` → `main` and merge it with **squash merge** to keep the main history clean.
+
+### Why squash merge?
+
+During integration, `INT` may accumulate many small commits ("fix typo", "try again", etc.). Squash merge collapses them into one clean commit on `main`, so the production history stays readable.
+
+### Who can do what
+
+| Role | What you can do |
+|---|---|
+| Maintainer (all team members) | push branches, open PRs, merge PRs into INT |
+| Administrator (Joan, David) | merge INT → main, change repo settings |
+
+### Preview URL vs. production URL
+
+| Branch | URL |
+|---|---|
+| `main` | `https://swisstopo.github.io/topo-drought-briefing/` |
+| `INT` | `https://swisstopo.github.io/topo-drought-briefing/int/` |
+
+Both are served from the same repository — no second repo needed.
+
+> **One-time setup (administrators only):** After the first workflow run, go to  
+> *Settings → Pages → Source* and set it to **"Deploy from a branch: `gh-pages`"**.  
+> The `gh-pages` branch is created automatically on first deploy.
 
 ---
 
