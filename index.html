@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trockenheitsbriefing / Bulletin s&eacute;cheresse</title>
+  <link rel="icon" href="https://www.admin.ch/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="site-brand">
+      <span class="beta-badge">BETA</span>
+      <img src="https://www.admin.ch/favicon.ico" width="18" height="18" alt="" aria-hidden="true"
+           style="image-rendering:auto;display:block;">
+      <span class="lang-de">Trockenheitsbriefing</span>
+      <span class="lang-fr">Bulletin s&eacute;cheresse</span>
+    </a>
+    <div class="header-actions">
+      <button class="action-btn lang-de" onclick="exportBriefing()">&#11015; Export Briefing</button>
+      <button class="action-btn lang-fr" onclick="exportBriefing()">&#11015; Exporter le briefing</button>
+      <button class="action-btn lang-de" onclick="copyPermalink()">&#128279; Link kopieren</button>
+      <button class="action-btn lang-fr" onclick="copyPermalink()">&#128279; Copier le lien</button>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <h1 class="page-title">
+      <span class="lang-de">Aktuelle Trockenheitslage</span>
+      <span class="lang-fr">Situation s&eacute;cheresse actuelle</span>
+    </h1>
+    <p class="page-subtitle">
+      <span class="lang-de">trockenheit.admin.ch &mdash; Alle Kantone</span>
+      <span class="lang-fr">trockenheit.admin.ch &mdash; Tous les cantons</span>
+    </p>
+  </div>
+  <div class="canton-grid">
+    <a href="canton/AG/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Aargau</div><div class="canton-name lang-fr">Argovie</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/AR/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Appenzell Ausserrhoden</div><div class="canton-name lang-fr">Appenzell Rhodes-Extérieures</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/AI/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Appenzell Innerrhoden</div><div class="canton-name lang-fr">Appenzell Rhodes-Intérieures</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/BL/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Basel-Landschaft</div><div class="canton-name lang-fr">Bâle-Campagne</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/BS/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Basel-Stadt</div><div class="canton-name lang-fr">Bâle-Ville</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/BE/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Bern</div><div class="canton-name lang-fr">Berne</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/FR/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Fribourg</div><div class="canton-name lang-fr">Fribourg</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/GE/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Genève</div><div class="canton-name lang-fr">Genève</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/GL/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Glarus</div><div class="canton-name lang-fr">Glaris</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/GR/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Graubünden</div><div class="canton-name lang-fr">Grisons</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/JU/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Jura</div><div class="canton-name lang-fr">Jura</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/LU/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Luzern</div><div class="canton-name lang-fr">Lucerne</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/NE/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Neuchâtel</div><div class="canton-name lang-fr">Neuchâtel</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/NW/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Nidwalden</div><div class="canton-name lang-fr">Nidwald</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/OW/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Obwalden</div><div class="canton-name lang-fr">Obwald</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/SH/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Schaffhausen</div><div class="canton-name lang-fr">Schaffhouse</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/SZ/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Schwyz</div><div class="canton-name lang-fr">Schwytz</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/SO/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Solothurn</div><div class="canton-name lang-fr">Soleure</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/SG/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">St. Gallen</div><div class="canton-name lang-fr">Saint-Gall</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/TG/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Thurgau</div><div class="canton-name lang-fr">Thurgovie</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/TI/index.html" class="canton-card"><span class="wl wl-2" style="background:#f7e84c;color:#1a1a1a;">2</span><div class="canton-card-info"><div class="canton-name lang-de">Ticino</div><div class="canton-name lang-fr">Tessin</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/UR/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Uri</div><div class="canton-name lang-fr">Uri</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/VS/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Valais</div><div class="canton-name lang-fr">Valais</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/VD/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Vaud</div><div class="canton-name lang-fr">Vaud</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/ZG/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Zug</div><div class="canton-name lang-fr">Zoug</div><div class="canton-ts">25.06.2026</div></div></a>
+<a href="canton/ZH/index.html" class="canton-card"><span class="wl wl-4" style="background:#e02020;color:#ffffff;">4</span><div class="canton-card-info"><div class="canton-name lang-de">Zürich</div><div class="canton-name lang-fr">Zurich</div><div class="canton-ts">25.06.2026</div></div></a>
+  </div>
+  <div class="card" style="margin-top:1.5rem;"><h2><span class="lang-de">Datenquellen</span><span class="lang-fr">Sources de donn&eacute;es</span></h2><ul class="lang-de further-links"><li><a href="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte" target="_blank" rel="noopener">Trockenheitswarnkarte: BAFU</a></li><li><a href="https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.trockenheitsdaten-numerisch" target="_blank" rel="noopener">Trockenheitsdaten (numerisch): BAFU</a></li><li><a href="https://s3.govtech.digisus-lab.ch/govtech/uploads/14/L2SYQ/U8YQGX7S.pdf" target="_blank" rel="noopener">Terminologie für Trockenheitsbulletins: BAFU / MeteoSchweiz</a></li><li><a href="https://www.trockenheit.admin.ch/de/trockenheit/trockenheitswarnungen-und-verhaltensempfehlungen" target="_blank" rel="noopener">Trockenheitswarnungen und Verhaltensempfehlungen: BAFU</a></li></ul><ul class="lang-fr further-links"><li><a href="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte" target="_blank" rel="noopener">Carte d&#x27;alerte à la sécheresse: BAFU</a></li><li><a href="https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.trockenheitsdaten-numerisch" target="_blank" rel="noopener">Données de sécheresse (numériques): BAFU</a></li><li><a href="https://s3.govtech.digisus-lab.ch/govtech/uploads/14/L2SYQ/U8YQGX7S.pdf" target="_blank" rel="noopener">Terminologie pour les bulletins de sécheresse: BAFU / MeteoSchweiz</a></li><li><a href="https://www.trockenheit.admin.ch/de/trockenheit/trockenheitswarnungen-und-verhaltensempfehlungen" target="_blank" rel="noopener">Avertissements de sécheresse et recommandations comportementales: BAFU</a></li></ul></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="lang-de">Quelle: BAFU / MeteoSchweiz &middot;
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+    <p class="lang-fr">Source: OFEV / M&eacute;t&eacute;oSuisse &middot;
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+    <p class="impressum lang-de">Impressum: Automatisiertes Trockenheitsbriefing f&uuml;r Schweizer Beh&ouml;rden &ndash;
+      von offenen Bundesdaten zum ver&ouml;ffentlichungsfertigen Bericht in Sekundenschnelle.
+      Entwickelt am GovTech Hackathon 2026 in Zusammenarbeit mit swisstopo, BAFU (FOEN) und MeteoSchweiz.
+      Team: David Oesch &middot; Joan Sturm &middot; Fabia Huesler &middot; Christopher Boodnee &middot;
+      Lea Stauber &middot; Benjamin Meyer &middot; Luca Huesler &middot; Simon Jaun &middot; Chantal Camenisch</p>
+    <p class="impressum lang-fr">Impressum&nbsp;: Bulletin de s&eacute;cheresse automatis&eacute; pour les autorit&eacute;s suisses &ndash;
+      des donn&eacute;es ouvertes de la Conf&eacute;d&eacute;ration au rapport pr&ecirc;t &agrave; publier en quelques secondes.
+      D&eacute;velopp&eacute; lors du GovTech Hackathon 2026 en collaboration avec swisstopo, l&rsquo;OFEV (BAFU) et M&eacute;t&eacute;oSuisse.
+      &Eacute;quipe&nbsp;: David Oesch &middot; Joan Sturm &middot; Fabia Huesler &middot; Christopher Boodnee &middot;
+      Lea Stauber &middot; Benjamin Meyer &middot; Luca Huesler &middot; Simon Jaun &middot; Chantal Camenisch</p>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
