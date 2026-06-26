@@ -2,17 +2,17 @@
   "canton_id": 2,
   "canton_name_de": "Bern",
   "canton_name_fr": "Berne",
-  "data_timestamp": "2026-06-25T00:00:00",
+  "data_timestamp": "2026-06-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.49,
-      "soil_moisture_pct": 26.6,
+      "soil_moisture_pct": 26.0,
       "vhi": 74.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.23000000000000043,
@@ -20,7 +20,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -1,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -50,7 +50,7 @@
         {
           "station_id": "2500",
           "station_name": "Station 2500",
-          "current_value": 0.4416666666666666,
+          "current_value": 0.43875,
           "threshold1": 0.597,
           "min_value": 0.408
         }
@@ -59,11 +59,11 @@
     {
       "region_id": 34,
       "region_name_de": "Berner Mittelland",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.52,
-      "soil_moisture_pct": 34.4,
+      "soil_moisture_pct": 33.7,
       "vhi": 97.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.20999999999999996,
@@ -71,7 +71,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -86,11 +86,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -1,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 2,
         "n_low": 2,
@@ -101,14 +101,14 @@
         {
           "station_id": "2159",
           "station_name": "Station 2159",
-          "current_value": 0.2779999999999999,
+          "current_value": 0.27475,
           "threshold1": 1.667,
           "min_value": 0.918
         },
         {
           "station_id": "2179",
           "station_name": "Station 2179",
-          "current_value": 1.831,
+          "current_value": 1.79825,
           "threshold1": 4.363,
           "min_value": 2.474
         }
@@ -117,11 +117,11 @@
     {
       "region_id": 35,
       "region_name_de": "Westliches Berner Oberland",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.89,
-      "soil_moisture_pct": 61.4,
+      "soil_moisture_pct": 60.5,
       "vhi": 86.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.05999999999999983,
@@ -129,7 +129,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -145,9 +145,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 4,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": 0,
+      "precip_deficit_delta": -2,
       "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 2,
@@ -159,14 +159,14 @@
         {
           "station_id": "2151",
           "station_name": "Station 2151",
-          "current_value": 11.987666666666668,
+          "current_value": 12.047,
           "threshold1": 14.31,
           "min_value": 8.521
         },
         {
           "station_id": "2646",
           "station_name": "Station 2646",
-          "current_value": 28.21366666666667,
+          "current_value": 28.45175,
           "threshold1": 29.213,
           "min_value": 20.576
         }
@@ -175,11 +175,11 @@
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.62,
-      "soil_moisture_pct": 18.7,
+      "soil_moisture_pct": 17.6,
       "vhi": 40.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.18999999999999995,
@@ -187,7 +187,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -203,10 +203,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -1,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 2,
         "n_low": 2,
@@ -217,14 +217,14 @@
         {
           "station_id": "2450",
           "station_name": "Station 2450",
-          "current_value": 0.613,
+          "current_value": 0.5985,
           "threshold1": 2.752,
           "min_value": 1.385
         },
         {
           "station_id": "2471",
           "station_name": "Station 2471",
-          "current_value": 1.0653333333333332,
+          "current_value": 1.0125,
           "threshold1": 1.832,
           "min_value": 1.171
         }
@@ -233,11 +233,11 @@
     {
       "region_id": 38,
       "region_name_de": "Oberes Emmental",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.09,
-      "soil_moisture_pct": 62.7,
+      "soil_moisture_pct": 61.7,
       "vhi": 48.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.08000000000000007,
@@ -245,7 +245,7 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -260,11 +260,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -1,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -275,7 +275,7 @@
         {
           "station_id": "2070",
           "station_name": "Station 2070",
-          "current_value": 1.3333333333333333,
+          "current_value": 1.28025,
           "threshold1": 5.736,
           "min_value": 2.432
         }
@@ -284,11 +284,11 @@
     {
       "region_id": 41,
       "region_name_de": "Östliches Berner Oberland",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.08,
-      "soil_moisture_pct": 82.3,
+      "soil_moisture_pct": 79.9,
       "vhi": 42.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.1200000000000001,
@@ -296,7 +296,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -311,11 +311,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": 2,
-      "soil_moisture_deficit_delta": -3,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -4,
       "discharge": {
         "n_total": 2,
         "n_low": 1,
@@ -326,14 +326,14 @@
         {
           "station_id": "2019",
           "station_name": "Station 2019",
-          "current_value": 49.489666666666665,
+          "current_value": 48.6445,
           "threshold1": 57.451,
           "min_value": 42.276
         },
         {
           "station_id": "2109",
           "station_name": "Station 2109",
-          "current_value": 36.292,
+          "current_value": 38.538250000000005,
           "threshold1": 33.227,
           "min_value": 18.317
         }
@@ -357,7 +357,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -367,7 +367,7 @@
   "n_regions_dry": 6,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
+  "cdi_situation_delta": -6,
   "mean_precip_sum_1m": 68.5,
   "mean_precip_sum_3m": 206.8,
   "precip_index_min": 2,

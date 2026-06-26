@@ -2,25 +2,25 @@
   "canton_id": 16,
   "canton_name_de": "Appenzell Innerrhoden",
   "canton_name_fr": "Appenzell Rhodes-Intérieures",
-  "data_timestamp": "2026-06-25T00:00:00",
+  "data_timestamp": "2026-06-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
-      "cdi": 4,
+      "cdi": 5,
       "spi_3m": -2.16,
-      "soil_moisture_pct": 42.6,
+      "soil_moisture_pct": 40.7,
       "vhi": 55.0,
-      "cdi_trend": 0,
+      "cdi_trend": 1,
       "spi_3m_delta": -0.20000000000000018,
       "vhi_delta": 0.0,
       "pct_critical": 0.25,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -30,16 +30,16 @@
       "precip_sum_1m": 94.4,
       "precip_sum_3m": 254.2,
       "precip_1m_index": 3,
-      "soil_moisture_index": 4,
+      "soil_moisture_index": 5,
       "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": -2,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -4,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -50,7 +50,7 @@
         {
           "station_id": "2181",
           "station_name": "Station 2181",
-          "current_value": 8.670333333333334,
+          "current_value": 8.547,
           "threshold1": 18.135,
           "min_value": 6.542
         }
@@ -59,11 +59,11 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -2.17,
-      "soil_moisture_pct": 67.0,
+      "soil_moisture_pct": 65.0,
       "vhi": 49.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.19999999999999996,
@@ -71,7 +71,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -81,16 +81,16 @@
       "precip_sum_1m": 99.0,
       "precip_sum_3m": 223.1,
       "precip_1m_index": 2,
-      "soil_moisture_index": 3,
+      "soil_moisture_index": 4,
       "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 3,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": -1,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
@@ -101,21 +101,21 @@
         {
           "station_id": "2139",
           "station_name": "Station 2139",
-          "current_value": 7.085000000000001,
+          "current_value": 7.066000000000001,
           "threshold1": 9.575,
           "min_value": 5.245
         },
         {
           "station_id": "2187",
           "station_name": "Station 2187",
-          "current_value": 4.433333333333334,
+          "current_value": 4.416,
           "threshold1": 7.51,
           "min_value": 5.393
         },
         {
           "station_id": "2410",
           "station_name": "Station 2410",
-          "current_value": 3.7716666666666665,
+          "current_value": 3.72075,
           "threshold1": 5.783,
           "min_value": 4.101
         }
@@ -130,14 +130,14 @@
     "2": 1
   },
   "n_regions_by_soil_moisture_index": {
-    "4": 1,
-    "3": 1
+    "5": 1,
+    "4": 1
   },
   "n_regions_by_hydro_index": {
     "4": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -146,8 +146,8 @@
   },
   "n_regions_dry": 2,
   "cdi_min_dry": 4,
-  "cdi_max_dry": 4,
-  "cdi_situation_delta": 0,
+  "cdi_max_dry": 5,
+  "cdi_situation_delta": -1,
   "mean_precip_sum_1m": 96.7,
   "mean_precip_sum_3m": 238.6,
   "precip_index_min": 2,

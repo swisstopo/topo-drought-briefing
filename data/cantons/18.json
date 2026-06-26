@@ -2,17 +2,17 @@
   "canton_id": 18,
   "canton_name_de": "Graubünden",
   "canton_name_fr": "Grisons",
-  "data_timestamp": "2026-06-25T00:00:00",
+  "data_timestamp": "2026-06-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 46,
       "region_name_de": "Surselva",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.78,
-      "soil_moisture_pct": 58.8,
+      "soil_moisture_pct": 56.1,
       "vhi": 70.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.20999999999999996,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,9 +36,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 2,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 0,
+      "precip_deficit_delta": -1,
       "soil_moisture_deficit_delta": -4,
       "discharge": {
         "n_total": 1,
@@ -50,7 +50,7 @@
         {
           "station_id": "2033",
           "station_name": "Station 2033",
-          "current_value": 33.37366666666667,
+          "current_value": 31.85,
           "threshold1": 50.762,
           "min_value": 24.78
         }
@@ -59,11 +59,11 @@
     {
       "region_id": 49,
       "region_name_de": "nördliches Mittelbünden",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.74,
-      "soil_moisture_pct": 67.4,
+      "soil_moisture_pct": 64.8,
       "vhi": 68.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.21999999999999997,
@@ -71,7 +71,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -81,16 +81,16 @@
       "precip_sum_1m": 95.8,
       "precip_sum_3m": 184.3,
       "precip_1m_index": 1,
-      "soil_moisture_index": 3,
+      "soil_moisture_index": 4,
       "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 2,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": -2,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -101,7 +101,7 @@
         {
           "station_id": "2498",
           "station_name": "Station 2498",
-          "current_value": 5.9590000000000005,
+          "current_value": 5.831,
           "threshold1": 12.128,
           "min_value": 5.162
         }
@@ -110,11 +110,11 @@
     {
       "region_id": 50,
       "region_name_de": "südliches Mittelbünden",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.2,
-      "soil_moisture_pct": 82.0,
+      "soil_moisture_pct": 79.8,
       "vhi": 78.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.11999999999999988,
@@ -122,7 +122,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 10,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -138,9 +138,9 @@
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 2,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 2,
@@ -152,14 +152,14 @@
         {
           "station_id": "2141",
           "station_name": "Station 2141",
-          "current_value": 20.503,
+          "current_value": 20.197,
           "threshold1": 25.798,
           "min_value": 13.825
         },
         {
           "station_id": "2355",
           "station_name": "Station 2355",
-          "current_value": 8.022,
+          "current_value": 7.835000000000001,
           "threshold1": 9.911,
           "min_value": 5.336
         }
@@ -168,11 +168,11 @@
     {
       "region_id": 52,
       "region_name_de": "Prättigau",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.34,
-      "soil_moisture_pct": 70.8,
+      "soil_moisture_pct": 68.1,
       "vhi": 52.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.18000000000000016,
@@ -180,7 +180,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 7,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -195,10 +195,10 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 3,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 2,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 1,
@@ -210,7 +210,7 @@
         {
           "station_id": "2150",
           "station_name": "Station 2150",
-          "current_value": 22.178,
+          "current_value": 21.737,
           "threshold1": 33.725,
           "min_value": 16.26
         }
@@ -219,11 +219,11 @@
     {
       "region_id": 63,
       "region_name_de": "Nordtessin",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.92,
-      "soil_moisture_pct": 60.4,
+      "soil_moisture_pct": 58.2,
       "vhi": 61.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.19999999999999996,
@@ -231,7 +231,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -246,10 +246,10 @@
       "warnlevel": 2,
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 3,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": -1,
       "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 1,
@@ -261,7 +261,7 @@
         {
           "station_id": "2494",
           "station_name": "Station 2494",
-          "current_value": 10.633666666666668,
+          "current_value": 10.74875,
           "threshold1": 24.667,
           "min_value": 11.511
         }
@@ -270,11 +270,11 @@
     {
       "region_id": 64,
       "region_name_de": "Östliches Tessin",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.55,
-      "soil_moisture_pct": 53.3,
+      "soil_moisture_pct": 49.9,
       "vhi": 57.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.19999999999999996,
@@ -282,7 +282,7 @@
       "pct_critical": 0.0,
       "spi_3m_percentile": 5,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -297,11 +297,11 @@
       "warnlevel": 2,
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": 3,
-      "soil_moisture_deficit_delta": 0,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": 1,
+      "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -312,7 +312,7 @@
         {
           "station_id": "2420",
           "station_name": "Station 2420",
-          "current_value": 12.511,
+          "current_value": 12.987,
           "threshold1": 24.324,
           "min_value": 10.381
         }
@@ -321,11 +321,11 @@
     {
       "region_id": 66,
       "region_name_de": "Bündner Südtäler",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -1.18,
-      "soil_moisture_pct": 69.1,
+      "soil_moisture_pct": 68.6,
       "vhi": 83.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.08999999999999986,
@@ -333,7 +333,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 12,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -349,9 +349,9 @@
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
       "cdi_forecast_week2": 2,
-      "precip_1m_index_forecast": 2,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": 0,
       "discharge": {
         "n_total": 2,
@@ -363,14 +363,14 @@
         {
           "station_id": "0078",
           "station_name": "Station 0078",
-          "current_value": 6.499666666666667,
+          "current_value": 6.54175,
           "threshold1": 8.533,
           "min_value": 3.884
         },
         {
           "station_id": "2617",
           "station_name": "Station 2617",
-          "current_value": 2.781,
+          "current_value": 2.7315,
           "threshold1": 4.083,
           "min_value": 2.205
         }
@@ -379,11 +379,11 @@
     {
       "region_id": 67,
       "region_name_de": "Oberengadin",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 1,
       "spi_3m": -0.67,
-      "soil_moisture_pct": 74.5,
+      "soil_moisture_pct": 74.6,
       "vhi": 96.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.07000000000000006,
@@ -391,7 +391,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 26,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -406,7 +406,7 @@
       "warnlevel": 2,
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
-      "cdi_forecast_week2": 2,
+      "cdi_forecast_week2": 1,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": 0,
@@ -421,28 +421,28 @@
         {
           "station_id": "2105",
           "station_name": "Station 2105",
-          "current_value": 9.482666666666669,
+          "current_value": 9.307,
           "threshold1": 10.921,
           "min_value": 3.361
         },
         {
           "station_id": "2256",
           "station_name": "Station 2256",
-          "current_value": 6.359333333333333,
+          "current_value": 6.5345,
           "threshold1": 5.226,
           "min_value": 1.152
         },
         {
           "station_id": "2262",
           "station_name": "Station 2262",
-          "current_value": 11.987,
+          "current_value": 12.24925,
           "threshold1": 10.246,
           "min_value": 2.958
         },
         {
           "station_id": "2263",
           "station_name": "Station 2263",
-          "current_value": 4.475666666666666,
+          "current_value": 4.4505,
           "threshold1": 4.172,
           "min_value": 1.74
         }
@@ -451,11 +451,11 @@
     {
       "region_id": 68,
       "region_name_de": "Unterengadin",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.77,
-      "soil_moisture_pct": 69.9,
+      "soil_moisture_pct": 68.3,
       "vhi": 101.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.21999999999999997,
@@ -463,7 +463,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 22,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -478,10 +478,10 @@
       "warnlevel": 2,
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
-      "cdi_forecast_week2": 2,
-      "precip_1m_index_forecast": 2,
+      "cdi_forecast_week2": 1,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": 0,
       "discharge": {
         "n_total": 2,
@@ -493,14 +493,14 @@
         {
           "station_id": "2304",
           "station_name": "Station 2304",
-          "current_value": 0.9806666666666668,
+          "current_value": 0.964,
           "threshold1": 1.309,
           "min_value": 0.563
         },
         {
           "station_id": "2319",
           "station_name": "Station 2319",
-          "current_value": 1.1186666666666667,
+          "current_value": 1.0845,
           "threshold1": 1.401,
           "min_value": 0.544
         }
@@ -516,7 +516,8 @@
   },
   "n_regions_by_soil_moisture_index": {
     "5": 1,
-    "3": 4,
+    "4": 1,
+    "3": 3,
     "2": 1,
     "1": 3
   },
@@ -527,7 +528,7 @@
     "5": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -537,7 +538,7 @@
   "n_regions_dry": 8,
   "cdi_min_dry": 2,
   "cdi_max_dry": 4,
-  "cdi_situation_delta": 4,
+  "cdi_situation_delta": -2,
   "mean_precip_sum_1m": 111.8,
   "mean_precip_sum_3m": 213.7,
   "precip_index_min": 1,
