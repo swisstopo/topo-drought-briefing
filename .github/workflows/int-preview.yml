@@ -1,30 +1,32 @@
-name: Daily Drought Briefing Update
+name: INT Branch Preview
 
-# Runs daily at 05:30 UTC (07:30 Swiss summer / 06:30 Swiss winter).
-# Data sources publish overnight; 05:30 UTC ensures fresh data is available.
-# Manual dispatch is also available for out-of-cycle updates.
+# Runs on every push to INT and can be triggered manually.
+# Deploys the site to /int/ on GitHub Pages so it can be reviewed
+# at swisstopo.github.io/topo-drought-briefing/int/ before merging to main.
 
 on:
-  schedule:
-    - cron: '30 5 * * *'
+  push:
+    branches:
+      - INT
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Only one deployment runs at a time. A second trigger queues rather than
-# cancelling an in-progress run to avoid leaving the site half-updated.
+# INT runs can cancel each other — no risk of half-deploying production.
 concurrency:
-  group: pages-main
-  cancel-in-progress: false
+  group: pages-int
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build-and-deploy-int:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout INT branch
         uses: actions/checkout@v4
+        with:
+          ref: INT
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
@@ -43,27 +45,24 @@ jobs:
         run: python scripts/download.py
 
       - name: Aggregate and evaluate
-        # aggregate.py applies drought rules (config/rules.yaml) and writes
-        # data/processed/warning_regions/ and data/processed/cantons/
         run: python scripts/aggregate.py
 
       - name: Validate processed outputs
-        # validate.py checks all generated JSON against config/schemas/
         run: python scripts/validate.py
 
       - name: Generate static site
-        # generate_site.py reads data/processed/cantons/ and writes site/
         run: python scripts/generate_site.py
 
       # -----------------------------------------------------------------------
-      # Publish to GitHub Pages (via gh-pages branch, root /)
-      # keep_files: true preserves the /int/ preview folder from the INT branch.
+      # Publish to GitHub Pages at /int/ — does not touch the main site (/).
+      # keep_files: true means only /int/ is updated; everything else stays.
       # -----------------------------------------------------------------------
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy INT preview to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          destination_dir: int
           keep_files: true
-          commit_message: "deploy main: ${{ github.sha }}"
+          commit_message: "deploy INT preview: ${{ github.sha }}"
