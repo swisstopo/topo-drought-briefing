@@ -1,4 +1,4 @@
-# Drought Briefing BETA
+# Drought Briefing BETA INT
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing) [![Daily Drought Briefing Update](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml/badge.svg)](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml) [![GitHub commit](https://img.shields.io/github/last-commit/swisstopo/topo-drought-briefing)](https://github.com/swisstopo/topo-drought-briefing/commits/main)
 
