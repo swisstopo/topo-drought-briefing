@@ -1,0 +1,169 @@
+{
+  "canton_id": 5,
+  "canton_name_de": "Schwyz",
+  "canton_name_fr": "Schwytz",
+  "data_timestamp": "2026-06-25T00:00:00",
+  "source": "api",
+  "regions": [
+    {
+      "region_id": 43,
+      "region_name_de": "Zürichseebecken",
+      "data_timestamp": "2026-06-25T00:00:00",
+      "source": "api",
+      "cdi": 4,
+      "spi_3m": -2.04,
+      "soil_moisture_pct": 61.7,
+      "vhi": 51.0,
+      "cdi_trend": 0,
+      "spi_3m_delta": 0.020000000000000018,
+      "vhi_delta": 0.0,
+      "pct_critical": 0.23076923076923078,
+      "spi_3m_percentile": 2,
+      "quality": {
+        "data_age_days": 1,
+        "coverage_pct": 1.0,
+        "missing_columns": [],
+        "outlier_flags": [],
+        "is_stale": false,
+        "overall": "ok"
+      },
+      "precip_sum_1m": 97.4,
+      "precip_sum_3m": 234.8,
+      "precip_1m_index": 2,
+      "soil_moisture_index": 4,
+      "hydro_index": 4,
+      "warnlevel": 4,
+      "warnlevel_info_de": "Grosse Gefahr",
+      "warnlevel_info_fr": "Danger fort",
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -1,
+      "discharge": {
+        "n_total": 1,
+        "n_low": 1,
+        "n_very_low": 1,
+        "pct_low": 100
+      },
+      "hydro_stations": [
+        {
+          "station_id": "ZH582",
+          "station_name": "Station ZH582",
+          "current_value": 0.5463333333333333,
+          "threshold1": 0.989,
+          "min_value": 0.456
+        }
+      ]
+    },
+    {
+      "region_id": 44,
+      "region_name_de": "östliche Zentralschweiz",
+      "data_timestamp": "2026-06-25T00:00:00",
+      "source": "api",
+      "cdi": 4,
+      "spi_3m": -1.52,
+      "soil_moisture_pct": 89.2,
+      "vhi": 50.0,
+      "cdi_trend": 1,
+      "spi_3m_delta": -0.040000000000000036,
+      "vhi_delta": 0.0,
+      "pct_critical": 0.09615384615384616,
+      "spi_3m_percentile": 5,
+      "quality": {
+        "data_age_days": 1,
+        "coverage_pct": 1.0,
+        "missing_columns": [],
+        "outlier_flags": [],
+        "is_stale": false,
+        "overall": "ok"
+      },
+      "precip_sum_1m": 131.0,
+      "precip_sum_3m": 344.9,
+      "precip_1m_index": 2,
+      "soil_moisture_index": 3,
+      "hydro_index": 4,
+      "warnlevel": 4,
+      "warnlevel_info_de": "Grosse Gefahr",
+      "warnlevel_info_fr": "Danger fort",
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 3,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": 1,
+      "soil_moisture_deficit_delta": -1,
+      "discharge": {
+        "n_total": 4,
+        "n_low": 4,
+        "n_very_low": 2,
+        "pct_low": 100
+      },
+      "hydro_stations": [
+        {
+          "station_id": "2084",
+          "station_name": "Station 2084",
+          "current_value": 10.142333333333331,
+          "threshold1": 26.037,
+          "min_value": 10.866
+        },
+        {
+          "station_id": "2300",
+          "station_name": "Station 2300",
+          "current_value": 0.403,
+          "threshold1": 1.521,
+          "min_value": 0.268
+        },
+        {
+          "station_id": "2604",
+          "station_name": "Station 2604",
+          "current_value": 0.1346666666666666,
+          "threshold1": 0.345,
+          "min_value": 0.131
+        },
+        {
+          "station_id": "2609",
+          "station_name": "Station 2609",
+          "current_value": 0.2883333333333333,
+          "threshold1": 0.955,
+          "min_value": 0.33
+        }
+      ]
+    }
+  ],
+  "max_warnlevel": 4,
+  "max_warnlevel_info_de": "Grosse Gefahr",
+  "max_warnlevel_info_fr": "Danger fort",
+  "n_regions_by_precip_index": {
+    "2": 2
+  },
+  "n_regions_by_soil_moisture_index": {
+    "4": 1,
+    "3": 1
+  },
+  "n_regions_by_hydro_index": {
+    "4": 2
+  },
+  "quality": {
+    "data_age_days": 1,
+    "coverage_pct": 1.0,
+    "missing_columns": [],
+    "outlier_flags": [],
+    "is_stale": false,
+    "overall": "ok"
+  },
+  "n_regions_dry": 2,
+  "cdi_min_dry": 4,
+  "cdi_max_dry": 4,
+  "cdi_situation_delta": -1,
+  "mean_precip_sum_1m": 114.2,
+  "mean_precip_sum_3m": 289.9,
+  "precip_index_min": 2,
+  "precip_index_max": 2,
+  "n_regions_with_precip_deficit": 2,
+  "n_regions_with_soil_moisture_deficit": 2,
+  "discharge": {
+    "n_total": 5,
+    "n_low": 5,
+    "n_very_low": 3,
+    "pct_low": 100
+  }
+}

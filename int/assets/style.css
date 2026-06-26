@@ -1,0 +1,151 @@
+/* Drought Briefing — Swiss Confederation Design System */
+:root {
+  --blue:   #003F6B;
+  --red:    #DC0000;
+  --text:   #1A1A1A;
+  --muted:  #666;
+  --bg:     #F5F5F5;
+  --white:  #fff;
+  --border: #D0D0D0;
+  --shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,'Noto Sans',sans-serif;font-size:15px;line-height:1.55;color:var(--text);background:var(--bg)}
+a{color:var(--blue)}
+.container{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+
+/* Header */
+.site-header{background:var(--white);border-top:4px solid var(--red);border-bottom:1px solid var(--border);padding:.75rem 0;position:sticky;top:0;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.site-brand{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--blue);font-weight:700;font-size:1.05rem}
+.site-brand:hover{text-decoration:underline}
+
+/* Language toggle */
+.lang-toggle{display:flex;border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.lang-btn{border:none;background:transparent;color:var(--muted);padding:.3rem .7rem;font-size:.85rem;cursor:pointer;font-weight:700;font-family:inherit;transition:background .1s,color .1s}
+.lang-btn+.lang-btn{border-left:1px solid var(--border)}
+.lang-btn.active{background:var(--blue);color:var(--white)}
+.lang-btn:hover:not(.active){background:var(--bg)}
+
+/* Language visibility */
+html[lang="fr"] .lang-de{display:none!important}
+html[lang="de"] .lang-fr{display:none!important}
+
+/* Main */
+main{padding:2rem 0 3rem}
+.page-header{margin-bottom:2rem}
+.page-title{font-size:1.9rem;font-weight:700;color:var(--blue)}
+.page-subtitle{color:var(--muted);font-size:.9rem;margin-top:.2rem}
+
+/* Lead card */
+.lead-card{border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.75rem;display:flex;align-items:flex-start;gap:1.25rem}
+.lead-content{flex:1;min-width:0}
+.lead-headline{font-size:1.35rem;font-weight:700;margin-bottom:.3rem}
+.lead-meta{font-size:.88rem;opacity:.85}
+.badge-large{font-size:1.8rem;font-weight:700;width:3.2rem;height:3.2rem;display:flex;align-items:center;justify-content:center;border-radius:6px;background:rgba(255,255,255,.25);flex-shrink:0}
+
+/* Warnlevel badges */
+.wl{display:inline-block;border-radius:4px;font-weight:700;padding:.15rem .5rem;min-width:2rem;text-align:center}
+.wl-1{background:#6bbd50;color:#fff}
+.wl-2{background:#f7e84c;color:#1a1a1a}
+.wl-3{background:#ff8c00;color:#fff}
+.wl-4{background:#e02020;color:#fff}
+.wl-5{background:#8b0000;color:#fff}
+
+/* Cards */
+.card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem;box-shadow:var(--shadow)}
+.card h2{font-size:1rem;font-weight:700;color:var(--blue);padding-bottom:.6rem;margin-bottom:.9rem;border-bottom:2px solid var(--bg)}
+.card-text{white-space:pre-line;font-size:.9rem}
+
+/* Region table */
+.region-table{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:.5rem}
+.region-table th{padding:.55rem .5rem;background:var(--bg);border-bottom:2px solid var(--border);text-align:left;font-weight:700;color:var(--blue)}
+.region-table td{padding:.7rem .5rem;border-bottom:1px solid var(--border);vertical-align:top}
+.region-table tr:last-child td{border-bottom:none}
+
+/* Canton grid (index) */
+.canton-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.canton-card{display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1rem 1.25rem;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:border-color .15s,box-shadow .15s}
+.canton-card:hover{border-color:var(--blue);box-shadow:0 2px 8px rgba(0,63,107,.18)}
+.canton-card-info{flex:1;min-width:0}
+.canton-name{font-weight:700}
+.canton-ts{font-size:.78rem;color:var(--muted)}
+
+/* Footer + quality */
+.site-footer{background:var(--white);border-top:1px solid var(--border);padding:1.25rem 0;font-size:.8rem;color:var(--muted)}
+.site-footer p{margin:0}
+.site-footer .impressum{margin-top:.6rem;font-size:.72rem;line-height:1.5;border-top:1px solid var(--border);padding-top:.6rem}
+.quality-bar{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem}
+.banner-links{margin-bottom:1rem;font-size:.85rem}
+.banner-links a{margin-right:.75rem}
+.further-links{margin-top:1rem}
+.further-links ul{list-style:none}
+.further-links li{padding:.2rem 0}
+.further-links li::before{content:"\2192  ";color:var(--blue)}
+
+/* Responsive */
+@media(max-width:600px){
+  .lead-card{flex-direction:column}
+  .canton-grid{grid-template-columns:1fr}
+  .page-title{font-size:1.5rem}
+  .region-table{font-size:.78rem}
+}
+
+/* BETA badge */
+.beta-badge{color:var(--red);font-size:.6rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--red);padding:.05rem .3rem;border-radius:2px;line-height:1;flex-shrink:0;align-self:center}
+
+/* Action buttons (export / permalink) */
+.header-actions{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.action-btn{border:1px solid var(--border);background:var(--white);color:var(--blue);padding:.3rem .65rem;font-size:.82rem;cursor:pointer;border-radius:4px;font-family:inherit;font-weight:700;transition:background .1s,color .1s}
+.action-btn:hover{background:var(--blue);color:var(--white)}
+
+/* Canton recommendation textarea */
+.canton-rec{width:100%;min-height:72px;resize:vertical;border:1px solid var(--border);border-radius:4px;padding:.35rem .45rem;font-family:inherit;font-size:.82rem;color:var(--text);background:var(--white)}
+.canton-rec:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
+.canton-rec-print{display:none}
+.map-print-label{display:none}
+
+/* Map + Allgemeine Lage side-by-side grid */
+.map-lage-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;align-items:stretch;margin-bottom:1.25rem}
+@media(max-width:700px){.map-lage-grid{grid-template-columns:1fr}}
+.map-lage-grid .map-card,.map-lage-grid .lage-card{margin-bottom:0;height:100%}
+
+/* Map card */
+.map-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.25rem;box-shadow:var(--shadow)}
+.map-card h2{font-size:1rem;font-weight:700;color:var(--blue);padding-bottom:.6rem;margin-bottom:.9rem;border-bottom:2px solid var(--bg)}
+.map-controls{display:flex;align-items:center;gap:1.5rem;margin-bottom:.75rem;flex-wrap:wrap}
+.map-radio-group{display:flex;gap:1rem}
+.map-radio-group label{display:flex;align-items:center;gap:.35rem;font-size:.88rem;cursor:pointer}
+.map-radio-group input[type=radio]{accent-color:var(--blue)}
+.map-frame{width:100%;height:420px;border:1px solid var(--border);border-radius:4px}
+.map-unavailable{padding:2rem;text-align:center;color:var(--muted);background:var(--bg);border-radius:4px;font-size:.88rem;border:1px dashed var(--border)}
+
+/* CDI legend */
+.cdi-legend{display:flex;flex-wrap:wrap;gap:.4rem .75rem;margin-top:.75rem}
+.cdi-legend-item{display:flex;align-items:center;gap:.4rem;font-size:.8rem}
+.cdi-swatch{width:1rem;height:1rem;border-radius:2px;border:1px solid rgba(0,0,0,.1);flex-shrink:0}
+
+/* Print */
+@media print{
+  .site-header{position:static}
+  .header-actions{display:none!important}
+  .lang-toggle{display:none!important}
+  /* Show only the active map iframe; hide radio controls */
+  .map-frame{display:none!important}
+  .map-frame-active{display:block!important;height:260px;width:100%}
+  .map-controls{display:none!important}
+  /* Label showing which CDI layer is displayed */
+  .map-print-label{display:block!important;font-size:.82rem;font-style:italic;color:var(--muted);margin:.3rem 0 .5rem}
+  /* Swap textarea for its sibling div so all text is visible (no scroll cutoff) */
+  .canton-rec{display:none!important}
+  .canton-rec-print{display:block!important;white-space:pre-wrap;word-break:break-word;font-size:.82rem;color:var(--text);padding:.35rem 0;min-height:1em}
+  .card,.map-card,.lage-card{box-shadow:none;break-inside:avoid}
+  .map-lage-grid{grid-template-columns:7fr 3fr}
+  .site-footer{display:none}
+  .quality-bar{break-before:page}
+  /* Preserve background colours in print (H) */
+  .lead-card,.badge-large,.wl,.wl-1,.wl-2,.wl-3,.wl-4,.wl-5,.cdi-swatch{
+    -webkit-print-color-adjust:exact;print-color-adjust:exact
+  }
+}

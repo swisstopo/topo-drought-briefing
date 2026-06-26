@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trockenheitsbriefing Zug / Bulletin s&eacute;cheresse Zoug</title>
+  <link rel="icon" href="https://www.admin.ch/favicon.ico">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../../index.html" class="site-brand">
+      <span class="beta-badge">BETA</span>
+      <img src="https://www.admin.ch/favicon.ico" width="18" height="18" alt="" aria-hidden="true"
+           style="image-rendering:auto;display:block;">
+      <span class="lang-de">Trockenheitsbriefing</span>
+      <span class="lang-fr">Bulletin s&eacute;cheresse</span>
+    </a>
+    <div class="header-actions">
+      <button class="action-btn lang-de" onclick="exportBriefing()">&#11015; Export Briefing</button>
+      <button class="action-btn lang-fr" onclick="exportBriefing()">&#11015; Exporter le briefing</button>
+      <button class="action-btn lang-de" onclick="copyPermalink()">&#128279; Link kopieren</button>
+      <button class="action-btn lang-fr" onclick="copyPermalink()">&#128279; Copier le lien</button>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-header">
+    <h1 class="page-title lang-de">Zug</h1>
+    <h1 class="page-title lang-fr">Zoug</h1>
+    <p class="page-subtitle">
+      <span class="lang-de">Trockenheitsbriefing &middot; Stand: 25.06.2026</span>
+      <span class="lang-fr">Bulletin s&eacute;cheresse &middot; &Eacute;tat: 25.06.2026</span>
+    </p>
+  </div>
+
+  <div class="lead-card" style="background:#e02020;color:#ffffff;">
+    <div class="lead-content">
+      <div class="lang-de">
+        <div class="lead-headline">Grosse Gefahr, Stufe 4</div>
+        <div class="lead-meta">Gültig ab 25.06.2026</div>
+      </div>
+      <div class="lang-fr">
+        <div class="lead-headline">Danger fort, niveau 4</div>
+        <div class="lead-meta">Valable à partir du 25.06.2026</div>
+      </div>
+    </div>
+    <div class="badge-large">4</div>
+  </div>
+
+  <p class="banner-links lang-de"><a href="https://www.trockenheit.admin.ch">Trockenheitsportal</a> · <a href="https://www.waldbrandgefahr.ch">Waldbrandgefahr</a> · <a href="https://www.naturgefahren.ch">Naturgefahrenportal</a></p>
+<p class="banner-links lang-fr"><a href="https://www.trockenheit.admin.ch">Portail sécheresse</a> · <a href="https://www.waldbrandgefahr.ch">Danger d&#x27;incendie de forêt</a> · <a href="https://www.naturgefahren.ch">Portail des dangers naturels</a></p>
+
+  <div class="map-lage-grid">
+    <div class="lage-card card"><h2 class="lang-de">Allgemeine Lage</h2><h2 class="lang-fr">Situation générale</h2><div class="card-text lang-de">Im Kanton Zug sind aktuell alle Regionen trocken (extrem trocken). Die Situation wird sich voraussichtlich verbessern.
+
+In den vergangenen 30 Tagen sind durchschnittlich rund 61 mm Niederschlag gefallen (3-Monats-Summe: 170 mm). Im langjährigen Vergleich bedeutet dies regional ein grosses Niederschlagsdefizit.
+
+alle Abflussmessstationen im Kanton weisen aktuell einen niedrigen Abfluss (7-Tages-Mittel) auf. Davon liegt 1 Station im sehr niedrigen Bereich.
+
+Bei der Bodenfeuchte weisen alle Warnregionen ein Defizit auf.</div><div class="card-text lang-fr">Dans le canton de Zoug, toutes les régions sont actuellement en situation de sécheresse (extrêmement sec). La situation devrait s&#x27;améliorer.
+
+Au cours des 30 derniers jours, il est tombé en moyenne environ 61 mm de précipitations (cumul sur 3 mois : 170 mm). En comparaison pluriannuelle, cela représente régionalement un déficit pluviométrique élevé.
+
+toutes les stations de mesure du débit du canton présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, 1 station se situe dans la plage très basse.
+
+Concernant l&#x27;humidité du sol, toutes les régions présentent un déficit.</div></div>
+    <div class="map-card"><h2><span class="lang-de">CDI-Karte Zug</span><span class="lang-fr">Carte CDI Zoug</span></h2><div class="map-controls"><div class="map-radio-group"><label><input type="radio" name="map-cdi" class="map-radio-btn" value="map-cdi1" checked><span class="lang-de">Aktueller CDI</span><span class="lang-fr">CDI actuel</span></label><label><input type="radio" name="map-cdi" class="map-radio-btn" value="map-cdi2"><span class="lang-de">CDI-Prognose Woche 2</span><span class="lang-fr">Prévision CDI semaine 2</span></label></div></div><iframe id="map-cdi1" class="map-frame" src="map_cdi1.html" loading="lazy"></iframe><iframe id="map-cdi2" class="map-frame" src="map_cdi2.html" loading="lazy" style="display:none;"></iframe><div id="map-print-label" class="map-print-label"></div><div class="lang-de"><div style="margin-top:.75rem;"><b style="font-size:.82rem;">Legende</b><div class="cdi-legend"><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#97e8cb;"></span>Nicht trocken</span><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#f9e5ae;"></span>Leicht trocken</span><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#f1b981;"></span>Trocken</span><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#d18c47;"></span>Sehr trocken</span><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#8a5a42;"></span>Extrem trocken</span></div></div></div><div class="lang-fr"><div style="margin-top:.75rem;"><b style="font-size:.82rem;">Légende</b><div class="cdi-legend"><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#97e8cb;"></span>Pas sec</span><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#f9e5ae;"></span>Légèrement sec</span><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#f1b981;"></span>Sec</span><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#d18c47;"></span>Très sec</span><span class="cdi-legend-item"><span class="cdi-swatch" style="background:#8a5a42;"></span>Extrêmement sec</span></div></div></div></div>
+  </div>
+
+  <div class="lang-de">
+    <div class="card"><h2>Allgemeine Lage nach Regionen</h2><table class="region-table"><thead><tr><th>Warnstufe</th><th>Region</th><th>Situation</th><th>Allgemeine Lage nach Regionen</th><th>Empfehlungen des Kantons</th></tr></thead><tbody><tr><td><span class='wl wl-4'>4</span></td><td><b><a href="https://www.trockenheit.admin.ch/de/regionen/39-freiamt/aktuelle-lage#index" target="_blank" rel="noopener">Freiamt</a></b></td><td><div style="font-size:.82rem;margin-bottom:.55rem;"><b>Station 2416</b><br/>Abfluss: 0.294 m³/s<br/>Trockenheitsschwelle: 0.558 m³/s<br/>Minimalwert: 0.253 m³/s</div><div style="font-size:.82rem;margin-bottom:.55rem;"><b>Station 2417</b><br/>Abfluss: 0.444 m³/s<br/>Trockenheitsschwelle: 0.830 m³/s<br/>Minimalwert: 0.385 m³/s</div><div style="font-size:.82rem;margin-bottom:.55rem;"><b>Station ZH572</b><br/>Abfluss: 0.266 m³/s<br/>Trockenheitsschwelle: 0.447 m³/s<br/>Minimalwert: 0.148 m³/s</div></td><td style='font-size:.85rem;'>In den vergangenen 30 Tagen sind in der Region Freiamt rund 61 mm Niederschlag gefallen (3-Monats-Summe: 170 mm). Die Region weist damit aktuell ein grosses Niederschlagsdefizit auf. Das Defizit wird in nächster Zeit tendenziell abnehmen.<br/><br/>alle Abflussmessstationen weisen aktuell einen niedrigen Abfluss (7-Tages-Mittel) auf. Davon liegt 1 Station im sehr niedrigen Bereich.<br/><br/>Es besteht zurzeit ein extremes Bodenfeuchtedefizit. Das Defizit wird in nächster Zeit tendenziell abnehmen.</td><td><textarea class="canton-rec" data-region-id="39" placeholder="Empfehlungen hier eingeben..." rows="3"></textarea><div class="canton-rec-print" id="canton-rec-print-39"></div></td></tr></tbody></table></div>
+<div class="card"><h2>Handlungsoptionen</h2><div class="card-text">- Informieren Sie sich über mögliche Anweisungen der lokalen Behörden betreffend Verbote und Einschränkungen der Wassernutzung und beachten Sie diese.
+
+- Gehen Sie sparsam mit den Wasserressourcen um.
+
+- Halten Sie sich an die Anweisungen und Verbote der lokalen Behörden bezüglich Waldbrandgefahr.</div></div>
+  </div>
+  <div class="lang-fr">
+    <div class="card"><h2>Situation par région</h2><table class="region-table"><thead><tr><th>Niveau d&#x27;alerte</th><th>Région</th><th>Situation</th><th>Situation par région</th><th>Recommandations du canton</th></tr></thead><tbody><tr><td><span class='wl wl-4'>4</span></td><td><b><a href="https://www.trockenheit.admin.ch/fr/regionen/39-freiamt/aktuelle-lage#index" target="_blank" rel="noopener">Freiamt</a></b></td><td><div style="font-size:.82rem;margin-bottom:.55rem;"><b>Station 2416</b><br/>Débit: 0.294 m³/s<br/>Seuil de sécheresse: 0.558 m³/s<br/>Valeur minimale: 0.253 m³/s</div><div style="font-size:.82rem;margin-bottom:.55rem;"><b>Station 2417</b><br/>Débit: 0.444 m³/s<br/>Seuil de sécheresse: 0.830 m³/s<br/>Valeur minimale: 0.385 m³/s</div><div style="font-size:.82rem;margin-bottom:.55rem;"><b>Station ZH572</b><br/>Débit: 0.266 m³/s<br/>Seuil de sécheresse: 0.447 m³/s<br/>Valeur minimale: 0.148 m³/s</div></td><td style='font-size:.85rem;'>Au cours des 30 derniers jours, environ 61 mm de précipitations sont tombés dans la région Freiamt (cumul sur 3 mois : 170 mm). La région présente actuellement déficit pluviométrique élevé. Le déficit va probablement diminuer prochainement.<br/><br/>toutes les stations de mesure du débit présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, 1 station se situe dans la plage très basse.<br/><br/>Concernant l&#x27;humidité du sol, il y a actuellement déficit d&#x27;humidité du sol extrême. Le déficit va probablement diminuer prochainement.</td><td><textarea class="canton-rec" data-region-id="39" placeholder="Saisissez les recommandations ici..." rows="3"></textarea><div class="canton-rec-print" id="canton-rec-print-39"></div></td></tr></tbody></table></div>
+<div class="card"><h2>Options d&#x27;action</h2><div class="card-text">- Informez-vous sur les éventuelles consignes des autorités locales concernant les interdictions et restrictions d&#x27;utilisation de l&#x27;eau et respectez-les.
+
+- Utilisez les ressources en eau avec parcimonie.
+
+- Respectez les consignes et interdictions des autorités locales concernant les risques d&#x27;incendie de forêt.</div></div>
+  </div>
+
+  <div class="card"><h2 class="lang-de">Weiterf&uuml;hrende Links</h2><h2 class="lang-fr">Liens compl&eacute;mentaires</h2><ul class="lang-de further-links"><li><a href="https://www.trockenheit.admin.ch/de/faktoren/vegetation/vegetationszustand-vhi">Vegetationszustand (VHI)</a></li></ul><ul class="lang-fr further-links"><li><a href="https://www.trockenheit.admin.ch/de/faktoren/vegetation/vegetationszustand-vhi">État de la végétation (VHI)</a></li></ul></div>
+
+  <div class="card" style="margin-top:1.5rem;"><h2><span class="lang-de">Datenquellen</span><span class="lang-fr">Sources de donn&eacute;es</span></h2><ul class="lang-de further-links"><li><a href="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte" target="_blank" rel="noopener">Trockenheitswarnkarte: BAFU</a></li><li><a href="https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.trockenheitsdaten-numerisch" target="_blank" rel="noopener">Trockenheitsdaten (numerisch): BAFU</a></li><li><a href="https://s3.govtech.digisus-lab.ch/govtech/uploads/14/L2SYQ/U8YQGX7S.pdf" target="_blank" rel="noopener">Terminologie für Trockenheitsbulletins: BAFU / MeteoSchweiz</a></li><li><a href="https://www.trockenheit.admin.ch/de/trockenheit/trockenheitswarnungen-und-verhaltensempfehlungen" target="_blank" rel="noopener">Trockenheitswarnungen und Verhaltensempfehlungen: BAFU</a></li></ul><ul class="lang-fr further-links"><li><a href="https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte" target="_blank" rel="noopener">Carte d&#x27;alerte à la sécheresse: BAFU</a></li><li><a href="https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.trockenheitsdaten-numerisch" target="_blank" rel="noopener">Données de sécheresse (numériques): BAFU</a></li><li><a href="https://s3.govtech.digisus-lab.ch/govtech/uploads/14/L2SYQ/U8YQGX7S.pdf" target="_blank" rel="noopener">Terminologie pour les bulletins de sécheresse: BAFU / MeteoSchweiz</a></li><li><a href="https://www.trockenheit.admin.ch/de/trockenheit/trockenheitswarnungen-und-verhaltensempfehlungen" target="_blank" rel="noopener">Avertissements de sécheresse et recommandations comportementales: BAFU</a></li></ul></div>
+
+  <div class="quality-bar">
+    <span class="lang-de">
+      Aktualit&auml;t: 1&nbsp;Tage &middot;
+      Abdeckung: 100%
+    </span>
+    <span class="lang-fr">
+      Actualit&eacute;: 1&nbsp;jours &middot;
+      Couverture: 100%
+    </span>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="lang-de">Quelle: BAFU / MeteoSchweiz &middot;
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+    <p class="lang-fr">Source: OFEV / M&eacute;t&eacute;oSuisse &middot;
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+    <p class="impressum lang-de">Impressum: Automatisiertes Trockenheitsbriefing f&uuml;r Schweizer Beh&ouml;rden &ndash;
+      von offenen Bundesdaten zum ver&ouml;ffentlichungsfertigen Bericht in Sekundenschnelle.
+      Entwickelt am GovTech Hackathon 2026 in Zusammenarbeit mit swisstopo, BAFU (FOEN) und MeteoSchweiz.
+      Team: David Oesch &middot; Joan Sturm &middot; Fabia Huesler &middot; Christopher Boodnee &middot;
+      Lea Stauber &middot; Benjamin Meyer &middot; Luca Huesler &middot; Simon Jaun &middot; Chantal Camenisch</p>
+    <p class="impressum lang-fr">Impressum&nbsp;: Bulletin de s&eacute;cheresse automatis&eacute; pour les autorit&eacute;s suisses &ndash;
+      des donn&eacute;es ouvertes de la Conf&eacute;d&eacute;ration au rapport pr&ecirc;t &agrave; publier en quelques secondes.
+      D&eacute;velopp&eacute; lors du GovTech Hackathon 2026 en collaboration avec swisstopo, l&rsquo;OFEV (BAFU) et M&eacute;t&eacute;oSuisse.
+      &Eacute;quipe&nbsp;: David Oesch &middot; Joan Sturm &middot; Fabia Huesler &middot; Christopher Boodnee &middot;
+      Lea Stauber &middot; Benjamin Meyer &middot; Luca Huesler &middot; Simon Jaun &middot; Chantal Camenisch</p>
+  </div>
+</footer>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

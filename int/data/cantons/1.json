@@ -1,0 +1,282 @@
+{
+  "canton_id": 1,
+  "canton_name_de": "Zürich",
+  "canton_name_fr": "Zurich",
+  "data_timestamp": "2026-06-25T00:00:00",
+  "source": "api",
+  "regions": [
+    {
+      "region_id": 39,
+      "region_name_de": "Freiamt",
+      "data_timestamp": "2026-06-25T00:00:00",
+      "source": "api",
+      "cdi": 5,
+      "spi_3m": -2.29,
+      "soil_moisture_pct": 37.6,
+      "vhi": 40.0,
+      "cdi_trend": 1,
+      "spi_3m_delta": 0.04999999999999982,
+      "vhi_delta": 0.0,
+      "pct_critical": 0.057692307692307696,
+      "spi_3m_percentile": 1,
+      "quality": {
+        "data_age_days": 1,
+        "coverage_pct": 1.0,
+        "missing_columns": [],
+        "outlier_flags": [],
+        "is_stale": false,
+        "overall": "ok"
+      },
+      "precip_sum_1m": 61.4,
+      "precip_sum_3m": 169.8,
+      "precip_1m_index": 4,
+      "soil_moisture_index": 5,
+      "hydro_index": 3,
+      "warnlevel": 4,
+      "warnlevel_info_de": "Grosse Gefahr",
+      "warnlevel_info_fr": "Danger fort",
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 3,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
+      "discharge": {
+        "n_total": 3,
+        "n_low": 3,
+        "n_very_low": 1,
+        "pct_low": 100
+      },
+      "hydro_stations": [
+        {
+          "station_id": "2416",
+          "station_name": "Station 2416",
+          "current_value": 0.2943333333333333,
+          "threshold1": 0.558,
+          "min_value": 0.253
+        },
+        {
+          "station_id": "2417",
+          "station_name": "Station 2417",
+          "current_value": 0.4436666666666666,
+          "threshold1": 0.83,
+          "min_value": 0.385
+        },
+        {
+          "station_id": "ZH572",
+          "station_name": "Station ZH572",
+          "current_value": 0.2656666666666666,
+          "threshold1": 0.447,
+          "min_value": 0.148
+        }
+      ]
+    },
+    {
+      "region_id": 42,
+      "region_name_de": "östliches Mittelland",
+      "data_timestamp": "2026-06-25T00:00:00",
+      "source": "api",
+      "cdi": 5,
+      "spi_3m": -2.26,
+      "soil_moisture_pct": 22.2,
+      "vhi": 38.0,
+      "cdi_trend": 1,
+      "spi_3m_delta": 0.020000000000000018,
+      "vhi_delta": 0.0,
+      "pct_critical": 0.15384615384615385,
+      "spi_3m_percentile": 0,
+      "quality": {
+        "data_age_days": 1,
+        "coverage_pct": 1.0,
+        "missing_columns": [],
+        "outlier_flags": [],
+        "is_stale": false,
+        "overall": "ok"
+      },
+      "precip_sum_1m": 50.9,
+      "precip_sum_3m": 142.7,
+      "precip_1m_index": 3,
+      "soil_moisture_index": 5,
+      "hydro_index": 5,
+      "warnlevel": 4,
+      "warnlevel_info_de": "Grosse Gefahr",
+      "warnlevel_info_fr": "Danger fort",
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
+      "discharge": {
+        "n_total": 3,
+        "n_low": 3,
+        "n_very_low": 3,
+        "pct_low": 100
+      },
+      "hydro_stations": [
+        {
+          "station_id": "2132",
+          "station_name": "Station 2132",
+          "current_value": 1.112,
+          "threshold1": 3.015,
+          "min_value": 1.317
+        },
+        {
+          "station_id": "2312",
+          "station_name": "Station 2312",
+          "current_value": 0.0826666666666666,
+          "threshold1": 0.203,
+          "min_value": 0.08
+        },
+        {
+          "station_id": "2386",
+          "station_name": "Station 2386",
+          "current_value": 0.7440000000000001,
+          "threshold1": 1.325,
+          "min_value": 0.756
+        }
+      ]
+    },
+    {
+      "region_id": 43,
+      "region_name_de": "Zürichseebecken",
+      "data_timestamp": "2026-06-25T00:00:00",
+      "source": "api",
+      "cdi": 4,
+      "spi_3m": -2.04,
+      "soil_moisture_pct": 61.7,
+      "vhi": 51.0,
+      "cdi_trend": 0,
+      "spi_3m_delta": 0.020000000000000018,
+      "vhi_delta": 0.0,
+      "pct_critical": 0.23076923076923078,
+      "spi_3m_percentile": 2,
+      "quality": {
+        "data_age_days": 1,
+        "coverage_pct": 1.0,
+        "missing_columns": [],
+        "outlier_flags": [],
+        "is_stale": false,
+        "overall": "ok"
+      },
+      "precip_sum_1m": 97.4,
+      "precip_sum_3m": 234.8,
+      "precip_1m_index": 2,
+      "soil_moisture_index": 4,
+      "hydro_index": 4,
+      "warnlevel": 4,
+      "warnlevel_info_de": "Grosse Gefahr",
+      "warnlevel_info_fr": "Danger fort",
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -1,
+      "discharge": {
+        "n_total": 1,
+        "n_low": 1,
+        "n_very_low": 1,
+        "pct_low": 100
+      },
+      "hydro_stations": [
+        {
+          "station_id": "ZH582",
+          "station_name": "Station ZH582",
+          "current_value": 0.5463333333333333,
+          "threshold1": 0.989,
+          "min_value": 0.456
+        }
+      ]
+    },
+    {
+      "region_id": 47,
+      "region_name_de": "Alpstein",
+      "data_timestamp": "2026-06-25T00:00:00",
+      "source": "api",
+      "cdi": 4,
+      "spi_3m": -2.16,
+      "soil_moisture_pct": 42.6,
+      "vhi": 55.0,
+      "cdi_trend": 0,
+      "spi_3m_delta": -0.20000000000000018,
+      "vhi_delta": 0.0,
+      "pct_critical": 0.25,
+      "spi_3m_percentile": 1,
+      "quality": {
+        "data_age_days": 1,
+        "coverage_pct": 1.0,
+        "missing_columns": [],
+        "outlier_flags": [],
+        "is_stale": false,
+        "overall": "ok"
+      },
+      "precip_sum_1m": 94.4,
+      "precip_sum_3m": 254.2,
+      "precip_1m_index": 3,
+      "soil_moisture_index": 4,
+      "hydro_index": 4,
+      "warnlevel": 4,
+      "warnlevel_info_de": "Grosse Gefahr",
+      "warnlevel_info_fr": "Danger fort",
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": 1,
+      "soil_moisture_deficit_delta": -2,
+      "discharge": {
+        "n_total": 1,
+        "n_low": 1,
+        "n_very_low": 0,
+        "pct_low": 100
+      },
+      "hydro_stations": [
+        {
+          "station_id": "2181",
+          "station_name": "Station 2181",
+          "current_value": 8.670333333333334,
+          "threshold1": 18.135,
+          "min_value": 6.542
+        }
+      ]
+    }
+  ],
+  "max_warnlevel": 4,
+  "max_warnlevel_info_de": "Grosse Gefahr",
+  "max_warnlevel_info_fr": "Danger fort",
+  "n_regions_by_precip_index": {
+    "4": 1,
+    "3": 2,
+    "2": 1
+  },
+  "n_regions_by_soil_moisture_index": {
+    "5": 2,
+    "4": 2
+  },
+  "n_regions_by_hydro_index": {
+    "3": 1,
+    "5": 1,
+    "4": 2
+  },
+  "quality": {
+    "data_age_days": 1,
+    "coverage_pct": 1.0,
+    "missing_columns": [],
+    "outlier_flags": [],
+    "is_stale": false,
+    "overall": "ok"
+  },
+  "n_regions_dry": 4,
+  "cdi_min_dry": 4,
+  "cdi_max_dry": 5,
+  "cdi_situation_delta": -4,
+  "mean_precip_sum_1m": 76.0,
+  "mean_precip_sum_3m": 200.4,
+  "precip_index_min": 2,
+  "precip_index_max": 4,
+  "n_regions_with_precip_deficit": 4,
+  "n_regions_with_soil_moisture_deficit": 4,
+  "discharge": {
+    "n_total": 8,
+    "n_low": 8,
+    "n_very_low": 5,
+    "pct_low": 100
+  }
+}
