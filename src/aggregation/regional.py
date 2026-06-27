@@ -191,10 +191,18 @@ def _compute_hydro_stations(region_id: int, bundle: DataBundle) -> list[HydroSta
             val = float(raw_val)
         date = latest.get("measured_at")
 
-        st_name_raw = latest.get("station_name")
-        if pd.isna(st_name_raw) or not st_name_raw:
-            st_name_raw = latest.get("name", f"Station {st_id}")
-        st_name = str(st_name_raw)
+        st_name_raw = bundle.station_names.get(str(st_id))
+        
+        # Fallbacks in case a station ID is missing from stations.csv
+        if not st_name_raw or pd.isna(st_name_raw):
+            st_name_raw = latest.get("station_name")
+        if not st_name_raw or pd.isna(st_name_raw):
+            st_name_raw = latest.get("name")
+            
+        if st_name_raw and not pd.isna(st_name_raw):
+            st_name = f"{st_name_raw} ({st_id})"
+        else:
+            st_name = f"Station {st_id}"
 
         if pd.isna(date) or math.isnan(val):
             continue
