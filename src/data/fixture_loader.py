@@ -107,7 +107,6 @@ def load() -> DataBundle:
     forecast_df["valid_at"] = pd.to_datetime(forecast_df["valid_at"], format="%d.%m.%Y", errors="coerce")
     data_timestamp = _parse_timestamp(comment_lines)
 
-    # Note: Removed redundant `_read_csv_from_zip` calls for the station CSVs here.
     current_stations_df = _read_stations_csv(DATA_DIR / CURRENT_ZIP_NAME, CURRENT_STATIONS_CSV)
     reference_stations_df = _read_stations_csv(DATA_DIR / REFERENCE_ZIP_NAME, REFERENCE_STATIONS_CSV)
     station_region_map = load_station_region_map()
