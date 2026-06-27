@@ -2,13 +2,13 @@
   "canton_id": 10,
   "canton_name_de": "Fribourg",
   "canton_name_fr": "Fribourg",
-  "data_timestamp": "2026-06-26T00:00:00",
+  "data_timestamp": "2026-06-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 34,
       "region_name_de": "Berner Mittelland",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.52,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,7 +35,7 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
+      "cdi_forecast_week2": 5,
       "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -3,
@@ -50,14 +50,14 @@
         {
           "station_id": "2159",
           "station_name": "Station 2159",
-          "current_value": 0.27475,
+          "current_value": 0.2724,
           "threshold1": 1.667,
           "min_value": 0.918
         },
         {
           "station_id": "2179",
           "station_name": "Station 2179",
-          "current_value": 1.79825,
+          "current_value": 1.7726,
           "threshold1": 4.363,
           "min_value": 2.474
         }
@@ -66,7 +66,7 @@
     {
       "region_id": 36,
       "region_name_de": "Greyerzerland",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.63,
@@ -78,7 +78,7 @@
       "pct_critical": 0.19230769230769232,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -93,11 +93,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
+      "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 2,
         "n_low": 2,
@@ -108,14 +108,14 @@
         {
           "station_id": "2160",
           "station_name": "Station 2160",
-          "current_value": 11.38025,
+          "current_value": 11.8816,
           "threshold1": 17.034,
           "min_value": 8.381
         },
         {
           "station_id": "2412",
           "station_name": "Station 2412",
-          "current_value": 0.179,
+          "current_value": 0.1772,
           "threshold1": 0.362,
           "min_value": 0.195
         }
@@ -124,7 +124,7 @@
     {
       "region_id": 55,
       "region_name_de": "westliches Mittelland",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.89,
@@ -136,7 +136,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -151,11 +151,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -4,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 3,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 2,
         "n_low": 2,
@@ -166,14 +166,14 @@
         {
           "station_id": "2034",
           "station_name": "Station 2034",
-          "current_value": 0.8334999999999999,
+          "current_value": 0.8248,
           "threshold1": 2.21,
           "min_value": 1.183
         },
         {
           "station_id": "2369",
           "station_name": "Station 2369",
-          "current_value": 0.21425,
+          "current_value": 0.2088,
           "threshold1": 0.461,
           "min_value": 0.189
         }
@@ -196,7 +196,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -206,7 +206,7 @@
   "n_regions_dry": 3,
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -5,
+  "cdi_situation_delta": -2,
   "mean_precip_sum_1m": 56.8,
   "mean_precip_sum_3m": 184.8,
   "precip_index_min": 3,

@@ -2,13 +2,13 @@
   "canton_id": 4,
   "canton_name_de": "Uri",
   "canton_name_fr": "Uri",
-  "data_timestamp": "2026-06-26T00:00:00",
+  "data_timestamp": "2026-06-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 44,
       "region_name_de": "östliche Zentralschweiz",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.52,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 5,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -50,28 +50,28 @@
         {
           "station_id": "2084",
           "station_name": "Station 2084",
-          "current_value": 9.72675,
+          "current_value": 9.5362,
           "threshold1": 26.037,
           "min_value": 10.866
         },
         {
           "station_id": "2300",
           "station_name": "Station 2300",
-          "current_value": 0.3825,
+          "current_value": 0.3652,
           "threshold1": 1.521,
           "min_value": 0.268
         },
         {
           "station_id": "2604",
           "station_name": "Station 2604",
-          "current_value": 0.1305,
+          "current_value": 0.1272,
           "threshold1": 0.345,
           "min_value": 0.131
         },
         {
           "station_id": "2609",
           "station_name": "Station 2609",
-          "current_value": 0.2754999999999999,
+          "current_value": 0.2652,
           "threshold1": 0.955,
           "min_value": 0.33
         }
@@ -80,7 +80,7 @@
     {
       "region_id": 45,
       "region_name_de": "Urner Alpen",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.52,
@@ -92,7 +92,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 6,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -108,9 +108,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 1,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": -1,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": -4,
       "discharge": {
         "n_total": 2,
@@ -122,14 +122,14 @@
         {
           "station_id": "2056",
           "station_name": "Station 2056",
-          "current_value": 61.41825,
+          "current_value": 61.3942,
           "threshold1": 75.941,
           "min_value": 39.444
         },
         {
           "station_id": "2276",
           "station_name": "Station 2276",
-          "current_value": 1.31425,
+          "current_value": 1.3004000000000002,
           "threshold1": 2.29,
           "min_value": 1.235
         }
@@ -138,7 +138,7 @@
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.44,
@@ -150,7 +150,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 6,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -167,9 +167,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -180,7 +180,7 @@
         {
           "station_id": "2104",
           "station_name": "Station 2104",
-          "current_value": 40.15,
+          "current_value": 40.06179999999999,
           "threshold1": 62.728,
           "min_value": 35.214
         }
@@ -202,7 +202,7 @@
     "4": 3
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],

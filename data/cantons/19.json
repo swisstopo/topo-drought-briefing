@@ -2,13 +2,13 @@
   "canton_id": 19,
   "canton_name_de": "Aargau",
   "canton_name_fr": "Argovie",
-  "data_timestamp": "2026-06-26T00:00:00",
+  "data_timestamp": "2026-06-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.99,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
@@ -50,21 +50,21 @@
         {
           "station_id": "2106",
           "station_name": "Station 2106",
-          "current_value": 2.59975,
+          "current_value": 2.5422,
           "threshold1": 5.792,
           "min_value": 3.311
         },
         {
           "station_id": "2202",
           "station_name": "Station 2202",
-          "current_value": 0.2385,
+          "current_value": 0.2299999999999999,
           "threshold1": 0.982,
           "min_value": 0.385
         },
         {
           "station_id": "2485",
           "station_name": "Station 2485",
-          "current_value": 0.3545,
+          "current_value": 0.351,
           "threshold1": 0.776,
           "min_value": 0.312
         }
@@ -73,7 +73,7 @@
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.49,
@@ -85,7 +85,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -102,9 +102,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -3,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -115,7 +115,7 @@
         {
           "station_id": "2500",
           "station_name": "Station 2500",
-          "current_value": 0.43875,
+          "current_value": 0.4356,
           "threshold1": 0.597,
           "min_value": 0.408
         }
@@ -124,7 +124,7 @@
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.62,
@@ -136,7 +136,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -153,9 +153,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -3,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 2,
         "n_low": 2,
@@ -166,14 +166,14 @@
         {
           "station_id": "2450",
           "station_name": "Station 2450",
-          "current_value": 0.5985,
+          "current_value": 0.5862,
           "threshold1": 2.752,
           "min_value": 1.385
         },
         {
           "station_id": "2471",
           "station_name": "Station 2471",
-          "current_value": 1.0125,
+          "current_value": 0.9844,
           "threshold1": 1.832,
           "min_value": 1.171
         }
@@ -182,7 +182,7 @@
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.29,
@@ -194,7 +194,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -210,9 +210,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 1,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -3,
+      "precip_deficit_delta": -2,
       "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 3,
@@ -224,21 +224,21 @@
         {
           "station_id": "2416",
           "station_name": "Station 2416",
-          "current_value": 0.2922499999999999,
+          "current_value": 0.2904,
           "threshold1": 0.558,
           "min_value": 0.253
         },
         {
           "station_id": "2417",
           "station_name": "Station 2417",
-          "current_value": 0.44025,
+          "current_value": 0.4368,
           "threshold1": 0.83,
           "min_value": 0.385
         },
         {
           "station_id": "ZH572",
           "station_name": "Station ZH572",
-          "current_value": 0.255,
+          "current_value": 0.2481999999999999,
           "threshold1": 0.447,
           "min_value": 0.148
         }
@@ -247,7 +247,7 @@
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.27,
@@ -259,7 +259,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -275,10 +275,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -2,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
@@ -289,21 +289,21 @@
         {
           "station_id": "2132",
           "station_name": "Station 2132",
-          "current_value": 1.08675,
+          "current_value": 1.0654,
           "threshold1": 3.015,
           "min_value": 1.317
         },
         {
           "station_id": "2312",
           "station_name": "Station 2312",
-          "current_value": 0.082,
+          "current_value": 0.0822,
           "threshold1": 0.203,
           "min_value": 0.08
         },
         {
           "station_id": "2386",
           "station_name": "Station 2386",
-          "current_value": 0.7364999999999999,
+          "current_value": 0.7218,
           "threshold1": 1.325,
           "min_value": 0.756
         }
@@ -328,7 +328,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],

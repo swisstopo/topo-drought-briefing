@@ -2,13 +2,13 @@
   "canton_id": 24,
   "canton_name_de": "Neuchâtel",
   "canton_name_fr": "Neuchâtel",
-  "data_timestamp": "2026-06-26T00:00:00",
+  "data_timestamp": "2026-06-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.79,
@@ -20,7 +20,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,10 +36,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -3,
+      "precip_1m_index_forecast": 3,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -50,7 +50,7 @@
         {
           "station_id": "2370",
           "station_name": "Station 2370",
-          "current_value": 3.15925,
+          "current_value": 3.1566,
           "threshold1": 6.453,
           "min_value": 3.733
         }
@@ -59,7 +59,7 @@
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.52,
@@ -71,7 +71,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 5,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -86,11 +86,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -4,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 3,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 4,
         "n_low": 4,
@@ -101,28 +101,28 @@
         {
           "station_id": "2378",
           "station_name": "Station 2378",
-          "current_value": 2.63225,
+          "current_value": 2.5484,
           "threshold1": 3.511,
           "min_value": 2.228
         },
         {
           "station_id": "2458",
           "station_name": "Station 2458",
-          "current_value": 0.0655,
+          "current_value": 0.0644,
           "threshold1": 0.134,
           "min_value": 0.048
         },
         {
           "station_id": "2480",
           "station_name": "Station 2480",
-          "current_value": 1.80775,
+          "current_value": 1.794,
           "threshold1": 2.809,
           "min_value": 1.372
         },
         {
           "station_id": "2493",
           "station_name": "Station 2493",
-          "current_value": 0.34725,
+          "current_value": 0.34,
           "threshold1": 0.415,
           "min_value": 0.191
         }
@@ -143,7 +143,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -153,7 +153,7 @@
   "n_regions_dry": 2,
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
+  "cdi_situation_delta": -1,
   "mean_precip_sum_1m": 60.0,
   "mean_precip_sum_3m": 210.1,
   "precip_index_min": 4,

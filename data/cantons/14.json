@@ -2,13 +2,13 @@
   "canton_id": 14,
   "canton_name_de": "Schaffhausen",
   "canton_name_fr": "Schaffhouse",
-  "data_timestamp": "2026-06-26T00:00:00",
+  "data_timestamp": "2026-06-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.27,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,10 +36,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -2,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
@@ -50,21 +50,21 @@
         {
           "station_id": "2132",
           "station_name": "Station 2132",
-          "current_value": 1.08675,
+          "current_value": 1.0654,
           "threshold1": 3.015,
           "min_value": 1.317
         },
         {
           "station_id": "2312",
           "station_name": "Station 2312",
-          "current_value": 0.082,
+          "current_value": 0.0822,
           "threshold1": 0.203,
           "min_value": 0.08
         },
         {
           "station_id": "2386",
           "station_name": "Station 2386",
-          "current_value": 0.7364999999999999,
+          "current_value": 0.7218,
           "threshold1": 1.325,
           "min_value": 0.756
         }
@@ -84,7 +84,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
