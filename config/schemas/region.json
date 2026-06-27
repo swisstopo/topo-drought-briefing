@@ -32,6 +32,7 @@
     "soil_moisture_index_forecast",
     "precip_deficit_delta",
     "soil_moisture_deficit_delta",
+    "vhi_index",
     "discharge",
     "hydro_stations"
   ],
@@ -70,8 +71,10 @@
       "type": ["number", "null"]
     },
     "vhi": {
-      "description": "Vegetation Health Index; null when unavailable",
-      "type": ["number", "null"]
+      "description": "Vegetation Health Index (0–100 scale, i.e. the raw 0–1 value × 100); null when unavailable",
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 100
     },
     "cdi_trend": {
       "description": "Week-on-week CDI change: +1 worsening, 0 stable, -1 improving",
@@ -200,6 +203,12 @@
     "soil_moisture_deficit_delta": {
       "description": "Soil moisture index change from current to week-2 forecast",
       "type": "integer"
+    },
+    "vhi_index": {
+      "description": "VHI stress index (1–5): 1 = Normal/Good/Excellent (VHI ≥ 40), 2 = Slightly Stressed, 3 = Stressed, 4 = Very Stressed, 5 = Extremely Stressed. Thresholds in config/rules.yaml → vhi.thresholds.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
     },
     "discharge": {
       "description": "Discharge station summary for the region",

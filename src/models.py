@@ -76,6 +76,7 @@ class RegionReport:
     soil_moisture_index_forecast: int | None = None
     precip_deficit_delta: int = 0
     soil_moisture_deficit_delta: int = 0
+    vhi_index: int = 1
     discharge: DischargeStats = field(default_factory=lambda: DischargeStats(0, 0, 0, 0))
     hydro_stations: list[HydroStationReport] = field(default_factory=list)
 
@@ -105,6 +106,8 @@ class CantonReport:
     precip_index_max: int = 1
     n_regions_with_precip_deficit: int = 0
     n_regions_with_soil_moisture_deficit: int = 0
+    n_regions_with_vhi_stress: int = 0
+    max_vhi_index: int = 1
     discharge: DischargeStats = field(default_factory=lambda: DischargeStats(0, 0, 0, 0))
 
 

@@ -28,6 +28,8 @@
     "precip_index_max",
     "n_regions_with_precip_deficit",
     "n_regions_with_soil_moisture_deficit",
+    "n_regions_with_vhi_stress",
+    "max_vhi_index",
     "discharge"
   ],
   "properties": {
@@ -173,6 +175,17 @@
       "description": "Number of regions with soil moisture index ≥ indicator_deficits.soil_moisture_index_min",
       "type": "integer",
       "minimum": 0
+    },
+    "n_regions_with_vhi_stress": {
+      "description": "Number of regions with vhi_index ≥ vhi.stress_index_min",
+      "type": "integer",
+      "minimum": 0
+    },
+    "max_vhi_index": {
+      "description": "Maximum VHI stress index across all regions in the canton (1–5)",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
     },
     "discharge": {
       "description": "Aggregated discharge station summary across all regions in the canton",

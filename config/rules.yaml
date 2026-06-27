@@ -98,3 +98,31 @@ warnlevel:
   # Minimum warning level used when no official Warnkarte entry is available
   # for a region. The effective level is max(cdi, fallback_min).
   fallback_min: 1
+
+# ---------------------------------------------------------------------------
+# VHI (Vegetation Health Index) stress classification
+# ---------------------------------------------------------------------------
+
+vhi:
+
+  # VHI index at or above this → region counted in n_regions_with_vhi_stress.
+  # Set to 2 so that "Slightly Stressed" and worse regions are counted.
+  stress_index_min: 2
+
+  # Classify a VHI float (0–100) into a stress index 1–5 using the official
+  # SwissEO VHI classes. The three "positive" classes (Normal / Good / Excellent)
+  # are merged into level 1 — they represent no operational stress concern.
+  #
+  #  Index  VHI range   Official identifier
+  #  -----  ---------   -------------------
+  #    1    40–100      Normal / Good / Excellent
+  #    2    30–39       Slightly Stressed
+  #    3    20–29       Stressed
+  #    4    10–19       Very Stressed
+  #    5     0–9        Extremely Stressed
+  thresholds:
+    1: 40
+    2: 30
+    3: 20
+    4: 10
+    5: 0

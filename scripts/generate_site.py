@@ -500,6 +500,7 @@ def _region_from_dict(d: dict) -> RegionReport:
         ),
         precip_deficit_delta=int(d["precip_deficit_delta"]),
         soil_moisture_deficit_delta=int(d["soil_moisture_deficit_delta"]),
+        vhi_index=int(d.get("vhi_index", 1)),
         discharge=_discharge_from_dict(d["discharge"]),
         hydro_stations=[_hydro_station_from_dict(s) for s in d["hydro_stations"]],
     )
@@ -533,6 +534,8 @@ def canton_from_dict(d: dict) -> CantonReport:
         precip_index_max=int(d["precip_index_max"]),
         n_regions_with_precip_deficit=int(d["n_regions_with_precip_deficit"]),
         n_regions_with_soil_moisture_deficit=int(d["n_regions_with_soil_moisture_deficit"]),
+        n_regions_with_vhi_stress=int(d.get("n_regions_with_vhi_stress", 0)),
+        max_vhi_index=int(d.get("max_vhi_index", 1)),
         discharge=_discharge_from_dict(d["discharge"]),
     )
 

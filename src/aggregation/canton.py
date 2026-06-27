@@ -69,6 +69,8 @@ def compute_canton_report(
 
     n_precip_deficit = sum(1 for r in region_reports if r.precip_1m_index >= RULES.precip_1m_index_min)
     n_soil_deficit = sum(1 for r in region_reports if r.soil_moisture_index >= RULES.soil_moisture_index_min)
+    n_vhi_stress = sum(1 for r in region_reports if r.vhi_index >= RULES.vhi_stress_index_min)
+    max_vhi_index = max(r.vhi_index for r in region_reports)
 
     discharge = compute_discharge_stats(region_ids, bundle)
 
@@ -97,6 +99,8 @@ def compute_canton_report(
         precip_index_max=precip_index_max,
         n_regions_with_precip_deficit=n_precip_deficit,
         n_regions_with_soil_moisture_deficit=n_soil_deficit,
+        n_regions_with_vhi_stress=n_vhi_stress,
+        max_vhi_index=max_vhi_index,
         discharge=discharge,
     )
 

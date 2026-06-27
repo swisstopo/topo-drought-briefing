@@ -159,6 +159,18 @@ nomenclature:
       4: { de: "ein grosses Bodenfeuchtedefizit",             fr: "déficit d'humidité du sol élevé",     it: "grande deficit di umidità del suolo" }
       5: { de: "ein extremes Bodenfeuchtedefizit",            fr: "déficit d'humidité du sol extrême",   it: "estremo deficit di umidità del suolo" }
 
+  vhi:
+    field: vhi_index
+    # Stress level nouns for the vegetation health sentence.
+    # Maps to the official SwissEO VHI classes (see config/rules.yaml → vhi.thresholds).
+    # Levels 1 merges "Normal / Good / Excellent" (VHI >= 40); levels 2–5 are the four stress classes.
+    noun:
+      1: { de: "kein erhöhtes Stressniveau",          fr: "aucun stress végétatif élevé",        it: "nessun livello di stress elevato" }
+      2: { de: "ein leicht erhöhtes Stressniveau",    fr: "un stress végétatif légèrement élevé", it: "un livello di stress leggermente elevato" }
+      3: { de: "ein erhöhtes Stressniveau",           fr: "un stress végétatif modéré",           it: "un livello di stress moderato" }
+      4: { de: "ein stark erhöhtes Stressniveau",     fr: "un stress végétatif élevé",            it: "un livello di stress elevato" }
+      5: { de: "ein extremes Stressniveau",           fr: "un stress végétatif extrême",          it: "un livello di stress estremo" }
+
 # ---------------------------------------------------------------------------
 # Reusable trend logic. Typically compares the forecast (p50) against the
 # current value. Since the index runs from "1 = no deficit ... 5 = extreme",
@@ -277,6 +289,8 @@ sections:
         {{#if canton.discharge.n_total}}{{ pct_stations(canton.discharge.pct_low)|ucfirst }} im Kanton weisen aktuell einen niedrigen Abfluss (7-Tages-Mittel) auf. Davon {{ plural(canton.discharge.n_very_low, "liegt", "liegen") }} {{ canton.discharge.n_very_low }} {{ plural(canton.discharge.n_very_low, "Station", "Stationen") }} im sehr niedrigen Bereich.{{/if}}{{#if not canton.discharge.n_total}}Im Kanton liegen keine Abflussmessstationen vor.{{/if}}
 
         Bei der Bodenfeuchte weisen {{ region_phrase(canton.n_regions_with_soil_moisture_deficit, canton.regions|length, "Warnregionen") }} ein Defizit auf.
+
+        Der Vegetationszustand zeigt in {{ region_phrase(canton.n_regions_with_vhi_stress, canton.regions|length, "Warnregionen") }} {{ nomenclature.vhi.noun[canton.max_vhi_index].de }}.
       fr: |
         Dans le canton de {{ canton.canton_name_fr }}, {{ region_phrase(canton.n_regions_dry, canton.regions|length) }} sont actuellement en situation de sécheresse{{#if canton.cdi_min_dry}} ({{ deficit_range(canton.cdi_min_dry, canton.cdi_max_dry, "cdi") }}){{/if}}. La situation {{ trend(canton.cdi_situation_delta, "situation") }}.
 
@@ -285,6 +299,8 @@ sections:
         {{#if canton.discharge.n_total}}{{ pct_stations(canton.discharge.pct_low)|ucfirst }} du canton présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, {{ canton.discharge.n_very_low }} {{ plural(canton.discharge.n_very_low, "station se situe", "stations se situent") }} dans la plage très basse.{{/if}}{{#if not canton.discharge.n_total}}Le canton ne dispose d'aucune station de mesure du débit.{{/if}}
 
         Concernant l'humidité du sol, {{ region_phrase(canton.n_regions_with_soil_moisture_deficit, canton.regions|length) }} présentent un déficit.
+
+        L'état de la végétation indique {{ nomenclature.vhi.noun[canton.max_vhi_index].fr }} dans {{ region_phrase(canton.n_regions_with_vhi_stress, canton.regions|length, "Warnregionen", "régions d'alerte") }}.
     placeholders:
       - id: precip_index_summary
         source: canton.n_regions_by_precip_index
@@ -308,6 +324,8 @@ sections:
 
         Es besteht zurzeit {{ nomenclature.bodenfeuchte.noun[this.soil_moisture_index].de }}. Das Defizit wird in nächster Zeit tendenziell {{ trend(this.soil_moisture_deficit_delta, "defizit") }}.
 
+        Der Vegetationszustand zeigt {{ nomenclature.vhi.noun[this.vhi_index].de }}.
+
         {{/each}}
       fr: |
         {{#each canton.regions}}
@@ -318,6 +336,8 @@ sections:
         {{#if this.discharge.n_total}}{{ pct_stations(this.discharge.pct_low)|ucfirst }} présentent actuellement un débit faible (moyenne sur 7 jours). Parmi elles, {{ this.discharge.n_very_low }} {{ plural(this.discharge.n_very_low, "station se situe", "stations se situent") }} dans la plage très basse.{{/if}}{{#if not this.discharge.n_total}}Cette région ne dispose d'aucune station de mesure du débit.{{/if}}
 
         Concernant l'humidité du sol, il y a actuellement {{ nomenclature.bodenfeuchte.noun[this.soil_moisture_index].fr }}. Le déficit va probablement {{ trend(this.soil_moisture_deficit_delta, "defizit") }} prochainement.
+
+        L'état de la végétation indique {{ nomenclature.vhi.noun[this.vhi_index].fr }}.
 
         {{/each}}
     placeholders:

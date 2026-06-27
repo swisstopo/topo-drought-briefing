@@ -46,6 +46,12 @@ class Rules:
         wl = raw["warnlevel"]
         self.fallback_min: int = int(wl["fallback_min"])
 
+        vhi = raw["vhi"]
+        self.vhi_stress_index_min: int = int(vhi["stress_index_min"])
+        self.vhi_thresholds: dict[int, float] = {
+            int(k): float(v) for k, v in vhi["thresholds"].items()
+        }
+
 
 def load_rules() -> Rules:
     """Load and parse config/rules.yaml. Raises KeyError on missing keys."""
