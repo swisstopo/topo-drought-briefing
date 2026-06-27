@@ -2,18 +2,18 @@
   "canton_id": 9,
   "canton_name_de": "Zug",
   "canton_name_fr": "Zoug",
-  "data_timestamp": "2026-06-25T00:00:00",
+  "data_timestamp": "2026-06-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.29,
-      "soil_moisture_pct": 37.6,
-      "vhi": 40.0,
+      "soil_moisture_pct": 37.9,
+      "vhi": 32.0,
       "cdi_trend": 1,
       "spi_3m_delta": 0.04999999999999982,
       "vhi_delta": 0.0,
@@ -36,9 +36,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 3,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -1,
+      "precip_deficit_delta": -3,
       "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 3,
@@ -49,22 +49,22 @@
       "hydro_stations": [
         {
           "station_id": "2416",
-          "station_name": "Station 2416",
-          "current_value": 0.2943333333333333,
+          "station_name": "Hitzkirch, Richensee (2416)",
+          "current_value": 0.2922499999999999,
           "threshold1": 0.558,
           "min_value": 0.253
         },
         {
           "station_id": "2417",
-          "station_name": "Station 2417",
-          "current_value": 0.4436666666666666,
+          "station_name": "Oberkirch (2417)",
+          "current_value": 0.44025,
           "threshold1": 0.83,
           "min_value": 0.385
         },
         {
           "station_id": "ZH572",
-          "station_name": "Station ZH572",
-          "current_value": 0.2656666666666666,
+          "station_name": "Dietikon (ZH572)",
+          "current_value": 0.255,
           "threshold1": 0.447,
           "min_value": 0.148
         }

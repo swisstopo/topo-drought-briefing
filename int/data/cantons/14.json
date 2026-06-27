@@ -2,18 +2,18 @@
   "canton_id": 14,
   "canton_name_de": "Schaffhausen",
   "canton_name_fr": "Schaffhouse",
-  "data_timestamp": "2026-06-25T00:00:00",
+  "data_timestamp": "2026-06-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.26,
-      "soil_moisture_pct": 22.2,
-      "vhi": 38.0,
+      "spi_3m": -2.27,
+      "soil_moisture_pct": 22.8,
+      "vhi": 25.0,
       "cdi_trend": 1,
       "spi_3m_delta": 0.020000000000000018,
       "vhi_delta": 0.0,
@@ -28,17 +28,17 @@
         "overall": "ok"
       },
       "precip_sum_1m": 50.9,
-      "precip_sum_3m": 142.7,
+      "precip_sum_3m": 142.6,
       "precip_1m_index": 3,
-      "soil_moisture_index": 5,
+      "soil_moisture_index": 4,
       "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -1,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -2,
       "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 3,
@@ -49,22 +49,22 @@
       "hydro_stations": [
         {
           "station_id": "2132",
-          "station_name": "Station 2132",
-          "current_value": 1.112,
+          "station_name": "Neftenbach (2132)",
+          "current_value": 1.08675,
           "threshold1": 3.015,
           "min_value": 1.317
         },
         {
           "station_id": "2312",
-          "station_name": "Station 2312",
-          "current_value": 0.0826666666666666,
+          "station_name": "Salmsach, Hungerbühl (2312)",
+          "current_value": 0.082,
           "threshold1": 0.203,
           "min_value": 0.08
         },
         {
           "station_id": "2386",
-          "station_name": "Station 2386",
-          "current_value": 0.7440000000000001,
+          "station_name": "Frauenfeld (2386)",
+          "current_value": 0.7364999999999999,
           "threshold1": 1.325,
           "min_value": 0.756
         }
@@ -78,7 +78,7 @@
     "3": 1
   },
   "n_regions_by_soil_moisture_index": {
-    "5": 1
+    "4": 1
   },
   "n_regions_by_hydro_index": {
     "5": 1
@@ -94,9 +94,9 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -1,
+  "cdi_situation_delta": -2,
   "mean_precip_sum_1m": 50.9,
-  "mean_precip_sum_3m": 142.7,
+  "mean_precip_sum_3m": 142.6,
   "precip_index_min": 3,
   "precip_index_max": 3,
   "n_regions_with_precip_deficit": 1,

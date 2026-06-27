@@ -2,18 +2,18 @@
   "canton_id": 6,
   "canton_name_de": "Obwalden",
   "canton_name_fr": "Obwald",
-  "data_timestamp": "2026-06-25T00:00:00",
+  "data_timestamp": "2026-06-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-06-25T00:00:00",
+      "data_timestamp": "2026-06-26T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.86,
-      "soil_moisture_pct": 74.3,
-      "vhi": 39.0,
+      "soil_moisture_pct": 72.4,
+      "vhi": 38.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.1200000000000001,
       "vhi_delta": 0.0,
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": -2,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 4,
         "n_low": 4,
@@ -49,29 +49,29 @@
       "hydro_stations": [
         {
           "station_id": "2102",
-          "station_name": "Station 2102",
-          "current_value": 4.11,
+          "station_name": "Sarnen (2102)",
+          "current_value": 4.16175,
           "threshold1": 7.699,
           "min_value": 3.134
         },
         {
           "station_id": "2436",
-          "station_name": "Station 2436",
-          "current_value": 0.0489999999999999,
+          "station_name": "Alpnach, Chilch Erli (2436)",
+          "current_value": 0.0445,
           "threshold1": 0.225,
           "min_value": 0.035
         },
         {
           "station_id": "2481",
-          "station_name": "Station 2481",
-          "current_value": 15.827333333333334,
+          "station_name": "Buochs, Flugplatz (2481)",
+          "current_value": 15.81125,
           "threshold1": 20.673,
           "min_value": 12.808
         },
         {
           "station_id": "2634",
-          "station_name": "Station 2634",
-          "current_value": 3.3223333333333334,
+          "station_name": "Emmen (2634)",
+          "current_value": 3.1950000000000003,
           "threshold1": 8.079,
           "min_value": 2.599
         }
@@ -101,7 +101,7 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -1,
+  "cdi_situation_delta": -2,
   "mean_precip_sum_1m": 106.5,
   "mean_precip_sum_3m": 291.6,
   "precip_index_min": 3,
