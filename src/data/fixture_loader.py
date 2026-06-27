@@ -102,20 +102,22 @@ def load() -> DataBundle:
     forecast_raw, _ = _read_csv_from_zip(
         DATA_DIR / CURRENT_ZIP_NAME, "weekly_forecast_regions.csv"
     )
-    current_stations_df, _ = _read_csv_from_zip(
-        DATA_DIR / CURRENT_ZIP_NAME, "weekly_current_stations.csv"
-    )
-    reference_stations_df, _ = _read_csv_from_zip(
-        DATA_DIR / REFERENCE_ZIP_NAME, "daily_reference_stations.csv"
-    )
     
     forecast_df = forecast_raw.copy()
     forecast_df["valid_at"] = pd.to_datetime(forecast_df["valid_at"], format="%d.%m.%Y", errors="coerce")
     data_timestamp = _parse_timestamp(comment_lines)
 
+    # Note: Removed redundant `_read_csv_from_zip` calls for the station CSVs here.
     current_stations_df = _read_stations_csv(DATA_DIR / CURRENT_ZIP_NAME, CURRENT_STATIONS_CSV)
     reference_stations_df = _read_stations_csv(DATA_DIR / REFERENCE_ZIP_NAME, REFERENCE_STATIONS_CSV)
     station_region_map = load_station_region_map()
+
+    try:
+        stations_df = _read_stations_csv(DATA_DIR / REFERENCE_ZIP_NAME, "stations.csv")
+        station_names = dict(zip(stations_df["hydro_station_id"], stations_df["name"]))
+    except (FileNotFoundError, KeyError) as e:
+        logger.warning("Could not load stations.csv: %s", e)
+        station_names = {}
 
     return DataBundle(
         current_df=_parse_dates(current_df),
@@ -125,6 +127,7 @@ def load() -> DataBundle:
         current_stations_df=current_stations_df,
         reference_stations_df=reference_stations_df,
         station_region_map=station_region_map,
+        station_names=station_names,
         data_timestamp=data_timestamp,
         source="fixture",
     )
