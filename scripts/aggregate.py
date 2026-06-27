@@ -105,6 +105,13 @@ def _load_bundle_from_raw(raw_dir: Path) -> DataBundle:
         forecast_df["valid_at"], format="%d.%m.%Y", errors="coerce"
     )
 
+    try:
+        stations_df = _read_stations_from_zip(reference_zip, "stations.csv")
+        station_names = dict(zip(stations_df["hydro_station_id"], stations_df["name"]))
+    except Exception as e:
+        log.warning("Could not load stations.csv from raw data: %s", e)
+        station_names = {}
+
     return DataBundle(
         current_df=_parse_dates(current_df),
         historic_df=_parse_dates(historic_df),
@@ -113,6 +120,7 @@ def _load_bundle_from_raw(raw_dir: Path) -> DataBundle:
         current_stations_df=current_stations_df,
         reference_stations_df=reference_stations_df,
         station_region_map=load_station_region_map(),
+        station_names=station_names,  # NEW
         data_timestamp=_parse_timestamp(comments),
         source="api",
     )

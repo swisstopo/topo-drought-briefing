@@ -26,6 +26,7 @@ class DataBundle:
     current_stations_df: pd.DataFrame = field(default_factory=pd.DataFrame)
     reference_stations_df: pd.DataFrame = field(default_factory=pd.DataFrame)
     station_region_map: dict[str, int] = field(default_factory=dict)
+    station_names: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass
