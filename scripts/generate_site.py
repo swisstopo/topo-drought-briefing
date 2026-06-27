@@ -598,7 +598,7 @@ def _station_details_html(r: RegionReport, locale: str) -> str:
     lbl_mn = _html.escape(t("metric_threshold_min", locale))
     parts: list[str] = []
     for s in stations:
-        name = _html.escape(s.station_name if s.station_name else f"Station {s.station_id}")
+        name = _html.escape(s.station_name)
         t1_str = _fmt_q(s.threshold1) if not math.isnan(s.threshold1) else "–"
         mn_str = _fmt_q(s.min_value) if not math.isnan(s.min_value) else "–"
         parts.append(
