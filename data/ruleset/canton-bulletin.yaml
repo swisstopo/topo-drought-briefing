@@ -290,7 +290,7 @@ sections:
 
         Bei der Bodenfeuchte weisen {{ region_phrase(canton.n_regions_with_soil_moisture_deficit, canton.regions|length, "Warnregionen") }} ein Defizit auf.
 
-        Der Vegetationszustand zeigt in {{ region_phrase(canton.n_regions_with_vhi_stress, canton.regions|length, "Warnregionen") }} {{ nomenclature.vhi.noun[canton.max_vhi_index].de }}.
+        Der Vegetationszustand zeigt in {{ region_phrase(canton.n_regions_with_vhi_stress, canton.regions|length, "Warnregionen", "Warnregionen", "dative") }} {{ nomenclature.vhi.noun[canton.max_vhi_index].de }}.
       fr: |
         Dans le canton de {{ canton.canton_name_fr }}, {{ region_phrase(canton.n_regions_dry, canton.regions|length) }} sont actuellement en situation de sécheresse{{#if canton.cdi_min_dry}} ({{ deficit_range(canton.cdi_min_dry, canton.cdi_max_dry, "cdi") }}){{/if}}. La situation {{ trend(canton.cdi_situation_delta, "situation") }}.
 
