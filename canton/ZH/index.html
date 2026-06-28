@@ -18,10 +18,26 @@
       <span class="lang-fr">Bulletin s&eacute;cheresse</span>
     </a>
     <div class="header-actions">
-      <button class="action-btn lang-de" onclick="exportBriefing()">&#11015; Export Briefing</button>
-      <button class="action-btn lang-fr" onclick="exportBriefing()">&#11015; Exporter le briefing</button>
-      <button class="action-btn lang-de" onclick="copyPermalink()">&#128279; Link kopieren</button>
-      <button class="action-btn lang-fr" onclick="copyPermalink()">&#128279; Copier le lien</button>
+      <button class="action-btn lang-de" onclick="exportBriefing()">Export Briefing</button>
+      <button class="action-btn lang-fr" onclick="exportBriefing()">Exporter le briefing</button>
+      <button class="action-btn lang-de" onclick="copyPermalink()">Link kopieren</button>
+      <button class="action-btn lang-fr" onclick="copyPermalink()">Copier le lien</button>
+      <div class="feedback-wrap lang-de">
+        <button class="action-btn" onclick="toggleFeedback(event)">Feedback</button>
+        <div class="feedback-popover" id="feedback-popover">
+          <a href="mailto:trockenheit@bafu.admin.ch?subject=Feedback%20Trockenheitsbriefing">Mail-App &ouml;ffnen</a>
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=trockenheit@bafu.admin.ch&amp;su=Feedback%20Trockenheitsbriefing" target="_blank" rel="noopener">Gmail</a>
+          <a href="https://outlook.live.com/mail/0/deeplink/compose?to=trockenheit%40bafu.admin.ch&amp;subject=Feedback%20Trockenheitsbriefing" target="_blank" rel="noopener">Outlook Web</a>
+        </div>
+      </div>
+      <div class="feedback-wrap lang-fr">
+        <button class="action-btn" onclick="toggleFeedback(event)">Feedback</button>
+        <div class="feedback-popover" id="feedback-popover-fr">
+          <a href="mailto:trockenheit@bafu.admin.ch?subject=Feedback%20Bulletin%20s%C3%A9cheresse">Ouvrir dans l&rsquo;application mail</a>
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=trockenheit@bafu.admin.ch&amp;su=Feedback%20Bulletin%20s%C3%A9cheresse" target="_blank" rel="noopener">Gmail</a>
+          <a href="https://outlook.live.com/mail/0/deeplink/compose?to=trockenheit%40bafu.admin.ch&amp;subject=Feedback%20Bulletin%20s%C3%A9cheresse" target="_blank" rel="noopener">Outlook Web</a>
+        </div>
+      </div>
       <div class="lang-toggle">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="fr">FR</button>
@@ -110,9 +126,11 @@ Concernant l&#x27;humidité du sol, toutes les régions présentent un déficit.
 <footer class="site-footer">
   <div class="container">
     <p class="lang-de">Quelle: BAFU / MeteoSchweiz / swisstopo &middot;
-      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a> &middot;
+      <a href="https://github.com/swisstopo/topo-drought-briefing/issues/new/choose">Fehler melden</a></p>
     <p class="lang-fr">Source: OFEV / M&eacute;t&eacute;oSuisse / swisstopo &middot;
-      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a> &middot;
+      <a href="https://github.com/swisstopo/topo-drought-briefing/issues/new/choose">Signaler une erreur</a></p>
     <p class="impressum lang-de">Impressum: Automatisiertes Trockenheitsbriefing f&uuml;r Schweizer Beh&ouml;rden &ndash;
       von offenen Bundesdaten zum ver&ouml;ffentlichungsfertigen Bericht in Sekundenschnelle.
       Entwickelt am GovTech Hackathon 2026 in Zusammenarbeit mit swisstopo, BAFU (FOEN) und MeteoSchweiz.

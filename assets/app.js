@@ -137,12 +137,32 @@
     if (el) el.textContent = '';
   });
 
+  /* ---- feedback popover ---- */
+  window.toggleFeedback = function (e) {
+    e.stopPropagation();
+    var pop = e.currentTarget.closest('.feedback-wrap').querySelector('.feedback-popover');
+    var isOpen = pop.classList.contains('open');
+    document.querySelectorAll('.feedback-popover.open').forEach(function (p) { p.classList.remove('open'); });
+    if (!isOpen) pop.classList.add('open');
+  };
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.feedback-popover.open').forEach(function (p) { p.classList.remove('open'); });
+  });
+
   /* ---- canton recommendation textareas (no persistence — always start empty) ---- */
   function initCantonRecs() {
     document.querySelectorAll('.canton-rec').forEach(function (ta) {
-      var printDiv = document.getElementById('canton-rec-print-' + ta.dataset.regionId);
       ta.addEventListener('input', function () {
-        if (printDiv) printDiv.textContent = ta.value;
+        var id = ta.dataset.regionId;
+        var val = ta.value;
+        /* Sync to the DE+FR twin textarea so switching language keeps the text */
+        document.querySelectorAll('.canton-rec[data-region-id="' + id + '"]').forEach(function (other) {
+          if (other !== ta) other.value = val;
+        });
+        /* Update all print divs for this region (one per language) */
+        document.querySelectorAll('[id="canton-rec-print-' + id + '"]').forEach(function (div) {
+          div.textContent = val;
+        });
       });
     });
   }
