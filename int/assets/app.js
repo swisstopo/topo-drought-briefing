@@ -137,6 +137,18 @@
     if (el) el.textContent = '';
   });
 
+  /* ---- feedback popover ---- */
+  window.toggleFeedback = function (e) {
+    e.stopPropagation();
+    var pop = e.currentTarget.closest('.feedback-wrap').querySelector('.feedback-popover');
+    var isOpen = pop.classList.contains('open');
+    document.querySelectorAll('.feedback-popover.open').forEach(function (p) { p.classList.remove('open'); });
+    if (!isOpen) pop.classList.add('open');
+  };
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.feedback-popover.open').forEach(function (p) { p.classList.remove('open'); });
+  });
+
   /* ---- canton recommendation textareas (no persistence — always start empty) ---- */
   function initCantonRecs() {
     document.querySelectorAll('.canton-rec').forEach(function (ta) {
