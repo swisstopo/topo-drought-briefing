@@ -2,18 +2,18 @@
   "canton_id": 16,
   "canton_name_de": "Appenzell Innerrhoden",
   "canton_name_fr": "Appenzell Rhodes-Intérieures",
-  "data_timestamp": "2026-06-26T00:00:00",
+  "data_timestamp": "2026-06-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.16,
       "soil_moisture_pct": 40.7,
-      "vhi": 42.0,
+      "vhi": 41.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.20000000000000018,
       "vhi_delta": 0.0,
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -50,7 +50,7 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 8.547,
+          "current_value": 8.398599999999998,
           "threshold1": 18.135,
           "min_value": 6.542
         }
@@ -59,12 +59,12 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -2.17,
       "soil_moisture_pct": 65.0,
-      "vhi": 41.0,
+      "vhi": 38.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.19999999999999996,
       "vhi_delta": 0.0,
@@ -87,9 +87,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 1,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -1,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 3,
@@ -101,21 +101,21 @@
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 7.066000000000001,
+          "current_value": 7.0082,
           "threshold1": 9.575,
           "min_value": 5.245
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 4.416,
+          "current_value": 4.365,
           "threshold1": 7.51,
           "min_value": 5.393
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 3.72075,
+          "current_value": 3.6722,
           "threshold1": 5.783,
           "min_value": 4.101
         }

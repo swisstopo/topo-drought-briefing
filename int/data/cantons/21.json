@@ -2,18 +2,18 @@
   "canton_id": 21,
   "canton_name_de": "Ticino",
   "canton_name_fr": "Tessin",
-  "data_timestamp": "2026-06-26T00:00:00",
+  "data_timestamp": "2026-06-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 62,
       "region_name_de": "Westliches Tessin",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.73,
       "soil_moisture_pct": 54.3,
-      "vhi": 61.0,
+      "vhi": 48.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.1499999999999999,
       "vhi_delta": 0.0,
@@ -50,14 +50,14 @@
         {
           "station_id": "2244",
           "station_name": "Klusmatten (2244)",
-          "current_value": 0.964,
+          "current_value": 0.9532,
           "threshold1": 1.475,
           "min_value": 0.582
         },
         {
           "station_id": "2605",
           "station_name": "Lavertezzo, Campiòi (2605)",
-          "current_value": 2.6567500000000006,
+          "current_value": 2.74,
           "threshold1": 6.976,
           "min_value": 2.606
         }
@@ -66,12 +66,12 @@
     {
       "region_id": 63,
       "region_name_de": "Nordtessin",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.92,
       "soil_moisture_pct": 58.2,
-      "vhi": 57.0,
+      "vhi": 39.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.19999999999999996,
       "vhi_delta": 0.0,
@@ -108,7 +108,7 @@
         {
           "station_id": "2494",
           "station_name": "Pollegio, Campagna (2494)",
-          "current_value": 10.74875,
+          "current_value": 10.5374,
           "threshold1": 24.667,
           "min_value": 11.511
         }
@@ -117,12 +117,12 @@
     {
       "region_id": 64,
       "region_name_de": "Östliches Tessin",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.55,
       "soil_moisture_pct": 49.9,
-      "vhi": 56.0,
+      "vhi": 47.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.19999999999999996,
       "vhi_delta": 0.0,
@@ -159,7 +159,7 @@
         {
           "station_id": "2420",
           "station_name": "Lumino, Sassello (2420)",
-          "current_value": 12.987,
+          "current_value": 12.810399999999998,
           "threshold1": 24.324,
           "min_value": 10.381
         }
@@ -168,7 +168,7 @@
     {
       "region_id": 65,
       "region_name_de": "Sottoceneri",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -1.43,
@@ -202,29 +202,29 @@
       "soil_moisture_deficit_delta": 0,
       "discharge": {
         "n_total": 3,
-        "n_low": 3,
+        "n_low": 2,
         "n_very_low": 0,
-        "pct_low": 100
+        "pct_low": 67
       },
       "hydro_stations": [
         {
           "station_id": "2321",
           "station_name": "Pregassona (2321)",
-          "current_value": 0.6779999999999999,
+          "current_value": 0.8054,
           "threshold1": 1.116,
           "min_value": 0.504
         },
         {
           "station_id": "2349",
           "station_name": "Chiasso, Ponte di Polenta (2349)",
-          "current_value": 0.1114999999999999,
+          "current_value": 0.1664,
           "threshold1": 0.14,
           "min_value": 0.049
         },
         {
           "station_id": "2461",
           "station_name": "Magliaso, Ponte (2461)",
-          "current_value": 0.38025,
+          "current_value": 0.3786,
           "threshold1": 0.458,
           "min_value": 0.147
         }
@@ -267,8 +267,8 @@
   "n_regions_with_soil_moisture_deficit": 4,
   "discharge": {
     "n_total": 7,
-    "n_low": 7,
+    "n_low": 6,
     "n_very_low": 0,
-    "pct_low": 100
+    "pct_low": 86
   }
 }

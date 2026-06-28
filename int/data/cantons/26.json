@@ -2,13 +2,13 @@
   "canton_id": 26,
   "canton_name_de": "Jura",
   "canton_name_fr": "Jura",
-  "data_timestamp": "2026-06-26T00:00:00",
+  "data_timestamp": "2026-06-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.99,
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
@@ -50,21 +50,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 2.59975,
+          "current_value": 2.5422,
           "threshold1": 5.792,
           "min_value": 3.311
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.2385,
+          "current_value": 0.2299999999999999,
           "threshold1": 0.982,
           "min_value": 0.385
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.3545,
+          "current_value": 0.351,
           "threshold1": 0.776,
           "min_value": 0.312
         }
@@ -73,12 +73,12 @@
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-06-26T00:00:00",
+      "data_timestamp": "2026-06-27T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.79,
       "soil_moisture_pct": 26.0,
-      "vhi": 42.0,
+      "vhi": 38.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.10000000000000009,
       "vhi_delta": 0.0,
@@ -101,10 +101,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -3,
+      "precip_1m_index_forecast": 3,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -115,7 +115,7 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 3.15925,
+          "current_value": 3.1566,
           "threshold1": 6.453,
           "min_value": 3.733
         }
