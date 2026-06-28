@@ -192,8 +192,14 @@ main{padding:2rem 0 3rem}
 
 /* Action buttons (export / permalink) */
 .header-actions{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
-.action-btn{border:1px solid var(--border);background:var(--white);color:var(--blue);padding:.3rem .65rem;font-size:.82rem;cursor:pointer;border-radius:4px;font-family:inherit;font-weight:700;transition:background .1s,color .1s}
+.action-btn{border:1px solid var(--border);background:var(--white);color:var(--blue);padding:.3rem .65rem;font-size:.82rem;cursor:pointer;border-radius:4px;font-family:inherit;font-weight:700;transition:background .1s,color .1s;text-decoration:none}
 .action-btn:hover{background:var(--blue);color:var(--white)}
+/* Feedback popover */
+.feedback-wrap{position:relative;display:inline-block}
+.feedback-popover{display:none;position:absolute;top:calc(100% + 6px);right:0;background:var(--white);border:1px solid var(--border);border-radius:6px;box-shadow:var(--shadow);min-width:180px;z-index:200;padding:.35rem 0}
+.feedback-popover.open{display:block}
+.feedback-popover a{display:block;padding:.45rem .85rem;font-size:.82rem;color:var(--text);text-decoration:none;white-space:nowrap}
+.feedback-popover a:hover{background:var(--bg);color:var(--blue)}
 
 /* Canton recommendation textarea */
 .canton-rec{width:100%;min-height:72px;resize:vertical;border:1px solid var(--border);border-radius:4px;padding:.35rem .45rem;font-family:inherit;font-size:.82rem;color:var(--text);background:var(--white)}
@@ -386,12 +392,32 @@ _JS = """\
     if (el) el.textContent = '';
   });
 
+  /* ---- feedback popover ---- */
+  window.toggleFeedback = function (e) {
+    e.stopPropagation();
+    var pop = e.currentTarget.closest('.feedback-wrap').querySelector('.feedback-popover');
+    var isOpen = pop.classList.contains('open');
+    document.querySelectorAll('.feedback-popover.open').forEach(function (p) { p.classList.remove('open'); });
+    if (!isOpen) pop.classList.add('open');
+  };
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.feedback-popover.open').forEach(function (p) { p.classList.remove('open'); });
+  });
+
   /* ---- canton recommendation textareas (no persistence — always start empty) ---- */
   function initCantonRecs() {
     document.querySelectorAll('.canton-rec').forEach(function (ta) {
-      var printDiv = document.getElementById('canton-rec-print-' + ta.dataset.regionId);
       ta.addEventListener('input', function () {
-        if (printDiv) printDiv.textContent = ta.value;
+        var id = ta.dataset.regionId;
+        var val = ta.value;
+        /* Sync to the DE+FR twin textarea so switching language keeps the text */
+        document.querySelectorAll('.canton-rec[data-region-id="' + id + '"]').forEach(function (other) {
+          if (other !== ta) other.value = val;
+        });
+        /* Update all print divs for this region (one per language) */
+        document.querySelectorAll('[id="canton-rec-print-' + id + '"]').forEach(function (div) {
+          div.textContent = val;
+        });
       });
     });
   }
@@ -930,10 +956,26 @@ def _header_html(back_href: str) -> str:
       <span class="lang-fr">Bulletin s&eacute;cheresse</span>
     </a>
     <div class="header-actions">
-      <button class="action-btn lang-de" onclick="exportBriefing()">&#11015; Export Briefing</button>
-      <button class="action-btn lang-fr" onclick="exportBriefing()">&#11015; Exporter le briefing</button>
-      <button class="action-btn lang-de" onclick="copyPermalink()">&#128279; Link kopieren</button>
-      <button class="action-btn lang-fr" onclick="copyPermalink()">&#128279; Copier le lien</button>
+      <button class="action-btn lang-de" onclick="exportBriefing()">Export Briefing</button>
+      <button class="action-btn lang-fr" onclick="exportBriefing()">Exporter le briefing</button>
+      <button class="action-btn lang-de" onclick="copyPermalink()">Link kopieren</button>
+      <button class="action-btn lang-fr" onclick="copyPermalink()">Copier le lien</button>
+      <div class="feedback-wrap lang-de">
+        <button class="action-btn" onclick="toggleFeedback(event)">Feedback</button>
+        <div class="feedback-popover" id="feedback-popover">
+          <a href="mailto:trockenheit@bafu.admin.ch?subject=Feedback%20Trockenheitsbriefing">Mail-App &ouml;ffnen</a>
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=trockenheit@bafu.admin.ch&amp;su=Feedback%20Trockenheitsbriefing" target="_blank" rel="noopener">Gmail</a>
+          <a href="https://outlook.live.com/mail/0/deeplink/compose?to=trockenheit%40bafu.admin.ch&amp;subject=Feedback%20Trockenheitsbriefing" target="_blank" rel="noopener">Outlook Web</a>
+        </div>
+      </div>
+      <div class="feedback-wrap lang-fr">
+        <button class="action-btn" onclick="toggleFeedback(event)">Feedback</button>
+        <div class="feedback-popover" id="feedback-popover-fr">
+          <a href="mailto:trockenheit@bafu.admin.ch?subject=Feedback%20Bulletin%20s%C3%A9cheresse">Ouvrir dans l&rsquo;application mail</a>
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=trockenheit@bafu.admin.ch&amp;su=Feedback%20Bulletin%20s%C3%A9cheresse" target="_blank" rel="noopener">Gmail</a>
+          <a href="https://outlook.live.com/mail/0/deeplink/compose?to=trockenheit%40bafu.admin.ch&amp;subject=Feedback%20Bulletin%20s%C3%A9cheresse" target="_blank" rel="noopener">Outlook Web</a>
+        </div>
+      </div>
       <div class="lang-toggle">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="fr">FR</button>
@@ -948,9 +990,11 @@ def _footer_html() -> str:
 <footer class="site-footer">
   <div class="container">
     <p class="lang-de">Quelle: BAFU / MeteoSchweiz / swisstopo &middot;
-      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a> &middot;
+      <a href="https://github.com/swisstopo/topo-drought-briefing/issues/new/choose">Fehler melden</a></p>
     <p class="lang-fr">Source: OFEV / M&eacute;t&eacute;oSuisse / swisstopo &middot;
-      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a></p>
+      <a href="https://www.trockenheit.admin.ch">trockenheit.admin.ch</a> &middot;
+      <a href="https://github.com/swisstopo/topo-drought-briefing/issues/new/choose">Signaler une erreur</a></p>
     <p class="impressum lang-de">Impressum: Automatisiertes Trockenheitsbriefing f&uuml;r Schweizer Beh&ouml;rden &ndash;
       von offenen Bundesdaten zum ver&ouml;ffentlichungsfertigen Bericht in Sekundenschnelle.
       Entwickelt am GovTech Hackathon 2026 in Zusammenarbeit mit swisstopo, BAFU (FOEN) und MeteoSchweiz.
