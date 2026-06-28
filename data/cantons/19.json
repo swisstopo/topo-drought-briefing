@@ -49,21 +49,21 @@
       "hydro_stations": [
         {
           "station_id": "2106",
-          "station_name": "Station 2106",
+          "station_name": "Münchenstein, Hofmatt (2106)",
           "current_value": 2.5422,
           "threshold1": 5.792,
           "min_value": 3.311
         },
         {
           "station_id": "2202",
-          "station_name": "Station 2202",
+          "station_name": "Liestal (2202)",
           "current_value": 0.2299999999999999,
           "threshold1": 0.982,
           "min_value": 0.385
         },
         {
           "station_id": "2485",
-          "station_name": "Station 2485",
+          "station_name": "Boncourt, Frontière (2485)",
           "current_value": 0.351,
           "threshold1": 0.776,
           "min_value": 0.312
@@ -114,7 +114,7 @@
       "hydro_stations": [
         {
           "station_id": "2500",
-          "station_name": "Station 2500",
+          "station_name": "Ittigen (2500)",
           "current_value": 0.4356,
           "threshold1": 0.597,
           "min_value": 0.408
@@ -165,14 +165,14 @@
       "hydro_stations": [
         {
           "station_id": "2450",
-          "station_name": "Station 2450",
+          "station_name": "Zofingen (2450)",
           "current_value": 0.5862,
           "threshold1": 2.752,
           "min_value": 1.385
         },
         {
           "station_id": "2471",
-          "station_name": "Station 2471",
+          "station_name": "Murgenthal, Walliswil (2471)",
           "current_value": 0.9844,
           "threshold1": 1.832,
           "min_value": 1.171
@@ -223,21 +223,21 @@
       "hydro_stations": [
         {
           "station_id": "2416",
-          "station_name": "Station 2416",
+          "station_name": "Hitzkirch, Richensee (2416)",
           "current_value": 0.2904,
           "threshold1": 0.558,
           "min_value": 0.253
         },
         {
           "station_id": "2417",
-          "station_name": "Station 2417",
+          "station_name": "Oberkirch (2417)",
           "current_value": 0.4368,
           "threshold1": 0.83,
           "min_value": 0.385
         },
         {
           "station_id": "ZH572",
-          "station_name": "Station ZH572",
+          "station_name": "Dietikon (ZH572)",
           "current_value": 0.2481999999999999,
           "threshold1": 0.447,
           "min_value": 0.148
@@ -288,21 +288,21 @@
       "hydro_stations": [
         {
           "station_id": "2132",
-          "station_name": "Station 2132",
+          "station_name": "Neftenbach (2132)",
           "current_value": 1.0654,
           "threshold1": 3.015,
           "min_value": 1.317
         },
         {
           "station_id": "2312",
-          "station_name": "Station 2312",
+          "station_name": "Salmsach, Hungerbühl (2312)",
           "current_value": 0.0822,
           "threshold1": 0.203,
           "min_value": 0.08
         },
         {
           "station_id": "2386",
-          "station_name": "Station 2386",
+          "station_name": "Frauenfeld (2386)",
           "current_value": 0.7218,
           "threshold1": 1.325,
           "min_value": 0.756

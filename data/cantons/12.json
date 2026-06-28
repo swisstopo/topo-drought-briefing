@@ -49,21 +49,21 @@
       "hydro_stations": [
         {
           "station_id": "2106",
-          "station_name": "Station 2106",
+          "station_name": "Münchenstein, Hofmatt (2106)",
           "current_value": 2.5422,
           "threshold1": 5.792,
           "min_value": 3.311
         },
         {
           "station_id": "2202",
-          "station_name": "Station 2202",
+          "station_name": "Liestal (2202)",
           "current_value": 0.2299999999999999,
           "threshold1": 0.982,
           "min_value": 0.385
         },
         {
           "station_id": "2485",
-          "station_name": "Station 2485",
+          "station_name": "Boncourt, Frontière (2485)",
           "current_value": 0.351,
           "threshold1": 0.776,
           "min_value": 0.312

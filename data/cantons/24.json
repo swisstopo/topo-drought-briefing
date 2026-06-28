@@ -49,7 +49,7 @@
       "hydro_stations": [
         {
           "station_id": "2370",
-          "station_name": "Station 2370",
+          "station_name": "Le Noirmont, La Goule (2370)",
           "current_value": 3.1566,
           "threshold1": 6.453,
           "min_value": 3.733
@@ -100,28 +100,28 @@
       "hydro_stations": [
         {
           "station_id": "2378",
-          "station_name": "Station 2378",
+          "station_name": "Orbe, Le Chalet (2378)",
           "current_value": 2.5484,
           "threshold1": 3.511,
           "min_value": 2.228
         },
         {
           "station_id": "2458",
-          "station_name": "Station 2458",
+          "station_name": "Valangin (2458)",
           "current_value": 0.0644,
           "threshold1": 0.134,
           "min_value": 0.048
         },
         {
           "station_id": "2480",
-          "station_name": "Station 2480",
+          "station_name": "Boudry (2480)",
           "current_value": 1.794,
           "threshold1": 2.809,
           "min_value": 1.372
         },
         {
           "station_id": "2493",
-          "station_name": "Station 2493",
+          "station_name": "Gland, Route Suisse (2493)",
           "current_value": 0.34,
           "threshold1": 0.415,
           "min_value": 0.191

@@ -49,7 +49,7 @@
       "hydro_stations": [
         {
           "station_id": "2432",
-          "station_name": "Station 2432",
+          "station_name": "Ecublens, Les Bois (2432)",
           "current_value": 0.4136,
           "threshold1": 0.928,
           "min_value": 0.39

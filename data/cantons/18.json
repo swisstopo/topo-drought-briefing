@@ -49,7 +49,7 @@
       "hydro_stations": [
         {
           "station_id": "2033",
-          "station_name": "Station 2033",
+          "station_name": "Ilanz (2033)",
           "current_value": 31.615,
           "threshold1": 50.762,
           "min_value": 24.78
@@ -100,7 +100,7 @@
       "hydro_stations": [
         {
           "station_id": "2498",
-          "station_name": "Station 2498",
+          "station_name": "Castrisch (2498)",
           "current_value": 5.694799999999999,
           "threshold1": 12.128,
           "min_value": 5.162
@@ -151,14 +151,14 @@
       "hydro_stations": [
         {
           "station_id": "2141",
-          "station_name": "Station 2141",
+          "station_name": "Tiefencastel (2141)",
           "current_value": 19.772,
           "threshold1": 25.798,
           "min_value": 13.825
         },
         {
           "station_id": "2355",
-          "station_name": "Station 2355",
+          "station_name": "Davos, Frauenkirch (2355)",
           "current_value": 7.668200000000001,
           "threshold1": 9.911,
           "min_value": 5.336
@@ -209,7 +209,7 @@
       "hydro_stations": [
         {
           "station_id": "2150",
-          "station_name": "Station 2150",
+          "station_name": "Felsenbach (2150)",
           "current_value": 21.210200000000004,
           "threshold1": 33.725,
           "min_value": 16.26
@@ -260,7 +260,7 @@
       "hydro_stations": [
         {
           "station_id": "2494",
-          "station_name": "Station 2494",
+          "station_name": "Pollegio, Campagna (2494)",
           "current_value": 10.5374,
           "threshold1": 24.667,
           "min_value": 11.511
@@ -311,7 +311,7 @@
       "hydro_stations": [
         {
           "station_id": "2420",
-          "station_name": "Station 2420",
+          "station_name": "Lumino, Sassello (2420)",
           "current_value": 12.810399999999998,
           "threshold1": 24.324,
           "min_value": 10.381
@@ -362,14 +362,14 @@
       "hydro_stations": [
         {
           "station_id": "0078",
-          "station_name": "Station 0078",
+          "station_name": "Le Prese (0078)",
           "current_value": 6.7094000000000005,
           "threshold1": 8.533,
           "min_value": 3.884
         },
         {
           "station_id": "2617",
-          "station_name": "Station 2617",
+          "station_name": "Müstair (2617)",
           "current_value": 2.6814,
           "threshold1": 4.083,
           "min_value": 2.205
@@ -420,28 +420,28 @@
       "hydro_stations": [
         {
           "station_id": "2105",
-          "station_name": "Station 2105",
+          "station_name": "St. Moritzbad (2105)",
           "current_value": 9.284,
           "threshold1": 10.921,
           "min_value": 3.361
         },
         {
           "station_id": "2256",
-          "station_name": "Station 2256",
+          "station_name": "Pontresina (2256)",
           "current_value": 7.2316,
           "threshold1": 5.226,
           "min_value": 1.152
         },
         {
           "station_id": "2262",
-          "station_name": "Station 2262",
+          "station_name": "Pontresina (2262)",
           "current_value": 12.7064,
           "threshold1": 10.246,
           "min_value": 2.958
         },
         {
           "station_id": "2263",
-          "station_name": "Station 2263",
+          "station_name": "La Punt-Chamues-ch (2263)",
           "current_value": 4.4394,
           "threshold1": 4.172,
           "min_value": 1.74
@@ -492,14 +492,14 @@
       "hydro_stations": [
         {
           "station_id": "2304",
-          "station_name": "Station 2304",
+          "station_name": "Zernez, Punt la Drossa (2304)",
           "current_value": 0.9482,
           "threshold1": 1.309,
           "min_value": 0.563
         },
         {
           "station_id": "2319",
-          "station_name": "Station 2319",
+          "station_name": "Zernez (2319)",
           "current_value": 1.0530000000000002,
           "threshold1": 1.401,
           "min_value": 0.544

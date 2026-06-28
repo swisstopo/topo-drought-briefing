@@ -49,28 +49,28 @@
       "hydro_stations": [
         {
           "station_id": "2102",
-          "station_name": "Station 2102",
+          "station_name": "Sarnen (2102)",
           "current_value": 4.166,
           "threshold1": 7.699,
           "min_value": 3.134
         },
         {
           "station_id": "2436",
-          "station_name": "Station 2436",
+          "station_name": "Alpnach, Chilch Erli (2436)",
           "current_value": 0.0407999999999999,
           "threshold1": 0.225,
           "min_value": 0.035
         },
         {
           "station_id": "2481",
-          "station_name": "Station 2481",
+          "station_name": "Buochs, Flugplatz (2481)",
           "current_value": 15.7784,
           "threshold1": 20.673,
           "min_value": 12.808
         },
         {
           "station_id": "2634",
-          "station_name": "Station 2634",
+          "station_name": "Emmen (2634)",
           "current_value": 3.0962000000000005,
           "threshold1": 8.079,
           "min_value": 2.599

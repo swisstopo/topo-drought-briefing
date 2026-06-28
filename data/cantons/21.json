@@ -49,14 +49,14 @@
       "hydro_stations": [
         {
           "station_id": "2244",
-          "station_name": "Station 2244",
+          "station_name": "Klusmatten (2244)",
           "current_value": 0.9532,
           "threshold1": 1.475,
           "min_value": 0.582
         },
         {
           "station_id": "2605",
-          "station_name": "Station 2605",
+          "station_name": "Lavertezzo, Campiòi (2605)",
           "current_value": 2.74,
           "threshold1": 6.976,
           "min_value": 2.606
@@ -107,7 +107,7 @@
       "hydro_stations": [
         {
           "station_id": "2494",
-          "station_name": "Station 2494",
+          "station_name": "Pollegio, Campagna (2494)",
           "current_value": 10.5374,
           "threshold1": 24.667,
           "min_value": 11.511
@@ -158,7 +158,7 @@
       "hydro_stations": [
         {
           "station_id": "2420",
-          "station_name": "Station 2420",
+          "station_name": "Lumino, Sassello (2420)",
           "current_value": 12.810399999999998,
           "threshold1": 24.324,
           "min_value": 10.381
@@ -209,21 +209,21 @@
       "hydro_stations": [
         {
           "station_id": "2321",
-          "station_name": "Station 2321",
+          "station_name": "Pregassona (2321)",
           "current_value": 0.8054,
           "threshold1": 1.116,
           "min_value": 0.504
         },
         {
           "station_id": "2349",
-          "station_name": "Station 2349",
+          "station_name": "Chiasso, Ponte di Polenta (2349)",
           "current_value": 0.1664,
           "threshold1": 0.14,
           "min_value": 0.049
         },
         {
           "station_id": "2461",
-          "station_name": "Station 2461",
+          "station_name": "Magliaso, Ponte (2461)",
           "current_value": 0.3786,
           "threshold1": 0.458,
           "min_value": 0.147

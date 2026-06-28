@@ -49,7 +49,7 @@
       "hydro_stations": [
         {
           "station_id": "2500",
-          "station_name": "Station 2500",
+          "station_name": "Ittigen (2500)",
           "current_value": 0.4356,
           "threshold1": 0.597,
           "min_value": 0.408
@@ -100,14 +100,14 @@
       "hydro_stations": [
         {
           "station_id": "2159",
-          "station_name": "Station 2159",
+          "station_name": "Belp, Mülimatt (2159)",
           "current_value": 0.2724,
           "threshold1": 1.667,
           "min_value": 0.918
         },
         {
           "station_id": "2179",
-          "station_name": "Station 2179",
+          "station_name": "Thörishaus, Sensematt (2179)",
           "current_value": 1.7726,
           "threshold1": 4.363,
           "min_value": 2.474
@@ -158,14 +158,14 @@
       "hydro_stations": [
         {
           "station_id": "2151",
-          "station_name": "Station 2151",
+          "station_name": "Oberwil (2151)",
           "current_value": 12.205,
           "threshold1": 14.31,
           "min_value": 8.521
         },
         {
           "station_id": "2646",
-          "station_name": "Station 2646",
+          "station_name": "Emdthal (2646)",
           "current_value": 28.8284,
           "threshold1": 29.213,
           "min_value": 20.576
@@ -216,14 +216,14 @@
       "hydro_stations": [
         {
           "station_id": "2450",
-          "station_name": "Station 2450",
+          "station_name": "Zofingen (2450)",
           "current_value": 0.5862,
           "threshold1": 2.752,
           "min_value": 1.385
         },
         {
           "station_id": "2471",
-          "station_name": "Station 2471",
+          "station_name": "Murgenthal, Walliswil (2471)",
           "current_value": 0.9844,
           "threshold1": 1.832,
           "min_value": 1.171
@@ -274,7 +274,7 @@
       "hydro_stations": [
         {
           "station_id": "2070",
-          "station_name": "Station 2070",
+          "station_name": "Emmenmatt, nur Hauptstation (2070)",
           "current_value": 1.2402,
           "threshold1": 5.736,
           "min_value": 2.432
@@ -325,14 +325,14 @@
       "hydro_stations": [
         {
           "station_id": "2019",
-          "station_name": "Station 2019",
+          "station_name": "Brienzwiler (2019)",
           "current_value": 49.5606,
           "threshold1": 57.451,
           "min_value": 42.276
         },
         {
           "station_id": "2109",
-          "station_name": "Station 2109",
+          "station_name": "Gsteig (2109)",
           "current_value": 40.974,
           "threshold1": 33.227,
           "min_value": 18.317

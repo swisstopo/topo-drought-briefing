@@ -49,14 +49,14 @@
       "hydro_stations": [
         {
           "station_id": "2160",
-          "station_name": "Station 2160",
+          "station_name": "Broc, Château d'en bas (2160)",
           "current_value": 11.8816,
           "threshold1": 17.034,
           "min_value": 8.381
         },
         {
           "station_id": "2412",
-          "station_name": "Station 2412",
+          "station_name": "Vuippens, Château (2412)",
           "current_value": 0.1772,
           "threshold1": 0.362,
           "min_value": 0.195
@@ -107,28 +107,28 @@
       "hydro_stations": [
         {
           "station_id": "2378",
-          "station_name": "Station 2378",
+          "station_name": "Orbe, Le Chalet (2378)",
           "current_value": 2.5484,
           "threshold1": 3.511,
           "min_value": 2.228
         },
         {
           "station_id": "2458",
-          "station_name": "Station 2458",
+          "station_name": "Valangin (2458)",
           "current_value": 0.0644,
           "threshold1": 0.134,
           "min_value": 0.048
         },
         {
           "station_id": "2480",
-          "station_name": "Station 2480",
+          "station_name": "Boudry (2480)",
           "current_value": 1.794,
           "threshold1": 2.809,
           "min_value": 1.372
         },
         {
           "station_id": "2493",
-          "station_name": "Station 2493",
+          "station_name": "Gland, Route Suisse (2493)",
           "current_value": 0.34,
           "threshold1": 0.415,
           "min_value": 0.191
@@ -179,14 +179,14 @@
       "hydro_stations": [
         {
           "station_id": "2034",
-          "station_name": "Station 2034",
+          "station_name": "Payerne, Caserne d'aviation (2034)",
           "current_value": 0.8248,
           "threshold1": 2.21,
           "min_value": 1.183
         },
         {
           "station_id": "2369",
-          "station_name": "Station 2369",
+          "station_name": "Yvonand, La Mauguettaz (2369)",
           "current_value": 0.2088,
           "threshold1": 0.461,
           "min_value": 0.189
@@ -237,7 +237,7 @@
       "hydro_stations": [
         {
           "station_id": "2432",
-          "station_name": "Station 2432",
+          "station_name": "Ecublens, Les Bois (2432)",
           "current_value": 0.4136,
           "threshold1": 0.928,
           "min_value": 0.39
@@ -288,14 +288,14 @@
       "hydro_stations": [
         {
           "station_id": "2203",
-          "station_name": "Station 2203",
+          "station_name": "Aigle (2203)",
           "current_value": 3.3006,
           "threshold1": 4.378,
           "min_value": 2.296
         },
         {
           "station_id": "2486",
-          "station_name": "Station 2486",
+          "station_name": "Vevey, Copet (2486)",
           "current_value": 0.2235999999999999,
           "threshold1": 0.528,
           "min_value": 0.197

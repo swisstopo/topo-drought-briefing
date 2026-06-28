@@ -49,7 +49,7 @@
       "hydro_stations": [
         {
           "station_id": "2181",
-          "station_name": "Station 2181",
+          "station_name": "Halden (2181)",
           "current_value": 8.398599999999998,
           "threshold1": 18.135,
           "min_value": 6.542
@@ -100,21 +100,21 @@
       "hydro_stations": [
         {
           "station_id": "2139",
-          "station_name": "Station 2139",
+          "station_name": "St. Margrethen (2139)",
           "current_value": 7.0082,
           "threshold1": 9.575,
           "min_value": 5.245
         },
         {
           "station_id": "2187",
-          "station_name": "Station 2187",
+          "station_name": "Salez (2187)",
           "current_value": 4.365,
           "threshold1": 7.51,
           "min_value": 5.393
         },
         {
           "station_id": "2410",
-          "station_name": "Station 2410",
+          "station_name": "Ruggell (2410)",
           "current_value": 3.6722,
           "threshold1": 5.783,
           "min_value": 4.101

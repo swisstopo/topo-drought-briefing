@@ -49,21 +49,21 @@
       "hydro_stations": [
         {
           "station_id": "2132",
-          "station_name": "Station 2132",
+          "station_name": "Neftenbach (2132)",
           "current_value": 1.0654,
           "threshold1": 3.015,
           "min_value": 1.317
         },
         {
           "station_id": "2312",
-          "station_name": "Station 2312",
+          "station_name": "Salmsach, Hungerbühl (2312)",
           "current_value": 0.0822,
           "threshold1": 0.203,
           "min_value": 0.08
         },
         {
           "station_id": "2386",
-          "station_name": "Station 2386",
+          "station_name": "Frauenfeld (2386)",
           "current_value": 0.7218,
           "threshold1": 1.325,
           "min_value": 0.756

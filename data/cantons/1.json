@@ -49,21 +49,21 @@
       "hydro_stations": [
         {
           "station_id": "2416",
-          "station_name": "Station 2416",
+          "station_name": "Hitzkirch, Richensee (2416)",
           "current_value": 0.2904,
           "threshold1": 0.558,
           "min_value": 0.253
         },
         {
           "station_id": "2417",
-          "station_name": "Station 2417",
+          "station_name": "Oberkirch (2417)",
           "current_value": 0.4368,
           "threshold1": 0.83,
           "min_value": 0.385
         },
         {
           "station_id": "ZH572",
-          "station_name": "Station ZH572",
+          "station_name": "Dietikon (ZH572)",
           "current_value": 0.2481999999999999,
           "threshold1": 0.447,
           "min_value": 0.148
@@ -114,21 +114,21 @@
       "hydro_stations": [
         {
           "station_id": "2132",
-          "station_name": "Station 2132",
+          "station_name": "Neftenbach (2132)",
           "current_value": 1.0654,
           "threshold1": 3.015,
           "min_value": 1.317
         },
         {
           "station_id": "2312",
-          "station_name": "Station 2312",
+          "station_name": "Salmsach, Hungerbühl (2312)",
           "current_value": 0.0822,
           "threshold1": 0.203,
           "min_value": 0.08
         },
         {
           "station_id": "2386",
-          "station_name": "Station 2386",
+          "station_name": "Frauenfeld (2386)",
           "current_value": 0.7218,
           "threshold1": 1.325,
           "min_value": 0.756
@@ -179,7 +179,7 @@
       "hydro_stations": [
         {
           "station_id": "ZH582",
-          "station_name": "Station ZH582",
+          "station_name": "Rüti (ZH582)",
           "current_value": 0.4806,
           "threshold1": 0.989,
           "min_value": 0.456
@@ -230,7 +230,7 @@
       "hydro_stations": [
         {
           "station_id": "2181",
-          "station_name": "Station 2181",
+          "station_name": "Halden (2181)",
           "current_value": 8.398599999999998,
           "threshold1": 18.135,
           "min_value": 6.542

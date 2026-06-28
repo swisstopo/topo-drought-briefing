@@ -49,21 +49,21 @@
       "hydro_stations": [
         {
           "station_id": "2416",
-          "station_name": "Station 2416",
+          "station_name": "Hitzkirch, Richensee (2416)",
           "current_value": 0.2904,
           "threshold1": 0.558,
           "min_value": 0.253
         },
         {
           "station_id": "2417",
-          "station_name": "Station 2417",
+          "station_name": "Oberkirch (2417)",
           "current_value": 0.4368,
           "threshold1": 0.83,
           "min_value": 0.385
         },
         {
           "station_id": "ZH572",
-          "station_name": "Station ZH572",
+          "station_name": "Dietikon (ZH572)",
           "current_value": 0.2481999999999999,
           "threshold1": 0.447,
           "min_value": 0.148
