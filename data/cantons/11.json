@@ -2,33 +2,33 @@
   "canton_id": 11,
   "canton_name_de": "Solothurn",
   "canton_name_fr": "Soleure",
-  "data_timestamp": "2026-06-28T00:00:00",
+  "data_timestamp": "2026-06-29T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-06-28T00:00:00",
+      "data_timestamp": "2026-06-29T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -1.99,
-      "soil_moisture_pct": 21.6,
+      "spi_3m": -2.61,
+      "soil_moisture_pct": 12.5,
       "vhi": 22.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.1299999999999999,
+      "cdi_trend": 0,
+      "spi_3m_delta": -0.6199999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.038461538461538464,
-      "spi_3m_percentile": 2,
+      "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 55.1,
-      "precip_sum_3m": 167.7,
+      "precip_sum_1m": 55.5,
+      "precip_sum_3m": 141.9,
       "precip_1m_index": 3,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -50,21 +50,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 2.483166666666667,
+          "current_value": 2.424571428571429,
           "threshold1": 5.792,
           "min_value": 3.311
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.2205,
+          "current_value": 0.2102857142857142,
           "threshold1": 0.982,
           "min_value": 0.385
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.3473333333333332,
+          "current_value": 0.344,
           "threshold1": 0.776,
           "min_value": 0.312
         }
@@ -73,27 +73,27 @@
     {
       "region_id": 32,
       "region_name_de": "Balsthal",
-      "data_timestamp": "2026-06-28T00:00:00",
+      "data_timestamp": "2026-06-29T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -1.93,
-      "soil_moisture_pct": 21.7,
+      "spi_3m": -2.6,
+      "soil_moisture_pct": 13.4,
       "vhi": 21.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.1299999999999999,
+      "cdi_trend": 0,
+      "spi_3m_delta": -0.6700000000000002,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 2,
+      "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 58.0,
-      "precip_sum_3m": 185.3,
+      "precip_sum_1m": 58.3,
+      "precip_sum_3m": 153.0,
       "precip_1m_index": 3,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -115,14 +115,14 @@
         {
           "station_id": "2307",
           "station_name": "Sonceboz (2307)",
-          "current_value": 0.8690000000000001,
+          "current_value": 0.8645714285714285,
           "threshold1": 1.385,
           "min_value": 0.576
         },
         {
           "station_id": "2434",
           "station_name": "Olten, Hammermühle (2434)",
-          "current_value": 0.3783333333333333,
+          "current_value": 0.3664285714285715,
           "threshold1": 0.955,
           "min_value": 0.315
         }
@@ -131,30 +131,30 @@
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-06-28T00:00:00",
+      "data_timestamp": "2026-06-29T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.49,
-      "soil_moisture_pct": 26.0,
+      "spi_3m": -3.1,
+      "soil_moisture_pct": 18.9,
       "vhi": 13.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.23000000000000043,
+      "spi_3m_delta": -0.6099999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 39.4,
-      "precip_sum_3m": 143.4,
+      "precip_sum_1m": 39.8,
+      "precip_sum_3m": 122.5,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
-      "hydro_index": 2,
+      "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
@@ -166,14 +166,14 @@
       "discharge": {
         "n_total": 1,
         "n_low": 1,
-        "n_very_low": 1,
+        "n_very_low": 0,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
-          "current_value": 0.433,
+          "current_value": 0.4374285714285714,
           "threshold1": 0.597,
           "min_value": 0.408
         }
@@ -182,27 +182,27 @@
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-06-28T00:00:00",
+      "data_timestamp": "2026-06-29T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.62,
-      "soil_moisture_pct": 17.6,
+      "spi_3m": -3.33,
+      "soil_moisture_pct": 10.4,
       "vhi": 15.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.18999999999999995,
+      "spi_3m_delta": -0.71,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 34.2,
-      "precip_sum_3m": 143.1,
+      "precip_sum_1m": 34.3,
+      "precip_sum_3m": 118.6,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -224,14 +224,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 0.5730000000000001,
+          "current_value": 0.5555714285714286,
           "threshold1": 2.752,
           "min_value": 1.385
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 0.9628333333333332,
+          "current_value": 0.9501428571428572,
           "threshold1": 1.832,
           "min_value": 1.171
         }
@@ -249,11 +249,10 @@
     "5": 4
   },
   "n_regions_by_hydro_index": {
-    "5": 3,
-    "2": 1
+    "5": 4
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -264,8 +263,8 @@
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
   "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 46.7,
-  "mean_precip_sum_3m": 159.9,
+  "mean_precip_sum_1m": 47.0,
+  "mean_precip_sum_3m": 134.0,
   "precip_index_min": 3,
   "precip_index_max": 5,
   "n_regions_with_precip_deficit": 4,
@@ -273,7 +272,7 @@
   "discharge": {
     "n_total": 8,
     "n_low": 8,
-    "n_very_low": 7,
+    "n_very_low": 6,
     "pct_low": 100
   }
 }

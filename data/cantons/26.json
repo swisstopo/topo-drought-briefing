@@ -2,33 +2,33 @@
   "canton_id": 26,
   "canton_name_de": "Jura",
   "canton_name_fr": "Jura",
-  "data_timestamp": "2026-06-28T00:00:00",
+  "data_timestamp": "2026-06-29T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-06-28T00:00:00",
+      "data_timestamp": "2026-06-29T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -1.99,
-      "soil_moisture_pct": 21.6,
+      "spi_3m": -2.61,
+      "soil_moisture_pct": 12.5,
       "vhi": 22.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.1299999999999999,
+      "cdi_trend": 0,
+      "spi_3m_delta": -0.6199999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.038461538461538464,
-      "spi_3m_percentile": 2,
+      "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 55.1,
-      "precip_sum_3m": 167.7,
+      "precip_sum_1m": 55.5,
+      "precip_sum_3m": 141.9,
       "precip_1m_index": 3,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -50,21 +50,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 2.483166666666667,
+          "current_value": 2.424571428571429,
           "threshold1": 5.792,
           "min_value": 3.311
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.2205,
+          "current_value": 0.2102857142857142,
           "threshold1": 0.982,
           "min_value": 0.385
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.3473333333333332,
+          "current_value": 0.344,
           "threshold1": 0.776,
           "min_value": 0.312
         }
@@ -73,28 +73,28 @@
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-06-28T00:00:00",
+      "data_timestamp": "2026-06-29T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -1.79,
-      "soil_moisture_pct": 26.0,
+      "spi_3m": -2.41,
+      "soil_moisture_pct": 15.4,
       "vhi": 27.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.10000000000000009,
+      "cdi_trend": 0,
+      "spi_3m_delta": -0.6200000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
-      "spi_3m_percentile": 3,
+      "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 63.8,
-      "precip_sum_3m": 208.4,
-      "precip_1m_index": 4,
+      "precip_sum_1m": 64.6,
+      "precip_sum_3m": 174.6,
+      "precip_1m_index": 3,
       "soil_moisture_index": 5,
       "hydro_index": 5,
       "warnlevel": 4,
@@ -103,7 +103,7 @@
       "cdi_forecast_week2": 5,
       "precip_1m_index_forecast": 3,
       "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": -1,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 1,
@@ -115,7 +115,7 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 3.154166666666667,
+          "current_value": 3.155857142857143,
           "threshold1": 6.453,
           "min_value": 3.733
         }
@@ -126,8 +126,7 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "3": 1,
-    "4": 1
+    "3": 2
   },
   "n_regions_by_soil_moisture_index": {
     "5": 2
@@ -136,7 +135,7 @@
     "5": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -147,10 +146,10 @@
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 59.5,
-  "mean_precip_sum_3m": 188.1,
+  "mean_precip_sum_1m": 60.0,
+  "mean_precip_sum_3m": 158.2,
   "precip_index_min": 3,
-  "precip_index_max": 4,
+  "precip_index_max": 3,
   "n_regions_with_precip_deficit": 2,
   "n_regions_with_soil_moisture_deficit": 2,
   "discharge": {
