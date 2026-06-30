@@ -20,7 +20,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -78,7 +78,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -129,7 +129,7 @@
       "pct_critical": 0.0,
       "spi_3m_percentile": 6,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -180,7 +180,7 @@
       "pct_critical": 0.0,
       "spi_3m_percentile": 8,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -246,7 +246,7 @@
     "2": 1
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
