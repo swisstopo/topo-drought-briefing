@@ -2,33 +2,33 @@
   "canton_id": 16,
   "canton_name_de": "Appenzell Innerrhoden",
   "canton_name_fr": "Appenzell Rhodes-Intérieures",
-  "data_timestamp": "2026-06-29T00:00:00",
+  "data_timestamp": "2026-06-30T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-06-29T00:00:00",
+      "data_timestamp": "2026-06-30T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -3.36,
+      "spi_3m": -3.32,
       "soil_moisture_pct": 24.1,
       "vhi": 29.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -1.1999999999999997,
+      "spi_3m_delta": -1.1599999999999997,
       "vhi_delta": 0.0,
       "pct_critical": 0.25,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 93.4,
-      "precip_sum_3m": 198.0,
+      "precip_sum_1m": 95.7,
+      "precip_sum_3m": 200.3,
       "precip_1m_index": 4,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -36,10 +36,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -2,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -50,47 +50,47 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 8.147,
-          "threshold1": 18.135,
-          "min_value": 6.542
+          "current_value": 9.031,
+          "threshold1": 16.855,
+          "min_value": 4.812
         }
       ]
     },
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-06-29T00:00:00",
+      "data_timestamp": "2026-06-30T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -3.23,
+      "spi_3m": -3.18,
       "soil_moisture_pct": 41.4,
       "vhi": 30.0,
       "cdi_trend": 1,
-      "spi_3m_delta": -1.06,
+      "spi_3m_delta": -1.0100000000000002,
       "vhi_delta": 0.0,
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 100.8,
-      "precip_sum_3m": 181.6,
+      "precip_sum_1m": 103.4,
+      "precip_sum_3m": 184.1,
       "precip_1m_index": 2,
       "soil_moisture_index": 5,
       "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -3,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": 2,
+      "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
@@ -101,23 +101,23 @@
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 6.845285714285715,
-          "threshold1": 9.575,
-          "min_value": 5.245
+          "current_value": 7.028,
+          "threshold1": 9.254,
+          "min_value": 4.524
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 4.265428571428572,
-          "threshold1": 7.51,
-          "min_value": 5.393
+          "current_value": 4.224,
+          "threshold1": 7.194,
+          "min_value": 4.696
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 3.520285714285714,
-          "threshold1": 5.783,
-          "min_value": 4.101
+          "current_value": 3.257,
+          "threshold1": 5.569,
+          "min_value": 3.287
         }
       ]
     }
@@ -136,7 +136,7 @@
     "5": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -146,9 +146,9 @@
   "n_regions_dry": 2,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 97.1,
-  "mean_precip_sum_3m": 189.8,
+  "cdi_situation_delta": -1,
+  "mean_precip_sum_1m": 99.6,
+  "mean_precip_sum_3m": 192.2,
   "precip_index_min": 2,
   "precip_index_max": 4,
   "n_regions_with_precip_deficit": 2,
