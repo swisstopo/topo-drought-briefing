@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -71,7 +71,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -122,7 +122,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 8,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -180,7 +180,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -231,7 +231,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -282,7 +282,7 @@
       "pct_critical": 0.0,
       "spi_3m_percentile": 8,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -333,7 +333,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 16,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -384,7 +384,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 28,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -456,7 +456,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 20,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -518,7 +518,7 @@
     "1": 1
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
