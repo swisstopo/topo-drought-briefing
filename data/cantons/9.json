@@ -2,17 +2,17 @@
   "canton_id": 9,
   "canton_name_de": "Zug",
   "canton_name_fr": "Zoug",
-  "data_timestamp": "2026-07-01T00:00:00",
+  "data_timestamp": "2026-06-30T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-07-01T00:00:00",
+      "data_timestamp": "2026-06-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.03,
-      "soil_moisture_pct": 21.2,
+      "soil_moisture_pct": 23.1,
       "vhi": 24.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.7399999999999998,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -50,21 +50,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.2755,
+          "current_value": 0.276,
           "threshold1": 0.621,
           "min_value": 0.24
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.3795,
+          "current_value": 0.382,
           "threshold1": 0.821,
           "min_value": 0.385
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.3095,
+          "current_value": 0.404,
           "threshold1": 0.436,
           "min_value": 0.141
         }
@@ -84,7 +84,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],

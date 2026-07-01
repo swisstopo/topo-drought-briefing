@@ -2,17 +2,17 @@
   "canton_id": 25,
   "canton_name_de": "Genève",
   "canton_name_fr": "Genève",
-  "data_timestamp": "2026-07-01T00:00:00",
+  "data_timestamp": "2026-06-30T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 56,
       "region_name_de": "Genferseebecken",
-      "data_timestamp": "2026-07-01T00:00:00",
+      "data_timestamp": "2026-06-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.63,
-      "soil_moisture_pct": 22.2,
+      "soil_moisture_pct": 23.1,
       "vhi": 18.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.19999999999999996,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 5,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,10 +35,10 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 4,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 5,
       "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 2,
       "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 1,
@@ -50,7 +50,7 @@
         {
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
-          "current_value": 0.367,
+          "current_value": 0.358,
           "threshold1": 0.818,
           "min_value": 0.377
         }
@@ -70,7 +70,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -80,7 +80,7 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -1,
+  "cdi_situation_delta": 0,
   "mean_precip_sum_1m": 41.4,
   "mean_precip_sum_3m": 141.6,
   "precip_index_min": 3,

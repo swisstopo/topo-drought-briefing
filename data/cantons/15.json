@@ -2,17 +2,17 @@
   "canton_id": 15,
   "canton_name_de": "Appenzell Ausserrhoden",
   "canton_name_fr": "Appenzell Rhodes-Extérieures",
-  "data_timestamp": "2026-07-01T00:00:00",
+  "data_timestamp": "2026-06-30T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-07-01T00:00:00",
+      "data_timestamp": "2026-06-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.32,
-      "soil_moisture_pct": 22.8,
+      "soil_moisture_pct": 24.1,
       "vhi": 32.0,
       "cdi_trend": 0,
       "spi_3m_delta": -1.1599999999999997,
@@ -20,7 +20,7 @@
       "pct_critical": 0.25,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -50,7 +50,7 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 8.8745,
+          "current_value": 9.031,
           "threshold1": 16.855,
           "min_value": 4.812
         }
@@ -59,11 +59,11 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-07-01T00:00:00",
+      "data_timestamp": "2026-06-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.18,
-      "soil_moisture_pct": 39.4,
+      "soil_moisture_pct": 41.4,
       "vhi": 38.0,
       "cdi_trend": 1,
       "spi_3m_delta": -1.0100000000000002,
@@ -71,7 +71,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -101,21 +101,21 @@
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 6.8875,
+          "current_value": 7.028,
           "threshold1": 9.254,
           "min_value": 4.524
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 4.2125,
+          "current_value": 4.224,
           "threshold1": 7.194,
           "min_value": 4.696
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 3.3815,
+          "current_value": 3.257,
           "threshold1": 5.569,
           "min_value": 3.287
         }
@@ -136,7 +136,7 @@
     "5": 2
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
