@@ -2,17 +2,17 @@
   "canton_id": 23,
   "canton_name_de": "Valais",
   "canton_name_fr": "Valais",
-  "data_timestamp": "2026-06-30T00:00:00",
+  "data_timestamp": "2026-07-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 57,
       "region_name_de": "Chablais",
-      "data_timestamp": "2026-06-30T00:00:00",
+      "data_timestamp": "2026-07-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.04,
-      "soil_moisture_pct": 49.6,
+      "soil_moisture_pct": 48.6,
       "vhi": 41.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.5700000000000001,
@@ -20,7 +20,7 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -50,14 +50,14 @@
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 3.515,
+          "current_value": 3.239,
           "threshold1": 4.01,
           "min_value": 2.207
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 0.192,
+          "current_value": 0.194,
           "threshold1": 0.471,
           "min_value": 0.145
         }
@@ -66,7 +66,7 @@
     {
       "region_id": 58,
       "region_name_de": "Walliser Südalpen",
-      "data_timestamp": "2026-06-30T00:00:00",
+      "data_timestamp": "2026-07-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.66,
@@ -78,7 +78,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -93,11 +93,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -4,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 1,
         "n_low": 0,
@@ -117,11 +117,11 @@
     {
       "region_id": 59,
       "region_name_de": "nördliches Wallis",
-      "data_timestamp": "2026-06-30T00:00:00",
+      "data_timestamp": "2026-07-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.74,
-      "soil_moisture_pct": 62.1,
+      "soil_moisture_pct": 61.7,
       "vhi": 33.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.6100000000000003,
@@ -129,7 +129,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -145,10 +145,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -3,
+      "precip_1m_index_forecast": 3,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -2,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -159,7 +159,7 @@
         {
           "station_id": "2630",
           "station_name": "Sion (2630)",
-          "current_value": 0.146,
+          "current_value": 0.1525,
           "threshold1": 0.257,
           "min_value": 0.189
         }
@@ -168,11 +168,11 @@
     {
       "region_id": 60,
       "region_name_de": "Vispertäler",
-      "data_timestamp": "2026-06-30T00:00:00",
+      "data_timestamp": "2026-07-01T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.88,
-      "soil_moisture_pct": 74.1,
+      "soil_moisture_pct": 74.0,
       "vhi": 35.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.09000000000000008,
@@ -180,7 +180,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -210,7 +210,7 @@
         {
           "station_id": "2351",
           "station_name": "Visp (2351)",
-          "current_value": 30.678,
+          "current_value": 36.5535,
           "threshold1": 23.794,
           "min_value": 15.982
         }
@@ -219,11 +219,11 @@
     {
       "region_id": 61,
       "region_name_de": "Goms",
-      "data_timestamp": "2026-06-30T00:00:00",
+      "data_timestamp": "2026-07-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.33,
-      "soil_moisture_pct": 76.7,
+      "soil_moisture_pct": 76.4,
       "vhi": 35.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.3400000000000001,
@@ -231,7 +231,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -248,9 +248,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -3,
       "discharge": {
         "n_total": 1,
         "n_low": 0,
@@ -261,7 +261,7 @@
         {
           "station_id": "2346",
           "station_name": "Brig (2346)",
-          "current_value": 114.928,
+          "current_value": 120.0445,
           "threshold1": 84.395,
           "min_value": 46.998
         }
@@ -285,7 +285,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -295,7 +295,7 @@
   "n_regions_dry": 5,
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -5,
+  "cdi_situation_delta": -4,
   "mean_precip_sum_1m": 74.5,
   "mean_precip_sum_3m": 178.3,
   "precip_index_min": 1,

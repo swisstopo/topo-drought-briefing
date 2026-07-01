@@ -2,17 +2,17 @@
   "canton_id": 5,
   "canton_name_de": "Schwyz",
   "canton_name_fr": "Schwytz",
-  "data_timestamp": "2026-06-30T00:00:00",
+  "data_timestamp": "2026-07-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 43,
       "region_name_de": "Zürichseebecken",
-      "data_timestamp": "2026-06-30T00:00:00",
+      "data_timestamp": "2026-07-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.93,
-      "soil_moisture_pct": 41.7,
+      "soil_moisture_pct": 39.3,
       "vhi": 28.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.8900000000000001,
@@ -20,7 +20,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,10 +35,10 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 3,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 4,
       "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 2,
       "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 1,
@@ -50,7 +50,7 @@
         {
           "station_id": "ZH582",
           "station_name": "Rüti (ZH582)",
-          "current_value": 0.29,
+          "current_value": 0.2845,
           "threshold1": 0.956,
           "min_value": 0.456
         }
@@ -59,11 +59,11 @@
     {
       "region_id": 44,
       "region_name_de": "östliche Zentralschweiz",
-      "data_timestamp": "2026-06-30T00:00:00",
+      "data_timestamp": "2026-07-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.54,
-      "soil_moisture_pct": 61.7,
+      "soil_moisture_pct": 59.0,
       "vhi": 41.0,
       "cdi_trend": 1,
       "spi_3m_delta": -1.02,
@@ -71,7 +71,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -87,9 +87,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 3,
+      "precip_1m_index_forecast": 4,
       "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 2,
       "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 4,
@@ -101,14 +101,14 @@
         {
           "station_id": "2084",
           "station_name": "Ingenbohl (2084)",
-          "current_value": 7.422,
+          "current_value": 10.159,
           "threshold1": 23.22,
           "min_value": 5.985
         },
         {
           "station_id": "2300",
           "station_name": "Euthal, Rüti (2300)",
-          "current_value": 0.247,
+          "current_value": 0.24,
           "threshold1": 1.267,
           "min_value": 0.203
         },
@@ -122,7 +122,7 @@
         {
           "station_id": "2609",
           "station_name": "Einsiedeln (2609)",
-          "current_value": 0.229,
+          "current_value": 0.226,
           "threshold1": 0.905,
           "min_value": 0.282
         }
@@ -142,7 +142,7 @@
     "5": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -152,7 +152,7 @@
   "n_regions_dry": 2,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
+  "cdi_situation_delta": -1,
   "mean_precip_sum_1m": 120.5,
   "mean_precip_sum_3m": 236.2,
   "precip_index_min": 2,
