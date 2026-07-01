@@ -2,17 +2,17 @@
   "canton_id": 6,
   "canton_name_de": "Obwalden",
   "canton_name_fr": "Obwald",
-  "data_timestamp": "2026-06-30T00:00:00",
+  "data_timestamp": "2026-07-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-06-30T00:00:00",
+      "data_timestamp": "2026-07-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.73,
-      "soil_moisture_pct": 42.6,
+      "soil_moisture_pct": 40.1,
       "vhi": 39.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.8699999999999999,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,42 +36,42 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 3,
+      "precip_1m_index_forecast": 4,
       "soil_moisture_index_forecast": 5,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 2,
       "soil_moisture_deficit_delta": 0,
       "discharge": {
         "n_total": 4,
         "n_low": 3,
-        "n_very_low": 1,
+        "n_very_low": 0,
         "pct_low": 75
       },
       "hydro_stations": [
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 4.022,
+          "current_value": 4.151,
           "threshold1": 7.857,
           "min_value": 3.584
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.251,
+          "current_value": 2.2045,
           "threshold1": 0.205,
           "min_value": 0.034
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 14.953,
+          "current_value": 18.378500000000003,
           "threshold1": 20.524,
           "min_value": 11.099
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 3.298,
+          "current_value": 3.476,
           "threshold1": 7.541,
           "min_value": 2.088
         }
@@ -91,7 +91,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -111,7 +111,7 @@
   "discharge": {
     "n_total": 4,
     "n_low": 3,
-    "n_very_low": 1,
+    "n_very_low": 0,
     "pct_low": 75
   }
 }
