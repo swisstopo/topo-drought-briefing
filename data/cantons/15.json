@@ -2,17 +2,17 @@
   "canton_id": 15,
   "canton_name_de": "Appenzell Ausserrhoden",
   "canton_name_fr": "Appenzell Rhodes-Extérieures",
-  "data_timestamp": "2026-07-01T00:00:00",
+  "data_timestamp": "2026-07-02T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-07-01T00:00:00",
+      "data_timestamp": "2026-07-02T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.32,
-      "soil_moisture_pct": 22.8,
+      "soil_moisture_pct": 21.5,
       "vhi": 28.0,
       "cdi_trend": 0,
       "spi_3m_delta": -1.1599999999999997,
@@ -20,7 +20,7 @@
       "pct_critical": 0.25,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,9 +36,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 4,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": 0,
+      "precip_deficit_delta": -2,
       "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 1,
@@ -50,7 +50,7 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 8.8745,
+          "current_value": 13.738,
           "threshold1": 16.855,
           "min_value": 4.812
         }
@@ -59,11 +59,11 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-07-01T00:00:00",
+      "data_timestamp": "2026-07-02T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.18,
-      "soil_moisture_pct": 39.4,
+      "soil_moisture_pct": 37.4,
       "vhi": 36.0,
       "cdi_trend": 1,
       "spi_3m_delta": -1.0100000000000002,
@@ -71,7 +71,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -87,9 +87,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 4,
+      "precip_1m_index_forecast": 3,
       "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": 2,
+      "precip_deficit_delta": 1,
       "soil_moisture_deficit_delta": -1,
       "discharge": {
         "n_total": 3,
@@ -101,21 +101,21 @@
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 6.8875,
+          "current_value": 8.453333333333333,
           "threshold1": 9.254,
           "min_value": 4.524
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 4.2125,
+          "current_value": 4.4383333333333335,
           "threshold1": 7.194,
           "min_value": 4.696
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 3.3815,
+          "current_value": 3.782666666666667,
           "threshold1": 5.569,
           "min_value": 3.287
         }
@@ -136,7 +136,7 @@
     "5": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
