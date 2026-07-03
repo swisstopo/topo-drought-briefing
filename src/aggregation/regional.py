@@ -14,6 +14,16 @@ from src.models import DataBundle, HydroStationReport, RegionReport, WarnkarteEn
 from src.quality.checks import run_quality_checks
 
 
+def _classify_vhi(vhi: float, thresholds: dict[int, float]) -> int:
+    """Map a VHI float (0–100) to a stress index 1–5 using rules.yaml thresholds."""
+    if math.isnan(vhi):
+        return 1
+    for level in sorted(thresholds.keys()):
+        if vhi >= thresholds[level]:
+            return level
+    return max(thresholds.keys())
+
+
 def compute_region_report(
     region_id: int,
     bundle: DataBundle,
@@ -44,6 +54,9 @@ def compute_region_report(
     spi_3m = _safe(row["spi_3m"])
     soil_moisture_pct = _safe(row["soil_moisture_ufc"])
     vhi = float(vhi_value) if vhi_value is not None else _safe(row["vhi"])
+    if not math.isnan(vhi) and vhi >= 100:
+        vhi = float("nan")  # 110 and similar are "no data" sentinels in the SwissEO dataset
+    vhi_index = _classify_vhi(vhi, RULES.vhi_thresholds)
 
     # --- Trends vs prior week ---
     if prior_row is not None:
@@ -137,6 +150,7 @@ def compute_region_report(
         precip_1m_index_forecast=precip_1m_index_forecast,
         soil_moisture_index_forecast=soil_moisture_index_forecast,
         precip_deficit_delta=precip_deficit_delta,
+        vhi_index=vhi_index,
         soil_moisture_deficit_delta=soil_moisture_deficit_delta,
         discharge=discharge,
         hydro_stations=hydro_stations,

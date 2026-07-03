@@ -22,6 +22,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    # peaceiris/actions-gh-pages@v4 bundles Node 20; suppress the deprecation
+    # warning until a Node 24-compatible release is available.
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -61,9 +66,21 @@ jobs:
       # -----------------------------------------------------------------------
 
       - name: Deploy to GitHub Pages
+        id: deploy
         uses: peaceiris/actions-gh-pages@v4
+        continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           keep_files: true
           commit_message: "deploy main: ${{ github.sha }}"
+
+      # Retry once on transient git-objects errors (ENOENT scandir .git/objects/*)
+      - name: Retry Deploy to GitHub Pages
+        if: steps.deploy.outcome == 'failure'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          keep_files: true
+          commit_message: "deploy main (retry): ${{ github.sha }}"
