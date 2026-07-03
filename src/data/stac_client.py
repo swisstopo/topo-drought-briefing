@@ -145,6 +145,13 @@ def _fetch_from_stac() -> DataBundle:
     reference_stations_df = _parse_stations_from_zip_bytes(reference_zip_bytes, "daily_reference_stations.csv")
     station_region_map = fixture_loader.load_station_region_map()
 
+    try:
+        stations_df = _parse_stations_from_zip_bytes(reference_zip_bytes, "stations.csv")
+        station_names = dict(zip(stations_df["hydro_station_id"], stations_df["name"]))
+    except Exception as e:
+        logger.warning("Could not load stations.csv from STAC: %s", e)
+        station_names = {}
+
     data_timestamp = _parse_timestamp(comment_lines)
 
     forecast_df = forecast_raw.copy()
@@ -160,6 +167,7 @@ def _fetch_from_stac() -> DataBundle:
         current_stations_df=current_stations_df,
         reference_stations_df=reference_stations_df,
         station_region_map=station_region_map,
+        station_names=station_names,  
         data_timestamp=data_timestamp,
         source="api",
     )
