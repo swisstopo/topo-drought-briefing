@@ -662,7 +662,100 @@ def _cdi_legend_html(locale: str) -> str:
     )
 
 
-def _generate_map_files(canton: CantonReport, out_dir: Path) -> bool:
+def _resolve_cdi_time_indices() -> tuple[str, str, str, str]:
+    """
+    Discover which WMS time indices (0/1/2) correspond to the current and
+    forecast CDI week by:
+
+    1. Scraping trockenheit.admin.ch/en for "Situation until MM/DD/YYYY"
+    2. Querying WMS GetFeatureInfo for time=0,1,2 to read valid_from/valid_to
+    3. Matching the situation date to the right index
+
+    Returns (current_idx, forecast_idx, current_label, forecast_label) where
+    labels are "DD.MM.YY - DD.MM.YY" date-range strings.
+    Falls back to ("1", "2", "Aktueller CDI", "CDI-Prognose Woche 2") on error.
+    """
+    import requests as _req
+
+    FALLBACK = ("1", "2", "Aktueller CDI", "CDI-Prognose Woche 2")
+
+    # Step 1 — scrape the "Situation until" date
+    try:
+        resp = _req.get("https://www.trockenheit.admin.ch/en", timeout=15)
+        resp.raise_for_status()
+        m = re.search(r"Situation until (\d{2}/\d{2}/\d{4})", resp.text)
+        if not m:
+            log.warning("'Situation until' date not found on trockenheit.admin.ch")
+            return FALLBACK
+        situation_date = datetime.strptime(m.group(1), "%m/%d/%Y").date()
+    except Exception as exc:
+        log.warning("Could not fetch trockenheit.admin.ch: %s", exc)
+        return FALLBACK
+
+    # Step 2 — probe WMS GetFeatureInfo for time indices 0, 1, 2
+    _WMS_FI = (
+        "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo"
+        "&LAYERS=ch.bafu.trockenheitsindex&QUERY_LAYERS=ch.bafu.trockenheitsindex"
+        "&INFO_FORMAT=application/json&CRS=EPSG:2056"
+        "&BBOX=2420000,1030000,2900000,1350000&WIDTH=1920&HEIGHT=1280&I=960&J=640"
+    )
+    time_data: dict[int, tuple] = {}
+    for idx in range(3):
+        try:
+            resp = _req.get(f"{_WMS_FI}&time={idx}", timeout=15)
+            resp.raise_for_status()
+            features = resp.json().get("features", [])
+            if features:
+                props = features[0]["properties"]
+                vf = datetime.strptime(props["valid_from"], "%Y-%m-%d %H:%M:%S").date()
+                vt = datetime.strptime(props["valid_to"], "%Y-%m-%d %H:%M:%S").date()
+                time_data[idx] = (vf, vt)
+        except Exception as exc:
+            log.warning("WMS GetFeatureInfo time=%d failed: %s", idx, exc)
+
+    if not time_data:
+        log.warning("No WMS time data available; using fallback indices")
+        return FALLBACK
+
+    # Step 3 — find the index whose range contains the situation date
+    current_idx = None
+    for idx in sorted(time_data):
+        vf, vt = time_data[idx]
+        if vf <= situation_date <= vt:
+            current_idx = idx
+            break
+
+    if current_idx is None:
+        log.warning(
+            "Situation date %s not in any WMS time range %s; using fallback",
+            situation_date, {i: time_data[i] for i in time_data},
+        )
+        return FALLBACK
+
+    forecast_idx = current_idx + 1
+
+    def _fmt(idx: int) -> str | None:
+        if idx not in time_data:
+            return None
+        vf, vt = time_data[idx]
+        return f"{vf.strftime('%d.%m.%y')} - {vt.strftime('%d.%m.%y')}"
+
+    current_label  = _fmt(current_idx)  or "Aktueller CDI"
+    forecast_label = _fmt(forecast_idx) or "CDI-Prognose Woche 2"
+
+    log.info(
+        "CDI time: current=time=%d (%s), forecast=time=%d (%s)",
+        current_idx, current_label, forecast_idx, forecast_label,
+    )
+    return str(current_idx), str(forecast_idx), current_label, forecast_label
+
+
+def _generate_map_files(
+    canton: CantonReport,
+    out_dir: Path,
+    cdi_current: str = "1",
+    cdi_forecast: str = "2",
+) -> bool:
     """
     Pre-generate Folium map HTML files for the canton.
     Returns True when both files were written; False on any error (e.g. no network).
@@ -672,7 +765,7 @@ def _generate_map_files(canton: CantonReport, out_dir: Path) -> bool:
     try:
         from src.viz.maps import build_map
 
-        for wms_time, filename in [("1", "map_cdi1.html"), ("2", "map_cdi2.html")]:
+        for wms_time, filename in [(cdi_current, "map_cdi1.html"), (cdi_forecast, "map_cdi2.html")]:
             m = build_map(canton_id=canton.canton_id, wms_time=wms_time)
             html_str = _inject_print_resize(m.get_root().render())
             (out_dir / filename).write_text(html_str, encoding="utf-8")
@@ -716,27 +809,34 @@ def _inject_print_resize(html: str) -> str:
     return html.replace("</body>", script + "</body>", 1)
 
 
-def _map_section_html(canton: CantonReport, has_maps: bool) -> str:
+def _map_section_html(
+    canton: CantonReport,
+    has_maps: bool,
+    label_current: str | None = None,
+    label_forecast: str | None = None,
+) -> str:
     """
     Bilingual map card with CDI/forecast radio toggle.
     Sits outside the lang-de/lang-fr divs so only two iframes are created total.
+    label_current / label_forecast: date-range strings like "22.06.26 - 28.06.26"
+    injected by _resolve_cdi_time_indices(); fall back to translation strings.
     """
     name_de = _html.escape(canton.canton_name_de)
     name_fr = _html.escape(canton.canton_name_fr)
 
     if has_maps:
+        lbl_cur  = _html.escape(label_current  or t("map_cdi_current",  "de"))
+        lbl_fore = _html.escape(label_forecast or t("map_cdi_forecast", "de"))
         map_body = (
             f'<div class="map-controls">'
             f'<div class="map-radio-group">'
             f'<label>'
             f'<input type="radio" name="map-cdi" class="map-radio-btn" value="map-cdi1" checked>'
-            f'<span class="lang-de">{_html.escape(t("map_cdi_current", "de"))}</span>'
-            f'<span class="lang-fr">{_html.escape(t("map_cdi_current", "fr"))}</span>'
+            f'<span>{lbl_cur}</span>'
             f"</label>"
             f'<label>'
             f'<input type="radio" name="map-cdi" class="map-radio-btn" value="map-cdi2">'
-            f'<span class="lang-de">{_html.escape(t("map_cdi_forecast", "de"))}</span>'
-            f'<span class="lang-fr">{_html.escape(t("map_cdi_forecast", "fr"))}</span>'
+            f'<span>{lbl_fore}</span>'
             f"</label>"
             f"</div>"
             f"</div>"
@@ -1019,6 +1119,8 @@ def _canton_page(
     ruleset,
     has_maps: bool = False,
     sources: list[dict] | None = None,
+    map_label_current: str | None = None,
+    map_label_forecast: str | None = None,
 ) -> str:
     """Generate a bilingual canton briefing page (single HTML, language-toggled by JS)."""
     bg, fg = _WARNSTUFE_COLOURS.get(canton.max_warnlevel, ("#cccccc", "#1a1a1a"))
@@ -1069,7 +1171,7 @@ Bulletin s&eacute;cheresse {_html.escape(canton.canton_name_fr)}</title>
 
   <div class="map-lage-grid">
     {_allgemeine_lage_html(doc_de, doc_fr, ruleset)}
-    {_map_section_html(canton, has_maps)}
+    {_map_section_html(canton, has_maps, map_label_current, map_label_forecast)}
   </div>
 
   <div class="lang-de">
@@ -1200,6 +1302,9 @@ def generate_site(
     site_dir.mkdir(parents=True, exist_ok=True)
     _write_assets(site_dir)
 
+    # Resolve CDI time indices once — same for all cantons
+    cdi_current, cdi_forecast, map_label_current, map_label_forecast = _resolve_cdi_time_indices()
+
     # Copy processed JSON for transparency (browser can inspect, future JS use)
     site_data_dir = site_dir / "data" / "cantons"
     site_data_dir.mkdir(parents=True, exist_ok=True)
@@ -1224,7 +1329,7 @@ def generate_site(
         out_dir = site_dir / "canton" / abbrev
         out_dir.mkdir(parents=True, exist_ok=True)
 
-        has_maps = _generate_map_files(canton, out_dir)
+        has_maps = _generate_map_files(canton, out_dir, cdi_current, cdi_forecast)
 
         try:
             doc_de = render_briefing(canton, ruleset, locale="de")
@@ -1232,6 +1337,8 @@ def generate_site(
             page_html = _canton_page(
                 canton, doc_de, doc_fr, ruleset,
                 has_maps=has_maps, sources=sources,
+                map_label_current=map_label_current,
+                map_label_forecast=map_label_forecast,
             )
             (out_dir / "index.html").write_text(page_html, encoding="utf-8")
             log.info("  canton/%s/index.html  (maps=%s)", abbrev, has_maps)

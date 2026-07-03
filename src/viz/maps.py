@@ -126,7 +126,7 @@ def _fetch_canton_geometry(canton_id: int = 2) -> tuple[gpd.GeoDataFrame, list[f
 # Interactive map (folium)
 # ---------------------------------------------------------------------------
 
-def build_map(canton_id: int = 2, wms_time: str = "1") -> folium.Map:
+def build_map(canton_id: int = 2, wms_time: str | None = None) -> folium.Map:
     """
     Layer stack (bottom → top):
       1. Relief shading          – opaque WMS base layer
@@ -134,6 +134,9 @@ def build_map(canton_id: int = 2, wms_time: str = "1") -> folium.Map:
       3. Drought index Layer B   – full extent, delta opacity
       4. Outside mask            – world minus canton polygon, cancels Layer B outside
       5. Canton border           – actual polygon boundary, no fill
+
+    wms_time: WMS time index string ("0", "1", "2") resolved at site-generation time.
+              None omits the time parameter entirely (WMS returns latest data).
     """
     canton_gdf, bounds = _fetch_canton_geometry(canton_id)
     center_lat = (bounds[1] + bounds[3]) / 2
@@ -155,7 +158,7 @@ def build_map(canton_id: int = 2, wms_time: str = "1") -> folium.Map:
     ).add_to(m)
 
     delta_opacity = max(0.0, OPACITY_INSIDE - OPACITY_OUTSIDE)
-    drought_url = f"{SWISSTOPO_WMS}?time={wms_time}"
+    drought_url = f"{SWISSTOPO_WMS}?time={wms_time}" if wms_time is not None else SWISSTOPO_WMS
 
     # ── 2. Drought index Layer A – full extent at OPACITY_OUTSIDE ────────────
     folium.WmsTileLayer(
