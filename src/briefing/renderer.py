@@ -104,7 +104,7 @@ def _plural(n: int, singular: str, plural: str) -> str:
 
 def _make_region_phrase(locale: str):
     """
-    Return a callable region_phrase(n, total, noun_de, noun_fr) that converts a
+    Return a callable region_phrase(n, total, noun_de, noun_fr, case) that converts a
     raw count into natural language:
       all   → "alle Regionen" / "toutes les régions"
       most  → "die Mehrzahl der …" / "la majorité des …"
@@ -112,26 +112,32 @@ def _make_region_phrase(locale: str):
       few   → "wenige …" / "quelques …"
       one   → "1 von {total} …" / "1 … sur {total}"
       none  → "keine …" / "aucune …"
+
+    case="dative" switches DE articles/endings for use after prepositions like "in":
+      alle → allen, die Mehrzahl → der Mehrzahl, wenige → wenigen, keine → keinen
+    French is unaffected by case.
     """
     def region_phrase(
         n: int,
         total: int,
         noun_de: str = "Regionen",
         noun_fr: str = "régions",
+        case: str = "nominative",
     ) -> str:
         n = int(n)
         total = int(total)
         noun = noun_de if locale == "de" else noun_fr
+        dat = (locale == "de" and case == "dative")
         if total == 0 or n == 0:
-            return ("keine " + noun_de) if locale == "de" else ("aucune " + noun)
+            return ("keinen " + noun_de) if dat else (("keine " + noun_de) if locale == "de" else ("aucune " + noun))
         if n == total:
-            return ("alle " + noun) if locale == "de" else ("toutes les " + noun)
+            return ("allen " + noun) if dat else (("alle " + noun) if locale == "de" else ("toutes les " + noun))
         if n * 2 > total:          # strict majority
-            return ("die Mehrzahl der " + noun) if locale == "de" else ("la majorité des " + noun)
+            return ("der Mehrzahl der " + noun) if dat else (("die Mehrzahl der " + noun) if locale == "de" else ("la majorité des " + noun))
         if n * 2 == total:         # exactly half
-            return ("die Hälfte der " + noun) if locale == "de" else ("la moitié des " + noun)
+            return ("der Hälfte der " + noun) if dat else (("die Hälfte der " + noun) if locale == "de" else ("la moitié des " + noun))
         if n > 1:                  # small minority
-            return ("wenige " + noun) if locale == "de" else ("quelques " + noun)
+            return ("wenigen " + noun) if dat else (("wenige " + noun) if locale == "de" else ("quelques " + noun))
         # n == 1
         noun_fr_sg = noun_fr.rstrip("s") or noun_fr
         return f"1 von {total} {noun_de}" if locale == "de" else f"1 {noun_fr_sg} sur {total}"
