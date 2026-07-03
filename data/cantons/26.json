@@ -40,6 +40,7 @@
       "soil_moisture_index_forecast": 5,
       "precip_deficit_delta": 1,
       "soil_moisture_deficit_delta": 0,
+      "vhi_index": 4,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
@@ -105,6 +106,7 @@
       "soil_moisture_index_forecast": 5,
       "precip_deficit_delta": 1,
       "soil_moisture_deficit_delta": 0,
+      "vhi_index": 4,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
@@ -152,6 +154,8 @@
   "precip_index_max": 3,
   "n_regions_with_precip_deficit": 2,
   "n_regions_with_soil_moisture_deficit": 2,
+  "n_regions_with_vhi_stress": 2,
+  "max_vhi_index": 4,
   "discharge": {
     "n_total": 4,
     "n_low": 4,
