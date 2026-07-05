@@ -2,13 +2,13 @@
   "canton_id": 6,
   "canton_name_de": "Obwalden",
   "canton_name_fr": "Obwald",
-  "data_timestamp": "2026-07-04T00:00:00",
+  "data_timestamp": "2026-07-05T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-07-04T00:00:00",
+      "data_timestamp": "2026-07-05T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.73,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
+      "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 2,
       "discharge": {
         "n_total": 4,
@@ -51,28 +51,28 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 7.118799999999999,
+          "current_value": 7.402,
           "threshold1": 7.857,
           "min_value": 3.584
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 3.5082,
+          "current_value": 2.9683333333333337,
           "threshold1": 0.205,
           "min_value": 0.034
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 22.1996,
+          "current_value": 20.930166666666665,
           "threshold1": 20.524,
           "min_value": 11.099
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 20.4822,
+          "current_value": 17.9025,
           "threshold1": 7.541,
           "min_value": 2.088
         }
@@ -92,7 +92,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -102,7 +102,7 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
+  "cdi_situation_delta": -1,
   "mean_precip_sum_1m": 117.6,
   "mean_precip_sum_3m": 246.7,
   "precip_index_min": 2,
