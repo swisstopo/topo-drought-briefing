@@ -2,13 +2,13 @@
   "canton_id": 20,
   "canton_name_de": "Thurgau",
   "canton_name_fr": "Thurgovie",
-  "data_timestamp": "2026-07-06T00:00:00",
+  "data_timestamp": "2026-07-07T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-07-06T00:00:00",
+      "data_timestamp": "2026-07-07T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -2.26,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -37,37 +37,37 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 5,
       "discharge": {
         "n_total": 3,
-        "n_low": 2,
-        "n_very_low": 0,
-        "pct_low": 67
+        "n_low": 3,
+        "n_very_low": 3,
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 2.983571428571429,
-          "threshold1": 2.975,
-          "min_value": 1.317
+          "current_value": 1.261,
+          "threshold1": 2.823,
+          "min_value": 1.329
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.1918571428571428,
-          "threshold1": 0.21,
+          "current_value": 0.073,
+          "threshold1": 0.2,
           "min_value": 0.073
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 1.3261428571428573,
-          "threshold1": 1.345,
-          "min_value": 0.751
+          "current_value": 0.681,
+          "threshold1": 1.311,
+          "min_value": 0.692
         }
       ]
     }
@@ -85,7 +85,7 @@
     "1": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -106,8 +106,8 @@
   "max_vhi_index": 5,
   "discharge": {
     "n_total": 3,
-    "n_low": 2,
-    "n_very_low": 0,
-    "pct_low": 67
+    "n_low": 3,
+    "n_very_low": 3,
+    "pct_low": 100
   }
 }
