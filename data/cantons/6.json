@@ -2,13 +2,13 @@
   "canton_id": 6,
   "canton_name_de": "Obwalden",
   "canton_name_fr": "Obwald",
-  "data_timestamp": "2026-07-11T00:00:00",
+  "data_timestamp": "2026-07-12T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-07-11T00:00:00",
+      "data_timestamp": "2026-07-12T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -1.95,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 1,
+      "soil_moisture_deficit_delta": 2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 4,
@@ -51,28 +51,28 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 6.196,
+          "current_value": 5.9625,
           "threshold1": 7.607,
           "min_value": 2.567
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.1234,
+          "current_value": 0.1156666666666666,
           "threshold1": 0.175,
           "min_value": 0.015
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 11.3742,
+          "current_value": 11.258333333333336,
           "threshold1": 19.751,
           "min_value": 11.099
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 3.3182,
+          "current_value": 3.230166666666667,
           "threshold1": 6.64,
           "min_value": 1.947
         }
@@ -92,7 +92,7 @@
     "2": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
