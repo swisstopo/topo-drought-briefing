@@ -2,44 +2,44 @@
   "canton_id": 15,
   "canton_name_de": "Appenzell Ausserrhoden",
   "canton_name_fr": "Appenzell Rhodes-Extérieures",
-  "data_timestamp": "2026-07-12T00:00:00",
+  "data_timestamp": "2026-07-13T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-07-12T00:00:00",
+      "data_timestamp": "2026-07-13T00:00:00",
       "source": "api",
-      "cdi": 4,
-      "spi_3m": -3.17,
-      "soil_moisture_pct": 43.5,
+      "cdi": 5,
+      "spi_3m": -3.64,
+      "soil_moisture_pct": 20.4,
       "vhi": 42.0,
-      "cdi_trend": -1,
-      "spi_3m_delta": 0.16999999999999993,
+      "cdi_trend": 1,
+      "spi_3m_delta": -0.4700000000000002,
       "vhi_delta": 0.0,
       "pct_critical": 0.25,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 70.8,
-      "precip_sum_3m": 221.9,
-      "precip_1m_index": 4,
-      "soil_moisture_index": 4,
-      "hydro_index": 3,
+      "precip_sum_1m": 40.7,
+      "precip_sum_3m": 208.1,
+      "precip_1m_index": 5,
+      "soil_moisture_index": 5,
+      "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -3,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
@@ -51,7 +51,7 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 7.557833333333334,
+          "current_value": 7.076428571428572,
           "threshold1": 16.114,
           "min_value": 4.769
         }
@@ -60,30 +60,30 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-07-12T00:00:00",
+      "data_timestamp": "2026-07-13T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -3.03,
-      "soil_moisture_pct": 51.9,
+      "spi_3m": -3.43,
+      "soil_moisture_pct": 30.3,
       "vhi": 43.0,
       "cdi_trend": 0,
-      "spi_3m_delta": 0.15000000000000036,
+      "spi_3m_delta": -0.40000000000000036,
       "vhi_delta": 0.0,
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 60.3,
-      "precip_sum_3m": 204.4,
+      "precip_sum_1m": 36.3,
+      "precip_sum_3m": 196.5,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
-      "hydro_index": 4,
+      "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
@@ -103,21 +103,21 @@
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 4.984166666666667,
+          "current_value": 4.9237142857142855,
           "threshold1": 8.981,
           "min_value": 4.263
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 3.301333333333333,
+          "current_value": 3.265428571428572,
           "threshold1": 6.834,
           "min_value": 4.322
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 2.6005,
+          "current_value": 2.533428571428572,
           "threshold1": 5.322,
           "min_value": 3.088
         }
@@ -128,19 +128,17 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "4": 1,
-    "5": 1
+    "5": 2
   },
   "n_regions_by_soil_moisture_index": {
+    "5": 2
+  },
+  "n_regions_by_hydro_index": {
     "4": 1,
     "5": 1
   },
-  "n_regions_by_hydro_index": {
-    "3": 1,
-    "4": 1
-  },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -148,12 +146,12 @@
     "overall": "ok"
   },
   "n_regions_dry": 2,
-  "cdi_min_dry": 4,
+  "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -1,
-  "mean_precip_sum_1m": 65.5,
-  "mean_precip_sum_3m": 213.2,
-  "precip_index_min": 4,
+  "cdi_situation_delta": -2,
+  "mean_precip_sum_1m": 38.5,
+  "mean_precip_sum_3m": 202.3,
+  "precip_index_min": 5,
   "precip_index_max": 5,
   "n_regions_with_precip_deficit": 2,
   "n_regions_with_soil_moisture_deficit": 2,
