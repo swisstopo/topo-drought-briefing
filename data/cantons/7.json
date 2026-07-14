@@ -2,13 +2,13 @@
   "canton_id": 7,
   "canton_name_de": "Nidwalden",
   "canton_name_fr": "Nidwald",
-  "data_timestamp": "2026-07-13T00:00:00",
+  "data_timestamp": "2026-07-14T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.33,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -44,37 +44,37 @@
       "discharge": {
         "n_total": 4,
         "n_low": 4,
-        "n_very_low": 0,
+        "n_very_low": 2,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 5.731285714285714,
-          "threshold1": 7.607,
-          "min_value": 2.567
+          "current_value": 4.022,
+          "threshold1": 7.211,
+          "min_value": 2.214
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.1095714285714285,
-          "threshold1": 0.175,
-          "min_value": 0.015
+          "current_value": 0.056,
+          "threshold1": 0.151,
+          "min_value": 0.008
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 11.011,
-          "threshold1": 19.751,
-          "min_value": 11.099
+          "current_value": 9.612,
+          "threshold1": 18.166,
+          "min_value": 10.817
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 3.146428571428572,
-          "threshold1": 6.64,
-          "min_value": 1.947
+          "current_value": 2.549,
+          "threshold1": 6.173,
+          "min_value": 1.545
         }
       ]
     }
@@ -92,7 +92,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -114,7 +114,7 @@
   "discharge": {
     "n_total": 4,
     "n_low": 4,
-    "n_very_low": 0,
+    "n_very_low": 2,
     "pct_low": 100
   }
 }

@@ -2,13 +2,13 @@
   "canton_id": 22,
   "canton_name_de": "Vaud",
   "canton_name_fr": "Vaud",
-  "data_timestamp": "2026-07-13T00:00:00",
+  "data_timestamp": "2026-07-14T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 36,
       "region_name_de": "Greyerzerland",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.06,
@@ -20,7 +20,7 @@
       "pct_critical": 0.19230769230769232,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -43,23 +43,23 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 2,
-        "n_low": 2,
+        "n_low": 1,
         "n_very_low": 0,
-        "pct_low": 100
+        "pct_low": 50
       },
       "hydro_stations": [
         {
           "station_id": "2160",
           "station_name": "Broc, Château d'en bas (2160)",
-          "current_value": 8.528714285714287,
-          "threshold1": 13.018,
-          "min_value": 6.222
+          "current_value": 5.815,
+          "threshold1": 11.567,
+          "min_value": 6.031
         },
         {
           "station_id": "2412",
           "station_name": "Vuippens, Château (2412)",
-          "current_value": 0.3018571428571429,
-          "threshold1": 0.319,
+          "current_value": 0.524,
+          "threshold1": 0.298,
           "min_value": 0.156
         }
       ]
@@ -67,7 +67,7 @@
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.19,
@@ -79,7 +79,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -94,11 +94,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
+      "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": -3,
-      "soil_moisture_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -3,
       "vhi_index": 3,
       "discharge": {
         "n_total": 4,
@@ -110,37 +110,37 @@
         {
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
-          "current_value": 2.253285714285714,
-          "threshold1": 2.967,
+          "current_value": 2.2,
+          "threshold1": 2.789,
           "min_value": 2.15
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 0.057,
-          "threshold1": 0.109,
+          "current_value": 0.053,
+          "threshold1": 0.099,
           "min_value": 0.048
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
-          "current_value": 1.5302857142857142,
-          "threshold1": 2.436,
-          "min_value": 1.284
+          "current_value": 1.484,
+          "threshold1": 2.336,
+          "min_value": 1.058
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
-          "current_value": 0.2854285714285715,
-          "threshold1": 0.319,
-          "min_value": 0.191
+          "current_value": 0.261,
+          "threshold1": 0.301,
+          "min_value": 0.148
         }
       ]
     },
     {
       "region_id": 55,
       "region_name_de": "westliches Mittelland",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.48,
@@ -152,7 +152,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -183,15 +183,15 @@
         {
           "station_id": "2034",
           "station_name": "Payerne, Caserne d'aviation (2034)",
-          "current_value": 0.4838571428571429,
-          "threshold1": 1.842,
+          "current_value": 0.53,
+          "threshold1": 1.7,
           "min_value": 0.68
         },
         {
           "station_id": "2369",
           "station_name": "Yvonand, La Mauguettaz (2369)",
-          "current_value": 0.144,
-          "threshold1": 0.383,
+          "current_value": 0.133,
+          "threshold1": 0.36,
           "min_value": 0.189
         }
       ]
@@ -199,7 +199,7 @@
     {
       "region_id": 56,
       "region_name_de": "Genferseebecken",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.74,
@@ -211,7 +211,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -226,11 +226,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": -4,
-      "soil_moisture_deficit_delta": -3,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 3,
       "discharge": {
         "n_total": 1,
@@ -242,8 +242,8 @@
         {
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
-          "current_value": 0.3344285714285714,
-          "threshold1": 0.746,
+          "current_value": 0.301,
+          "threshold1": 0.679,
           "min_value": 0.301
         }
       ]
@@ -251,7 +251,7 @@
     {
       "region_id": 57,
       "region_name_de": "Chablais",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.7,
@@ -263,7 +263,7 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -278,10 +278,10 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 2,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 3,
       "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": -2,
+      "precip_deficit_delta": -1,
       "soil_moisture_deficit_delta": -1,
       "vhi_index": 1,
       "discharge": {
@@ -294,15 +294,15 @@
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 1.9872857142857143,
-          "threshold1": 3.634,
-          "min_value": 1.996
+          "current_value": 2.028,
+          "threshold1": 3.366,
+          "min_value": 1.986
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 0.1924285714285714,
-          "threshold1": 0.419,
+          "current_value": 0.174,
+          "threshold1": 0.383,
           "min_value": 0.145
         }
       ]
@@ -325,7 +325,7 @@
     "5": 3
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -335,7 +335,7 @@
   "n_regions_dry": 5,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -9,
+  "cdi_situation_delta": -6,
   "mean_precip_sum_1m": 35.5,
   "mean_precip_sum_3m": 184.9,
   "precip_index_min": 4,
@@ -346,8 +346,8 @@
   "max_vhi_index": 3,
   "discharge": {
     "n_total": 11,
-    "n_low": 11,
+    "n_low": 10,
     "n_very_low": 7,
-    "pct_low": 100
+    "pct_low": 91
   }
 }

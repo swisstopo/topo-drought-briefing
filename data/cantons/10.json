@@ -2,13 +2,13 @@
   "canton_id": 10,
   "canton_name_de": "Fribourg",
   "canton_name_fr": "Fribourg",
-  "data_timestamp": "2026-07-13T00:00:00",
+  "data_timestamp": "2026-07-14T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 34,
       "region_name_de": "Berner Mittelland",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.07,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
       "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 2,
       "discharge": {
         "n_total": 2,
@@ -51,15 +51,15 @@
         {
           "station_id": "2159",
           "station_name": "Belp, Mülimatt (2159)",
-          "current_value": 0.2224285714285714,
-          "threshold1": 1.33,
-          "min_value": 0.738
+          "current_value": 0.145,
+          "threshold1": 1.283,
+          "min_value": 0.571
         },
         {
           "station_id": "2179",
           "station_name": "Thörishaus, Sensematt (2179)",
-          "current_value": 1.5422857142857145,
-          "threshold1": 3.385,
+          "current_value": 1.354,
+          "threshold1": 3.369,
           "min_value": 1.756
         }
       ]
@@ -67,7 +67,7 @@
     {
       "region_id": 36,
       "region_name_de": "Greyerzerland",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.06,
@@ -79,7 +79,7 @@
       "pct_critical": 0.19230769230769232,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -102,23 +102,23 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 2,
-        "n_low": 2,
+        "n_low": 1,
         "n_very_low": 0,
-        "pct_low": 100
+        "pct_low": 50
       },
       "hydro_stations": [
         {
           "station_id": "2160",
           "station_name": "Broc, Château d'en bas (2160)",
-          "current_value": 8.528714285714287,
-          "threshold1": 13.018,
-          "min_value": 6.222
+          "current_value": 5.815,
+          "threshold1": 11.567,
+          "min_value": 6.031
         },
         {
           "station_id": "2412",
           "station_name": "Vuippens, Château (2412)",
-          "current_value": 0.3018571428571429,
-          "threshold1": 0.319,
+          "current_value": 0.524,
+          "threshold1": 0.298,
           "min_value": 0.156
         }
       ]
@@ -126,7 +126,7 @@
     {
       "region_id": 55,
       "region_name_de": "westliches Mittelland",
-      "data_timestamp": "2026-07-13T00:00:00",
+      "data_timestamp": "2026-07-14T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.48,
@@ -138,7 +138,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -169,15 +169,15 @@
         {
           "station_id": "2034",
           "station_name": "Payerne, Caserne d'aviation (2034)",
-          "current_value": 0.4838571428571429,
-          "threshold1": 1.842,
+          "current_value": 0.53,
+          "threshold1": 1.7,
           "min_value": 0.68
         },
         {
           "station_id": "2369",
           "station_name": "Yvonand, La Mauguettaz (2369)",
-          "current_value": 0.144,
-          "threshold1": 0.383,
+          "current_value": 0.133,
+          "threshold1": 0.36,
           "min_value": 0.189
         }
       ]
@@ -198,7 +198,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -219,8 +219,8 @@
   "max_vhi_index": 3,
   "discharge": {
     "n_total": 6,
-    "n_low": 6,
+    "n_low": 5,
     "n_very_low": 4,
-    "pct_low": 100
+    "pct_low": 83
   }
 }
