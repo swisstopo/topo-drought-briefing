@@ -2,17 +2,17 @@
   "canton_id": 24,
   "canton_name_de": "Neuchâtel",
   "canton_name_fr": "Neuchâtel",
-  "data_timestamp": "2026-07-14T00:00:00",
+  "data_timestamp": "2026-07-15T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-07-14T00:00:00",
+      "data_timestamp": "2026-07-15T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.84,
-      "soil_moisture_pct": 6.4,
+      "soil_moisture_pct": 6.1,
       "vhi": 17.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.5699999999999998,
@@ -20,7 +20,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -3,
-      "soil_moisture_deficit_delta": -2,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -4,
       "vhi_index": 4,
       "discharge": {
         "n_total": 1,
@@ -51,7 +51,7 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 3.187,
+          "current_value": 3.1815,
           "threshold1": 5.48,
           "min_value": 3.476
         }
@@ -60,11 +60,11 @@
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-07-14T00:00:00",
+      "data_timestamp": "2026-07-15T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.19,
-      "soil_moisture_pct": 8.7,
+      "soil_moisture_pct": 8.5,
       "vhi": 18.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.41999999999999993,
@@ -72,7 +72,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -87,11 +87,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -3,
-      "soil_moisture_deficit_delta": -3,
+      "cdi_forecast_week2": 2,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -4,
       "vhi_index": 4,
       "discharge": {
         "n_total": 4,
@@ -103,28 +103,28 @@
         {
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
-          "current_value": 2.2,
+          "current_value": 2.2060000000000004,
           "threshold1": 2.789,
           "min_value": 2.15
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 0.053,
+          "current_value": 0.052,
           "threshold1": 0.099,
           "min_value": 0.048
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
-          "current_value": 1.484,
+          "current_value": 1.4540000000000002,
           "threshold1": 2.336,
           "min_value": 1.058
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
-          "current_value": 0.261,
+          "current_value": 0.254,
           "threshold1": 0.301,
           "min_value": 0.148
         }
@@ -145,7 +145,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -155,7 +155,7 @@
   "n_regions_dry": 2,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
+  "cdi_situation_delta": -5,
   "mean_precip_sum_1m": 24.9,
   "mean_precip_sum_3m": 165.8,
   "precip_index_min": 5,
