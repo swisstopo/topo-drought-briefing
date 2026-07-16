@@ -29,10 +29,18 @@ jobs:
           ref: INT
 
       - name: Set up Python 3.12
+        id: setup-python
         uses: actions/setup-python@v5
+        continue-on-error: true
         with:
           python-version: '3.12'
           cache: 'pip'
+
+      - name: Set up Python 3.12 (retry without cache)
+        if: steps.setup-python.outcome == 'failure'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
       - name: Install dependencies
         run: pip install -e .
