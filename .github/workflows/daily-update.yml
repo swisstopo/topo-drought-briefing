@@ -12,11 +12,12 @@ on:
 permissions:
   contents: write
 
-# Only one deployment runs at a time. A second trigger queues rather than
-# cancelling an in-progress run to avoid leaving the site half-updated.
+# Only one deployment runs at a time. If a new hourly trigger arrives while the
+# previous run is still in progress, cancel it and start fresh. peaceiris does
+# an atomic git push, so a cancelled run leaves the last good version in place.
 concurrency:
   group: pages-main
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:

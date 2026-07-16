@@ -155,7 +155,13 @@ barely reverts, VHI stays stressed), CDI 1 gives rho about 0.37 (strong
 recovery). Worked example on the live 2026-06-28 forecast: Region 31 (Jura), CDI
 forecast 5, VHI-only predicts 40 (+26) while CDI-conditioned predicts 15 (+1);
 Region 42 (Mittelland), CDI forecast 2 (easing), CDI-conditioned predicts 26
-(+15). See prototypes/vhi_nowcast_cdi_compare.png.
+(+15).
+
+![VHI-only vs CDI-conditioned 7-day nowcast, four regions](vhi_nowcast_cdi_compare.png)
+
+Faint dotted orange is the VHI-only AR(1) forecast; solid red is the
+CDI-conditioned forecast. Region 31 (CDI forecast 5, extreme dry) stays flat
+instead of jumping to 40; Region 42 (CDI forecast 2, easing) still recovers.
 
 ## VHI-only 7-day baseline (four focus regions, for reference)
 
@@ -171,6 +177,11 @@ Skill score greater than 0 means the model beats the baseline.
 Note on the low R2: VHI is already a normalized index, so most of its variance is
 anomaly by design. A low seasonal R2 means the climatology correctly isolates the
 seasonal signal from the stress signal, not that the fit is poor.
+
+![VHI-only 7-day nowcast, four regions](vhi_nowcast_7day.png)
+
+Blue is the observed VHI over the last 3 weeks, orange is the 7-day AR(1)
+forecast, the grey band is the climatological mean +/- 1 sigma.
 
 ## Proposed output in the briefing
 
