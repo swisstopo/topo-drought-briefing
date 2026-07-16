@@ -81,7 +81,8 @@
     if (!label) return '';
     var lang = document.documentElement.lang || 'de';
     var span = label.querySelector('.lang-' + lang);
-    return span ? span.textContent.trim() : '';
+    if (span) return span.textContent.trim();
+    return label.textContent.trim();
   }
   function _notifyIframe(frame) {
     if (!frame) return;

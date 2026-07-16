@@ -2,20 +2,20 @@
   "canton_id": 11,
   "canton_name_de": "Solothurn",
   "canton_name_fr": "Soleure",
-  "data_timestamp": "2026-07-02T00:00:00",
+  "data_timestamp": "2026-07-15T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-07-02T00:00:00",
+      "data_timestamp": "2026-07-15T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.54,
-      "soil_moisture_pct": 10.7,
-      "vhi": 14.0,
+      "spi_3m": -2.96,
+      "soil_moisture_pct": 6.1,
+      "vhi": 22.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.55,
+      "spi_3m_delta": -0.5499999999999998,
       "vhi_delta": 0.0,
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 0,
@@ -27,20 +27,20 @@
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 58.9,
-      "precip_sum_3m": 145.3,
-      "precip_1m_index": 3,
+      "precip_sum_1m": 21.3,
+      "precip_sum_3m": 134.1,
+      "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 5,
-      "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": 0,
-      "vhi_index": 4,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -4,
+      "vhi_index": 3,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
@@ -51,37 +51,37 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 2.752,
-          "threshold1": 5.361,
-          "min_value": 2.681
+          "current_value": 1.754,
+          "threshold1": 4.89,
+          "min_value": 2.594
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.3916666666666666,
-          "threshold1": 0.895,
+          "current_value": 0.1105,
+          "threshold1": 0.694,
           "min_value": 0.27
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.3886666666666666,
-          "threshold1": 0.684,
-          "min_value": 0.301
+          "current_value": 0.309,
+          "threshold1": 0.587,
+          "min_value": 0.248
         }
       ]
     },
     {
       "region_id": 32,
       "region_name_de": "Balsthal",
-      "data_timestamp": "2026-07-02T00:00:00",
+      "data_timestamp": "2026-07-15T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.54,
-      "soil_moisture_pct": 11.6,
-      "vhi": 19.0,
-      "cdi_trend": 0,
-      "spi_3m_delta": -0.6100000000000001,
+      "spi_3m": -2.9,
+      "soil_moisture_pct": 8.3,
+      "vhi": 26.0,
+      "cdi_trend": 1,
+      "spi_3m_delta": -0.44999999999999973,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
@@ -93,39 +93,39 @@
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 61.5,
-      "precip_sum_3m": 156.3,
-      "precip_1m_index": 3,
+      "precip_sum_1m": 21.5,
+      "precip_sum_3m": 145.7,
+      "precip_1m_index": 5,
       "soil_moisture_index": 5,
-      "hydro_index": 5,
+      "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 5,
-      "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": 0,
-      "vhi_index": 4,
+      "cdi_forecast_week2": 1,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -4,
+      "vhi_index": 3,
       "discharge": {
         "n_total": 2,
         "n_low": 2,
-        "n_very_low": 0,
+        "n_very_low": 2,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2307",
           "station_name": "Sonceboz (2307)",
-          "current_value": 0.8809999999999999,
-          "threshold1": 1.263,
-          "min_value": 0.576
+          "current_value": 0.688,
+          "threshold1": 1.111,
+          "min_value": 0.5
         },
         {
           "station_id": "2434",
           "station_name": "Olten, Hammermühle (2434)",
-          "current_value": 0.4943333333333333,
-          "threshold1": 0.924,
+          "current_value": 0.274,
+          "threshold1": 0.798,
           "min_value": 0.315
         }
       ]
@@ -133,14 +133,14 @@
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-07-02T00:00:00",
+      "data_timestamp": "2026-07-15T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -3.03,
-      "soil_moisture_pct": 17.8,
-      "vhi": 7.0,
+      "spi_3m": -3.08,
+      "soil_moisture_pct": 15.9,
+      "vhi": 24.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.5399999999999996,
+      "spi_3m_delta": -0.3500000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 0,
@@ -152,47 +152,47 @@
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 42.9,
-      "precip_sum_3m": 125.6,
+      "precip_sum_1m": 27.1,
+      "precip_sum_3m": 133.4,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
-      "hydro_index": 5,
+      "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 5,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": 0,
-      "vhi_index": 5,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -4,
+      "vhi_index": 3,
       "discharge": {
         "n_total": 1,
-        "n_low": 0,
-        "n_very_low": 0,
-        "pct_low": 0
+        "n_low": 1,
+        "n_very_low": 1,
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
-          "current_value": 0.6143333333333333,
-          "threshold1": 0.594,
-          "min_value": 0.354
+          "current_value": 0.399,
+          "threshold1": 0.59,
+          "min_value": 0.334
         }
       ]
     },
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-07-02T00:00:00",
+      "data_timestamp": "2026-07-15T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -3.19,
-      "soil_moisture_pct": 9.5,
-      "vhi": 6.0,
-      "cdi_trend": 0,
-      "spi_3m_delta": -0.5699999999999998,
+      "spi_3m": -3.14,
+      "soil_moisture_pct": 10.3,
+      "vhi": 14.0,
+      "cdi_trend": 1,
+      "spi_3m_delta": -0.33000000000000007,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
@@ -204,40 +204,40 @@
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 40.0,
-      "precip_sum_3m": 124.3,
-      "precip_1m_index": 4,
+      "precip_sum_1m": 32.6,
+      "precip_sum_3m": 137.5,
+      "precip_1m_index": 5,
       "soil_moisture_index": 5,
-      "hydro_index": 5,
+      "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 5,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": 0,
-      "vhi_index": 5,
+      "cdi_forecast_week2": 2,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -4,
+      "vhi_index": 4,
       "discharge": {
         "n_total": 2,
         "n_low": 1,
-        "n_very_low": 0,
+        "n_very_low": 1,
         "pct_low": 50
       },
       "hydro_stations": [
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 2.060666666666666,
-          "threshold1": 2.634,
-          "min_value": 1.385
+          "current_value": 0.629,
+          "threshold1": 2.512,
+          "min_value": 1.201
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 1.853,
-          "threshold1": 1.775,
-          "min_value": 1.166
+          "current_value": 1.7705,
+          "threshold1": 1.687,
+          "min_value": 1.013
         }
       ]
     }
@@ -246,15 +246,14 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "3": 2,
-    "5": 1,
-    "4": 1
+    "5": 4
   },
   "n_regions_by_soil_moisture_index": {
     "5": 4
   },
   "n_regions_by_hydro_index": {
-    "5": 4
+    "5": 1,
+    "4": 3
   },
   "quality": {
     "data_age_days": 1,
@@ -267,19 +266,19 @@
   "n_regions_dry": 4,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 50.8,
-  "mean_precip_sum_3m": 137.9,
-  "precip_index_min": 3,
+  "cdi_situation_delta": -10,
+  "mean_precip_sum_1m": 25.6,
+  "mean_precip_sum_3m": 137.7,
+  "precip_index_min": 5,
   "precip_index_max": 5,
   "n_regions_with_precip_deficit": 4,
   "n_regions_with_soil_moisture_deficit": 4,
   "n_regions_with_vhi_stress": 4,
-  "max_vhi_index": 5,
+  "max_vhi_index": 4,
   "discharge": {
     "n_total": 8,
-    "n_low": 6,
-    "n_very_low": 3,
-    "pct_low": 75
+    "n_low": 7,
+    "n_very_low": 7,
+    "pct_low": 88
   }
 }
