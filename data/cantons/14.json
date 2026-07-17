@@ -2,17 +2,17 @@
   "canton_id": 14,
   "canton_name_de": "Schaffhausen",
   "canton_name_fr": "Schaffhouse",
-  "data_timestamp": "2026-07-16T00:00:00",
+  "data_timestamp": "2026-07-17T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-07-16T00:00:00",
+      "data_timestamp": "2026-07-17T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.68,
-      "soil_moisture_pct": 13.2,
+      "soil_moisture_pct": 12.5,
       "vhi": 16.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.4200000000000004,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
+      "cdi_forecast_week2": 2,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -4,
       "vhi_index": 4,
       "discharge": {
         "n_total": 3,
@@ -51,21 +51,21 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.2153333333333334,
+          "current_value": 1.50775,
           "threshold1": 2.796,
           "min_value": 1.329
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.0956666666666666,
+          "current_value": 0.0955,
           "threshold1": 0.194,
           "min_value": 0.073
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.848,
+          "current_value": 1.17575,
           "threshold1": 1.28,
           "min_value": 0.545
         }
@@ -85,7 +85,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -95,7 +95,7 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
+  "cdi_situation_delta": -3,
   "mean_precip_sum_1m": 54.8,
   "mean_precip_sum_3m": 146.4,
   "precip_index_min": 3,
