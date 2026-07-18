@@ -2,13 +2,13 @@
   "canton_id": 13,
   "canton_name_de": "Basel-Landschaft",
   "canton_name_fr": "Bâle-Campagne",
-  "data_timestamp": "2026-07-17T00:00:00",
+  "data_timestamp": "2026-07-18T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-07-17T00:00:00",
+      "data_timestamp": "2026-07-18T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.96,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -4,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 5,
       "discharge": {
         "n_total": 3,
@@ -51,21 +51,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 2.36375,
+          "current_value": 2.7746,
           "threshold1": 4.89,
           "min_value": 2.594
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.12375,
+          "current_value": 0.1568,
           "threshold1": 0.694,
           "min_value": 0.27
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.32875,
+          "current_value": 0.3522,
           "threshold1": 0.587,
           "min_value": 0.248
         }
@@ -74,7 +74,7 @@
     {
       "region_id": 32,
       "region_name_de": "Balsthal",
-      "data_timestamp": "2026-07-17T00:00:00",
+      "data_timestamp": "2026-07-18T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.9,
@@ -86,7 +86,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -101,30 +101,30 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 1,
+      "cdi_forecast_week2": 2,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": -4,
-      "soil_moisture_deficit_delta": -4,
+      "soil_moisture_deficit_delta": -3,
       "vhi_index": 5,
       "discharge": {
         "n_total": 2,
-        "n_low": 2,
+        "n_low": 1,
         "n_very_low": 1,
-        "pct_low": 100
+        "pct_low": 50
       },
       "hydro_stations": [
         {
           "station_id": "2307",
           "station_name": "Sonceboz (2307)",
-          "current_value": 0.964,
+          "current_value": 1.2548,
           "threshold1": 1.111,
           "min_value": 0.5
         },
         {
           "station_id": "2434",
           "station_name": "Olten, Hammermühle (2434)",
-          "current_value": 0.4385,
+          "current_value": 0.4592,
           "threshold1": 0.798,
           "min_value": 0.315
         }
@@ -145,7 +145,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -155,7 +155,7 @@
   "n_regions_dry": 2,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -5,
+  "cdi_situation_delta": -4,
   "mean_precip_sum_1m": 21.4,
   "mean_precip_sum_3m": 139.9,
   "precip_index_min": 5,
@@ -166,8 +166,8 @@
   "max_vhi_index": 5,
   "discharge": {
     "n_total": 5,
-    "n_low": 5,
+    "n_low": 4,
     "n_very_low": 4,
-    "pct_low": 100
+    "pct_low": 80
   }
 }
