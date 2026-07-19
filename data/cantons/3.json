@@ -2,13 +2,13 @@
   "canton_id": 3,
   "canton_name_de": "Luzern",
   "canton_name_fr": "Lucerne",
-  "data_timestamp": "2026-07-18T00:00:00",
+  "data_timestamp": "2026-07-19T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-07-18T00:00:00",
+      "data_timestamp": "2026-07-19T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.14,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,14 +51,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 1.1432,
+          "current_value": 1.1386666666666667,
           "threshold1": 2.512,
           "min_value": 1.201
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 2.1382,
+          "current_value": 2.108,
           "threshold1": 1.687,
           "min_value": 1.013
         }
@@ -67,7 +67,7 @@
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-07-18T00:00:00",
+      "data_timestamp": "2026-07-19T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.62,
@@ -79,7 +79,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -110,21 +110,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.2145999999999999,
+          "current_value": 0.2158333333333333,
           "threshold1": 0.685,
           "min_value": 0.17
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.285,
+          "current_value": 0.2875,
           "threshold1": 0.803,
           "min_value": 0.314
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.1686,
+          "current_value": 0.2021666666666667,
           "threshold1": 0.381,
           "min_value": 0.135
         }
@@ -133,7 +133,7 @@
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-07-18T00:00:00",
+      "data_timestamp": "2026-07-19T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.33,
@@ -145,7 +145,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -176,28 +176,28 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 4.124599999999999,
+          "current_value": 4.1055,
           "threshold1": 7.211,
           "min_value": 2.214
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.1029999999999999,
+          "current_value": 0.0946666666666666,
           "threshold1": 0.151,
           "min_value": 0.008
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 10.939,
+          "current_value": 11.379166666666668,
           "threshold1": 18.166,
           "min_value": 10.817
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 3.5134,
+          "current_value": 3.4898333333333333,
           "threshold1": 6.173,
           "min_value": 1.545
         }
@@ -220,7 +220,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],

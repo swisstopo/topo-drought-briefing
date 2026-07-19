@@ -2,13 +2,13 @@
   "canton_id": 19,
   "canton_name_de": "Aargau",
   "canton_name_fr": "Argovie",
-  "data_timestamp": "2026-07-18T00:00:00",
+  "data_timestamp": "2026-07-19T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-07-18T00:00:00",
+      "data_timestamp": "2026-07-19T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.96,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,10 +36,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -4,
-      "soil_moisture_deficit_delta": -2,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 4,
       "discharge": {
         "n_total": 3,
@@ -51,21 +51,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 2.7746,
+          "current_value": 2.7776666666666663,
           "threshold1": 4.89,
           "min_value": 2.594
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.1568,
+          "current_value": 0.1553333333333333,
           "threshold1": 0.694,
           "min_value": 0.27
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.3522,
+          "current_value": 0.3485,
           "threshold1": 0.587,
           "min_value": 0.248
         }
@@ -74,7 +74,7 @@
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-07-18T00:00:00",
+      "data_timestamp": "2026-07-19T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.08,
@@ -86,7 +86,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -117,7 +117,7 @@
         {
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
-          "current_value": 0.4488,
+          "current_value": 0.4408333333333333,
           "threshold1": 0.59,
           "min_value": 0.334
         }
@@ -126,7 +126,7 @@
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-07-18T00:00:00",
+      "data_timestamp": "2026-07-19T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.14,
@@ -138,7 +138,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -169,14 +169,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 1.1432,
+          "current_value": 1.1386666666666667,
           "threshold1": 2.512,
           "min_value": 1.201
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 2.1382,
+          "current_value": 2.108,
           "threshold1": 1.687,
           "min_value": 1.013
         }
@@ -185,7 +185,7 @@
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-07-18T00:00:00",
+      "data_timestamp": "2026-07-19T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.62,
@@ -197,7 +197,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -228,21 +228,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.2145999999999999,
+          "current_value": 0.2158333333333333,
           "threshold1": 0.685,
           "min_value": 0.17
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.285,
+          "current_value": 0.2875,
           "threshold1": 0.803,
           "min_value": 0.314
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.1686,
+          "current_value": 0.2021666666666667,
           "threshold1": 0.381,
           "min_value": 0.135
         }
@@ -251,7 +251,7 @@
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-07-18T00:00:00",
+      "data_timestamp": "2026-07-19T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.68,
@@ -263,7 +263,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -294,21 +294,21 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.8592,
+          "current_value": 1.803,
           "threshold1": 2.796,
           "min_value": 1.329
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.0892,
+          "current_value": 0.0941666666666666,
           "threshold1": 0.194,
           "min_value": 0.073
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 1.15,
+          "current_value": 1.1041666666666667,
           "threshold1": 1.28,
           "min_value": 0.545
         }
@@ -330,7 +330,7 @@
     "4": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
