@@ -2,72 +2,72 @@
   "canton_id": 20,
   "canton_name_de": "Thurgau",
   "canton_name_fr": "Thurgovie",
-  "data_timestamp": "2026-07-19T00:00:00",
+  "data_timestamp": "2026-07-21T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-07-19T00:00:00",
+      "data_timestamp": "2026-07-21T00:00:00",
       "source": "api",
-      "cdi": 5,
-      "spi_3m": -2.68,
-      "soil_moisture_pct": 12.5,
+      "cdi": 4,
+      "spi_3m": -2.14,
+      "soil_moisture_pct": 18.5,
       "vhi": 14.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.4200000000000004,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.54,
       "vhi_delta": 0.0,
       "pct_critical": 0.15384615384615385,
-      "spi_3m_percentile": 0,
+      "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 2,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 54.8,
-      "precip_sum_3m": 146.4,
-      "precip_1m_index": 3,
-      "soil_moisture_index": 5,
-      "hydro_index": 5,
+      "precip_sum_1m": 73.3,
+      "precip_sum_3m": 177.3,
+      "precip_1m_index": 1,
+      "soil_moisture_index": 4,
+      "hydro_index": 3,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
+      "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 4,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
-        "n_very_low": 1,
+        "n_very_low": 3,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.803,
-          "threshold1": 2.796,
-          "min_value": 1.329
+          "current_value": 1.154,
+          "threshold1": 2.621,
+          "min_value": 1.313
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.0941666666666666,
-          "threshold1": 0.194,
+          "current_value": 0.088,
+          "threshold1": 0.182,
           "min_value": 0.073
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 1.1041666666666667,
-          "threshold1": 1.28,
-          "min_value": 0.545
+          "current_value": 0.773,
+          "threshold1": 1.185,
+          "min_value": 0.523
         }
       ]
     }
@@ -76,16 +76,16 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "3": 1
+    "1": 1
   },
   "n_regions_by_soil_moisture_index": {
-    "5": 1
+    "4": 1
   },
   "n_regions_by_hydro_index": {
-    "5": 1
+    "3": 1
   },
   "quality": {
-    "data_age_days": 2,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -93,21 +93,21 @@
     "overall": "ok"
   },
   "n_regions_dry": 1,
-  "cdi_min_dry": 5,
-  "cdi_max_dry": 5,
-  "cdi_situation_delta": -3,
-  "mean_precip_sum_1m": 54.8,
-  "mean_precip_sum_3m": 146.4,
-  "precip_index_min": 3,
-  "precip_index_max": 3,
-  "n_regions_with_precip_deficit": 1,
+  "cdi_min_dry": 4,
+  "cdi_max_dry": 4,
+  "cdi_situation_delta": -1,
+  "mean_precip_sum_1m": 73.3,
+  "mean_precip_sum_3m": 177.3,
+  "precip_index_min": 1,
+  "precip_index_max": 1,
+  "n_regions_with_precip_deficit": 0,
   "n_regions_with_soil_moisture_deficit": 1,
   "n_regions_with_vhi_stress": 1,
   "max_vhi_index": 4,
   "discharge": {
     "n_total": 3,
     "n_low": 3,
-    "n_very_low": 1,
+    "n_very_low": 3,
     "pct_low": 100
   }
 }

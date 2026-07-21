@@ -2,34 +2,34 @@
   "canton_id": 7,
   "canton_name_de": "Nidwalden",
   "canton_name_fr": "Nidwald",
-  "data_timestamp": "2026-07-19T00:00:00",
+  "data_timestamp": "2026-07-21T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-07-19T00:00:00",
+      "data_timestamp": "2026-07-21T00:00:00",
       "source": "api",
-      "cdi": 5,
-      "spi_3m": -2.33,
-      "soil_moisture_pct": 43.8,
+      "cdi": 4,
+      "spi_3m": -1.87,
+      "soil_moisture_pct": 54.5,
       "vhi": 19.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.3800000000000001,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.45999999999999996,
       "vhi_delta": 0.0,
       "pct_critical": 0.09615384615384616,
-      "spi_3m_percentile": 1,
+      "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 2,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 89.0,
-      "precip_sum_3m": 297.3,
-      "precip_1m_index": 4,
+      "precip_sum_1m": 128.9,
+      "precip_sum_3m": 340.5,
+      "precip_1m_index": 1,
       "soil_moisture_index": 5,
       "hydro_index": 4,
       "warnlevel": 4,
@@ -37,44 +37,44 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -3,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 4,
       "discharge": {
         "n_total": 4,
         "n_low": 4,
-        "n_very_low": 0,
+        "n_very_low": 3,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 4.1055,
-          "threshold1": 7.211,
-          "min_value": 2.214
+          "current_value": 3.557,
+          "threshold1": 6.315,
+          "min_value": 2.174
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.0946666666666666,
-          "threshold1": 0.151,
+          "current_value": 0.044,
+          "threshold1": 0.135,
           "min_value": 0.008
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 11.379166666666668,
-          "threshold1": 18.166,
-          "min_value": 10.817
+          "current_value": 11.084,
+          "threshold1": 16.935,
+          "min_value": 10.571
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 3.4898333333333333,
-          "threshold1": 6.173,
-          "min_value": 1.545
+          "current_value": 2.919,
+          "threshold1": 5.474,
+          "min_value": 1.255
         }
       ]
     }
@@ -83,7 +83,7 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "4": 1
+    "1": 1
   },
   "n_regions_by_soil_moisture_index": {
     "5": 1
@@ -92,7 +92,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 2,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -100,21 +100,21 @@
     "overall": "ok"
   },
   "n_regions_dry": 1,
-  "cdi_min_dry": 5,
-  "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 89.0,
-  "mean_precip_sum_3m": 297.3,
-  "precip_index_min": 4,
-  "precip_index_max": 4,
-  "n_regions_with_precip_deficit": 1,
+  "cdi_min_dry": 4,
+  "cdi_max_dry": 4,
+  "cdi_situation_delta": -1,
+  "mean_precip_sum_1m": 128.9,
+  "mean_precip_sum_3m": 340.5,
+  "precip_index_min": 1,
+  "precip_index_max": 1,
+  "n_regions_with_precip_deficit": 0,
   "n_regions_with_soil_moisture_deficit": 1,
   "n_regions_with_vhi_stress": 1,
   "max_vhi_index": 4,
   "discharge": {
     "n_total": 4,
     "n_low": 4,
-    "n_very_low": 0,
+    "n_very_low": 3,
     "pct_low": 100
   }
 }

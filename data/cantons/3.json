@@ -2,44 +2,44 @@
   "canton_id": 3,
   "canton_name_de": "Luzern",
   "canton_name_fr": "Lucerne",
-  "data_timestamp": "2026-07-19T00:00:00",
+  "data_timestamp": "2026-07-21T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-07-19T00:00:00",
+      "data_timestamp": "2026-07-21T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -3.14,
-      "soil_moisture_pct": 8.7,
+      "spi_3m": -2.66,
+      "soil_moisture_pct": 13.2,
       "vhi": 6.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.33000000000000007,
+      "cdi_trend": 0,
+      "spi_3m_delta": 0.48,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 2,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 32.6,
-      "precip_sum_3m": 137.5,
-      "precip_1m_index": 5,
+      "precip_sum_1m": 58.6,
+      "precip_sum_3m": 163.5,
+      "precip_1m_index": 3,
       "soil_moisture_index": 5,
       "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -4,
-      "soil_moisture_deficit_delta": -3,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 5,
       "discharge": {
         "n_total": 2,
@@ -51,15 +51,15 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 1.1386666666666667,
-          "threshold1": 2.512,
-          "min_value": 1.201
+          "current_value": 0.798,
+          "threshold1": 2.49,
+          "min_value": 1.122
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 2.108,
-          "threshold1": 1.687,
+          "current_value": 1.849,
+          "threshold1": 1.676,
           "min_value": 1.013
         }
       ]
@@ -67,38 +67,38 @@
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-07-19T00:00:00",
+      "data_timestamp": "2026-07-21T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.62,
-      "soil_moisture_pct": 17.2,
+      "spi_3m": -2.3,
+      "soil_moisture_pct": 18.5,
       "vhi": 11.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.3200000000000003,
+      "cdi_trend": 0,
+      "spi_3m_delta": 0.3200000000000003,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 0,
+      "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 2,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 67.7,
-      "precip_sum_3m": 181.7,
-      "precip_1m_index": 3,
+      "precip_sum_1m": 75.9,
+      "precip_sum_3m": 205.3,
+      "precip_1m_index": 2,
       "soil_moisture_index": 5,
       "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -3,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 4,
       "discharge": {
         "n_total": 3,
@@ -110,51 +110,51 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.2158333333333333,
-          "threshold1": 0.685,
-          "min_value": 0.17
+          "current_value": 0.21,
+          "threshold1": 0.666,
+          "min_value": 0.135
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.2875,
-          "threshold1": 0.803,
-          "min_value": 0.314
+          "current_value": 0.285,
+          "threshold1": 0.773,
+          "min_value": 0.238
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.2021666666666667,
-          "threshold1": 0.381,
-          "min_value": 0.135
+          "current_value": 0.172,
+          "threshold1": 0.344,
+          "min_value": 0.094
         }
       ]
     },
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-07-19T00:00:00",
+      "data_timestamp": "2026-07-21T00:00:00",
       "source": "api",
-      "cdi": 5,
-      "spi_3m": -2.33,
-      "soil_moisture_pct": 43.8,
+      "cdi": 4,
+      "spi_3m": -1.87,
+      "soil_moisture_pct": 54.5,
       "vhi": 19.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.3800000000000001,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.45999999999999996,
       "vhi_delta": 0.0,
       "pct_critical": 0.09615384615384616,
-      "spi_3m_percentile": 1,
+      "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 2,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 89.0,
-      "precip_sum_3m": 297.3,
-      "precip_1m_index": 4,
+      "precip_sum_1m": 128.9,
+      "precip_sum_3m": 340.5,
+      "precip_1m_index": 1,
       "soil_moisture_index": 5,
       "hydro_index": 4,
       "warnlevel": 4,
@@ -162,44 +162,44 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -3,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 4,
       "discharge": {
         "n_total": 4,
         "n_low": 4,
-        "n_very_low": 0,
+        "n_very_low": 3,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 4.1055,
-          "threshold1": 7.211,
-          "min_value": 2.214
+          "current_value": 3.557,
+          "threshold1": 6.315,
+          "min_value": 2.174
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.0946666666666666,
-          "threshold1": 0.151,
+          "current_value": 0.044,
+          "threshold1": 0.135,
           "min_value": 0.008
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 11.379166666666668,
-          "threshold1": 18.166,
-          "min_value": 10.817
+          "current_value": 11.084,
+          "threshold1": 16.935,
+          "min_value": 10.571
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 3.4898333333333333,
-          "threshold1": 6.173,
-          "min_value": 1.545
+          "current_value": 2.919,
+          "threshold1": 5.474,
+          "min_value": 1.255
         }
       ]
     }
@@ -208,9 +208,9 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "5": 1,
     "3": 1,
-    "4": 1
+    "2": 1,
+    "1": 1
   },
   "n_regions_by_soil_moisture_index": {
     "5": 3
@@ -220,7 +220,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 2,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -228,21 +228,21 @@
     "overall": "ok"
   },
   "n_regions_dry": 3,
-  "cdi_min_dry": 5,
+  "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -8,
-  "mean_precip_sum_1m": 63.1,
-  "mean_precip_sum_3m": 205.5,
-  "precip_index_min": 3,
-  "precip_index_max": 5,
-  "n_regions_with_precip_deficit": 3,
+  "cdi_situation_delta": -5,
+  "mean_precip_sum_1m": 87.8,
+  "mean_precip_sum_3m": 236.4,
+  "precip_index_min": 1,
+  "precip_index_max": 3,
+  "n_regions_with_precip_deficit": 2,
   "n_regions_with_soil_moisture_deficit": 3,
   "n_regions_with_vhi_stress": 3,
   "max_vhi_index": 5,
   "discharge": {
     "n_total": 9,
     "n_low": 8,
-    "n_very_low": 4,
+    "n_very_low": 7,
     "pct_low": 89
   }
 }

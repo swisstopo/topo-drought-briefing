@@ -2,44 +2,44 @@
   "canton_id": 24,
   "canton_name_de": "Neuchâtel",
   "canton_name_fr": "Neuchâtel",
-  "data_timestamp": "2026-07-19T00:00:00",
+  "data_timestamp": "2026-07-21T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-07-19T00:00:00",
+      "data_timestamp": "2026-07-21T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.84,
-      "soil_moisture_pct": 5.7,
+      "spi_3m": -2.36,
+      "soil_moisture_pct": 19.6,
       "vhi": 3.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.5699999999999998,
+      "spi_3m_delta": 0.48,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 2,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 21.0,
-      "precip_sum_3m": 157.6,
-      "precip_1m_index": 5,
-      "soil_moisture_index": 5,
+      "precip_sum_1m": 46.9,
+      "precip_sum_3m": 186.0,
+      "precip_1m_index": 4,
+      "soil_moisture_index": 4,
       "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -4,
-      "soil_moisture_deficit_delta": -3,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 5,
+      "precip_deficit_delta": -2,
+      "soil_moisture_deficit_delta": 1,
       "vhi_index": 5,
       "discharge": {
         "n_total": 1,
@@ -51,82 +51,82 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 3.635666666666667,
-          "threshold1": 5.48,
-          "min_value": 3.476
+          "current_value": 3.236,
+          "threshold1": 5.285,
+          "min_value": 3.424
         }
       ]
     },
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-07-19T00:00:00",
+      "data_timestamp": "2026-07-21T00:00:00",
       "source": "api",
-      "cdi": 5,
-      "spi_3m": -2.19,
-      "soil_moisture_pct": 8.1,
+      "cdi": 4,
+      "spi_3m": -1.85,
+      "soil_moisture_pct": 11.0,
       "vhi": 6.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.41999999999999993,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.33999999999999986,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 2,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 28.7,
-      "precip_sum_3m": 174.1,
-      "precip_1m_index": 5,
+      "precip_sum_1m": 44.5,
+      "precip_sum_3m": 195.8,
+      "precip_1m_index": 3,
       "soil_moisture_index": 5,
-      "hydro_index": 4,
+      "hydro_index": 3,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -4,
-      "soil_moisture_deficit_delta": -3,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 5,
       "discharge": {
         "n_total": 4,
-        "n_low": 2,
-        "n_very_low": 1,
-        "pct_low": 50
+        "n_low": 3,
+        "n_very_low": 3,
+        "pct_low": 75
       },
       "hydro_stations": [
         {
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
-          "current_value": 2.2536666666666667,
-          "threshold1": 2.789,
-          "min_value": 2.15
+          "current_value": 2.251,
+          "threshold1": 2.738,
+          "min_value": 2.134
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 0.1028333333333333,
-          "threshold1": 0.099,
-          "min_value": 0.048
+          "current_value": 0.056,
+          "threshold1": 0.095,
+          "min_value": 0.041
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
-          "current_value": 1.5581666666666667,
-          "threshold1": 2.336,
-          "min_value": 1.058
+          "current_value": 1.429,
+          "threshold1": 2.275,
+          "min_value": 1.053
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
-          "current_value": 0.4678333333333334,
-          "threshold1": 0.301,
-          "min_value": 0.148
+          "current_value": 0.387,
+          "threshold1": 0.289,
+          "min_value": 0.111
         }
       ]
     }
@@ -135,17 +135,19 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "5": 2
+    "4": 1,
+    "3": 1
   },
   "n_regions_by_soil_moisture_index": {
-    "5": 2
+    "4": 1,
+    "5": 1
   },
   "n_regions_by_hydro_index": {
     "5": 1,
-    "4": 1
+    "3": 1
   },
   "quality": {
-    "data_age_days": 2,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -153,21 +155,21 @@
     "overall": "ok"
   },
   "n_regions_dry": 2,
-  "cdi_min_dry": 5,
+  "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -4,
-  "mean_precip_sum_1m": 24.9,
-  "mean_precip_sum_3m": 165.8,
-  "precip_index_min": 5,
-  "precip_index_max": 5,
+  "cdi_situation_delta": 0,
+  "mean_precip_sum_1m": 45.7,
+  "mean_precip_sum_3m": 190.9,
+  "precip_index_min": 3,
+  "precip_index_max": 4,
   "n_regions_with_precip_deficit": 2,
   "n_regions_with_soil_moisture_deficit": 2,
   "n_regions_with_vhi_stress": 2,
   "max_vhi_index": 5,
   "discharge": {
     "n_total": 5,
-    "n_low": 3,
-    "n_very_low": 2,
-    "pct_low": 60
+    "n_low": 4,
+    "n_very_low": 4,
+    "pct_low": 80
   }
 }

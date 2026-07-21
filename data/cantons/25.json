@@ -2,44 +2,44 @@
   "canton_id": 25,
   "canton_name_de": "Genève",
   "canton_name_fr": "Genève",
-  "data_timestamp": "2026-07-19T00:00:00",
+  "data_timestamp": "2026-07-21T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 56,
       "region_name_de": "Genferseebecken",
-      "data_timestamp": "2026-07-19T00:00:00",
+      "data_timestamp": "2026-07-21T00:00:00",
       "source": "api",
-      "cdi": 5,
-      "spi_3m": -1.74,
-      "soil_moisture_pct": 13.5,
+      "cdi": 3,
+      "spi_3m": -1.31,
+      "soil_moisture_pct": 22.8,
       "vhi": 4.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.29000000000000004,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.42999999999999994,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 3,
+      "spi_3m_percentile": 8,
       "quality": {
-        "data_age_days": 2,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 16.7,
-      "precip_sum_3m": 139.8,
-      "precip_1m_index": 5,
-      "soil_moisture_index": 5,
-      "hydro_index": 5,
+      "precip_sum_1m": 39.6,
+      "precip_sum_3m": 163.4,
+      "precip_1m_index": 2,
+      "soil_moisture_index": 3,
+      "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 1,
+      "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": -4,
-      "soil_moisture_deficit_delta": -4,
+      "soil_moisture_index_forecast": 2,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 5,
       "discharge": {
         "n_total": 1,
@@ -51,8 +51,8 @@
         {
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
-          "current_value": 0.4396666666666666,
-          "threshold1": 0.679,
+          "current_value": 0.335,
+          "threshold1": 0.648,
           "min_value": 0.301
         }
       ]
@@ -62,16 +62,16 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "5": 1
+    "2": 1
   },
   "n_regions_by_soil_moisture_index": {
-    "5": 1
+    "3": 1
   },
   "n_regions_by_hydro_index": {
-    "5": 1
+    "4": 1
   },
   "quality": {
-    "data_age_days": 2,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -79,13 +79,13 @@
     "overall": "ok"
   },
   "n_regions_dry": 1,
-  "cdi_min_dry": 5,
-  "cdi_max_dry": 5,
-  "cdi_situation_delta": -4,
-  "mean_precip_sum_1m": 16.7,
-  "mean_precip_sum_3m": 139.8,
-  "precip_index_min": 5,
-  "precip_index_max": 5,
+  "cdi_min_dry": 3,
+  "cdi_max_dry": 3,
+  "cdi_situation_delta": 0,
+  "mean_precip_sum_1m": 39.6,
+  "mean_precip_sum_3m": 163.4,
+  "precip_index_min": 2,
+  "precip_index_max": 2,
   "n_regions_with_precip_deficit": 1,
   "n_regions_with_soil_moisture_deficit": 1,
   "n_regions_with_vhi_stress": 1,
