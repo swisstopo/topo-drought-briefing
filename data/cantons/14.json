@@ -2,17 +2,17 @@
   "canton_id": 14,
   "canton_name_de": "Schaffhausen",
   "canton_name_fr": "Schaffhouse",
-  "data_timestamp": "2026-07-22T00:00:00",
+  "data_timestamp": "2026-07-23T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-07-22T00:00:00",
+      "data_timestamp": "2026-07-23T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -2.14,
-      "soil_moisture_pct": 20.0,
+      "soil_moisture_pct": 22.1,
       "vhi": 22.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.54,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,21 +51,21 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.1245,
+          "current_value": 1.1049999999999998,
           "threshold1": 2.621,
           "min_value": 1.313
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.0745,
+          "current_value": 0.0693333333333333,
           "threshold1": 0.182,
           "min_value": 0.073
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.757,
+          "current_value": 0.7453333333333333,
           "threshold1": 1.185,
           "min_value": 0.523
         }
@@ -85,7 +85,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
