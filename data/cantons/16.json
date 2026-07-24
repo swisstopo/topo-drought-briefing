@@ -2,17 +2,17 @@
   "canton_id": 16,
   "canton_name_de": "Appenzell Innerrhoden",
   "canton_name_fr": "Appenzell Rhodes-Intérieures",
-  "data_timestamp": "2026-07-23T00:00:00",
+  "data_timestamp": "2026-07-24T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-07-23T00:00:00",
+      "data_timestamp": "2026-07-24T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -3.33,
-      "soil_moisture_pct": 23.9,
+      "soil_moisture_pct": 26.3,
       "vhi": 41.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.31000000000000005,
@@ -20,7 +20,7 @@
       "pct_critical": 0.25,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -1,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 5,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": 1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
@@ -51,7 +51,7 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 5.820333333333333,
+          "current_value": 5.5765,
           "threshold1": 14.649,
           "min_value": 4.14
         }
@@ -60,11 +60,11 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-07-23T00:00:00",
+      "data_timestamp": "2026-07-24T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.89,
-      "soil_moisture_pct": 35.9,
+      "soil_moisture_pct": 39.0,
       "vhi": 55.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.54,
@@ -72,7 +72,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -87,11 +87,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -2,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": 1,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
@@ -103,21 +103,21 @@
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 3.394333333333333,
+          "current_value": 3.2647500000000003,
           "threshold1": 8.224,
           "min_value": 4.084
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 3.5156666666666667,
+          "current_value": 3.46125,
           "threshold1": 6.176,
           "min_value": 3.918
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 2.5243333333333333,
+          "current_value": 2.5105,
           "threshold1": 4.669,
           "min_value": 2.916
         }
@@ -140,7 +140,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -150,7 +150,7 @@
   "n_regions_dry": 2,
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -1,
+  "cdi_situation_delta": 1,
   "mean_precip_sum_1m": 71.6,
   "mean_precip_sum_3m": 235.6,
   "precip_index_min": 3,
