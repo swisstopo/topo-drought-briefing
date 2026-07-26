@@ -13,7 +13,7 @@ _DISCHARGE_LABEL = "Abfluss"
 def compute_discharge_stats(region_ids: Collection[int], bundle: DataBundle) -> DischargeStats:
     """Count discharge stations in the given regions with low / very low flow.
 
-    Low      = current value < threshold1 (at the station's current day-of-year).
+    Low      = current value < low_flow_threshold (at the station's current day-of-year).
     Very low = current value < q347 (subset of low).
     Only stations with label == "Abfluss" and a matching reference row are counted.
     """

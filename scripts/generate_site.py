@@ -489,7 +489,7 @@ def _hydro_station_from_dict(d: dict) -> HydroStationReport:
         station_id=str(d["station_id"]),
         station_name=str(d["station_name"]),
         current_value=_float_or_nan(d["current_value"]),
-        threshold1=_float_or_nan(d["threshold1"]),
+        low_flow_threshold=_float_or_nan(d["low_flow_threshold"]),
         min_value=_float_or_nan(d["min_value"]),
     )
 
@@ -635,7 +635,7 @@ def _station_details_html(r: RegionReport, locale: str) -> str:
     parts: list[str] = []
     for s in stations:
         name = _html.escape(s.station_name)
-        t1_str = _fmt_q(s.threshold1) if not math.isnan(s.threshold1) else "–"
+        t1_str = _fmt_q(s.low_flow_threshold) if not math.isnan(s.low_flow_threshold) else "–"
         mn_str = _fmt_q(s.min_value) if not math.isnan(s.min_value) else "–"
         parts.append(
             f'<div style="font-size:.82rem;margin-bottom:.55rem;">'

@@ -101,7 +101,7 @@ Discharge/low-flow station counts (`canton.discharge`, `region.discharge`) are *
 computed from a YAML-declared `aggregate` placeholder — there is no such construct in the
 current schema. They're computed directly in Python: `src/aggregation/stations.py` classifies
 each station as low/very-low by comparing its current value against
-`threshold1`/`q347` from `daily_reference_stations`, and `src/aggregation/regional.py`
+`low_flow_threshold`/`q347` from `daily_reference_stations`, and `src/aggregation/regional.py`
 joins stations to regions via `data/station_region_mapping.json` (produced by
 `scripts/extract_station_mappings.py` — see `data/README.md`). The resulting counts are then
 available to the `allgemeine-lage`/`regionen` templates as `canton.discharge`/`this.discharge`.

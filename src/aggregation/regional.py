@@ -239,7 +239,7 @@ def _compute_hydro_stations(region_id: int, bundle: DataBundle) -> list[HydroSta
             station_id=str(st_id),
             station_name=st_name,
             current_value=val,
-            threshold1=t1,
+            low_flow_threshold=t1,
             min_value=min_val,
         ))
     return reports

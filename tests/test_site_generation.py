@@ -138,12 +138,12 @@ class TestHydroStationFromDict:
             "station_id": "ABC",
             "station_name": "Test Station",
             "current_value": None,
-            "threshold1": None,
+            "low_flow_threshold": None,
             "min_value": 0.5,
         }
         s = _hydro_station_from_dict(d)
         assert math.isnan(s.current_value)
-        assert math.isnan(s.threshold1)
+        assert math.isnan(s.low_flow_threshold)
         assert s.min_value == pytest.approx(0.5)
         assert s.station_id == "ABC"
 
@@ -152,12 +152,12 @@ class TestHydroStationFromDict:
             "station_id": "XY1",
             "station_name": "River Station",
             "current_value": 12.5,
-            "threshold1": 8.0,
+            "low_flow_threshold": 8.0,
             "min_value": 2.1,
         }
         s = _hydro_station_from_dict(d)
         assert s.current_value == pytest.approx(12.5)
-        assert s.threshold1 == pytest.approx(8.0)
+        assert s.low_flow_threshold == pytest.approx(8.0)
 
 
 class TestSlug:
