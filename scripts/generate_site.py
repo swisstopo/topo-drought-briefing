@@ -361,6 +361,12 @@ _JS = """\
    * already rendered for screen dimensions.
    */
   window.exportBriefing = function () {
+    if (!document.body.classList.contains('page-canton')) {
+      var lang = document.documentElement.lang || 'de';
+      var msg = lang === 'fr' ? 'Veuillez d\\'abord choisir un canton.' : 'Bitte zuerst einen Kanton auswählen.';
+      _showToast(msg);
+      return;
+    }
     _setMapPrintLabel();
     var active = document.querySelector('.map-frame-active');
     if (active) {
@@ -1141,7 +1147,7 @@ Bulletin s&eacute;cheresse {_html.escape(canton.canton_name_fr)}</title>
   <link rel="icon" href="{_FAVICON_URL}">
   <link rel="stylesheet" href="../../assets/style.css">
 </head>
-<body>
+<body class="page-canton">
 {_header_html("../../index.html")}
 
 <main class="container">
