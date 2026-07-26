@@ -9,6 +9,9 @@
 # For the source list shown on the website itself, see config/sources.yaml —
 # not this file (data_sources/references here were removed as dead config;
 # see data/ruleset/README.md).
+#
+# See ARCHITECTURE.md § Internationalization for a proposed consolidation of
+# this file's several ad hoc per-language nesting shapes into one convention.
 # ---------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------

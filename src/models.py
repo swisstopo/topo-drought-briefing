@@ -1,4 +1,6 @@
 # src/models.py
+# See ARCHITECTURE.md § Internationalization for the planned consolidation
+# of this file's per-language (_de/_fr/_it) field pairs into a translation key.
 from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime

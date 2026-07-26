@@ -1,4 +1,6 @@
 # config/settings.py
+# See ARCHITECTURE.md § Internationalization for the planned consolidation
+# of this file's per-language name/label dicts into a single catalog.
 from pathlib import Path
 from typing import Final
 import json
