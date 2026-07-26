@@ -3,7 +3,7 @@
 Fetches current VHI (Vegetation Health Index) per drought Warnregion
 from the SwissEO REST endpoint.
 
-On any network or HTTP error, falls back to data/vhi_fixture.csv.
+On any network or HTTP error, falls back to data/fixtures/vhi_fixture.csv.
 Same pattern as src/data/warnkarte_client.py.
 
 Endpoint:
@@ -27,7 +27,7 @@ _TIMEOUT_SECONDS = 10
 def fetch_for_regions(region_ids: list[int]) -> dict[int, float]:
     """
     Return {drought_region_id: vhi_mean} for each requested region.
-    Falls back to data/vhi_fixture.csv on any network or HTTP error.
+    Falls back to data/fixtures/vhi_fixture.csv on any network or HTTP error.
     """
     try:
         return _fetch_live(region_ids)
