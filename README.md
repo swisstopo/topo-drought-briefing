@@ -26,7 +26,25 @@ No Python knowledge is needed to update them.
 
 ---
 
+## Glossary
+
+| Term | Meaning |
+|---|---|
+| **VHI** | Vegetation Health Index. Vegetation-stress level, 1–5: 1 = Normal/Good/Excellent (VHI ≥ 40), 2 = Slightly Stressed, 3 = Stressed, 4 = Very Stressed, 5 = Extremely Stressed. |
+| **CDI** | Combined Drought Indicator. BAFU's composite drought index, 0 (no drought) to 5 (exceptional). |
+| **SPI** | Standardized Precipitation Index. A standard meteorological drought index; this project uses the 3-month window (`spi_3m`). |
+| **BFS canton number** | Switzerland's official Bundesamt für Statistik canton numbering (1–26), used throughout as `canton_id`. Full lookup in `config/settings.py` (`CANTON_ABBREV`/`CANTON_NAMES`). |
+| **q347** | A station's extreme "very low flow" discharge cutoff, from BAFU's own reference dataset. |
+| **Low-flow threshold** | A day-of-year-specific "low flow" cutoff (less extreme than q347) used to classify a station as having low discharge. |
+| **Warnlevel** | BAFU's official danger level (Gefahrenstufe), 1–5, from the live Warnkarte API; falls back to `max(cdi, 1)` when unavailable. |
+
+---
+
 ## Cookbook
+
+> **Backlog:** a short animated GIF walkthrough of this cookbook for non-IT
+> users has been requested but needs an actual screen recording — tracked as
+> a manual follow-up, not something generated here.
 
 ### How to change a drought threshold (US-01)
 
@@ -93,6 +111,19 @@ The pipeline falls back to fixture data automatically. The published site will s
 
 ---
 
+### How to access the drought briefings as a public user (US-04)
+
+The website is accessible at the GitHub Pages URL for this repository.
+
+1. Go to the repository's Settings > Pages to find the published URL.
+2. Open the URL in any web browser. No login is required.
+3. Select a canton from the overview page.
+4. Switch between German and French using the DE / FR buttons in the top right corner.
+5. To save a PDF, use your browser's print function (Ctrl+P or Cmd+P) and choose "Save as PDF".
+6. To share a link in a specific language, click "Link kopieren" / "Copier le lien" in the header. The link includes the language parameter.
+
+---
+
 ### How to manage "Weiterführende Links" per canton (US-05)
 
 Every canton page has a "Weiterführende Links / Liens complémentaires" section. The links are defined in `data/ruleset/canton-bulletin.yaml` under the `weiterfuehrende_links` key.
@@ -125,19 +156,6 @@ Links where the URL is not defined for the current canton are automatically hidd
 ### You need other Changes to make?
 
 Then type your question [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing)
-
----
-
-### How to access the drought briefings as a public user (US-04)
-
-The website is accessible at the GitHub Pages URL for this repository.
-
-1. Go to the repository's Settings > Pages to find the published URL.
-2. Open the URL in any web browser. No login is required.
-3. Select a canton from the overview page.
-4. Switch between German and French using the DE / FR buttons in the top right corner.
-5. To save a PDF, use your browser's print function (Ctrl+P or Cmd+P) and choose "Save as PDF".
-6. To share a link in a specific language, click "Link kopieren" / "Copier le lien" in the header. The link includes the language parameter.
 
 ---
 
@@ -244,7 +262,7 @@ The generated site is written to `site/`. Open `site/index.html` in a browser to
 
 ## Contributing
 
-Contributions are welcome.
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for commit conventions and the pre-PR checklist.
 
 For questions about drought methodology, contact BAFU.
 
