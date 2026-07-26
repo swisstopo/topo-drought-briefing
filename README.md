@@ -215,14 +215,16 @@ tests/                — automated tests (run via GitHub Actions or locally)
 
 ## Running locally
 
-Requirements: Python 3.11 or later, and the `uv` package manager.
+Requirements: Python 3.12 or later, and the [`uv`](https://docs.astral.sh/uv/getting-started/installation/) package manager.
 
 ```
-uv sync
-uv run pytest tests/ -v
-uv run python scripts/download.py
-uv run python scripts/aggregate.py
-uv run python scripts/generate_site.py
+make sync      # uv sync
+make test      # uv run pytest tests/ -v
+make lint      # uv run ruff check .
+make download  # uv run python scripts/download.py
+make aggregate # uv run python scripts/aggregate.py
+make site      # uv run python scripts/generate_site.py
+make pipeline  # download + aggregate + site
 ```
 
 The generated site is written to `site/`. Open `site/index.html` in a browser to preview it.

@@ -21,4 +21,12 @@ dependencies = [
 dev = [
     "pytest>=9.0.3",
     "responses>=0.26.1",
+    "ruff>=0.14",
 ]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
