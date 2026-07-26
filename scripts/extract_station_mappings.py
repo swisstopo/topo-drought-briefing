@@ -1,7 +1,23 @@
+# scripts/extract_station_mappings.py
+"""
+Extract the hydro_station_id -> drought_region_id mapping from BAFU's
+station list PDF.
+
+Reads data/stations.pdf (BAFU-published station table) and the
+`reference` CSV zip's regions.csv (region master data), matches each
+station's row to a region by name, and writes
+data/station_region_mapping.json.
+
+Usage (from the repo root):
+    uv run python scripts/extract_station_mappings.py
+
+Re-run whenever BAFU publishes an updated station list PDF (replace
+data/stations.pdf with the new version first).
+"""
 import pandas as pd
 import zipfile
 import json
-import pypdf 
+import pypdf
 
 zip_path = "data/trockenheitsdaten-numerisch_reference__trockenheitsdaten-numerisch_reference.csv.zip"
 internal_csv_path = "regions.csv"
