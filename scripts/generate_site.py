@@ -1182,10 +1182,10 @@ Bulletin s&eacute;cheresse {_html.escape(canton.canton_name_fr)}</title>
   </div>
 
   <div class="lang-de">
-    {_sections_html(doc_de, canton, ruleset, "de", skip=frozenset({"allgemeine-lage", "datenquellen"}))}
+    {_sections_html(doc_de, canton, ruleset, "de", skip=frozenset({"allgemeine-lage"}))}
   </div>
   <div class="lang-fr">
-    {_sections_html(doc_fr, canton, ruleset, "fr", skip=frozenset({"allgemeine-lage", "datenquellen"}))}
+    {_sections_html(doc_fr, canton, ruleset, "fr", skip=frozenset({"allgemeine-lage"}))}
   </div>
 
   {_further_links_html(doc_de, doc_fr)}

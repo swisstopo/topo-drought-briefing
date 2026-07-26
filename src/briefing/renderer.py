@@ -218,9 +218,6 @@ def render_briefing(
     )
     env.globals["handlungsempfehlungen"] = resolved_he
     env.globals["canton"] = canton
-    # Expose data_sources and references as lists so Handlebars-style each loops work
-    env.globals["data_sources"] = list(ruleset.data_sources.values())
-    env.globals["references"] = list(ruleset.references.values())
 
     sections: dict[str, str] = {}
     for sec in ruleset.sections:

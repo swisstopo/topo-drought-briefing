@@ -17,8 +17,6 @@ RULESET_PATH = Path(__file__).resolve().parent.parent / "data/ruleset/canton-bul
 def test_load_ruleset_returns_schema_instance():
     ruleset = load_ruleset(RULESET_PATH)
     assert isinstance(ruleset, RulesetSchema)
-    assert ruleset.id == "canton-bulletin"
-    assert "warnkarte" in ruleset.data_sources
     assert "niederschlag" in ruleset.nomenclature.indicators
 
 

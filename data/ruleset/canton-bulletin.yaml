@@ -1,70 +1,15 @@
-id: canton-bulletin
-title: Example drought bulletin template
-description: |
-  Weekly bulletin per drought region. Uses the recommended terminology from the
-  BAFU/MeteoSchweiz reference document (U8YQGX7S.pdf).
-  Rule: the terms "Trockenheit" / "trocken" are reserved for the lead block and
-  the CDI description. For the contributing factors (precipitation, surface/ground
-  water, soil moisture) use the "deficit" terminology instead.
-
-context:
-  scope: canton
-  required_inputs:
-    canton_id: "BFS canton ID (e.g. 2 for Bern)"
-
 # ---------------------------------------------------------------------------
-# External data sources.
-# Resolved per region at render time and exposed to sections under their key
-# (e.g. {{ warnkarte.warnlevel }}).
+# Weekly bulletin per drought region. Uses the recommended terminology from the
+# BAFU/MeteoSchweiz reference document (U8YQGX7S.pdf):
+# https://s3.govtech.digisus-lab.ch/govtech/uploads/14/L2SYQ/U8YQGX7S.pdf
+# Rule: the terms "Trockenheit" / "trocken" are reserved for the lead block and
+# the CDI description. For the contributing factors (precipitation, surface/ground
+# water, soil moisture) use the "deficit" terminology instead.
+#
+# For the source list shown on the website itself, see config/sources.yaml —
+# not this file (data_sources/references here were removed as dead config;
+# see data/ruleset/README.md).
 # ---------------------------------------------------------------------------
-data_sources:
-
-  warnkarte:
-    type: rest_api
-    provider: "BAFU"
-    title: "Drought warning map"
-    url: "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte/{drought_region_id}"
-    response_path: "feature.attributes"
-    fields:
-      warnlevel: "warnlevel"       # 1-5, matches the BAFU "Gefahrenstufe" scale
-      info_de:   "info_de"         # plain-text label, e.g. "Mässige Gefahr"
-      info_fr:   "info_fr"
-      info_it:   "info_it"
-      valid_from: "valid_from"
-    description: |
-      Returns the current, official danger level per region (idn = drought_region_id).
-      Single source of truth for the action recommendations — do not derive from CSV.
-
-  trockenheitsdaten_numerisch:
-    type: stac_collection
-    provider: "BAFU"
-    title: "Drought data (numeric)"
-    landing_page: "https://data.geo.admin.ch/browser/index.html#/collections/ch.bafu.trockenheitsdaten-numerisch"
-    description: |
-      Time series of all variables shown on the BAFU drought platform: precipitation
-      sums and SPI, soil moisture, hydro index, CDI, etc., broken down by drought
-      region and measurement station.
-    datasets_used:
-      - weekly_current_regions       # current indices & sums per region
-      - weekly_forecast_regions      # weekly forecast (p10/p50/p90) per region
-      - monthly_historic_regions     # long-term comparison (from 1991)
-      - daily_reference_stations     # reference thresholds per station and day of year
-      - weekly_current_stations      # current station measurements (discharge / water level)
-      - regions                      # region master data (drought_region_id ↔ name)
-      - stations                     # station master data
-
-# ---------------------------------------------------------------------------
-# External references (for the source list in the report).
-# ---------------------------------------------------------------------------
-references:
-  terminologie_bafu:
-    title: "Recommended terminology for drought bulletins"
-    url: "https://s3.govtech.digisus-lab.ch/govtech/uploads/14/L2SYQ/U8YQGX7S.pdf"
-    provider: "BAFU / MeteoSchweiz"
-  handlungsempfehlungen_bafu:
-    title: "Drought warnings and behavioural recommendations"
-    url: "https://www.trockenheit.admin.ch/de/trockenheit/trockenheitswarnungen-und-verhaltensempfehlungen"
-    provider: "BAFU"
 
 # ---------------------------------------------------------------------------
 # Banner links rendered as a link row directly under the title.
@@ -104,12 +49,6 @@ nomenclature:
       3: { de: "trocken",         fr: "sec",              it: "secco" }
       4: { de: "sehr trocken",    fr: "très sec",         it: "molto secco" }
       5: { de: "extrem trocken",  fr: "extrêmement sec",  it: "estremamente secco" }
-    noun:
-      1: { de: "keine Trockenheit",       fr: "pas de sécheresse",   it: "nessuna siccità" }
-      2: { de: "leichte Trockenheit",     fr: "sécheresse légère",   it: "siccità leggera" }
-      3: { de: "erhebliche Trockenheit",  fr: "sécheresse modérée",  it: "siccità moderata" }
-      4: { de: "grosse Trockenheit",      fr: "sécheresse élevée",   it: "siccità elevata" }
-      5: { de: "extreme Trockenheit",     fr: "sécheresse extrême",  it: "siccità estrema" }
     # Range / single composition used by the deficit_range() renderer helper.
     # Parts come from `adjective`; e.g. "leicht trocken bis sehr trocken".
     range:  { de: "{min} bis {max}", fr: "{min} à {max}", it: "{min} a {max}" }
@@ -133,22 +72,6 @@ nomenclature:
       5: { de: "extremes",    fr: "extrême",  it: "estremo" }
     range:  { de: "ein {min} bis {max} Niederschlagsdefizit", fr: "un déficit pluviométrique {min} à {max}", it: "un deficit di precipitazioni {min} a {max}" }
     single: { de: "ein {val} Niederschlagsdefizit",           fr: "un déficit pluviométrique {val}",         it: "un deficit di precipitazioni {val}" }
-
-  hydro:
-    field: hydro_index
-    note: "For groundwater, do not use the '-defizit' wording."
-    adjective:
-      1: { de: "—",                                       fr: "—",                                   it: "—" }
-      2: { de: "leicht niedrige Abflüsse/Wasserstände",   fr: "niveaux d'eau légèrement bas",        it: "livelli dell'acqua/portata leggermente bassi" }
-      3: { de: "niedrige Abflüsse/Wasserstände",          fr: "niveaux d'eau bas",                   it: "livelli d'acqua/portata bassi" }
-      4: { de: "sehr niedrige Abflüsse/Wasserstände",     fr: "niveaux d'eau très bas",              it: "livelli d'acqua/portata molto bassi" }
-      5: { de: "extrem niedrige Abflüsse/Wasserstände",   fr: "niveaux d'eau extrêmement bas",       it: "livelli dell'acqua/portata estremamente bassi" }
-    noun:
-      1: { de: "kein oder geringes Abflussdefizit",       fr: "pas de déficit d'écoulement",         it: "nessun o scarso deficit di portata" }
-      2: { de: "ein leichtes Abflussdefizit",                 fr: "léger déficit d'écoulement",          it: "leggero deficit di portata" }
-      3: { de: "ein erhebliches Abflussdefizit",              fr: "déficit d'écoulement modéré",         it: "notevole deficit di portata" }
-      4: { de: "ein grosses Abflussdefizit",                  fr: "déficit d'écoulement élevé",          it: "grande deficit di portata" }
-      5: { de: "ein extremes Abflussdefizit",                 fr: "déficit d'écoulement extrême",        it: "deficit di portata estremo" }
 
   bodenfeuchte:
     field: soil_moisture_index
@@ -363,24 +286,3 @@ sections:
         source: canton.max_warnlevel
         resolver: handlungsempfehlungen.by_gefahrenstufe
         fallback_rule: "If recommendations missing for a level, follow .fallback chain (3 → 2, 5 → 4)."
-
-  - id: datenquellen
-    title: { de: "Datenquellen", fr: "Sources de données", it: "Fonti dei dati" }
-    locale: de
-    template: |
-      {{#each data_sources}}
-      - {{ this.title }} ({{ this.provider }}) — {{ this.landing_page or this.url }}
-      {{/each}}
-      {{#each references}}
-      - {{ this.title }} ({{ this.provider }}) — {{ this.url }}
-      {{/each}}
-    placeholders:
-      - id: datenquellen_liste
-        source: data_sources
-        description: "All external data sources declared in data_sources, rendered as title + provider + URL."
-      - id: referenzen_liste
-        source: references
-        description: "All external documents declared in references (terminology, recommendations etc.)."
-    notes:
-      - "The section automatically renders every top-level entry in data_sources and references."
-      - "No local file paths — web links only (landing_page for STAC collections, url for APIs / documents)."
