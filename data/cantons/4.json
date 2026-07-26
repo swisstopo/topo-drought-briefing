@@ -2,13 +2,13 @@
   "canton_id": 4,
   "canton_name_de": "Uri",
   "canton_name_fr": "Uri",
-  "data_timestamp": "2026-07-25T00:00:00",
+  "data_timestamp": "2026-07-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 44,
       "region_name_de": "östliche Zentralschweiz",
-      "data_timestamp": "2026-07-25T00:00:00",
+      "data_timestamp": "2026-07-26T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -2.17,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,28 +51,28 @@
         {
           "station_id": "2084",
           "station_name": "Ingenbohl (2084)",
-          "current_value": 7.1098,
+          "current_value": 6.563,
           "threshold1": 15.469,
           "min_value": 5.985
         },
         {
           "station_id": "2300",
           "station_name": "Euthal, Rüti (2300)",
-          "current_value": 0.3908,
+          "current_value": 0.3595,
           "threshold1": 1.034,
           "min_value": 0.114
         },
         {
           "station_id": "2604",
           "station_name": "Biberbrugg (2604)",
-          "current_value": 0.0794,
+          "current_value": 0.0778333333333333,
           "threshold1": 0.262,
           "min_value": 0.048
         },
         {
           "station_id": "2609",
           "station_name": "Einsiedeln (2609)",
-          "current_value": 0.2602,
+          "current_value": 0.2463333333333333,
           "threshold1": 0.742,
           "min_value": 0.172
         }
@@ -81,7 +81,7 @@
     {
       "region_id": 45,
       "region_name_de": "Urner Alpen",
-      "data_timestamp": "2026-07-25T00:00:00",
+      "data_timestamp": "2026-07-26T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.59,
@@ -93,7 +93,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 6,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -110,9 +110,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": 2,
-      "soil_moisture_deficit_delta": 0,
+      "soil_moisture_deficit_delta": 1,
       "vhi_index": 1,
       "discharge": {
         "n_total": 2,
@@ -124,14 +124,14 @@
         {
           "station_id": "2056",
           "station_name": "Seedorf (2056)",
-          "current_value": 39.9284,
+          "current_value": 38.50866666666667,
           "threshold1": 63.629,
           "min_value": 44.915
         },
         {
           "station_id": "2276",
           "station_name": "Isenthal (2276)",
-          "current_value": 0.8506,
+          "current_value": 0.8408333333333333,
           "threshold1": 1.805,
           "min_value": 1.0
         }
@@ -140,7 +140,7 @@
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-07-25T00:00:00",
+      "data_timestamp": "2026-07-26T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.79,
@@ -152,7 +152,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -183,7 +183,7 @@
         {
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
-          "current_value": 25.5602,
+          "current_value": 25.000333333333334,
           "threshold1": 52.838,
           "min_value": 29.17
         }
@@ -207,7 +207,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
