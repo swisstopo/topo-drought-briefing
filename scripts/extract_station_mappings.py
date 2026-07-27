@@ -19,7 +19,7 @@ import zipfile
 import json
 import pypdf
 
-zip_path = "data/trockenheitsdaten-numerisch_reference__trockenheitsdaten-numerisch_reference.csv.zip"
+zip_path = "data/fixtures/trockenheitsdaten-numerisch_reference__trockenheitsdaten-numerisch_reference.csv.zip"
 internal_csv_path = "regions.csv"
 
 # 1. Read Regions directly from the ZIP
