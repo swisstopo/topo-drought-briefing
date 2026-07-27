@@ -169,20 +169,22 @@ Changes should **not** go directly to `main`. Use the `INT` branch as a shared s
 
 ```
 your-branch  →  INT  →  main
-   (PR)         (PR, squash merge)
+   (PR, squash merge)   (PR, merge commit)
 ```
 
 ### Workflow
 
 1. Create a branch from `INT` (not from `main`) and make your changes.
-2. Open a pull request targeting `INT`.
+2. Open a pull request targeting `INT`, and merge it with **squash merge**.
 3. Every push to `INT` automatically deploys a preview to:
    **`https://swisstopo.github.io/topo-drought-briefing/int/`**
-4. Review the preview. If the output looks correct, open a pull request from `INT` → `main` and merge it with **squash merge** to keep the main history clean.
+4. Review the preview. If the output looks correct, open a pull request from `INT` → `main` and merge it with a regular **merge commit**.
 
-### Why squash merge?
+### Why squash merge for branch → INT, but a merge commit for INT → main?
 
-During integration, `INT` may accumulate many small commits ("fix typo", "try again", etc.). Squash merge collapses them into one clean commit on `main`, so the production history stays readable.
+During integration, a feature branch may accumulate many small commits ("fix typo", "try again", etc.). Squash merge collapses them into one clean commit on `INT`, so its working history stays readable per feature.
+
+By the time `INT` is merged into `main`, it typically contains several such squashed commits from unrelated PRs. Squashing *that* merge as well would flatten all of them into a single commit on `main`, losing per-PR attribution on the permanent production history. A regular merge commit instead preserves each PR's individual (already-squashed) commit on `main`, while still recording the integration point.
 
 ### Who can do what
 
