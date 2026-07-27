@@ -13,6 +13,14 @@ _KANTONE = json.loads((DATA_DIR / "kantone_warnregionen.json").read_text(encodin
 if not _KANTONE:
     raise ValueError("kantone_warnregionen.json is empty or could not be parsed")
 
+# `kantone_warnregionen.json`'s "MAPGEO" field is a map.geo.admin.ch URL query
+# fragment per canton, e.g. "&center=2691805,1252035&z=9" — a copy-pasted map
+# link, not a first-class coordinate field. `center=X,Y` gives the map's
+# center point in LV95 (Swiss CH1903+) easting/northing meters; `z` is the
+# zoom level and is intentionally ignored here. `_parse_mapgeo` extracts just
+# the (easting, northing) pair so it can be used as a canton's map center
+# point elsewhere (see src/viz/maps.py), without needing to re-parse the
+# rest of the URL.
 _MAPGEO_RE = re.compile(r"center=(\d+),(\d+)")
 
 
