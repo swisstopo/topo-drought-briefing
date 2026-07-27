@@ -1,7 +1,8 @@
-name: Daily Drought Briefing Update
+name: Hourly Drought Briefing Update
 
-# Runs daily at 05:30 UTC (07:30 Swiss summer / 06:30 Swiss winter).
-# Data sources publish overnight; 05:30 UTC ensures fresh data is available.
+# Runs hourly, at minute 21 past every hour. BAFU does not publish source
+# data on a fixed schedule (typically Thursdays/Sundays, but not guaranteed) —
+# hourly polling minimizes the lag between trockenheit.ch and this briefing.
 # Manual dispatch is also available for out-of-cycle updates.
 
 on:

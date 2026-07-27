@@ -80,7 +80,7 @@ drought-briefing/
 ├── tests/
 │
 └── .github/
-    └── workflows/     daily-update.yml, int-preview.yml
+    └── workflows/     hourly-update.yml, int-preview.yml
 ```
 
 `data/raw/` and `data/processed/` are build artifacts, not checked into the
@@ -616,7 +616,7 @@ Workflows:
 ```text
 .github/workflows/
 
-  daily-update.yml   — scheduled + manual, deploys to the production site (/)
+  hourly-update.yml  — scheduled hourly + manual, deploys to the production site (/)
   int-preview.yml    — on push to INT, deploys a preview to /int/
 ```
 

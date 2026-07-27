@@ -1,10 +1,10 @@
 # Drought Briefing BETA 
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing) [![Daily Drought Briefing Update](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml/badge.svg)](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml) [![GitHub commit](https://img.shields.io/github/last-commit/swisstopo/topo-drought-briefing)](https://github.com/swisstopo/topo-drought-briefing/commits/main)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing) [![Hourly Drought Briefing Update](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/hourly-update.yml/badge.svg)](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/hourly-update.yml) [![GitHub commit](https://img.shields.io/github/last-commit/swisstopo/topo-drought-briefing)](https://github.com/swisstopo/topo-drought-briefing/commits/main)
 
 Automated drought situation reports for Swiss authorities.
 
-The system downloads federal open data every day, applies drought rules, and publishes a static website.
+The system downloads federal open data every hour, applies drought rules, and publishes a static website.
 No server is needed. Everything runs on GitHub.
 
 Live site: [swisstopo.github.io/topo-drought-briefing](https://swisstopo.github.io/topo-drought-briefing): published via GitHub Pages (see Settings > Pages in this repository).
@@ -13,7 +13,7 @@ Live site: [swisstopo.github.io/topo-drought-briefing](https://swisstopo.github.
 
 ## How the system works
 
-Every day, GitHub Actions runs a pipeline:
+Every hour, GitHub Actions runs a pipeline:
 
 1. Downloads drought data from federal open data portals (BAFU, SwissEO, swisstopo).
 2. Calculates indicators per warning region and per canton.
@@ -82,9 +82,13 @@ Note: If you are not sure which key controls which label, look at the label on t
 
 ---
 
-### How to manage daily automation (US-03 — for administrators)
+### How to manage automation (US-03 — for administrators)
 
-The daily pipeline runs automatically using GitHub Actions.
+The pipeline runs automatically every hour using GitHub Actions. It runs hourly
+rather than at a single fixed time because BAFU does not publish source data on
+a strict schedule — hourly polling keeps the briefing close to
+[trockenheit.ch](https://www.trockenheit.ch) without needing to guess the exact
+publish time.
 
 **To check whether the latest run succeeded:**
 
@@ -96,12 +100,12 @@ The daily pipeline runs automatically using GitHub Actions.
 **To run the pipeline manually (for example, after a configuration change):**
 
 1. Click the "Actions" tab.
-2. Select the workflow named "Daily update" (or similar).
+2. Select the workflow named "Hourly Drought Briefing Update".
 3. Click "Run workflow" on the right side, then confirm.
 
-**To change the schedule (for example, to run at a different time):**
+**To change the schedule (for example, to run at a different frequency):**
 
-1. Open `.github/workflows/daily.yml` (or the workflow file listed under Actions).
+1. Open `.github/workflows/hourly-update.yml`.
 2. Find the `schedule:` section and edit the cron expression.
 3. Commit your change.
 
