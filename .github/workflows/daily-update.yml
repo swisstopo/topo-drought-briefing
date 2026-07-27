@@ -28,6 +28,11 @@ jobs:
     env:
       ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
+    # peaceiris/actions-gh-pages@v4 bundles Node 20; suppress the deprecation
+    # warning until a Node 24-compatible release is available.
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
