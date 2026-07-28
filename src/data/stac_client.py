@@ -130,16 +130,12 @@ def _fetch_from_stac() -> DataBundle:
     forecast_raw, _ = _parse_csv_from_zip_bytes(
         current_zip_bytes, "weekly_forecast_regions.csv"
     )
-    current_stations_df, _ = _parse_csv_from_zip_bytes(
-        current_zip_bytes, "weekly_current_stations.csv"
-    )
-    
+
     historic_zip_bytes = _download_zip_bytes(_find_asset_href_in_items(items, "historic"))
     historic_df, _ = _parse_csv_from_zip_bytes(historic_zip_bytes, "weekly_historic_regions.csv")
-    
+
     reference_zip_bytes = _download_zip_bytes(_find_asset_href_in_items(items, "reference"))
     reference_df, _ = _parse_csv_from_zip_bytes(reference_zip_bytes, "regions.csv")
-    reference_stations_df, _ = _parse_csv_from_zip_bytes(reference_zip_bytes, "daily_reference_stations.csv")
 
     current_stations_df = _parse_stations_from_zip_bytes(current_zip_bytes, "weekly_current_stations.csv")
     reference_stations_df = _parse_stations_from_zip_bytes(reference_zip_bytes, "daily_reference_stations.csv")
