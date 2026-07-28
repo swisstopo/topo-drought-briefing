@@ -2,13 +2,13 @@
   "canton_id": 20,
   "canton_name_de": "Thurgau",
   "canton_name_fr": "Thurgovie",
-  "data_timestamp": "2026-07-27T00:00:00",
+  "data_timestamp": "2026-07-28T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-07-27T00:00:00",
+      "data_timestamp": "2026-07-28T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.2,
@@ -20,15 +20,15 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 73.0,
-      "precip_sum_3m": 177.9,
+      "precip_sum_1m": 72.9,
+      "precip_sum_3m": 177.8,
       "precip_1m_index": 1,
       "soil_moisture_index": 4,
       "hydro_index": 5,
@@ -51,22 +51,22 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.0605714285714285,
-          "threshold1": 2.621,
-          "min_value": 1.313
+          "current_value": 0.992,
+          "threshold1": 2.418,
+          "min_value": 1.086
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.0611428571428571,
-          "threshold1": 0.182,
-          "min_value": 0.073
+          "current_value": 0.053,
+          "threshold1": 0.171,
+          "min_value": 0.064
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.7154285714285714,
-          "threshold1": 1.185,
+          "current_value": 0.673,
+          "threshold1": 1.115,
           "min_value": 0.523
         }
       ]
@@ -85,7 +85,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -96,8 +96,8 @@
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 73.0,
-  "mean_precip_sum_3m": 177.9,
+  "mean_precip_sum_1m": 72.9,
+  "mean_precip_sum_3m": 177.8,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
