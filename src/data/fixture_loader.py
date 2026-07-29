@@ -1,6 +1,6 @@
 # src/data/fixture_loader.py
 """
-Reads the bundled ZIP fixtures from data/ into a DataBundle.
+Reads the bundled ZIP fixtures from data/fixtures/ into a DataBundle.
 
 CSV format: semicolon-separated; comment lines start with '#'.
 Date format in data: DD.MM.YYYY
@@ -21,6 +21,7 @@ from config.settings import (
     CURRENT_STATIONS_CSV,
     CURRENT_ZIP_NAME,
     DATA_DIR,
+    FIXTURES_DIR,
     HISTORIC_ZIP_NAME,
     REFERENCE_STATIONS_CSV,
     REFERENCE_ZIP_NAME,
@@ -91,28 +92,28 @@ def _parse_dates(df: pd.DataFrame) -> pd.DataFrame:
 
 def load() -> DataBundle:
     current_df, comment_lines = _read_csv_from_zip(
-        DATA_DIR / CURRENT_ZIP_NAME, "weekly_current_regions.csv"
+        FIXTURES_DIR / CURRENT_ZIP_NAME, "weekly_current_regions.csv"
     )
     historic_df, _ = _read_csv_from_zip(
-        DATA_DIR / HISTORIC_ZIP_NAME, "weekly_historic_regions.csv"
+        FIXTURES_DIR / HISTORIC_ZIP_NAME, "weekly_historic_regions.csv"
     )
     reference_df, _ = _read_csv_from_zip(
-        DATA_DIR / REFERENCE_ZIP_NAME, "regions.csv"
+        FIXTURES_DIR / REFERENCE_ZIP_NAME, "regions.csv"
     )
     forecast_raw, _ = _read_csv_from_zip(
-        DATA_DIR / CURRENT_ZIP_NAME, "weekly_forecast_regions.csv"
+        FIXTURES_DIR / CURRENT_ZIP_NAME, "weekly_forecast_regions.csv"
     )
-    
+
     forecast_df = forecast_raw.copy()
     forecast_df["valid_at"] = pd.to_datetime(forecast_df["valid_at"], format="%d.%m.%Y", errors="coerce")
     data_timestamp = _parse_timestamp(comment_lines)
 
-    current_stations_df = _read_stations_csv(DATA_DIR / CURRENT_ZIP_NAME, CURRENT_STATIONS_CSV)
-    reference_stations_df = _read_stations_csv(DATA_DIR / REFERENCE_ZIP_NAME, REFERENCE_STATIONS_CSV)
+    current_stations_df = _read_stations_csv(FIXTURES_DIR / CURRENT_ZIP_NAME, CURRENT_STATIONS_CSV)
+    reference_stations_df = _read_stations_csv(FIXTURES_DIR / REFERENCE_ZIP_NAME, REFERENCE_STATIONS_CSV)
     station_region_map = load_station_region_map()
 
     try:
-        stations_df = _read_stations_csv(DATA_DIR / REFERENCE_ZIP_NAME, "stations.csv")
+        stations_df = _read_stations_csv(FIXTURES_DIR / REFERENCE_ZIP_NAME, "stations.csv")
         station_names = dict(zip(stations_df["hydro_station_id"], stations_df["name"]))
     except (FileNotFoundError, KeyError) as e:
         logger.warning("Could not load stations.csv: %s", e)

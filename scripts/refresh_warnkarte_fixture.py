@@ -1,6 +1,6 @@
 # scripts/refresh_warnkarte_fixture.py
 """
-Refresh data/warnkarte_fixture.json from the live BAFU Warnkarte API.
+Refresh data/fixtures/warnkarte_fixture.json from the live BAFU Warnkarte API.
 
 Usage:
     uv run python scripts/refresh_warnkarte_fixture.py
@@ -20,7 +20,7 @@ import requests
 from config.settings import CANTON_TO_REGIONS
 
 URL = "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte/{rid}"
-FIXTURE = Path(__file__).resolve().parents[1] / "data" / "warnkarte_fixture.json"
+FIXTURE = Path(__file__).resolve().parents[1] / "data" / "fixtures" / "warnkarte_fixture.json"
 
 
 def main() -> None:

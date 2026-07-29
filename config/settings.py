@@ -1,16 +1,27 @@
 # config/settings.py
+# See ARCHITECTURE.md § Internationalization for the planned consolidation
+# of this file's per-language name/label dicts into a single catalog.
 from pathlib import Path
 from typing import Final
 import json
 import re
 
 DATA_DIR: Final[Path] = Path(__file__).parent.parent / "data"
+FIXTURES_DIR: Final[Path] = DATA_DIR / "fixtures"
 
 _KANTONE = json.loads((DATA_DIR / "kantone_warnregionen.json").read_text(encoding="utf-8"))
 
 if not _KANTONE:
     raise ValueError("kantone_warnregionen.json is empty or could not be parsed")
 
+# `kantone_warnregionen.json`'s "MAPGEO" field is a map.geo.admin.ch URL query
+# fragment per canton, e.g. "&center=2691805,1252035&z=9" — a copy-pasted map
+# link, not a first-class coordinate field. `center=X,Y` gives the map's
+# center point in LV95 (Swiss CH1903+) easting/northing meters; `z` is the
+# zoom level and is intentionally ignored here. `_parse_mapgeo` extracts just
+# the (easting, northing) pair so it can be used as a canton's map center
+# point elsewhere (see src/viz/maps.py), without needing to re-parse the
+# rest of the URL.
 _MAPGEO_RE = re.compile(r"center=(\d+),(\d+)")
 
 
@@ -112,7 +123,7 @@ VHI_URL: Final[str] = (
     "/swisseo_vhi_v100"
     "/ch.swisstopo.swisseo_vhi_v100_current_vegetation-warnregions.csv"
 )
-VHI_FIXTURE: Final[Path] = DATA_DIR / "vhi_fixture.csv"
+VHI_FIXTURE: Final[Path] = FIXTURES_DIR / "vhi_fixture.csv"
 
 CURRENT_ZIP_NAME: Final[str] = (
     "trockenheitsdaten-numerisch_current__trockenheitsdaten-numerisch_current.csv.zip"

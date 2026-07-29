@@ -1,4 +1,6 @@
 # src/models.py
+# See ARCHITECTURE.md § Internationalization for the planned consolidation
+# of this file's per-language (_de/_fr/_it) field pairs into a translation key.
 from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime
@@ -11,7 +13,7 @@ class HydroStationReport:
     station_id: str
     station_name: str
     current_value: float
-    threshold1: float
+    low_flow_threshold: float
     min_value: float
 
 
@@ -42,7 +44,7 @@ class QualityReport:
 @dataclass
 class DischargeStats:
     n_total: int      # discharge stations with a usable reference row
-    n_low: int        # current value < threshold1
+    n_low: int        # current value < low_flow_threshold
     n_very_low: int   # current value < q347 (subset of n_low)
     pct_low: int      # round(n_low / n_total * 100); 0 when n_total == 0
 

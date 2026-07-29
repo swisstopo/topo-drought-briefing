@@ -1,4 +1,6 @@
 # src/i18n/strings.py
+# See ARCHITECTURE.md § Internationalization for the planned consolidation
+# of this module's pattern with config/settings.py's per-language dicts.
 from __future__ import annotations
 
 from config.settings import (

@@ -3,33 +3,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from pydantic import BaseModel, ConfigDict, Field
-
-
-class ContextSpec(BaseModel):
-    scope: str
-    required_inputs: dict[str, str] = Field(default_factory=dict)
-    model_config = ConfigDict(extra="forbid")
-
-
-class DataSourceSpec(BaseModel):
-    type: str
-    provider: str
-    title: str
-    url: str | None = None
-    landing_page: str | None = None
-    response_path: str | None = None
-    fields: dict[str, str] | None = None
-    description: str | None = None
-    datasets_used: list[str] | None = None
-    model_config = ConfigDict(extra="forbid")
-
-
-class ReferenceSpec(BaseModel):
-    title: str
-    url: str
-    provider: str
-    model_config = ConfigDict(extra="forbid")
+from pydantic import BaseModel, ConfigDict
 
 
 class NomenclatureIndicatorSpec(BaseModel):
@@ -116,12 +90,6 @@ class SectionSpec(BaseModel):
 
 
 class RulesetSchema(BaseModel):
-    id: str
-    title: str
-    description: str | None = None
-    context: ContextSpec
-    data_sources: dict[str, DataSourceSpec]
-    references: dict[str, ReferenceSpec]
     nomenclature: NomenclatureSpec
     trend: dict[str, TrendSpec]
     handlungsempfehlungen: HandlungsempfehlungenSpec

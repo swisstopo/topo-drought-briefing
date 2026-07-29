@@ -104,7 +104,11 @@ def test_canton_report_uses_swisseo_vhi():
         status=200,
         content_type="text/csv",
     )
-    bundle = load_data()
+    # The STAC items endpoint is intentionally left unmocked here (only the VHI
+    # endpoint is under test), so load_data() falls back to fixture data and
+    # warns; assert on that expected warning instead of letting it leak.
+    with pytest.warns(UserWarning, match="STAC fetch failed"):
+        bundle = load_data()
     warnkarte = {rid: _make_warnkarte(rid, 2) for rid in [33, 34, 35, 37, 38, 41]}
     canton = compute_canton_report(canton_id=2, bundle=bundle, warnkarte_data=warnkarte)
     region_34 = next(r for r in canton.regions if r.region_id == 34)

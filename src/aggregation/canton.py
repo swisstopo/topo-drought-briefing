@@ -16,6 +16,10 @@ def compute_canton_report(
     bundle: DataBundle,
     warnkarte_data: dict[int, WarnkarteEntry],
 ) -> CantonReport:
+    """Compute a canton's full drought report by aggregating its warning
+    regions: per-region reports (via compute_region_report), the max
+    warning level across regions, canton-wide index counts/means, and
+    discharge station stats."""
     if canton_id not in CANTON_TO_REGIONS:
         raise ValueError(
             f"Canton {canton_id} not in CANTON_TO_REGIONS. "
