@@ -5,7 +5,7 @@ Fetches the current BAFU drought warning level per region.
 API endpoint:
   https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte/{drought_region_id}
 
-On any network or HTTP error, falls back to the bundled fixture (data/warnkarte_fixture.json).
+On any network or HTTP error, falls back to the bundled fixture (data/fixtures/warnkarte_fixture.json).
 Same pattern as src/data/stac_client.py.
 """
 from __future__ import annotations
@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 _BASE_URL = "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bafu.trockenheitswarnkarte"
 _TIMEOUT_SECONDS = 10
-_FIXTURE_PATH = Path(__file__).resolve().parents[2] / "data" / "warnkarte_fixture.json"
+_FIXTURE_PATH = Path(__file__).resolve().parents[2] / "data" / "fixtures" / "warnkarte_fixture.json"
 
 
 def _parse_response(payload: dict) -> WarnkarteEntry:

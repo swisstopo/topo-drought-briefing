@@ -1,10 +1,10 @@
 # Drought Briefing BETA 
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing) [![Daily Drought Briefing Update](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml/badge.svg)](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/daily-update.yml) [![GitHub commit](https://img.shields.io/github/last-commit/swisstopo/topo-drought-briefing)](https://github.com/swisstopo/topo-drought-briefing/commits/main)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/swisstopo/topo-drought-briefing) [![Hourly Drought Briefing Update](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/hourly-update.yml/badge.svg)](https://github.com/swisstopo/topo-drought-briefing/actions/workflows/hourly-update.yml) [![GitHub commit](https://img.shields.io/github/last-commit/swisstopo/topo-drought-briefing)](https://github.com/swisstopo/topo-drought-briefing/commits/main)
 
 Automated drought situation reports for Swiss authorities.
 
-The system downloads federal open data every day, applies drought rules, and publishes a static website.
+The system downloads federal open data every hour, applies drought rules, and publishes a static website.
 No server is needed. Everything runs on GitHub.
 
 Live site: [swisstopo.github.io/topo-drought-briefing](https://swisstopo.github.io/topo-drought-briefing): published via GitHub Pages (see Settings > Pages in this repository).
@@ -13,7 +13,7 @@ Live site: [swisstopo.github.io/topo-drought-briefing](https://swisstopo.github.
 
 ## How the system works
 
-Every day, GitHub Actions runs a pipeline:
+Every hour, GitHub Actions runs a pipeline:
 
 1. Downloads drought data from federal open data portals (BAFU, SwissEO, swisstopo).
 2. Calculates indicators per warning region and per canton.
@@ -26,7 +26,25 @@ No Python knowledge is needed to update them.
 
 ---
 
+## Glossary
+
+| Term | Meaning |
+|---|---|
+| **VHI** | Vegetation Health Index. Vegetation-stress level, 1–5: 1 = Normal/Good/Excellent (VHI ≥ 40), 2 = Slightly Stressed, 3 = Stressed, 4 = Very Stressed, 5 = Extremely Stressed. |
+| **CDI** | Combined Drought Indicator. BAFU's composite drought index, 0 (no drought) to 5 (exceptional). |
+| **SPI** | Standardized Precipitation Index. A standard meteorological drought index; this project uses the 3-month window (`spi_3m`). |
+| **BFS canton number** | Switzerland's official Bundesamt für Statistik canton numbering (1–26), used throughout as `canton_id`. Full lookup in `config/settings.py` (`CANTON_ABBREV`/`CANTON_NAMES`). |
+| **q347** | A station's extreme "very low flow" discharge cutoff, from BAFU's own reference dataset. |
+| **Low-flow threshold** | A day-of-year-specific "low flow" cutoff (less extreme than q347) used to classify a station as having low discharge. |
+| **Warnlevel** | BAFU's official danger level (Gefahrenstufe), 1–5, from the live Warnkarte API; falls back to `max(cdi, 1)` when unavailable. |
+
+---
+
 ## Cookbook
+
+> **Backlog:** a short animated GIF walkthrough of this cookbook for non-IT
+> users has been requested but needs an actual screen recording — tracked as
+> a manual follow-up, not something generated here.
 
 ### How to change a drought threshold (US-01)
 
@@ -64,9 +82,13 @@ Note: If you are not sure which key controls which label, look at the label on t
 
 ---
 
-### How to manage daily automation (US-03 — for administrators)
+### How to manage automation (US-03 — for administrators)
 
-The daily pipeline runs automatically using GitHub Actions.
+The pipeline runs automatically every hour using GitHub Actions. It runs hourly
+rather than at a single fixed time because BAFU does not publish source data on
+a strict schedule — hourly polling keeps the briefing close to
+[trockenheit.ch](https://www.trockenheit.ch) without needing to guess the exact
+publish time.
 
 **To check whether the latest run succeeded:**
 
@@ -78,18 +100,31 @@ The daily pipeline runs automatically using GitHub Actions.
 **To run the pipeline manually (for example, after a configuration change):**
 
 1. Click the "Actions" tab.
-2. Select the workflow named "Daily update" (or similar).
+2. Select the workflow named "Hourly Drought Briefing Update".
 3. Click "Run workflow" on the right side, then confirm.
 
-**To change the schedule (for example, to run at a different time):**
+**To change the schedule (for example, to run at a different frequency):**
 
-1. Open `.github/workflows/daily.yml` (or the workflow file listed under Actions).
+1. Open `.github/workflows/hourly-update.yml`.
 2. Find the `schedule:` section and edit the cron expression.
 3. Commit your change.
 
 **If the pipeline fails because data is unavailable:**
 
 The pipeline falls back to fixture data automatically. The published site will show a data quality warning, but it will not go offline. Check the Actions log for details.
+
+---
+
+### How to access the drought briefings as a public user (US-04)
+
+The website is accessible at the GitHub Pages URL for this repository.
+
+1. Go to the repository's Settings > Pages to find the published URL.
+2. Open the URL in any web browser. No login is required.
+3. Select a canton from the overview page.
+4. Switch between German and French using the DE / FR buttons in the top right corner.
+5. To save a PDF, use your browser's print function (Ctrl+P or Cmd+P) and choose "Save as PDF".
+6. To share a link in a specific language, click "Link kopieren" / "Copier le lien" in the header. The link includes the language parameter.
 
 ---
 
@@ -128,39 +163,28 @@ Then type your question [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https:
 
 ---
 
-### How to access the drought briefings as a public user (US-04)
-
-The website is accessible at the GitHub Pages URL for this repository.
-
-1. Go to the repository's Settings > Pages to find the published URL.
-2. Open the URL in any web browser. No login is required.
-3. Select a canton from the overview page.
-4. Switch between German and French using the DE / FR buttons in the top right corner.
-5. To save a PDF, use your browser's print function (Ctrl+P or Cmd+P) and choose "Save as PDF".
-6. To share a link in a specific language, click "Link kopieren" / "Copier le lien" in the header. The link includes the language parameter.
-
----
-
 ## Integration branch (INT) and preview deployment
 
 Changes should **not** go directly to `main`. Use the `INT` branch as a shared staging area:
 
 ```
 your-branch  →  INT  →  main
-   (PR)         (PR, squash merge)
+   (PR, squash merge)   (PR, merge commit)
 ```
 
 ### Workflow
 
 1. Create a branch from `INT` (not from `main`) and make your changes.
-2. Open a pull request targeting `INT`.
+2. Open a pull request targeting `INT`, and merge it with **squash merge**.
 3. Every push to `INT` automatically deploys a preview to:
    **`https://swisstopo.github.io/topo-drought-briefing/int/`**
-4. Review the preview. If the output looks correct, open a pull request from `INT` → `main` and merge it with **squash merge** to keep the main history clean.
+4. Review the preview. If the output looks correct, open a pull request from `INT` → `main` and merge it with a regular **merge commit**.
 
-### Why squash merge?
+### Why squash merge for branch → INT, but a merge commit for INT → main?
 
-During integration, `INT` may accumulate many small commits ("fix typo", "try again", etc.). Squash merge collapses them into one clean commit on `main`, so the production history stays readable.
+During integration, a feature branch may accumulate many small commits ("fix typo", "try again", etc.). Squash merge collapses them into one clean commit on `INT`, so its working history stays readable per feature.
+
+By the time `INT` is merged into `main`, it typically contains several such squashed commits from unrelated PRs. Squashing *that* merge as well would flatten all of them into a single commit on `main`, losing per-PR attribution on the permanent production history. A regular merge commit instead preserves each PR's individual (already-squashed) commit on `main`, while still recording the integration point.
 
 ### Who can do what
 
@@ -215,14 +239,16 @@ tests/                — automated tests (run via GitHub Actions or locally)
 
 ## Running locally
 
-Requirements: Python 3.11 or later, and the `uv` package manager.
+Requirements: Python 3.12 or later, and the [`uv`](https://docs.astral.sh/uv/getting-started/installation/) package manager.
 
 ```
-uv sync
-uv run pytest tests/ -v
-uv run python scripts/download.py
-uv run python scripts/aggregate.py
-uv run python scripts/generate_site.py
+make sync      # uv sync
+make test      # uv run pytest tests/ -v
+make lint      # uv run ruff check .
+make download  # uv run python scripts/download.py
+make aggregate # uv run python scripts/aggregate.py
+make site      # uv run python scripts/generate_site.py
+make pipeline  # download + aggregate + site
 ```
 
 The generated site is written to `site/`. Open `site/index.html` in a browser to preview it.
@@ -242,7 +268,7 @@ The generated site is written to `site/`. Open `site/index.html` in a browser to
 
 ## Contributing
 
-Contributions are welcome.
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for commit conventions and the pre-PR checklist.
 
 For questions about drought methodology, contact BAFU.
 

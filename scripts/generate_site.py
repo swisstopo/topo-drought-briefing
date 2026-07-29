@@ -361,6 +361,12 @@ _JS = """\
    * already rendered for screen dimensions.
    */
   window.exportBriefing = function () {
+    if (!document.body.classList.contains('page-canton')) {
+      var lang = document.documentElement.lang || 'de';
+      var msg = lang === 'fr' ? 'Veuillez d\\'abord choisir un canton.' : 'Bitte zuerst einen Kanton auswählen.';
+      _showToast(msg);
+      return;
+    }
     _setMapPrintLabel();
     var active = document.querySelector('.map-frame-active');
     if (active) {
@@ -483,7 +489,7 @@ def _hydro_station_from_dict(d: dict) -> HydroStationReport:
         station_id=str(d["station_id"]),
         station_name=str(d["station_name"]),
         current_value=_float_or_nan(d["current_value"]),
-        threshold1=_float_or_nan(d["threshold1"]),
+        low_flow_threshold=_float_or_nan(d["low_flow_threshold"]),
         min_value=_float_or_nan(d["min_value"]),
     )
 
@@ -629,7 +635,7 @@ def _station_details_html(r: RegionReport, locale: str) -> str:
     parts: list[str] = []
     for s in stations:
         name = _html.escape(s.station_name)
-        t1_str = _fmt_q(s.threshold1) if not math.isnan(s.threshold1) else "–"
+        t1_str = _fmt_q(s.low_flow_threshold) if not math.isnan(s.low_flow_threshold) else "–"
         mn_str = _fmt_q(s.min_value) if not math.isnan(s.min_value) else "–"
         parts.append(
             f'<div style="font-size:.82rem;margin-bottom:.55rem;">'
@@ -1141,7 +1147,7 @@ Bulletin s&eacute;cheresse {_html.escape(canton.canton_name_fr)}</title>
   <link rel="icon" href="{_FAVICON_URL}">
   <link rel="stylesheet" href="../../assets/style.css">
 </head>
-<body>
+<body class="page-canton">
 {_header_html("../../index.html")}
 
 <main class="container">
@@ -1176,10 +1182,10 @@ Bulletin s&eacute;cheresse {_html.escape(canton.canton_name_fr)}</title>
   </div>
 
   <div class="lang-de">
-    {_sections_html(doc_de, canton, ruleset, "de", skip=frozenset({"allgemeine-lage", "datenquellen"}))}
+    {_sections_html(doc_de, canton, ruleset, "de", skip=frozenset({"allgemeine-lage"}))}
   </div>
   <div class="lang-fr">
-    {_sections_html(doc_fr, canton, ruleset, "fr", skip=frozenset({"allgemeine-lage", "datenquellen"}))}
+    {_sections_html(doc_fr, canton, ruleset, "fr", skip=frozenset({"allgemeine-lage"}))}
   </div>
 
   {_further_links_html(doc_de, doc_fr)}

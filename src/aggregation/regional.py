@@ -30,6 +30,10 @@ def compute_region_report(
     warnkarte_entry: WarnkarteEntry | None = None,
     vhi_value: float | None = None,
 ) -> RegionReport:
+    """Compute one warning region's full drought report: current indicators,
+    week-over-week trends, historic percentile/pct_critical, forecast-week-2
+    values, discharge station stats, and data quality — from one region's
+    slice of `bundle` plus the region's live warnlevel/VHI, if available."""
     # --- Current snapshot (latest row for this region) ---
     current = bundle.current_df[bundle.current_df["drought_region_id"] == region_id]
     current = current.sort_values("measured_at")
@@ -182,6 +186,9 @@ def _compute_cdi_forecast_week2(bundle: DataBundle, region_id: int) -> int | Non
 
 
 def _compute_hydro_stations(region_id: int, bundle: DataBundle) -> list[HydroStationReport]:
+    """Build one HydroStationReport per discharge station in `region_id`,
+    pairing each station's latest current reading with its day-of-year
+    reference thresholds (low_flow_threshold/min) via station_region_map."""
     curr_st = bundle.current_stations_df
     ref_st = bundle.reference_stations_df
     if curr_st.empty or ref_st.empty or not bundle.station_region_map:
@@ -239,7 +246,7 @@ def _compute_hydro_stations(region_id: int, bundle: DataBundle) -> list[HydroSta
             station_id=str(st_id),
             station_name=st_name,
             current_value=val,
-            threshold1=t1,
+            low_flow_threshold=t1,
             min_value=min_val,
         ))
     return reports

@@ -222,7 +222,7 @@
           "minimum": 0
         },
         "n_low": {
-          "description": "Stations with current flow below threshold1 (low flow)",
+          "description": "Stations with current flow below low_flow_threshold (low flow)",
           "type": "integer",
           "minimum": 0
         },
@@ -249,7 +249,7 @@
           "station_id",
           "station_name",
           "current_value",
-          "threshold1",
+          "low_flow_threshold",
           "min_value"
         ],
         "properties": {
@@ -259,8 +259,8 @@
             "description": "Current discharge (m³/s); null when unavailable",
             "type": ["number", "null"]
           },
-          "threshold1": {
-            "description": "Low-flow threshold1 for this day-of-year (m³/s); null when unavailable",
+          "low_flow_threshold": {
+            "description": "Low-flow threshold for this day-of-year (m³/s); null when unavailable",
             "type": ["number", "null"]
           },
           "min_value": {
