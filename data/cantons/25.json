@@ -52,7 +52,7 @@
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
           "current_value": 0.289,
-          "threshold1": 0.648,
+          "low_flow_threshold": 0.648,
           "min_value": 0.28
         }
       ]

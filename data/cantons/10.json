@@ -52,14 +52,14 @@
           "station_id": "2159",
           "station_name": "Belp, Mülimatt (2159)",
           "current_value": 0.167,
-          "threshold1": 1.147,
+          "low_flow_threshold": 1.147,
           "min_value": 0.478
         },
         {
           "station_id": "2179",
           "station_name": "Thörishaus, Sensematt (2179)",
           "current_value": 1.408,
-          "threshold1": 3.139,
+          "low_flow_threshold": 3.139,
           "min_value": 1.246
         }
       ]
@@ -111,14 +111,14 @@
           "station_id": "2160",
           "station_name": "Broc, Château d'en bas (2160)",
           "current_value": 6.117,
-          "threshold1": 10.039,
+          "low_flow_threshold": 10.039,
           "min_value": 6.008
         },
         {
           "station_id": "2412",
           "station_name": "Vuippens, Château (2412)",
           "current_value": 0.129,
-          "threshold1": 0.261,
+          "low_flow_threshold": 0.261,
           "min_value": 0.13
         }
       ]
@@ -170,14 +170,14 @@
           "station_id": "2034",
           "station_name": "Payerne, Caserne d'aviation (2034)",
           "current_value": 0.589,
-          "threshold1": 1.528,
+          "low_flow_threshold": 1.528,
           "min_value": 0.434
         },
         {
           "station_id": "2369",
           "station_name": "Yvonand, La Mauguettaz (2369)",
           "current_value": 0.156,
-          "threshold1": 0.335,
+          "low_flow_threshold": 0.335,
           "min_value": 0.158
         }
       ]

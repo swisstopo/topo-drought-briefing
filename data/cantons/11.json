@@ -52,21 +52,21 @@
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
           "current_value": 1.768,
-          "threshold1": 4.378,
+          "low_flow_threshold": 4.378,
           "min_value": 2.039
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
           "current_value": 0.081,
-          "threshold1": 0.651,
+          "low_flow_threshold": 0.651,
           "min_value": 0.21
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
           "current_value": 0.295,
-          "threshold1": 0.555,
+          "low_flow_threshold": 0.555,
           "min_value": 0.209
         }
       ]
@@ -118,14 +118,14 @@
           "station_id": "2307",
           "station_name": "Sonceboz (2307)",
           "current_value": 0.654,
-          "threshold1": 1.051,
+          "low_flow_threshold": 1.051,
           "min_value": 0.5
         },
         {
           "station_id": "2434",
           "station_name": "Olten, Hammermühle (2434)",
           "current_value": 0.229,
-          "threshold1": 0.733,
+          "low_flow_threshold": 0.733,
           "min_value": 0.272
         }
       ]
@@ -177,7 +177,7 @@
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
           "current_value": 0.411,
-          "threshold1": 0.571,
+          "low_flow_threshold": 0.571,
           "min_value": 0.3
         }
       ]
@@ -229,14 +229,14 @@
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
           "current_value": 0.745,
-          "threshold1": 2.335,
+          "low_flow_threshold": 2.335,
           "min_value": 0.95
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
           "current_value": 1.486,
-          "threshold1": 1.649,
+          "low_flow_threshold": 1.649,
           "min_value": 1.013
         }
       ]

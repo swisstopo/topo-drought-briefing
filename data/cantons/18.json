@@ -52,7 +52,7 @@
           "station_id": "2033",
           "station_name": "Ilanz (2033)",
           "current_value": 12.545,
-          "threshold1": 33.436,
+          "low_flow_threshold": 33.436,
           "min_value": 18.41
         }
       ]
@@ -104,7 +104,7 @@
           "station_id": "2498",
           "station_name": "Castrisch (2498)",
           "current_value": 2.679,
-          "threshold1": 6.252,
+          "low_flow_threshold": 6.252,
           "min_value": 3.288
         }
       ]
@@ -156,14 +156,14 @@
           "station_id": "2141",
           "station_name": "Tiefencastel (2141)",
           "current_value": 10.045,
-          "threshold1": 16.458,
+          "low_flow_threshold": 16.458,
           "min_value": 11.159
         },
         {
           "station_id": "2355",
           "station_name": "Davos, Frauenkirch (2355)",
           "current_value": 3.454,
-          "threshold1": 6.152,
+          "low_flow_threshold": 6.152,
           "min_value": 3.89
         }
       ]
@@ -215,7 +215,7 @@
           "station_id": "2150",
           "station_name": "Felsenbach (2150)",
           "current_value": 9.04,
-          "threshold1": 20.455,
+          "low_flow_threshold": 20.455,
           "min_value": 11.99
         }
       ]
@@ -267,7 +267,7 @@
           "station_id": "2494",
           "station_name": "Pollegio, Campagna (2494)",
           "current_value": 5.787,
-          "threshold1": 15.194,
+          "low_flow_threshold": 15.194,
           "min_value": 6.989
         }
       ]
@@ -319,7 +319,7 @@
           "station_id": "2420",
           "station_name": "Lumino, Sassello (2420)",
           "current_value": 3.285,
-          "threshold1": 12.332,
+          "low_flow_threshold": 12.332,
           "min_value": 7.395
         }
       ]
@@ -371,7 +371,7 @@
           "station_id": "2617",
           "station_name": "Müstair (2617)",
           "current_value": 1.423,
-          "threshold1": 2.5,
+          "low_flow_threshold": 2.5,
           "min_value": 1.56
         }
       ]
@@ -423,28 +423,28 @@
           "station_id": "2105",
           "station_name": "St. Moritzbad (2105)",
           "current_value": 4.794,
-          "threshold1": 7.4,
+          "low_flow_threshold": 7.4,
           "min_value": 3.478
         },
         {
           "station_id": "2256",
           "station_name": "Pontresina (2256)",
           "current_value": 5.317,
-          "threshold1": 6.883,
+          "low_flow_threshold": 6.883,
           "min_value": 2.573
         },
         {
           "station_id": "2262",
           "station_name": "Pontresina (2262)",
           "current_value": 8.222,
-          "threshold1": 9.05,
+          "low_flow_threshold": 9.05,
           "min_value": 4.716
         },
         {
           "station_id": "2263",
           "station_name": "La Punt-Chamues-ch (2263)",
           "current_value": 1.5,
-          "threshold1": 2.235,
+          "low_flow_threshold": 2.235,
           "min_value": 1.259
         }
       ]
@@ -496,14 +496,14 @@
           "station_id": "2304",
           "station_name": "Zernez, Punt la Drossa (2304)",
           "current_value": 0.585,
-          "threshold1": 0.861,
+          "low_flow_threshold": 0.861,
           "min_value": 0.468
         },
         {
           "station_id": "2319",
           "station_name": "Zernez (2319)",
           "current_value": 0.569,
-          "threshold1": 0.745,
+          "low_flow_threshold": 0.745,
           "min_value": 0.29
         }
       ]

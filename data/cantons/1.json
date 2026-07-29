@@ -52,21 +52,21 @@
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
           "current_value": 0.17,
-          "threshold1": 0.636,
+          "low_flow_threshold": 0.636,
           "min_value": 0.131
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
           "current_value": 0.172,
-          "threshold1": 0.744,
+          "low_flow_threshold": 0.744,
           "min_value": 0.194
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
           "current_value": 0.127,
-          "threshold1": 0.318,
+          "low_flow_threshold": 0.318,
           "min_value": 0.085
         }
       ]
@@ -118,21 +118,21 @@
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
           "current_value": 0.992,
-          "threshold1": 2.418,
+          "low_flow_threshold": 2.418,
           "min_value": 1.086
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
           "current_value": 0.053,
-          "threshold1": 0.171,
+          "low_flow_threshold": 0.171,
           "min_value": 0.064
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
           "current_value": 0.673,
-          "threshold1": 1.115,
+          "low_flow_threshold": 1.115,
           "min_value": 0.523
         }
       ]
@@ -184,7 +184,7 @@
           "station_id": "ZH582",
           "station_name": "Rüti (ZH582)",
           "current_value": 0.255,
-          "threshold1": 0.778,
+          "low_flow_threshold": 0.778,
           "min_value": 0.254
         }
       ]
@@ -236,7 +236,7 @@
           "station_id": "2181",
           "station_name": "Halden (2181)",
           "current_value": 6.666,
-          "threshold1": 14.015,
+          "low_flow_threshold": 14.015,
           "min_value": 4.14
         }
       ]

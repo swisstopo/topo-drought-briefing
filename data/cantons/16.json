@@ -52,7 +52,7 @@
           "station_id": "2181",
           "station_name": "Halden (2181)",
           "current_value": 6.666,
-          "threshold1": 14.015,
+          "low_flow_threshold": 14.015,
           "min_value": 4.14
         }
       ]
@@ -104,21 +104,21 @@
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
           "current_value": 2.633,
-          "threshold1": 8.044,
+          "low_flow_threshold": 8.044,
           "min_value": 4.084
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
           "current_value": 3.177,
-          "threshold1": 5.937,
+          "low_flow_threshold": 5.937,
           "min_value": 3.88
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
           "current_value": 2.202,
-          "threshold1": 4.525,
+          "low_flow_threshold": 4.525,
           "min_value": 2.916
         }
       ]

@@ -52,28 +52,28 @@
           "station_id": "2084",
           "station_name": "Ingenbohl (2084)",
           "current_value": 3.331,
-          "threshold1": 14.09,
+          "low_flow_threshold": 14.09,
           "min_value": 3.319
         },
         {
           "station_id": "2300",
           "station_name": "Euthal, Rüti (2300)",
           "current_value": 0.186,
-          "threshold1": 0.98,
+          "low_flow_threshold": 0.98,
           "min_value": 0.114
         },
         {
           "station_id": "2604",
           "station_name": "Biberbrugg (2604)",
           "current_value": 0.067,
-          "threshold1": 0.248,
+          "low_flow_threshold": 0.248,
           "min_value": 0.048
         },
         {
           "station_id": "2609",
           "station_name": "Einsiedeln (2609)",
           "current_value": 0.168,
-          "threshold1": 0.653,
+          "low_flow_threshold": 0.653,
           "min_value": 0.169
         }
       ]
@@ -125,14 +125,14 @@
           "station_id": "2056",
           "station_name": "Seedorf (2056)",
           "current_value": 30.166,
-          "threshold1": 61.76,
+          "low_flow_threshold": 61.76,
           "min_value": 44.915
         },
         {
           "station_id": "2276",
           "station_name": "Isenthal (2276)",
           "current_value": 0.746,
-          "threshold1": 1.733,
+          "low_flow_threshold": 1.733,
           "min_value": 1.0
         }
       ]
@@ -184,7 +184,7 @@
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
           "current_value": 20.8,
-          "threshold1": 50.311,
+          "low_flow_threshold": 50.311,
           "min_value": 27.867
         }
       ]

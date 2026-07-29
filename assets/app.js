@@ -106,6 +106,12 @@
    * already rendered for screen dimensions.
    */
   window.exportBriefing = function () {
+    if (!document.body.classList.contains('page-canton')) {
+      var lang = document.documentElement.lang || 'de';
+      var msg = lang === 'fr' ? 'Veuillez d\'abord choisir un canton.' : 'Bitte zuerst einen Kanton auswählen.';
+      _showToast(msg);
+      return;
+    }
     _setMapPrintLabel();
     var active = document.querySelector('.map-frame-active');
     if (active) {

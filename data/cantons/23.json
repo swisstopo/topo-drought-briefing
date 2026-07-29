@@ -52,14 +52,14 @@
           "station_id": "2203",
           "station_name": "Aigle (2203)",
           "current_value": 1.668,
-          "threshold1": 3.045,
+          "low_flow_threshold": 3.045,
           "min_value": 1.838
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
           "current_value": 0.16,
-          "threshold1": 0.342,
+          "low_flow_threshold": 0.342,
           "min_value": 0.149
         }
       ]
@@ -111,7 +111,7 @@
           "station_id": "2053",
           "station_name": "Martigny, Pont de Rossettan (2053)",
           "current_value": 3.207,
-          "threshold1": 11.812,
+          "low_flow_threshold": 11.812,
           "min_value": 7.093
         }
       ]
@@ -163,7 +163,7 @@
           "station_id": "2630",
           "station_name": "Sion (2630)",
           "current_value": 0.312,
-          "threshold1": 0.279,
+          "low_flow_threshold": 0.279,
           "min_value": 0.203
         }
       ]
@@ -215,7 +215,7 @@
           "station_id": "2351",
           "station_name": "Visp (2351)",
           "current_value": 20.261,
-          "threshold1": 27.124,
+          "low_flow_threshold": 27.124,
           "min_value": 9.278
         }
       ]
@@ -267,7 +267,7 @@
           "station_id": "2346",
           "station_name": "Brig (2346)",
           "current_value": 87.925,
-          "threshold1": 91.338,
+          "low_flow_threshold": 91.338,
           "min_value": 43.643
         }
       ]

@@ -52,21 +52,21 @@
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
           "current_value": 0.17,
-          "threshold1": 0.636,
+          "low_flow_threshold": 0.636,
           "min_value": 0.131
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
           "current_value": 0.172,
-          "threshold1": 0.744,
+          "low_flow_threshold": 0.744,
           "min_value": 0.194
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
           "current_value": 0.127,
-          "threshold1": 0.318,
+          "low_flow_threshold": 0.318,
           "min_value": 0.085
         }
       ]

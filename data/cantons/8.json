@@ -52,7 +52,7 @@
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
           "current_value": 20.8,
-          "threshold1": 50.311,
+          "low_flow_threshold": 50.311,
           "min_value": 27.867
         }
       ]

@@ -52,14 +52,14 @@
           "station_id": "2160",
           "station_name": "Broc, Château d'en bas (2160)",
           "current_value": 6.117,
-          "threshold1": 10.039,
+          "low_flow_threshold": 10.039,
           "min_value": 6.008
         },
         {
           "station_id": "2412",
           "station_name": "Vuippens, Château (2412)",
           "current_value": 0.129,
-          "threshold1": 0.261,
+          "low_flow_threshold": 0.261,
           "min_value": 0.13
         }
       ]
@@ -111,28 +111,28 @@
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
           "current_value": 1.887,
-          "threshold1": 2.762,
+          "low_flow_threshold": 2.762,
           "min_value": 2.11
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
           "current_value": 0.047,
-          "threshold1": 0.093,
+          "low_flow_threshold": 0.093,
           "min_value": 0.039
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
           "current_value": 1.347,
-          "threshold1": 2.19,
+          "low_flow_threshold": 2.19,
           "min_value": 0.973
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
           "current_value": 0.322,
-          "threshold1": 0.28,
+          "low_flow_threshold": 0.28,
           "min_value": 0.111
         }
       ]
@@ -184,14 +184,14 @@
           "station_id": "2034",
           "station_name": "Payerne, Caserne d'aviation (2034)",
           "current_value": 0.589,
-          "threshold1": 1.528,
+          "low_flow_threshold": 1.528,
           "min_value": 0.434
         },
         {
           "station_id": "2369",
           "station_name": "Yvonand, La Mauguettaz (2369)",
           "current_value": 0.156,
-          "threshold1": 0.335,
+          "low_flow_threshold": 0.335,
           "min_value": 0.158
         }
       ]
@@ -243,7 +243,7 @@
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
           "current_value": 0.289,
-          "threshold1": 0.648,
+          "low_flow_threshold": 0.648,
           "min_value": 0.28
         }
       ]
@@ -295,14 +295,14 @@
           "station_id": "2203",
           "station_name": "Aigle (2203)",
           "current_value": 1.668,
-          "threshold1": 3.045,
+          "low_flow_threshold": 3.045,
           "min_value": 1.838
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
           "current_value": 0.16,
-          "threshold1": 0.342,
+          "low_flow_threshold": 0.342,
           "min_value": 0.149
         }
       ]

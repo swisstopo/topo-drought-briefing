@@ -52,7 +52,7 @@
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
           "current_value": 3.255,
-          "threshold1": 5.208,
+          "low_flow_threshold": 5.208,
           "min_value": 3.201
         }
       ]
@@ -104,28 +104,28 @@
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
           "current_value": 1.887,
-          "threshold1": 2.762,
+          "low_flow_threshold": 2.762,
           "min_value": 2.11
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
           "current_value": 0.047,
-          "threshold1": 0.093,
+          "low_flow_threshold": 0.093,
           "min_value": 0.039
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
           "current_value": 1.347,
-          "threshold1": 2.19,
+          "low_flow_threshold": 2.19,
           "min_value": 0.973
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
           "current_value": 0.322,
-          "threshold1": 0.28,
+          "low_flow_threshold": 0.28,
           "min_value": 0.111
         }
       ]

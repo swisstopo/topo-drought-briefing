@@ -52,14 +52,14 @@
           "station_id": "2244",
           "station_name": "Klusmatten (2244)",
           "current_value": 0.366,
-          "threshold1": 0.618,
+          "low_flow_threshold": 0.618,
           "min_value": 0.36
         },
         {
           "station_id": "2605",
           "station_name": "Lavertezzo, Campiòi (2605)",
           "current_value": 1.539,
-          "threshold1": 3.339,
+          "low_flow_threshold": 3.339,
           "min_value": 1.393
         }
       ]
@@ -111,7 +111,7 @@
           "station_id": "2494",
           "station_name": "Pollegio, Campagna (2494)",
           "current_value": 5.787,
-          "threshold1": 15.194,
+          "low_flow_threshold": 15.194,
           "min_value": 6.989
         }
       ]
@@ -163,7 +163,7 @@
           "station_id": "2420",
           "station_name": "Lumino, Sassello (2420)",
           "current_value": 3.285,
-          "threshold1": 12.332,
+          "low_flow_threshold": 12.332,
           "min_value": 7.395
         }
       ]
@@ -215,21 +215,21 @@
           "station_id": "2321",
           "station_name": "Pregassona (2321)",
           "current_value": 0.451,
-          "threshold1": 0.724,
+          "low_flow_threshold": 0.724,
           "min_value": 0.41
         },
         {
           "station_id": "2349",
           "station_name": "Chiasso, Ponte di Polenta (2349)",
           "current_value": 0.031,
-          "threshold1": 0.073,
+          "low_flow_threshold": 0.073,
           "min_value": 0.021
         },
         {
           "station_id": "2461",
           "station_name": "Magliaso, Ponte (2461)",
           "current_value": 0.187,
-          "threshold1": 0.226,
+          "low_flow_threshold": 0.226,
           "min_value": 0.088
         }
       ]

@@ -52,21 +52,21 @@
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
           "current_value": 1.768,
-          "threshold1": 4.378,
+          "low_flow_threshold": 4.378,
           "min_value": 2.039
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
           "current_value": 0.081,
-          "threshold1": 0.651,
+          "low_flow_threshold": 0.651,
           "min_value": 0.21
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
           "current_value": 0.295,
-          "threshold1": 0.555,
+          "low_flow_threshold": 0.555,
           "min_value": 0.209
         }
       ]
@@ -118,7 +118,7 @@
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
           "current_value": 0.411,
-          "threshold1": 0.571,
+          "low_flow_threshold": 0.571,
           "min_value": 0.3
         }
       ]
@@ -170,14 +170,14 @@
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
           "current_value": 0.745,
-          "threshold1": 2.335,
+          "low_flow_threshold": 2.335,
           "min_value": 0.95
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
           "current_value": 1.486,
-          "threshold1": 1.649,
+          "low_flow_threshold": 1.649,
           "min_value": 1.013
         }
       ]
@@ -229,21 +229,21 @@
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
           "current_value": 0.17,
-          "threshold1": 0.636,
+          "low_flow_threshold": 0.636,
           "min_value": 0.131
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
           "current_value": 0.172,
-          "threshold1": 0.744,
+          "low_flow_threshold": 0.744,
           "min_value": 0.194
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
           "current_value": 0.127,
-          "threshold1": 0.318,
+          "low_flow_threshold": 0.318,
           "min_value": 0.085
         }
       ]
@@ -295,21 +295,21 @@
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
           "current_value": 0.992,
-          "threshold1": 2.418,
+          "low_flow_threshold": 2.418,
           "min_value": 1.086
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
           "current_value": 0.053,
-          "threshold1": 0.171,
+          "low_flow_threshold": 0.171,
           "min_value": 0.064
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
           "current_value": 0.673,
-          "threshold1": 1.115,
+          "low_flow_threshold": 1.115,
           "min_value": 0.523
         }
       ]
