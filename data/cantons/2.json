@@ -2,17 +2,17 @@
   "canton_id": 2,
   "canton_name_de": "Bern",
   "canton_name_fr": "Berne",
-  "data_timestamp": "2026-07-29T00:00:00",
+  "data_timestamp": "2026-07-30T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-07-29T00:00:00",
+      "data_timestamp": "2026-07-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.6,
-      "soil_moisture_pct": 16.4,
+      "soil_moisture_pct": 15.8,
       "vhi": 26.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.010000000000000231,
@@ -20,7 +20,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
+      "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 4,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 3,
       "discharge": {
         "n_total": 1,
@@ -51,7 +51,7 @@
         {
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
-          "current_value": 0.402,
+          "current_value": 0.3963333333333333,
           "low_flow_threshold": 0.571,
           "min_value": 0.3
         }
@@ -60,11 +60,11 @@
     {
       "region_id": 34,
       "region_name_de": "Berner Mittelland",
-      "data_timestamp": "2026-07-29T00:00:00",
+      "data_timestamp": "2026-07-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.78,
-      "soil_moisture_pct": 18.7,
+      "soil_moisture_pct": 18.0,
       "vhi": 25.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.029999999999999805,
@@ -72,7 +72,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -89,9 +89,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
       "precip_1m_index_forecast": 5,
-      "soil_moisture_index_forecast": 5,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 3,
       "discharge": {
         "n_total": 2,
@@ -103,14 +103,14 @@
         {
           "station_id": "2159",
           "station_name": "Belp, Mülimatt (2159)",
-          "current_value": 0.1445,
+          "current_value": 0.1376666666666667,
           "low_flow_threshold": 1.147,
           "min_value": 0.478
         },
         {
           "station_id": "2179",
           "station_name": "Thörishaus, Sensematt (2179)",
-          "current_value": 1.342,
+          "current_value": 1.301,
           "low_flow_threshold": 3.139,
           "min_value": 1.246
         }
@@ -119,11 +119,11 @@
     {
       "region_id": 35,
       "region_name_de": "Westliches Berner Oberland",
-      "data_timestamp": "2026-07-29T00:00:00",
+      "data_timestamp": "2026-07-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.55,
-      "soil_moisture_pct": 54.7,
+      "soil_moisture_pct": 52.4,
       "vhi": 44.0,
       "cdi_trend": 1,
       "spi_3m_delta": 0.010000000000000009,
@@ -131,7 +131,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -147,10 +147,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 5,
-      "soil_moisture_index_forecast": 5,
-      "precip_deficit_delta": 4,
-      "soil_moisture_deficit_delta": 0,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": 3,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 1,
       "discharge": {
         "n_total": 2,
@@ -162,14 +162,14 @@
         {
           "station_id": "2151",
           "station_name": "Oberwil (2151)",
-          "current_value": 11.37,
+          "current_value": 10.493666666666668,
           "low_flow_threshold": 12.31,
           "min_value": 9.301
         },
         {
           "station_id": "2646",
           "station_name": "Emdthal (2646)",
-          "current_value": 18.1145,
+          "current_value": 19.049333333333333,
           "low_flow_threshold": 21.579,
           "min_value": 21.454
         }
@@ -178,11 +178,11 @@
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-07-29T00:00:00",
+      "data_timestamp": "2026-07-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.7,
-      "soil_moisture_pct": 10.3,
+      "soil_moisture_pct": 9.7,
       "vhi": 30.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.040000000000000036,
@@ -190,7 +190,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -205,11 +205,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 5,
-      "precip_1m_index_forecast": 5,
-      "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": 3,
-      "soil_moisture_deficit_delta": -1,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 2,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 2,
       "discharge": {
         "n_total": 2,
@@ -221,14 +221,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 0.7105,
+          "current_value": 0.6853333333333333,
           "low_flow_threshold": 2.335,
           "min_value": 0.95
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 1.457,
+          "current_value": 1.42,
           "low_flow_threshold": 1.649,
           "min_value": 1.013
         }
@@ -237,11 +237,11 @@
     {
       "region_id": 38,
       "region_name_de": "Oberes Emmental",
-      "data_timestamp": "2026-07-29T00:00:00",
+      "data_timestamp": "2026-07-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.02,
-      "soil_moisture_pct": 34.4,
+      "soil_moisture_pct": 33.1,
       "vhi": 45.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.0,
@@ -249,7 +249,7 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -266,9 +266,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 5,
       "precip_1m_index_forecast": 4,
-      "soil_moisture_index_forecast": 5,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": 3,
-      "soil_moisture_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
@@ -280,7 +280,7 @@
         {
           "station_id": "2070",
           "station_name": "Emmenmatt, nur Hauptstation (2070)",
-          "current_value": 0.541,
+          "current_value": 0.5256666666666666,
           "low_flow_threshold": 3.48,
           "min_value": 1.209
         }
@@ -289,11 +289,11 @@
     {
       "region_id": 41,
       "region_name_de": "Östliches Berner Oberland",
-      "data_timestamp": "2026-07-29T00:00:00",
+      "data_timestamp": "2026-07-30T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.84,
-      "soil_moisture_pct": 79.5,
+      "soil_moisture_pct": 77.8,
       "vhi": 45.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.06999999999999984,
@@ -301,7 +301,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -332,14 +332,14 @@
         {
           "station_id": "2019",
           "station_name": "Brienzwiler (2019)",
-          "current_value": 36.0715,
+          "current_value": 39.095666666666666,
           "low_flow_threshold": 59.337,
           "min_value": 43.495
         },
         {
           "station_id": "2109",
           "station_name": "Gsteig (2109)",
-          "current_value": 24.13,
+          "current_value": 27.456666666666667,
           "low_flow_threshold": 37.35,
           "min_value": 24.327
         }
@@ -364,7 +364,7 @@
     "5": 4
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -374,7 +374,7 @@
   "n_regions_dry": 6,
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": 0,
+  "cdi_situation_delta": -2,
   "mean_precip_sum_1m": 92.4,
   "mean_precip_sum_3m": 247.9,
   "precip_index_min": 1,
