@@ -2,13 +2,13 @@
   "canton_id": 11,
   "canton_name_de": "Solothurn",
   "canton_name_fr": "Soleure",
-  "data_timestamp": "2026-07-31T00:00:00",
+  "data_timestamp": "2026-08-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-07-31T00:00:00",
+      "data_timestamp": "2026-08-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.66,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,9 +36,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 1,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -3,
+      "precip_deficit_delta": -2,
       "soil_moisture_deficit_delta": -2,
       "vhi_index": 2,
       "discharge": {
@@ -51,21 +51,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 1.7215,
+          "current_value": 1.666,
           "low_flow_threshold": 4.378,
           "min_value": 2.039
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.068,
+          "current_value": 0.0636,
           "low_flow_threshold": 0.651,
           "min_value": 0.21
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.2907499999999999,
+          "current_value": 0.2894,
           "low_flow_threshold": 0.555,
           "min_value": 0.209
         }
@@ -74,7 +74,7 @@
     {
       "region_id": 32,
       "region_name_de": "Balsthal",
-      "data_timestamp": "2026-07-31T00:00:00",
+      "data_timestamp": "2026-08-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.38,
@@ -86,7 +86,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -102,9 +102,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 2,
-      "precip_1m_index_forecast": 1,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -3,
+      "precip_deficit_delta": -2,
       "soil_moisture_deficit_delta": -3,
       "vhi_index": 2,
       "discharge": {
@@ -117,14 +117,14 @@
         {
           "station_id": "2307",
           "station_name": "Sonceboz (2307)",
-          "current_value": 0.63425,
+          "current_value": 0.6308,
           "low_flow_threshold": 1.051,
           "min_value": 0.5
         },
         {
           "station_id": "2434",
           "station_name": "Olten, Hammermühle (2434)",
-          "current_value": 0.222,
+          "current_value": 0.2213999999999999,
           "low_flow_threshold": 0.733,
           "min_value": 0.272
         }
@@ -133,7 +133,7 @@
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-07-31T00:00:00",
+      "data_timestamp": "2026-08-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.6,
@@ -145,7 +145,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -160,7 +160,7 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
+      "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": -2,
@@ -176,7 +176,7 @@
         {
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
-          "current_value": 0.3925,
+          "current_value": 0.3903999999999999,
           "low_flow_threshold": 0.571,
           "min_value": 0.3
         }
@@ -185,7 +185,7 @@
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-07-31T00:00:00",
+      "data_timestamp": "2026-08-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.7,
@@ -197,7 +197,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -213,10 +213,10 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -3,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 2,
       "discharge": {
         "n_total": 2,
@@ -228,14 +228,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 0.6585000000000001,
+          "current_value": 0.6402,
           "low_flow_threshold": 2.335,
           "min_value": 0.95
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 1.3895,
+          "current_value": 1.3442,
           "low_flow_threshold": 1.649,
           "min_value": 1.013
         }
@@ -258,7 +258,7 @@
     "4": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -268,7 +268,7 @@
   "n_regions_dry": 4,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -9,
+  "cdi_situation_delta": -8,
   "mean_precip_sum_1m": 48.6,
   "mean_precip_sum_3m": 163.8,
   "precip_index_min": 2,

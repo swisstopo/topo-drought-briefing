@@ -2,13 +2,13 @@
   "canton_id": 17,
   "canton_name_de": "St. Gallen",
   "canton_name_fr": "Saint-Gall",
-  "data_timestamp": "2026-07-31T00:00:00",
+  "data_timestamp": "2026-08-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 43,
       "region_name_de": "Zürichseebecken",
-      "data_timestamp": "2026-07-31T00:00:00",
+      "data_timestamp": "2026-08-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.72,
@@ -20,7 +20,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
@@ -51,7 +51,7 @@
         {
           "station_id": "ZH582",
           "station_name": "Rüti (ZH582)",
-          "current_value": 0.238,
+          "current_value": 0.2367999999999999,
           "low_flow_threshold": 0.778,
           "min_value": 0.254
         }
@@ -60,7 +60,7 @@
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-07-31T00:00:00",
+      "data_timestamp": "2026-08-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.41,
@@ -72,7 +72,7 @@
       "pct_critical": 0.25,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -103,7 +103,7 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 4.27075,
+          "current_value": 4.0518,
           "low_flow_threshold": 14.015,
           "min_value": 4.14
         }
@@ -112,7 +112,7 @@
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-07-31T00:00:00",
+      "data_timestamp": "2026-08-01T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.85,
@@ -124,7 +124,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -155,7 +155,7 @@
         {
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
-          "current_value": 19.63325,
+          "current_value": 19.2928,
           "low_flow_threshold": 50.311,
           "min_value": 27.867
         }
@@ -164,7 +164,7 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-07-31T00:00:00",
+      "data_timestamp": "2026-08-01T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.94,
@@ -176,7 +176,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -193,9 +193,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
@@ -207,21 +207,21 @@
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 2.704,
+          "current_value": 2.713,
           "low_flow_threshold": 8.044,
           "min_value": 4.084
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 3.0680000000000005,
+          "current_value": 3.0398000000000005,
           "low_flow_threshold": 5.937,
           "min_value": 3.88
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 2.29625,
+          "current_value": 2.2906,
           "low_flow_threshold": 4.525,
           "min_value": 2.916
         }
@@ -244,7 +244,7 @@
     "5": 4
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
