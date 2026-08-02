@@ -2,13 +2,13 @@
   "canton_id": 5,
   "canton_name_de": "Schwyz",
   "canton_name_fr": "Schwytz",
-  "data_timestamp": "2026-08-01T00:00:00",
+  "data_timestamp": "2026-08-02T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 43,
       "region_name_de": "Zürichseebecken",
-      "data_timestamp": "2026-08-01T00:00:00",
+      "data_timestamp": "2026-08-02T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.72,
@@ -20,7 +20,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -3,
       "vhi_index": 2,
       "discharge": {
         "n_total": 1,
@@ -51,7 +51,7 @@
         {
           "station_id": "ZH582",
           "station_name": "Rüti (ZH582)",
-          "current_value": 0.2367999999999999,
+          "current_value": 0.2583333333333333,
           "low_flow_threshold": 0.778,
           "min_value": 0.254
         }
@@ -60,7 +60,7 @@
     {
       "region_id": 44,
       "region_name_de": "östliche Zentralschweiz",
-      "data_timestamp": "2026-08-01T00:00:00",
+      "data_timestamp": "2026-08-02T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.28,
@@ -72,7 +72,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -103,28 +103,28 @@
         {
           "station_id": "2084",
           "station_name": "Ingenbohl (2084)",
-          "current_value": 3.4566000000000003,
+          "current_value": 3.6365,
           "low_flow_threshold": 14.09,
           "min_value": 3.319
         },
         {
           "station_id": "2300",
           "station_name": "Euthal, Rüti (2300)",
-          "current_value": 0.1576,
+          "current_value": 0.1711666666666667,
           "low_flow_threshold": 0.98,
           "min_value": 0.114
         },
         {
           "station_id": "2604",
           "station_name": "Biberbrugg (2604)",
-          "current_value": 0.0613999999999999,
+          "current_value": 0.066,
           "low_flow_threshold": 0.248,
           "min_value": 0.048
         },
         {
           "station_id": "2609",
           "station_name": "Einsiedeln (2609)",
-          "current_value": 0.1568,
+          "current_value": 0.1783333333333333,
           "low_flow_threshold": 0.653,
           "min_value": 0.169
         }
@@ -146,7 +146,7 @@
     "5": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
