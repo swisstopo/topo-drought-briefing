@@ -2,43 +2,43 @@
   "canton_id": 14,
   "canton_name_de": "Schaffhausen",
   "canton_name_fr": "Schaffhouse",
-  "data_timestamp": "2026-08-02T00:00:00",
+  "data_timestamp": "2026-08-03T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-08-02T00:00:00",
+      "data_timestamp": "2026-08-03T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.2,
-      "soil_moisture_pct": 11.1,
+      "spi_3m": -2.05,
+      "soil_moisture_pct": 8.8,
       "vhi": 42.0,
-      "cdi_trend": 1,
-      "spi_3m_delta": -0.06000000000000005,
+      "cdi_trend": 0,
+      "spi_3m_delta": 0.15000000000000036,
       "vhi_delta": 0.0,
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 72.9,
-      "precip_sum_3m": 177.8,
-      "precip_1m_index": 1,
+      "precip_sum_1m": 42.2,
+      "precip_sum_3m": 187.7,
+      "precip_1m_index": 4,
       "soil_moisture_index": 4,
       "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 2,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": -3,
       "soil_moisture_deficit_delta": -2,
       "vhi_index": 1,
       "discharge": {
@@ -51,21 +51,21 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.1231666666666666,
+          "current_value": 1.070285714285714,
           "low_flow_threshold": 2.418,
           "min_value": 1.086
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.087,
+          "current_value": 0.0839999999999999,
           "low_flow_threshold": 0.171,
           "min_value": 0.064
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.6509999999999999,
+          "current_value": 0.6492857142857142,
           "low_flow_threshold": 1.115,
           "min_value": 0.523
         }
@@ -76,7 +76,7 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "1": 1
+    "4": 1
   },
   "n_regions_by_soil_moisture_index": {
     "4": 1
@@ -85,7 +85,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -96,11 +96,11 @@
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
   "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 72.9,
-  "mean_precip_sum_3m": 177.8,
-  "precip_index_min": 1,
-  "precip_index_max": 1,
-  "n_regions_with_precip_deficit": 0,
+  "mean_precip_sum_1m": 42.2,
+  "mean_precip_sum_3m": 187.7,
+  "precip_index_min": 4,
+  "precip_index_max": 4,
+  "n_regions_with_precip_deficit": 1,
   "n_regions_with_soil_moisture_deficit": 1,
   "n_regions_with_vhi_stress": 0,
   "max_vhi_index": 1,

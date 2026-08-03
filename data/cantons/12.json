@@ -2,34 +2,34 @@
   "canton_id": 12,
   "canton_name_de": "Basel-Stadt",
   "canton_name_fr": "Bâle-Ville",
-  "data_timestamp": "2026-08-02T00:00:00",
+  "data_timestamp": "2026-08-03T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-08-02T00:00:00",
+      "data_timestamp": "2026-08-03T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.66,
-      "soil_moisture_pct": 5.0,
+      "spi_3m": -2.57,
+      "soil_moisture_pct": 3.6,
       "vhi": 33.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.020000000000000018,
+      "spi_3m_delta": 0.03000000000000025,
       "vhi_delta": 0.0,
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 35.3,
-      "precip_sum_3m": 151.5,
-      "precip_1m_index": 4,
+      "precip_sum_1m": 24.8,
+      "precip_sum_3m": 156.3,
+      "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
       "warnlevel": 4,
@@ -37,9 +37,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 2,
       "discharge": {
         "n_total": 3,
@@ -51,21 +51,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 1.6814999999999998,
+          "current_value": 1.667,
           "low_flow_threshold": 4.378,
           "min_value": 2.039
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.0681666666666666,
+          "current_value": 0.0657142857142857,
           "low_flow_threshold": 0.651,
           "min_value": 0.21
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.288,
+          "current_value": 0.2871428571428571,
           "low_flow_threshold": 0.555,
           "min_value": 0.209
         }
@@ -76,7 +76,7 @@
   "max_warnlevel_info_de": "Grosse Gefahr",
   "max_warnlevel_info_fr": "Danger fort",
   "n_regions_by_precip_index": {
-    "4": 1
+    "5": 1
   },
   "n_regions_by_soil_moisture_index": {
     "5": 1
@@ -85,7 +85,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -96,10 +96,10 @@
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
   "cdi_situation_delta": -1,
-  "mean_precip_sum_1m": 35.3,
-  "mean_precip_sum_3m": 151.5,
-  "precip_index_min": 4,
-  "precip_index_max": 4,
+  "mean_precip_sum_1m": 24.8,
+  "mean_precip_sum_3m": 156.3,
+  "precip_index_min": 5,
+  "precip_index_max": 5,
   "n_regions_with_precip_deficit": 1,
   "n_regions_with_soil_moisture_deficit": 1,
   "n_regions_with_vhi_stress": 1,
