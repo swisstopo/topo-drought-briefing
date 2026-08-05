@@ -2,17 +2,17 @@
   "canton_id": 1,
   "canton_name_de": "Zürich",
   "canton_name_fr": "Zurich",
-  "data_timestamp": "2026-08-04T00:00:00",
+  "data_timestamp": "2026-08-05T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-08-04T00:00:00",
+      "data_timestamp": "2026-08-05T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.28,
-      "soil_moisture_pct": 10.5,
+      "soil_moisture_pct": 10.2,
       "vhi": 21.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.050000000000000266,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,21 +51,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.149,
+          "current_value": 0.147,
           "low_flow_threshold": 0.576,
           "min_value": 0.118
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.122,
+          "current_value": 0.1175,
           "low_flow_threshold": 0.72,
           "min_value": 0.14
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.133,
+          "current_value": 0.1335,
           "low_flow_threshold": 0.305,
           "min_value": 0.083
         }
@@ -74,11 +74,11 @@
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-08-04T00:00:00",
+      "data_timestamp": "2026-08-05T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.05,
-      "soil_moisture_pct": 8.8,
+      "soil_moisture_pct": 8.7,
       "vhi": 24.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.15000000000000036,
@@ -86,7 +86,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -101,7 +101,7 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
+      "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 3,
       "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -1,
@@ -117,21 +117,21 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 0.892,
+          "current_value": 0.8535,
           "low_flow_threshold": 2.358,
           "min_value": 1.086
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.061,
+          "current_value": 0.0579999999999999,
           "low_flow_threshold": 0.17,
           "min_value": 0.064
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.641,
+          "current_value": 0.622,
           "low_flow_threshold": 1.103,
           "min_value": 0.523
         }
@@ -140,11 +140,11 @@
     {
       "region_id": 43,
       "region_name_de": "Zürichseebecken",
-      "data_timestamp": "2026-08-04T00:00:00",
+      "data_timestamp": "2026-08-05T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.73,
-      "soil_moisture_pct": 17.9,
+      "soil_moisture_pct": 17.3,
       "vhi": 19.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.0,
@@ -152,7 +152,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -183,7 +183,7 @@
         {
           "station_id": "ZH582",
           "station_name": "Rüti (ZH582)",
-          "current_value": 0.23,
+          "current_value": 0.2535,
           "low_flow_threshold": 0.81,
           "min_value": 0.254
         }
@@ -192,11 +192,11 @@
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-08-04T00:00:00",
+      "data_timestamp": "2026-08-05T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.4,
-      "soil_moisture_pct": 15.4,
+      "soil_moisture_pct": 14.7,
       "vhi": 19.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.010000000000000231,
@@ -204,7 +204,7 @@
       "pct_critical": 0.25,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -228,14 +228,14 @@
       "discharge": {
         "n_total": 1,
         "n_low": 1,
-        "n_very_low": 0,
+        "n_very_low": 1,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 7.56,
+          "current_value": 6.0945,
           "low_flow_threshold": 13.383,
           "min_value": 3.991
         }
@@ -258,7 +258,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -268,7 +268,7 @@
   "n_regions_dry": 4,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -5,
+  "cdi_situation_delta": -4,
   "mean_precip_sum_1m": 40.5,
   "mean_precip_sum_3m": 224.8,
   "precip_index_min": 4,
@@ -280,7 +280,7 @@
   "discharge": {
     "n_total": 8,
     "n_low": 8,
-    "n_very_low": 7,
+    "n_very_low": 8,
     "pct_low": 100
   }
 }
