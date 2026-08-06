@@ -2,17 +2,17 @@
   "canton_id": 11,
   "canton_name_de": "Solothurn",
   "canton_name_fr": "Soleure",
-  "data_timestamp": "2026-08-05T00:00:00",
+  "data_timestamp": "2026-08-06T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-08-05T00:00:00",
+      "data_timestamp": "2026-08-06T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.57,
-      "soil_moisture_pct": 3.5,
+      "soil_moisture_pct": 3.4,
       "vhi": 62.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.03000000000000025,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,37 +35,37 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -1,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 5,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
-        "n_very_low": 3,
+        "n_very_low": 2,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 1.5295,
+          "current_value": 1.6743333333333332,
           "low_flow_threshold": 4.262,
           "min_value": 2.039
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.3685,
+          "current_value": 0.2803333333333333,
           "low_flow_threshold": 0.656,
           "min_value": 0.21
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.2755,
+          "current_value": 0.4286666666666667,
           "low_flow_threshold": 0.543,
           "min_value": 0.206
         }
@@ -74,11 +74,11 @@
     {
       "region_id": 32,
       "region_name_de": "Balsthal",
-      "data_timestamp": "2026-08-05T00:00:00",
+      "data_timestamp": "2026-08-06T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.42,
-      "soil_moisture_pct": 6.6,
+      "soil_moisture_pct": 6.5,
       "vhi": 82.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.020000000000000018,
@@ -86,7 +86,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -101,11 +101,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
+      "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -3,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 2,
@@ -117,14 +117,14 @@
         {
           "station_id": "2307",
           "station_name": "Sonceboz (2307)",
-          "current_value": 0.6134999999999999,
+          "current_value": 0.8326666666666666,
           "low_flow_threshold": 1.029,
           "min_value": 0.5
         },
         {
           "station_id": "2434",
           "station_name": "Olten, Hammermühle (2434)",
-          "current_value": 0.4705,
+          "current_value": 0.424,
           "low_flow_threshold": 0.726,
           "min_value": 0.249
         }
@@ -133,11 +133,11 @@
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-08-05T00:00:00",
+      "data_timestamp": "2026-08-06T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.66,
-      "soil_moisture_pct": 12.4,
+      "soil_moisture_pct": 12.2,
       "vhi": 60.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.07000000000000028,
@@ -145,7 +145,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -160,11 +160,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -2,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
@@ -176,7 +176,7 @@
         {
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
-          "current_value": 0.3925,
+          "current_value": 0.3986666666666666,
           "low_flow_threshold": 0.557,
           "min_value": 0.295
         }
@@ -185,11 +185,11 @@
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-08-05T00:00:00",
+      "data_timestamp": "2026-08-06T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.76,
-      "soil_moisture_pct": 6.6,
+      "soil_moisture_pct": 6.4,
       "vhi": 31.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.05999999999999961,
@@ -197,7 +197,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -212,30 +212,30 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -2,
+      "cdi_forecast_week2": 4,
+      "precip_1m_index_forecast": 4,
+      "soil_moisture_index_forecast": 4,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 2,
       "discharge": {
         "n_total": 2,
-        "n_low": 2,
-        "n_very_low": 2,
-        "pct_low": 100
+        "n_low": 1,
+        "n_very_low": 1,
+        "pct_low": 50
       },
       "hydro_stations": [
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 0.659,
+          "current_value": 0.7120000000000001,
           "low_flow_threshold": 2.275,
           "min_value": 0.935
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 1.405,
+          "current_value": 1.7410000000000003,
           "low_flow_threshold": 1.604,
           "min_value": 1.013
         }
@@ -256,7 +256,7 @@
     "4": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -266,7 +266,7 @@
   "n_regions_dry": 4,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -7,
+  "cdi_situation_delta": -3,
   "mean_precip_sum_1m": 30.1,
   "mean_precip_sum_3m": 164.8,
   "precip_index_min": 5,
@@ -277,8 +277,8 @@
   "max_vhi_index": 2,
   "discharge": {
     "n_total": 8,
-    "n_low": 8,
-    "n_very_low": 7,
-    "pct_low": 100
+    "n_low": 7,
+    "n_very_low": 5,
+    "pct_low": 88
   }
 }
