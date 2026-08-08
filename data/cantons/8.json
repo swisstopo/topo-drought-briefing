@@ -2,13 +2,13 @@
   "canton_id": 8,
   "canton_name_de": "Glarus",
   "canton_name_fr": "Glaris",
-  "data_timestamp": "2026-08-07T00:00:00",
+  "data_timestamp": "2026-08-08T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-08-07T00:00:00",
+      "data_timestamp": "2026-08-08T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.94,
@@ -20,7 +20,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,9 +36,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 1,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 3,
-      "precip_deficit_delta": -2,
+      "precip_deficit_delta": -1,
       "soil_moisture_deficit_delta": -1,
       "vhi_index": 2,
       "discharge": {
@@ -51,7 +51,7 @@
         {
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
-          "current_value": 17.41775,
+          "current_value": 17.441000000000003,
           "low_flow_threshold": 47.698,
           "min_value": 26.603
         }
@@ -71,7 +71,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],

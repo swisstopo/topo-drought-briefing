@@ -2,13 +2,13 @@
   "canton_id": 20,
   "canton_name_de": "Thurgau",
   "canton_name_fr": "Thurgovie",
-  "data_timestamp": "2026-08-07T00:00:00",
+  "data_timestamp": "2026-08-08T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-08-07T00:00:00",
+      "data_timestamp": "2026-08-08T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.05,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
+      "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 3,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 4,
       "discharge": {
         "n_total": 3,
@@ -51,7 +51,7 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 0.8087500000000001,
+          "current_value": 0.7968,
           "low_flow_threshold": 2.358,
           "min_value": 1.086
         },
@@ -65,7 +65,7 @@
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.631,
+          "current_value": 0.6305999999999999,
           "low_flow_threshold": 1.103,
           "min_value": 0.523
         }
@@ -85,7 +85,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -95,7 +95,7 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -2,
+  "cdi_situation_delta": -1,
   "mean_precip_sum_1m": 42.2,
   "mean_precip_sum_3m": 187.7,
   "precip_index_min": 4,
