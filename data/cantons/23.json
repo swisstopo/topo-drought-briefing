@@ -2,13 +2,13 @@
   "canton_id": 23,
   "canton_name_de": "Valais",
   "canton_name_fr": "Valais",
-  "data_timestamp": "2026-08-08T00:00:00",
+  "data_timestamp": "2026-08-09T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 57,
       "region_name_de": "Chablais",
-      "data_timestamp": "2026-08-08T00:00:00",
+      "data_timestamp": "2026-08-09T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.24,
@@ -20,7 +20,7 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 9,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -36,9 +36,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 2,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -1,
+      "precip_deficit_delta": -2,
       "soil_moisture_deficit_delta": -3,
       "vhi_index": 1,
       "discharge": {
@@ -51,14 +51,14 @@
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 1.5610000000000002,
+          "current_value": 1.5123333333333335,
           "low_flow_threshold": 2.918,
           "min_value": 1.838
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 0.1672,
+          "current_value": 0.16,
           "low_flow_threshold": 0.334,
           "min_value": 0.145
         }
@@ -67,7 +67,7 @@
     {
       "region_id": 58,
       "region_name_de": "Walliser Südalpen",
-      "data_timestamp": "2026-08-08T00:00:00",
+      "data_timestamp": "2026-08-09T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.19,
@@ -79,7 +79,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 10,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -110,7 +110,7 @@
         {
           "station_id": "2053",
           "station_name": "Martigny, Pont de Rossettan (2053)",
-          "current_value": 5.279,
+          "current_value": 5.181166666666667,
           "low_flow_threshold": 11.686,
           "min_value": 7.646
         }
@@ -119,7 +119,7 @@
     {
       "region_id": 59,
       "region_name_de": "nördliches Wallis",
-      "data_timestamp": "2026-08-08T00:00:00",
+      "data_timestamp": "2026-08-09T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -1.02,
@@ -131,7 +131,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 13,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -162,7 +162,7 @@
         {
           "station_id": "2630",
           "station_name": "Sion (2630)",
-          "current_value": 0.2556,
+          "current_value": 0.2533333333333333,
           "low_flow_threshold": 0.282,
           "min_value": 0.163
         }
@@ -171,7 +171,7 @@
     {
       "region_id": 60,
       "region_name_de": "Vispertäler",
-      "data_timestamp": "2026-08-08T00:00:00",
+      "data_timestamp": "2026-08-09T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.92,
@@ -183,7 +183,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 16,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -214,7 +214,7 @@
         {
           "station_id": "2351",
           "station_name": "Visp (2351)",
-          "current_value": 31.9272,
+          "current_value": 30.843333333333334,
           "low_flow_threshold": 26.698,
           "min_value": 9.278
         }
@@ -223,7 +223,7 @@
     {
       "region_id": 61,
       "region_name_de": "Goms",
-      "data_timestamp": "2026-08-08T00:00:00",
+      "data_timestamp": "2026-08-09T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.46,
@@ -235,7 +235,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 6,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -266,7 +266,7 @@
         {
           "station_id": "2346",
           "station_name": "Brig (2346)",
-          "current_value": 113.04659999999998,
+          "current_value": 111.70366666666666,
           "low_flow_threshold": 89.304,
           "min_value": 35.217
         }
@@ -292,7 +292,7 @@
     "1": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],

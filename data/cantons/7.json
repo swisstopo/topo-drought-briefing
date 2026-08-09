@@ -2,13 +2,13 @@
   "canton_id": 7,
   "canton_name_de": "Nidwalden",
   "canton_name_fr": "Nidwald",
-  "data_timestamp": "2026-08-08T00:00:00",
+  "data_timestamp": "2026-08-09T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-08-08T00:00:00",
+      "data_timestamp": "2026-08-09T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.04,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,28 +51,28 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 2.0508,
+          "current_value": 2.0306666666666664,
           "low_flow_threshold": 5.825,
           "min_value": 2.174
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.0284,
+          "current_value": 0.0261666666666666,
           "low_flow_threshold": 0.124,
           "min_value": 0.008
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 8.5114,
+          "current_value": 8.219499999999998,
           "low_flow_threshold": 15.317,
           "min_value": 10.571
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 2.1786000000000003,
+          "current_value": 2.123166666666666,
           "low_flow_threshold": 5.145,
           "min_value": 1.255
         }
@@ -92,7 +92,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],

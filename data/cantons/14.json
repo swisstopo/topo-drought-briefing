@@ -2,13 +2,13 @@
   "canton_id": 14,
   "canton_name_de": "Schaffhausen",
   "canton_name_fr": "Schaffhouse",
-  "data_timestamp": "2026-08-08T00:00:00",
+  "data_timestamp": "2026-08-09T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-08-08T00:00:00",
+      "data_timestamp": "2026-08-09T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.05,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,7 +51,7 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 0.7968,
+          "current_value": 0.7886666666666665,
           "low_flow_threshold": 2.358,
           "min_value": 1.086
         },
@@ -65,7 +65,7 @@
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.6305999999999999,
+          "current_value": 0.6281666666666667,
           "low_flow_threshold": 1.103,
           "min_value": 0.523
         }
@@ -85,7 +85,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
