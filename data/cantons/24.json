@@ -2,40 +2,40 @@
   "canton_id": 24,
   "canton_name_de": "Neuchâtel",
   "canton_name_fr": "Neuchâtel",
-  "data_timestamp": "2026-08-17T00:00:00",
+  "data_timestamp": "2026-08-18T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-08-17T00:00:00",
+      "data_timestamp": "2026-08-18T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -3.18,
+      "spi_3m": -3.15,
       "soil_moisture_pct": 4.5,
       "vhi": 13.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.4700000000000002,
+      "spi_3m_delta": -0.43999999999999995,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 24.5,
-      "precip_sum_3m": 143.9,
+      "precip_sum_1m": 25.7,
+      "precip_sum_3m": 145.0,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
+      "cdi_forecast_week2": 1,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": -4,
@@ -51,43 +51,43 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 2.843571428571429,
-          "low_flow_threshold": 5.081,
-          "min_value": 2.622
+          "current_value": 2.622,
+          "low_flow_threshold": 5.011,
+          "min_value": 2.556
         }
       ]
     },
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-08-17T00:00:00",
+      "data_timestamp": "2026-08-18T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.79,
+      "spi_3m": -2.78,
       "soil_moisture_pct": 7.5,
       "vhi": 10.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.43999999999999995,
+      "spi_3m_delta": -0.4299999999999997,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 39.0,
-      "precip_sum_3m": 143.1,
+      "precip_sum_1m": 39.4,
+      "precip_sum_3m": 143.5,
       "precip_1m_index": 4,
       "soil_moisture_index": 5,
       "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 2,
+      "cdi_forecast_week2": 1,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": -3,
@@ -95,23 +95,23 @@
       "vhi_index": 4,
       "discharge": {
         "n_total": 4,
-        "n_low": 4,
-        "n_very_low": 3,
-        "pct_low": 100
+        "n_low": 2,
+        "n_very_low": 2,
+        "pct_low": 50
       },
       "hydro_stations": [
         {
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
-          "current_value": 1.907,
-          "low_flow_threshold": 2.685,
+          "current_value": 1.892,
+          "low_flow_threshold": 2.73,
           "min_value": 2.103
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 0.0507142857142857,
-          "low_flow_threshold": 0.091,
+          "current_value": 0.125,
+          "low_flow_threshold": 0.092,
           "min_value": 0.039
         },
         {
@@ -124,9 +124,9 @@
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
-          "current_value": 0.2475714285714285,
-          "low_flow_threshold": 0.258,
-          "min_value": 0.111
+          "current_value": 0.273,
+          "low_flow_threshold": 0.257,
+          "min_value": 0.116
         }
       ]
     }
@@ -146,7 +146,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -156,9 +156,9 @@
   "n_regions_dry": 2,
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -6,
-  "mean_precip_sum_1m": 31.8,
-  "mean_precip_sum_3m": 143.5,
+  "cdi_situation_delta": -8,
+  "mean_precip_sum_1m": 32.5,
+  "mean_precip_sum_3m": 144.2,
   "precip_index_min": 4,
   "precip_index_max": 5,
   "n_regions_with_precip_deficit": 2,
@@ -167,8 +167,8 @@
   "max_vhi_index": 4,
   "discharge": {
     "n_total": 5,
-    "n_low": 5,
-    "n_very_low": 4,
-    "pct_low": 100
+    "n_low": 3,
+    "n_very_low": 3,
+    "pct_low": 60
   }
 }

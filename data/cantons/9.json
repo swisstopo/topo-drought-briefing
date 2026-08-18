@@ -2,33 +2,33 @@
   "canton_id": 9,
   "canton_name_de": "Zug",
   "canton_name_fr": "Zoug",
-  "data_timestamp": "2026-08-17T00:00:00",
+  "data_timestamp": "2026-08-18T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-08-17T00:00:00",
+      "data_timestamp": "2026-08-18T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -3.48,
+      "spi_3m": -3.43,
       "soil_moisture_pct": 6.3,
       "vhi": 18.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.54,
+      "spi_3m_delta": -0.4900000000000002,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 23.2,
-      "precip_sum_3m": 157.2,
+      "precip_sum_1m": 25.5,
+      "precip_sum_3m": 159.5,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -43,31 +43,31 @@
       "vhi_index": 4,
       "discharge": {
         "n_total": 3,
-        "n_low": 3,
-        "n_very_low": 3,
-        "pct_low": 100
+        "n_low": 2,
+        "n_very_low": 2,
+        "pct_low": 67
       },
       "hydro_stations": [
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.0056666666666666,
-          "low_flow_threshold": 0.526,
+          "current_value": 0.011,
+          "low_flow_threshold": 0.511,
           "min_value": 0.118
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.0437142857142857,
-          "low_flow_threshold": 0.695,
+          "current_value": 0.085,
+          "low_flow_threshold": 0.635,
           "min_value": 0.117
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.124,
-          "low_flow_threshold": 0.305,
-          "min_value": 0.078
+          "current_value": 0.31,
+          "low_flow_threshold": 0.309,
+          "min_value": 0.076
         }
       ]
     }
@@ -85,7 +85,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -96,8 +96,8 @@
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
   "cdi_situation_delta": -3,
-  "mean_precip_sum_1m": 23.2,
-  "mean_precip_sum_3m": 157.2,
+  "mean_precip_sum_1m": 25.5,
+  "mean_precip_sum_3m": 159.5,
   "precip_index_min": 5,
   "precip_index_max": 5,
   "n_regions_with_precip_deficit": 1,
@@ -106,8 +106,8 @@
   "max_vhi_index": 4,
   "discharge": {
     "n_total": 3,
-    "n_low": 3,
-    "n_very_low": 3,
-    "pct_low": 100
+    "n_low": 2,
+    "n_very_low": 2,
+    "pct_low": 67
   }
 }
