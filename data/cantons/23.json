@@ -2,13 +2,13 @@
   "canton_id": 23,
   "canton_name_de": "Valais",
   "canton_name_fr": "Valais",
-  "data_timestamp": "2026-08-19T00:00:00",
+  "data_timestamp": "2026-08-20T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 57,
       "region_name_de": "Chablais",
-      "data_timestamp": "2026-08-19T00:00:00",
+      "data_timestamp": "2026-08-20T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.5,
@@ -20,7 +20,7 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,14 +51,14 @@
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 1.821,
+          "current_value": 1.8026666666666664,
           "low_flow_threshold": 2.708,
           "min_value": 1.729
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 0.2073333333333333,
+          "current_value": 0.2003333333333333,
           "low_flow_threshold": 0.332,
           "min_value": 0.145
         }
@@ -67,11 +67,11 @@
     {
       "region_id": 58,
       "region_name_de": "Walliser Südalpen",
-      "data_timestamp": "2026-08-19T00:00:00",
+      "data_timestamp": "2026-08-20T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.67,
-      "soil_moisture_pct": 65.5,
+      "soil_moisture_pct": 65.8,
       "vhi": 28.0,
       "cdi_trend": 1,
       "spi_3m_delta": 0.10000000000000009,
@@ -79,7 +79,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -110,7 +110,7 @@
         {
           "station_id": "2053",
           "station_name": "Martigny, Pont de Rossettan (2053)",
-          "current_value": 5.064,
+          "current_value": 4.984666666666667,
           "low_flow_threshold": 10.832,
           "min_value": 6.318
         }
@@ -119,11 +119,11 @@
     {
       "region_id": 59,
       "region_name_de": "nördliches Wallis",
-      "data_timestamp": "2026-08-19T00:00:00",
+      "data_timestamp": "2026-08-20T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.56,
-      "soil_moisture_pct": 59.2,
+      "soil_moisture_pct": 59.7,
       "vhi": 20.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.26,
@@ -131,7 +131,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -162,7 +162,7 @@
         {
           "station_id": "2630",
           "station_name": "Sion (2630)",
-          "current_value": 0.2396666666666666,
+          "current_value": 0.237,
           "low_flow_threshold": 0.205,
           "min_value": 0.119
         }
@@ -171,11 +171,11 @@
     {
       "region_id": 60,
       "region_name_de": "Vispertäler",
-      "data_timestamp": "2026-08-19T00:00:00",
+      "data_timestamp": "2026-08-20T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.06,
-      "soil_moisture_pct": 73.2,
+      "soil_moisture_pct": 73.4,
       "vhi": 32.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.16999999999999993,
@@ -183,7 +183,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 12,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -214,7 +214,7 @@
         {
           "station_id": "2351",
           "station_name": "Visp (2351)",
-          "current_value": 33.64066666666667,
+          "current_value": 36.17066666666667,
           "low_flow_threshold": 22.048,
           "min_value": 10.107
         }
@@ -223,11 +223,11 @@
     {
       "region_id": 61,
       "region_name_de": "Goms",
-      "data_timestamp": "2026-08-19T00:00:00",
+      "data_timestamp": "2026-08-20T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.81,
-      "soil_moisture_pct": 74.0,
+      "soil_moisture_pct": 74.3,
       "vhi": 37.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.06999999999999984,
@@ -235,7 +235,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -266,7 +266,7 @@
         {
           "station_id": "2346",
           "station_name": "Brig (2346)",
-          "current_value": 108.95833333333331,
+          "current_value": 110.03833333333334,
           "low_flow_threshold": 75.262,
           "min_value": 33.437
         }
@@ -291,7 +291,7 @@
     "1": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
