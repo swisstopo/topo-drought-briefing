@@ -2,13 +2,13 @@
   "canton_id": 20,
   "canton_name_de": "Thurgau",
   "canton_name_fr": "Thurgovie",
-  "data_timestamp": "2026-08-24T00:00:00",
+  "data_timestamp": "2026-08-25T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-08-24T00:00:00",
+      "data_timestamp": "2026-08-25T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -2.1,
@@ -20,7 +20,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -43,31 +43,31 @@
       "vhi_index": 5,
       "discharge": {
         "n_total": 3,
-        "n_low": 1,
-        "n_very_low": 1,
-        "pct_low": 33
+        "n_low": 3,
+        "n_very_low": 3,
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.5405714285714285,
-          "low_flow_threshold": 2.337,
+          "current_value": 0.999,
+          "low_flow_threshold": 2.366,
           "min_value": 1.003
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.3889999999999999,
-          "low_flow_threshold": 0.162,
+          "current_value": 0.082,
+          "low_flow_threshold": 0.166,
           "min_value": 0.059
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 1.265,
-          "low_flow_threshold": 1.106,
-          "min_value": 0.602
+          "current_value": 0.637,
+          "low_flow_threshold": 1.139,
+          "min_value": 0.617
         }
       ]
     }
@@ -85,7 +85,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -106,8 +106,8 @@
   "max_vhi_index": 5,
   "discharge": {
     "n_total": 3,
-    "n_low": 1,
-    "n_very_low": 1,
-    "pct_low": 33
+    "n_low": 3,
+    "n_very_low": 3,
+    "pct_low": 100
   }
 }

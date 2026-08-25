@@ -2,13 +2,13 @@
   "canton_id": 23,
   "canton_name_de": "Valais",
   "canton_name_fr": "Valais",
-  "data_timestamp": "2026-08-24T00:00:00",
+  "data_timestamp": "2026-08-25T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 57,
       "region_name_de": "Chablais",
-      "data_timestamp": "2026-08-24T00:00:00",
+      "data_timestamp": "2026-08-25T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.83,
@@ -20,15 +20,15 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 90.4,
-      "precip_sum_3m": 267.9,
+      "precip_sum_1m": 90.5,
+      "precip_sum_3m": 268.0,
       "precip_1m_index": 2,
       "soil_moisture_index": 3,
       "hydro_index": 2,
@@ -43,31 +43,31 @@
       "vhi_index": 4,
       "discharge": {
         "n_total": 2,
-        "n_low": 1,
-        "n_very_low": 0,
-        "pct_low": 50
+        "n_low": 2,
+        "n_very_low": 2,
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 2.286285714285714,
-          "low_flow_threshold": 2.708,
-          "min_value": 1.729
+          "current_value": 1.454,
+          "low_flow_threshold": 2.595,
+          "min_value": 1.413
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 0.4178571428571428,
-          "low_flow_threshold": 0.332,
-          "min_value": 0.145
+          "current_value": 0.183,
+          "low_flow_threshold": 0.346,
+          "min_value": 0.115
         }
       ]
     },
     {
       "region_id": 58,
       "region_name_de": "Walliser Südalpen",
-      "data_timestamp": "2026-08-24T00:00:00",
+      "data_timestamp": "2026-08-25T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.07,
@@ -79,7 +79,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 12,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -110,36 +110,36 @@
         {
           "station_id": "2053",
           "station_name": "Martigny, Pont de Rossettan (2053)",
-          "current_value": 5.105857142857142,
-          "low_flow_threshold": 10.832,
-          "min_value": 6.318
+          "current_value": 5.211,
+          "low_flow_threshold": 10.091,
+          "min_value": 4.392
         }
       ]
     },
     {
       "region_id": 59,
       "region_name_de": "nördliches Wallis",
-      "data_timestamp": "2026-08-24T00:00:00",
+      "data_timestamp": "2026-08-25T00:00:00",
       "source": "api",
       "cdi": 2,
-      "spi_3m": -0.9,
+      "spi_3m": -0.89,
       "soil_moisture_pct": 75.5,
       "vhi": 16.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.66,
+      "spi_3m_delta": 0.67,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 16,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 133.9,
-      "precip_sum_3m": 318.2,
+      "precip_sum_1m": 134.3,
+      "precip_sum_3m": 318.6,
       "precip_1m_index": 1,
       "soil_moisture_index": 2,
       "hydro_index": 1,
@@ -162,16 +162,16 @@
         {
           "station_id": "2630",
           "station_name": "Sion (2630)",
-          "current_value": 0.2558571428571428,
-          "low_flow_threshold": 0.205,
-          "min_value": 0.119
+          "current_value": 0.262,
+          "low_flow_threshold": 0.187,
+          "min_value": 0.106
         }
       ]
     },
     {
       "region_id": 60,
       "region_name_de": "Vispertäler",
-      "data_timestamp": "2026-08-24T00:00:00",
+      "data_timestamp": "2026-08-25T00:00:00",
       "source": "api",
       "cdi": 1,
       "spi_3m": -0.58,
@@ -183,7 +183,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 27,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -206,16 +206,16 @@
       "vhi_index": 4,
       "discharge": {
         "n_total": 1,
-        "n_low": 0,
+        "n_low": 1,
         "n_very_low": 0,
-        "pct_low": 0
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2351",
           "station_name": "Visp (2351)",
-          "current_value": 27.049142857142854,
-          "low_flow_threshold": 22.048,
+          "current_value": 16.976,
+          "low_flow_threshold": 19.984,
           "min_value": 10.107
         }
       ]
@@ -223,7 +223,7 @@
     {
       "region_id": 61,
       "region_name_de": "Goms",
-      "data_timestamp": "2026-08-24T00:00:00",
+      "data_timestamp": "2026-08-25T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.1,
@@ -235,7 +235,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 13,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -266,9 +266,9 @@
         {
           "station_id": "2346",
           "station_name": "Brig (2346)",
-          "current_value": 105.06128571428572,
-          "low_flow_threshold": 75.262,
-          "min_value": 33.437
+          "current_value": 85.156,
+          "low_flow_threshold": 66.498,
+          "min_value": 31.355
         }
       ]
     }
@@ -291,7 +291,7 @@
     "1": 3
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -302,8 +302,8 @@
   "cdi_min_dry": 2,
   "cdi_max_dry": 3,
   "cdi_situation_delta": -6,
-  "mean_precip_sum_1m": 109.2,
-  "mean_precip_sum_3m": 271.3,
+  "mean_precip_sum_1m": 109.3,
+  "mean_precip_sum_3m": 271.4,
   "precip_index_min": 1,
   "precip_index_max": 2,
   "n_regions_with_precip_deficit": 1,
@@ -312,8 +312,8 @@
   "max_vhi_index": 4,
   "discharge": {
     "n_total": 6,
-    "n_low": 2,
-    "n_very_low": 0,
-    "pct_low": 33
+    "n_low": 4,
+    "n_very_low": 2,
+    "pct_low": 67
   }
 }
