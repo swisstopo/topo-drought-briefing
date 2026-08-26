@@ -2,17 +2,17 @@
   "canton_id": 25,
   "canton_name_de": "Genève",
   "canton_name_fr": "Genève",
-  "data_timestamp": "2026-08-25T00:00:00",
+  "data_timestamp": "2026-08-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 56,
       "region_name_de": "Genferseebecken",
-      "data_timestamp": "2026-08-25T00:00:00",
+      "data_timestamp": "2026-08-26T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.72,
-      "soil_moisture_pct": 29.9,
+      "soil_moisture_pct": 32.6,
       "vhi": 3.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.7899999999999998,
@@ -20,14 +20,14 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 61.6,
+      "precip_sum_1m": 61.5,
       "precip_sum_3m": 143.6,
       "precip_1m_index": 1,
       "soil_moisture_index": 2,
@@ -43,15 +43,15 @@
       "vhi_index": 5,
       "discharge": {
         "n_total": 1,
-        "n_low": 1,
-        "n_very_low": 1,
-        "pct_low": 100
+        "n_low": 0,
+        "n_very_low": 0,
+        "pct_low": 0
       },
       "hydro_stations": [
         {
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
-          "current_value": 0.342,
+          "current_value": 0.6385000000000001,
           "low_flow_threshold": 0.611,
           "min_value": 0.28
         }
@@ -71,7 +71,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -82,7 +82,7 @@
   "cdi_min_dry": 3,
   "cdi_max_dry": 3,
   "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 61.6,
+  "mean_precip_sum_1m": 61.5,
   "mean_precip_sum_3m": 143.6,
   "precip_index_min": 1,
   "precip_index_max": 1,
@@ -92,8 +92,8 @@
   "max_vhi_index": 5,
   "discharge": {
     "n_total": 1,
-    "n_low": 1,
-    "n_very_low": 1,
-    "pct_low": 100
+    "n_low": 0,
+    "n_very_low": 0,
+    "pct_low": 0
   }
 }

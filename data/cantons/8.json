@@ -2,17 +2,17 @@
   "canton_id": 8,
   "canton_name_de": "Glarus",
   "canton_name_fr": "Glaris",
-  "data_timestamp": "2026-08-25T00:00:00",
+  "data_timestamp": "2026-08-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-08-25T00:00:00",
+      "data_timestamp": "2026-08-26T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.9,
-      "soil_moisture_pct": 82.9,
+      "soil_moisture_pct": 84.8,
       "vhi": 12.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.7600000000000002,
@@ -20,7 +20,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -28,7 +28,7 @@
         "overall": "ok"
       },
       "precip_sum_1m": 121.3,
-      "precip_sum_3m": 371.5,
+      "precip_sum_3m": 371.3,
       "precip_1m_index": 3,
       "soil_moisture_index": 3,
       "hydro_index": 5,
@@ -51,7 +51,7 @@
         {
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
-          "current_value": 22.618,
+          "current_value": 22.5825,
           "low_flow_threshold": 43.524,
           "min_value": 22.61
         }
@@ -71,7 +71,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -83,7 +83,7 @@
   "cdi_max_dry": 4,
   "cdi_situation_delta": 0,
   "mean_precip_sum_1m": 121.3,
-  "mean_precip_sum_3m": 371.5,
+  "mean_precip_sum_3m": 371.3,
   "precip_index_min": 3,
   "precip_index_max": 3,
   "n_regions_with_precip_deficit": 1,
