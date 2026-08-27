@@ -2,17 +2,17 @@
   "canton_id": 9,
   "canton_name_de": "Zug",
   "canton_name_fr": "Zoug",
-  "data_timestamp": "2026-08-26T00:00:00",
+  "data_timestamp": "2026-08-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-08-26T00:00:00",
+      "data_timestamp": "2026-08-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -2.39,
-      "soil_moisture_pct": 37.9,
+      "soil_moisture_pct": 41.6,
       "vhi": 3.0,
       "cdi_trend": -1,
       "spi_3m_delta": 1.04,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,11 +35,11 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
+      "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 5,
       "discharge": {
         "n_total": 3,
@@ -51,21 +51,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.0335,
+          "current_value": 0.0376666666666666,
           "low_flow_threshold": 0.471,
           "min_value": 0.118
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.102,
+          "current_value": 0.1036666666666666,
           "low_flow_threshold": 0.588,
           "min_value": 0.113
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.2244999999999999,
+          "current_value": 0.2139999999999999,
           "low_flow_threshold": 0.32,
           "min_value": 0.076
         }
@@ -85,7 +85,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -95,7 +95,7 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 4,
   "cdi_max_dry": 4,
-  "cdi_situation_delta": -1,
+  "cdi_situation_delta": 0,
   "mean_precip_sum_1m": 72.9,
   "mean_precip_sum_3m": 210.9,
   "precip_index_min": 3,
