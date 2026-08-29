@@ -124,7 +124,7 @@
       "cdi": 3,
       "spi_3m": -1.82,
       "soil_moisture_pct": 76.5,
-      "vhi": 8.0,
+      "vhi": 11.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.8,
       "vhi_delta": 0.0,
@@ -151,7 +151,7 @@
       "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -1,
       "soil_moisture_deficit_delta": 0,
-      "vhi_index": 5,
+      "vhi_index": 4,
       "discharge": {
         "n_total": 2,
         "n_low": 0,
