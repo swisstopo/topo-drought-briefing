@@ -2,13 +2,13 @@
   "canton_id": 7,
   "canton_name_de": "Nidwalden",
   "canton_name_fr": "Nidwald",
-  "data_timestamp": "2026-08-28T00:00:00",
+  "data_timestamp": "2026-08-29T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-08-28T00:00:00",
+      "data_timestamp": "2026-08-29T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -2.23,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -44,35 +44,35 @@
       "discharge": {
         "n_total": 4,
         "n_low": 4,
-        "n_very_low": 2,
+        "n_very_low": 3,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 1.6795,
+          "current_value": 1.7282,
           "low_flow_threshold": 5.893,
           "min_value": 1.732
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.04675,
+          "current_value": 0.0464,
           "low_flow_threshold": 0.144,
           "min_value": 0.022
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 8.251999999999999,
+          "current_value": 8.3622,
           "low_flow_threshold": 12.854,
           "min_value": 6.979
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 3.10825,
+          "current_value": 2.975,
           "low_flow_threshold": 5.48,
           "min_value": 1.657
         }
@@ -92,7 +92,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -114,7 +114,7 @@
   "discharge": {
     "n_total": 4,
     "n_low": 4,
-    "n_very_low": 2,
+    "n_very_low": 3,
     "pct_low": 100
   }
 }
