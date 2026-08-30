@@ -2,13 +2,13 @@
   "canton_id": 12,
   "canton_name_de": "Basel-Stadt",
   "canton_name_fr": "Bâle-Ville",
-  "data_timestamp": "2026-08-29T00:00:00",
+  "data_timestamp": "2026-08-30T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-08-29T00:00:00",
+      "data_timestamp": "2026-08-30T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -2.69,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,7 +35,7 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
+      "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": -2,
@@ -51,21 +51,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 3.1842,
+          "current_value": 3.424666666666667,
           "low_flow_threshold": 3.782,
           "min_value": 1.997
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.7016,
+          "current_value": 0.6849999999999999,
           "low_flow_threshold": 0.595,
           "min_value": 0.185
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.4282,
+          "current_value": 0.4286666666666667,
           "low_flow_threshold": 0.487,
           "min_value": 0.182
         }
@@ -85,7 +85,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -95,7 +95,7 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 3,
   "cdi_max_dry": 3,
-  "cdi_situation_delta": 0,
+  "cdi_situation_delta": 1,
   "mean_precip_sum_1m": 55.9,
   "mean_precip_sum_3m": 148.3,
   "precip_index_min": 3,
