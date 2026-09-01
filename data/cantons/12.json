@@ -2,33 +2,33 @@
   "canton_id": 12,
   "canton_name_de": "Basel-Stadt",
   "canton_name_fr": "Bâle-Ville",
-  "data_timestamp": "2026-08-31T00:00:00",
+  "data_timestamp": "2026-09-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-08-31T00:00:00",
+      "data_timestamp": "2026-09-01T00:00:00",
       "source": "api",
       "cdi": 2,
-      "spi_3m": -2.3,
+      "spi_3m": -2.24,
       "soil_moisture_pct": 54.0,
       "vhi": null,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.3900000000000001,
+      "spi_3m_delta": 0.44999999999999973,
       "vhi_delta": 0.0,
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 81.5,
-      "precip_sum_3m": 165.3,
+      "precip_sum_1m": 84.3,
+      "precip_sum_3m": 168.1,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 2,
@@ -43,30 +43,30 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
-        "n_low": 2,
-        "n_very_low": 1,
-        "pct_low": 67
+        "n_low": 3,
+        "n_very_low": 2,
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 3.3230000000000004,
-          "low_flow_threshold": 3.782,
+          "current_value": 2.611,
+          "low_flow_threshold": 3.607,
           "min_value": 1.997
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.633,
-          "low_flow_threshold": 0.595,
+          "current_value": 0.498,
+          "low_flow_threshold": 0.545,
           "min_value": 0.185
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.4138571428571428,
-          "low_flow_threshold": 0.487,
+          "current_value": 0.367,
+          "low_flow_threshold": 0.464,
           "min_value": 0.182
         }
       ]
@@ -85,7 +85,7 @@
     "2": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -96,8 +96,8 @@
   "cdi_min_dry": 2,
   "cdi_max_dry": 2,
   "cdi_situation_delta": 1,
-  "mean_precip_sum_1m": 81.5,
-  "mean_precip_sum_3m": 165.3,
+  "mean_precip_sum_1m": 84.3,
+  "mean_precip_sum_3m": 168.1,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
@@ -106,8 +106,8 @@
   "max_vhi_index": 1,
   "discharge": {
     "n_total": 3,
-    "n_low": 2,
-    "n_very_low": 1,
-    "pct_low": 67
+    "n_low": 3,
+    "n_very_low": 2,
+    "pct_low": 100
   }
 }

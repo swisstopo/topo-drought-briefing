@@ -2,33 +2,33 @@
   "canton_id": 25,
   "canton_name_de": "Genève",
   "canton_name_fr": "Genève",
-  "data_timestamp": "2026-08-31T00:00:00",
+  "data_timestamp": "2026-09-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 56,
       "region_name_de": "Genferseebecken",
-      "data_timestamp": "2026-08-31T00:00:00",
+      "data_timestamp": "2026-09-01T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": -1.25,
+      "spi_3m": -1.22,
       "soil_moisture_pct": 54.2,
       "vhi": 26.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.47,
+      "spi_3m_delta": 0.5,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 10,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 84.5,
-      "precip_sum_3m": 169.2,
+      "precip_sum_1m": 86.0,
+      "precip_sum_3m": 170.7,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -51,9 +51,9 @@
         {
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
-          "current_value": 0.79,
-          "low_flow_threshold": 0.611,
-          "min_value": 0.28
+          "current_value": 0.614,
+          "low_flow_threshold": 0.589,
+          "min_value": 0.367
         }
       ]
     }
@@ -71,7 +71,7 @@
     "1": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -82,8 +82,8 @@
   "cdi_min_dry": null,
   "cdi_max_dry": null,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 84.5,
-  "mean_precip_sum_3m": 169.2,
+  "mean_precip_sum_1m": 86.0,
+  "mean_precip_sum_3m": 170.7,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,

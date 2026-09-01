@@ -2,33 +2,33 @@
   "canton_id": 20,
   "canton_name_de": "Thurgau",
   "canton_name_fr": "Thurgovie",
-  "data_timestamp": "2026-08-31T00:00:00",
+  "data_timestamp": "2026-09-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-08-31T00:00:00",
+      "data_timestamp": "2026-09-01T00:00:00",
       "source": "api",
       "cdi": 4,
-      "spi_3m": -1.76,
+      "spi_3m": -1.7,
       "soil_moisture_pct": 47.0,
       "vhi": 95.0,
       "cdi_trend": 1,
-      "spi_3m_delta": 0.3400000000000001,
+      "spi_3m_delta": 0.40000000000000013,
       "vhi_delta": 0.0,
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 74.4,
-      "precip_sum_3m": 203.0,
+      "precip_sum_1m": 77.7,
+      "precip_sum_3m": 206.4,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 4,
@@ -36,9 +36,9 @@
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
-      "precip_1m_index_forecast": 2,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": 1,
       "vhi_index": 1,
       "discharge": {
@@ -51,23 +51,23 @@
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.3165714285714287,
-          "low_flow_threshold": 2.366,
+          "current_value": 1.53,
+          "low_flow_threshold": 2.306,
           "min_value": 1.003
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.1561428571428571,
-          "low_flow_threshold": 0.166,
+          "current_value": 0.107,
+          "low_flow_threshold": 0.148,
           "min_value": 0.059
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.7565714285714286,
-          "low_flow_threshold": 1.139,
-          "min_value": 0.617
+          "current_value": 0.877,
+          "low_flow_threshold": 1.107,
+          "min_value": 0.596
         }
       ]
     }
@@ -85,7 +85,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -96,8 +96,8 @@
   "cdi_min_dry": 4,
   "cdi_max_dry": 4,
   "cdi_situation_delta": -1,
-  "mean_precip_sum_1m": 74.4,
-  "mean_precip_sum_3m": 203.0,
+  "mean_precip_sum_1m": 77.7,
+  "mean_precip_sum_3m": 206.4,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
