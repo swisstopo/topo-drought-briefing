@@ -294,7 +294,7 @@
       "cdi": 4,
       "spi_3m": -1.76,
       "soil_moisture_pct": 96.6,
-      "vhi": 59.0,
+      "vhi": 35.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.1499999999999999,
       "vhi_delta": 0.0,
@@ -321,7 +321,7 @@
       "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": 2,
       "soil_moisture_deficit_delta": 1,
-      "vhi_index": 1,
+      "vhi_index": 2,
       "discharge": {
         "n_total": 2,
         "n_low": 0,
@@ -380,7 +380,7 @@
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
   "n_regions_with_soil_moisture_deficit": 4,
-  "n_regions_with_vhi_stress": 1,
+  "n_regions_with_vhi_stress": 2,
   "max_vhi_index": 2,
   "discharge": {
     "n_total": 10,
