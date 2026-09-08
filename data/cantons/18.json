@@ -2,13 +2,13 @@
   "canton_id": 18,
   "canton_name_de": "Graubünden",
   "canton_name_fr": "Grisons",
-  "data_timestamp": "2026-09-07T00:00:00",
+  "data_timestamp": "2026-09-08T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 46,
       "region_name_de": "Surselva",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.87,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,16 +51,16 @@
         {
           "station_id": "2033",
           "station_name": "Ilanz (2033)",
-          "current_value": 13.06057142857143,
-          "low_flow_threshold": 25.058,
-          "min_value": 14.164
+          "current_value": 12.172,
+          "low_flow_threshold": 23.195,
+          "min_value": 13.885
         }
       ]
     },
     {
       "region_id": 49,
       "region_name_de": "nördliches Mittelbünden",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -2.06,
@@ -72,7 +72,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -103,16 +103,16 @@
         {
           "station_id": "2498",
           "station_name": "Castrisch (2498)",
-          "current_value": 3.1757142857142857,
-          "low_flow_threshold": 5.453,
-          "min_value": 3.169
+          "current_value": 2.776,
+          "low_flow_threshold": 5.301,
+          "min_value": 2.927
         }
       ]
     },
     {
       "region_id": 50,
       "region_name_de": "südliches Mittelbünden",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.08,
@@ -124,7 +124,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 13,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -141,9 +141,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 1,
       "discharge": {
         "n_total": 2,
@@ -155,23 +155,23 @@
         {
           "station_id": "2141",
           "station_name": "Tiefencastel (2141)",
-          "current_value": 8.443999999999999,
-          "low_flow_threshold": 13.604,
-          "min_value": 8.052
+          "current_value": 7.763,
+          "low_flow_threshold": 13.274,
+          "min_value": 7.512
         },
         {
           "station_id": "2355",
           "station_name": "Davos, Frauenkirch (2355)",
-          "current_value": 2.4282857142857144,
-          "low_flow_threshold": 4.806,
-          "min_value": 3.327
+          "current_value": 2.201,
+          "low_flow_threshold": 4.646,
+          "min_value": 2.98
         }
       ]
     },
     {
       "region_id": 52,
       "region_name_de": "Prättigau",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.72,
@@ -183,7 +183,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -198,32 +198,32 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
-      "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": -1,
+      "cdi_forecast_week2": 5,
+      "precip_1m_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
+      "precip_deficit_delta": -1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
-        "n_very_low": 0,
+        "n_very_low": 1,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2150",
           "station_name": "Felsenbach (2150)",
-          "current_value": 6.594857142857143,
-          "low_flow_threshold": 15.321,
-          "min_value": 9.107
+          "current_value": 5.969,
+          "low_flow_threshold": 14.861,
+          "min_value": 8.14
         }
       ]
     },
     {
       "region_id": 63,
       "region_name_de": "Nordtessin",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.94,
@@ -235,7 +235,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 16,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -266,16 +266,16 @@
         {
           "station_id": "2494",
           "station_name": "Pollegio, Campagna (2494)",
-          "current_value": 7.836428571428572,
-          "low_flow_threshold": 11.391,
-          "min_value": 7.841
+          "current_value": 7.17,
+          "low_flow_threshold": 11.224,
+          "min_value": 7.83
         }
       ]
     },
     {
       "region_id": 64,
       "region_name_de": "Östliches Tessin",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 1,
       "spi_3m": -0.84,
@@ -287,7 +287,7 @@
       "pct_critical": 0.0,
       "spi_3m_percentile": 19,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -310,16 +310,16 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
-        "n_low": 0,
+        "n_low": 1,
         "n_very_low": 0,
-        "pct_low": 0
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2420",
           "station_name": "Lumino, Sassello (2420)",
-          "current_value": 11.226,
-          "low_flow_threshold": 10.613,
+          "current_value": 10.384,
+          "low_flow_threshold": 10.514,
           "min_value": 5.179
         }
       ]
@@ -327,7 +327,7 @@
     {
       "region_id": 66,
       "region_name_de": "Bündner Südtäler",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.45,
@@ -339,7 +339,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 33,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -354,7 +354,7 @@
       "warnlevel": 1,
       "warnlevel_info_de": "Keine oder geringe Gefahr",
       "warnlevel_info_fr": "Aucun ou faible danger",
-      "cdi_forecast_week2": 1,
+      "cdi_forecast_week2": 2,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": 0,
@@ -370,16 +370,16 @@
         {
           "station_id": "2617",
           "station_name": "Müstair (2617)",
-          "current_value": 1.4147142857142856,
-          "low_flow_threshold": 2.082,
-          "min_value": 1.516
+          "current_value": 1.364,
+          "low_flow_threshold": 2.03,
+          "min_value": 1.4
         }
       ]
     },
     {
       "region_id": 67,
       "region_name_de": "Oberengadin",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 1,
       "spi_3m": -0.47,
@@ -391,7 +391,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 33,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -422,37 +422,37 @@
         {
           "station_id": "2105",
           "station_name": "St. Moritzbad (2105)",
-          "current_value": 5.021,
-          "low_flow_threshold": 5.003,
-          "min_value": 2.233
+          "current_value": 4.252,
+          "low_flow_threshold": 4.342,
+          "min_value": 2.173
         },
         {
           "station_id": "2256",
           "station_name": "Pontresina (2256)",
-          "current_value": 3.466428571428572,
-          "low_flow_threshold": 3.876,
-          "min_value": 1.504
+          "current_value": 3.083,
+          "low_flow_threshold": 2.922,
+          "min_value": 1.287
         },
         {
           "station_id": "2262",
           "station_name": "Pontresina (2262)",
-          "current_value": 7.179571428571429,
-          "low_flow_threshold": 5.416,
-          "min_value": 1.983
+          "current_value": 6.543,
+          "low_flow_threshold": 4.315,
+          "min_value": 1.631
         },
         {
           "station_id": "2263",
           "station_name": "La Punt-Chamues-ch (2263)",
-          "current_value": 1.6557142857142857,
-          "low_flow_threshold": 1.784,
-          "min_value": 1.213
+          "current_value": 1.439,
+          "low_flow_threshold": 1.708,
+          "min_value": 1.175
         }
       ]
     },
     {
       "region_id": 68,
       "region_name_de": "Unterengadin",
-      "data_timestamp": "2026-09-07T00:00:00",
+      "data_timestamp": "2026-09-08T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.73,
@@ -464,7 +464,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 23,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -479,10 +479,10 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 1,
-      "precip_1m_index_forecast": 1,
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 2,
       "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 0,
+      "precip_deficit_delta": 1,
       "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
@@ -495,16 +495,16 @@
         {
           "station_id": "2304",
           "station_name": "Zernez, Punt la Drossa (2304)",
-          "current_value": 0.5292857142857142,
-          "low_flow_threshold": 0.723,
-          "min_value": 0.474
+          "current_value": 0.497,
+          "low_flow_threshold": 0.695,
+          "min_value": 0.489
         },
         {
           "station_id": "2319",
           "station_name": "Zernez (2319)",
-          "current_value": 0.4101428571428572,
-          "low_flow_threshold": 0.561,
-          "min_value": 0.342
+          "current_value": 0.338,
+          "low_flow_threshold": 0.517,
+          "min_value": 0.34
         }
       ]
     }
@@ -527,7 +527,7 @@
     "1": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -537,7 +537,7 @@
   "n_regions_dry": 7,
   "cdi_min_dry": 2,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": 0,
+  "cdi_situation_delta": 4,
   "mean_precip_sum_1m": 131.3,
   "mean_precip_sum_3m": 284.1,
   "precip_index_min": 1,
@@ -548,8 +548,8 @@
   "max_vhi_index": 1,
   "discharge": {
     "n_total": 14,
-    "n_low": 11,
-    "n_very_low": 1,
-    "pct_low": 79
+    "n_low": 12,
+    "n_very_low": 2,
+    "pct_low": 86
   }
 }
