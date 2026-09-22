@@ -2,13 +2,13 @@
   "canton_id": 4,
   "canton_name_de": "Uri",
   "canton_name_fr": "Uri",
-  "data_timestamp": "2026-09-21T00:00:00",
+  "data_timestamp": "2026-09-22T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 44,
       "region_name_de": "östliche Zentralschweiz",
-      "data_timestamp": "2026-09-21T00:00:00",
+      "data_timestamp": "2026-09-22T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -2.74,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -37,51 +37,51 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 4,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -2,
-      "soil_moisture_deficit_delta": 1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
         "n_total": 4,
-        "n_low": 3,
-        "n_very_low": 1,
-        "pct_low": 75
+        "n_low": 4,
+        "n_very_low": 2,
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2084",
           "station_name": "Ingenbohl (2084)",
-          "current_value": 5.287714285714285,
-          "low_flow_threshold": 10.055,
-          "min_value": 3.953
+          "current_value": 3.894,
+          "low_flow_threshold": 9.161,
+          "min_value": 2.936
         },
         {
           "station_id": "2300",
           "station_name": "Euthal, Rüti (2300)",
-          "current_value": 0.9247142857142856,
-          "low_flow_threshold": 0.903,
-          "min_value": 0.082
+          "current_value": 0.379,
+          "low_flow_threshold": 0.892,
+          "min_value": 0.07
         },
         {
           "station_id": "2604",
           "station_name": "Biberbrugg (2604)",
-          "current_value": 0.15,
-          "low_flow_threshold": 0.283,
-          "min_value": 0.086
+          "current_value": 0.094,
+          "low_flow_threshold": 0.264,
+          "min_value": 0.074
         },
         {
           "station_id": "2609",
           "station_name": "Einsiedeln (2609)",
-          "current_value": 0.3158571428571429,
-          "low_flow_threshold": 0.738,
-          "min_value": 0.3
+          "current_value": 0.186,
+          "low_flow_threshold": 0.66,
+          "min_value": 0.251
         }
       ]
     },
     {
       "region_id": 45,
       "region_name_de": "Urner Alpen",
-      "data_timestamp": "2026-09-21T00:00:00",
+      "data_timestamp": "2026-09-22T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.79,
@@ -93,7 +93,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -110,9 +110,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 0,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 2,
       "discharge": {
         "n_total": 2,
@@ -124,23 +124,23 @@
         {
           "station_id": "2056",
           "station_name": "Seedorf (2056)",
-          "current_value": 23.76528571428572,
-          "low_flow_threshold": 34.999,
-          "min_value": 20.97
+          "current_value": 18.838,
+          "low_flow_threshold": 31.869,
+          "min_value": 19.032
         },
         {
           "station_id": "2276",
           "station_name": "Isenthal (2276)",
-          "current_value": 0.8265714285714285,
-          "low_flow_threshold": 1.148,
-          "min_value": 0.652
+          "current_value": 0.65,
+          "low_flow_threshold": 1.035,
+          "min_value": 0.547
         }
       ]
     },
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-09-21T00:00:00",
+      "data_timestamp": "2026-09-22T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.43,
@@ -152,7 +152,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -183,9 +183,9 @@
         {
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
-          "current_value": 17.019571428571428,
-          "low_flow_threshold": 39.269,
-          "min_value": 20.893
+          "current_value": 15.509,
+          "low_flow_threshold": 37.294,
+          "min_value": 20.19
         }
       ]
     }
@@ -206,7 +206,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -227,8 +227,8 @@
   "max_vhi_index": 2,
   "discharge": {
     "n_total": 7,
-    "n_low": 6,
-    "n_very_low": 2,
-    "pct_low": 86
+    "n_low": 7,
+    "n_very_low": 3,
+    "pct_low": 100
   }
 }
