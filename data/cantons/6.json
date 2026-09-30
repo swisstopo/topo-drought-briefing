@@ -2,17 +2,17 @@
   "canton_id": 6,
   "canton_name_de": "Obwalden",
   "canton_name_fr": "Obwald",
-  "data_timestamp": "2026-09-29T00:00:00",
+  "data_timestamp": "2026-09-30T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-09-29T00:00:00",
+      "data_timestamp": "2026-09-30T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.37,
-      "soil_moisture_pct": 62.4,
+      "soil_moisture_pct": 60.7,
       "vhi": 16.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.020000000000000018,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -44,35 +44,35 @@
       "discharge": {
         "n_total": 4,
         "n_low": 4,
-        "n_very_low": 3,
+        "n_very_low": 4,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 2.499,
+          "current_value": 2.4835000000000003,
           "low_flow_threshold": 5.871,
           "min_value": 2.342
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.014,
+          "current_value": 0.0135,
           "low_flow_threshold": 0.103,
           "min_value": 0.024
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 3.049,
+          "current_value": 2.8195,
           "low_flow_threshold": 7.857,
           "min_value": 3.425
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 1.594,
+          "current_value": 1.5699999999999998,
           "low_flow_threshold": 4.611,
           "min_value": 2.126
         }
@@ -92,7 +92,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -114,7 +114,7 @@
   "discharge": {
     "n_total": 4,
     "n_low": 4,
-    "n_very_low": 3,
+    "n_very_low": 4,
     "pct_low": 100
   }
 }
