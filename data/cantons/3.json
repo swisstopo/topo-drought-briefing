@@ -2,16 +2,16 @@
   "canton_id": 3,
   "canton_name_de": "Luzern",
   "canton_name_fr": "Lucerne",
-  "data_timestamp": "2026-10-02T00:00:00",
+  "data_timestamp": "2026-10-03T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-10-02T00:00:00",
+      "data_timestamp": "2026-10-03T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.39,
+      "spi_3m": -2.37,
       "soil_moisture_pct": 15.5,
       "vhi": 21.0,
       "cdi_trend": 0,
@@ -20,15 +20,15 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 17.1,
-      "precip_sum_3m": 166.7,
+      "precip_sum_1m": 17.9,
+      "precip_sum_3m": 167.5,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -51,14 +51,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 0.456,
+          "current_value": 0.6916,
           "low_flow_threshold": 1.992,
           "min_value": 1.103
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 0.8160000000000001,
+          "current_value": 0.9988,
           "low_flow_threshold": 1.601,
           "min_value": 1.07
         }
@@ -67,7 +67,7 @@
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-10-02T00:00:00",
+      "data_timestamp": "2026-10-03T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.32,
@@ -79,15 +79,15 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 28.1,
-      "precip_sum_3m": 192.5,
+      "precip_sum_1m": 27.9,
+      "precip_sum_3m": 192.4,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -110,21 +110,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.00375,
+          "current_value": 0.0043999999999999,
           "low_flow_threshold": 0.394,
           "min_value": 0.15
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.0355,
+          "current_value": 0.0372,
           "low_flow_threshold": 0.427,
           "min_value": 0.154
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.11075,
+          "current_value": 0.1372,
           "low_flow_threshold": 0.307,
           "min_value": 0.136
         }
@@ -133,27 +133,27 @@
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-10-02T00:00:00",
+      "data_timestamp": "2026-10-03T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.37,
       "soil_moisture_pct": 56.8,
       "vhi": 37.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.020000000000000018,
+      "spi_3m_delta": -0.010000000000000231,
       "vhi_delta": 0.0,
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 47.5,
-      "precip_sum_3m": 291.3,
+      "precip_sum_1m": 47.1,
+      "precip_sum_3m": 290.9,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -176,28 +176,28 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 2.4155,
+          "current_value": 2.431,
           "low_flow_threshold": 5.871,
           "min_value": 2.342
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.01325,
+          "current_value": 0.015,
           "low_flow_threshold": 0.103,
           "min_value": 0.024
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 2.691,
+          "current_value": 2.821,
           "low_flow_threshold": 7.857,
           "min_value": 3.425
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 1.53675,
+          "current_value": 2.0242,
           "low_flow_threshold": 4.611,
           "min_value": 2.126
         }
@@ -217,7 +217,7 @@
     "5": 3
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -228,8 +228,8 @@
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
   "cdi_situation_delta": -4,
-  "mean_precip_sum_1m": 30.9,
-  "mean_precip_sum_3m": 216.8,
+  "mean_precip_sum_1m": 31.0,
+  "mean_precip_sum_3m": 216.9,
   "precip_index_min": 5,
   "precip_index_max": 5,
   "n_regions_with_precip_deficit": 3,

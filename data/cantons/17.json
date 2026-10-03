@@ -2,33 +2,33 @@
   "canton_id": 17,
   "canton_name_de": "St. Gallen",
   "canton_name_fr": "Saint-Gall",
-  "data_timestamp": "2026-10-02T00:00:00",
+  "data_timestamp": "2026-10-03T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 43,
       "region_name_de": "Zürichseebecken",
-      "data_timestamp": "2026-10-02T00:00:00",
+      "data_timestamp": "2026-10-03T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.69,
       "soil_moisture_pct": 45.0,
       "vhi": 37.0,
       "cdi_trend": 0,
-      "spi_3m_delta": 0.06999999999999984,
+      "spi_3m_delta": 0.08000000000000007,
       "vhi_delta": 0.0,
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 39.1,
-      "precip_sum_3m": 230.3,
+      "precip_sum_1m": 38.8,
+      "precip_sum_3m": 230.0,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -51,7 +51,7 @@
         {
           "station_id": "ZH582",
           "station_name": "Rüti (ZH582)",
-          "current_value": 0.2345,
+          "current_value": 0.2676,
           "low_flow_threshold": 0.885,
           "min_value": 0.357
         }
@@ -60,7 +60,7 @@
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-10-02T00:00:00",
+      "data_timestamp": "2026-10-03T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.13,
@@ -72,15 +72,15 @@
       "pct_critical": 0.25,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 40.6,
-      "precip_sum_3m": 244.5,
+      "precip_sum_1m": 40.7,
+      "precip_sum_3m": 244.6,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -103,7 +103,7 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 3.75825,
+          "current_value": 4.2644,
           "low_flow_threshold": 10.961,
           "min_value": 4.182
         }
@@ -112,27 +112,27 @@
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-10-02T00:00:00",
+      "data_timestamp": "2026-10-03T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.53,
+      "spi_3m": -2.54,
       "soil_moisture_pct": 78.7,
       "vhi": 41.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.09999999999999964,
+      "spi_3m_delta": -0.10000000000000009,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 39.5,
-      "precip_sum_3m": 296.4,
+      "precip_sum_1m": 38.9,
+      "precip_sum_3m": 295.8,
       "precip_1m_index": 5,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -155,7 +155,7 @@
         {
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
-          "current_value": 13.94425,
+          "current_value": 14.0404,
           "low_flow_threshold": 34.421,
           "min_value": 20.19
         }
@@ -164,27 +164,27 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-10-02T00:00:00",
+      "data_timestamp": "2026-10-03T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -2.77,
+      "spi_3m": -2.78,
       "soil_moisture_pct": 48.7,
       "vhi": 41.0,
       "cdi_trend": 0,
-      "spi_3m_delta": 0.08999999999999986,
+      "spi_3m_delta": 0.08000000000000007,
       "vhi_delta": 0.0,
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 42.3,
-      "precip_sum_3m": 253.2,
+      "precip_sum_1m": 42.1,
+      "precip_sum_3m": 252.9,
       "precip_1m_index": 4,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -207,21 +207,21 @@
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 2.17275,
+          "current_value": 2.1738000000000004,
           "low_flow_threshold": 6.731,
           "min_value": 3.96
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 2.3977500000000003,
+          "current_value": 2.4218,
           "low_flow_threshold": 4.917,
           "min_value": 3.401
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 1.92,
+          "current_value": 1.932,
           "low_flow_threshold": 3.642,
           "min_value": 2.227
         }
@@ -242,7 +242,7 @@
     "5": 4
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -253,8 +253,8 @@
   "cdi_min_dry": 5,
   "cdi_max_dry": 5,
   "cdi_situation_delta": -4,
-  "mean_precip_sum_1m": 40.4,
-  "mean_precip_sum_3m": 256.1,
+  "mean_precip_sum_1m": 40.1,
+  "mean_precip_sum_3m": 255.8,
   "precip_index_min": 4,
   "precip_index_max": 5,
   "n_regions_with_precip_deficit": 4,
