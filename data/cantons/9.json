@@ -2,17 +2,17 @@
   "canton_id": 9,
   "canton_name_de": "Zug",
   "canton_name_fr": "Zoug",
-  "data_timestamp": "2026-10-06T00:00:00",
+  "data_timestamp": "2026-10-07T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-10-06T00:00:00",
+      "data_timestamp": "2026-10-07T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.89,
-      "soil_moisture_pct": 19.0,
+      "soil_moisture_pct": 19.3,
       "vhi": 6.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.5700000000000003,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -58,14 +58,14 @@
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.039,
+          "current_value": 0.0375,
           "low_flow_threshold": 0.424,
           "min_value": 0.107
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.121,
+          "current_value": 0.119,
           "low_flow_threshold": 0.309,
           "min_value": 0.133
         }
@@ -85,7 +85,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
