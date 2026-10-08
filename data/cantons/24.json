@@ -2,17 +2,17 @@
   "canton_id": 24,
   "canton_name_de": "Neuchâtel",
   "canton_name_fr": "Neuchâtel",
-  "data_timestamp": "2026-10-07T00:00:00",
+  "data_timestamp": "2026-10-08T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-10-07T00:00:00",
+      "data_timestamp": "2026-10-08T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.05,
-      "soil_moisture_pct": 26.2,
+      "soil_moisture_pct": 30.1,
       "vhi": 4.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.27,
@@ -20,7 +20,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,7 +35,7 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
+      "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -2,
@@ -51,7 +51,7 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 1.8915,
+          "current_value": 2.0123333333333333,
           "low_flow_threshold": 5.297,
           "min_value": 1.584
         }
@@ -60,11 +60,11 @@
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-10-07T00:00:00",
+      "data_timestamp": "2026-10-08T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.77,
-      "soil_moisture_pct": 17.8,
+      "soil_moisture_pct": 19.7,
       "vhi": 7.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.1399999999999999,
@@ -72,7 +72,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -103,28 +103,28 @@
         {
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
-          "current_value": 1.5385,
+          "current_value": 1.5406666666666666,
           "low_flow_threshold": 3.171,
           "min_value": 2.182
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 0.0515,
+          "current_value": 0.0536666666666666,
           "low_flow_threshold": 0.08,
           "min_value": 0.045
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
-          "current_value": 1.0005,
+          "current_value": 1.003,
           "low_flow_threshold": 2.329,
           "min_value": 1.038
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
-          "current_value": 0.2395,
+          "current_value": 0.2556666666666666,
           "low_flow_threshold": 0.28,
           "min_value": 0.145
         }
@@ -146,7 +146,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -156,7 +156,7 @@
   "n_regions_dry": 2,
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -3,
+  "cdi_situation_delta": -4,
   "mean_precip_sum_1m": 32.2,
   "mean_precip_sum_3m": 178.6,
   "precip_index_min": 3,

@@ -2,17 +2,17 @@
   "canton_id": 3,
   "canton_name_de": "Luzern",
   "canton_name_fr": "Lucerne",
-  "data_timestamp": "2026-10-07T00:00:00",
+  "data_timestamp": "2026-10-08T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-10-07T00:00:00",
+      "data_timestamp": "2026-10-08T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.46,
-      "soil_moisture_pct": 25.1,
+      "soil_moisture_pct": 27.9,
       "vhi": 4.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.08999999999999986,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,14 +51,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 0.7815000000000001,
+          "current_value": 0.7833333333333333,
           "low_flow_threshold": 2.094,
           "min_value": 1.103
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 0.924,
+          "current_value": 0.9163333333333332,
           "low_flow_threshold": 1.679,
           "min_value": 1.07
         }
@@ -67,11 +67,11 @@
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-10-07T00:00:00",
+      "data_timestamp": "2026-10-08T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.89,
-      "soil_moisture_pct": 19.3,
+      "soil_moisture_pct": 20.0,
       "vhi": 7.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.5700000000000003,
@@ -79,7 +79,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -117,14 +117,14 @@
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.0375,
+          "current_value": 0.0366666666666666,
           "low_flow_threshold": 0.424,
           "min_value": 0.107
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.119,
+          "current_value": 0.1156666666666666,
           "low_flow_threshold": 0.309,
           "min_value": 0.133
         }
@@ -133,11 +133,11 @@
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-10-07T00:00:00",
+      "data_timestamp": "2026-10-08T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -3.02,
-      "soil_moisture_pct": 49.6,
+      "soil_moisture_pct": 51.3,
       "vhi": 17.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.6499999999999999,
@@ -145,7 +145,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 0,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -176,7 +176,7 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 2.5825,
+          "current_value": 2.626,
           "low_flow_threshold": 5.771,
           "min_value": 2.532
         },
@@ -190,14 +190,14 @@
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 2.971,
+          "current_value": 2.919666666666666,
           "low_flow_threshold": 6.928,
           "min_value": 3.425
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 1.6905,
+          "current_value": 1.6706666666666667,
           "low_flow_threshold": 4.659,
           "min_value": 1.673
         }
@@ -218,7 +218,7 @@
     "5": 3
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
