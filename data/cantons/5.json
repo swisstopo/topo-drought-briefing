@@ -2,13 +2,13 @@
   "canton_id": 5,
   "canton_name_de": "Schwyz",
   "canton_name_fr": "Schwytz",
-  "data_timestamp": "2026-10-12T00:00:00",
+  "data_timestamp": "2026-10-13T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 43,
       "region_name_de": "Zürichseebecken",
-      "data_timestamp": "2026-10-12T00:00:00",
+      "data_timestamp": "2026-10-13T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.11,
@@ -20,15 +20,15 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 63.2,
-      "precip_sum_3m": 244.3,
+      "precip_sum_1m": 63.1,
+      "precip_sum_3m": 244.2,
       "precip_1m_index": 2,
       "soil_moisture_index": 5,
       "hydro_index": 2,
@@ -37,22 +37,22 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 4,
+      "soil_moisture_index_forecast": 5,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 2,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
-        "n_very_low": 0,
+        "n_very_low": 1,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "ZH582",
           "station_name": "Rüti (ZH582)",
-          "current_value": 0.6769999999999999,
-          "low_flow_threshold": 0.866,
+          "current_value": 0.427,
+          "low_flow_threshold": 0.853,
           "min_value": 0.29
         }
       ]
@@ -60,27 +60,27 @@
     {
       "region_id": 44,
       "region_name_de": "östliche Zentralschweiz",
-      "data_timestamp": "2026-10-12T00:00:00",
+      "data_timestamp": "2026-10-13T00:00:00",
       "source": "api",
       "cdi": 4,
-      "spi_3m": -2.08,
+      "spi_3m": -2.09,
       "soil_moisture_pct": 82.4,
       "vhi": 38.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.7999999999999998,
+      "spi_3m_delta": 0.79,
       "vhi_delta": 0.0,
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 75.5,
-      "precip_sum_3m": 325.6,
+      "precip_sum_1m": 75.3,
+      "precip_sum_3m": 325.4,
       "precip_1m_index": 2,
       "soil_moisture_index": 4,
       "hydro_index": 2,
@@ -89,43 +89,43 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": -1,
       "vhi_index": 2,
       "discharge": {
         "n_total": 4,
-        "n_low": 1,
+        "n_low": 2,
         "n_very_low": 0,
-        "pct_low": 25
+        "pct_low": 50
       },
       "hydro_stations": [
         {
           "station_id": "2084",
           "station_name": "Ingenbohl (2084)",
-          "current_value": 5.572571428571429,
-          "low_flow_threshold": 7.945,
+          "current_value": 6.705,
+          "low_flow_threshold": 7.397,
           "min_value": 2.936
         },
         {
           "station_id": "2300",
           "station_name": "Euthal, Rüti (2300)",
-          "current_value": 1.356142857142857,
-          "low_flow_threshold": 0.724,
+          "current_value": 0.932,
+          "low_flow_threshold": 0.64,
           "min_value": 0.07
         },
         {
           "station_id": "2604",
           "station_name": "Biberbrugg (2604)",
-          "current_value": 0.4135714285714286,
-          "low_flow_threshold": 0.254,
+          "current_value": 0.27,
+          "low_flow_threshold": 0.241,
           "min_value": 0.074
         },
         {
           "station_id": "2609",
           "station_name": "Einsiedeln (2609)",
-          "current_value": 0.8267142857142857,
-          "low_flow_threshold": 0.559,
+          "current_value": 0.443,
+          "low_flow_threshold": 0.535,
           "min_value": 0.251
         }
       ]
@@ -145,7 +145,7 @@
     "2": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -156,8 +156,8 @@
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
   "cdi_situation_delta": -1,
-  "mean_precip_sum_1m": 69.3,
-  "mean_precip_sum_3m": 285.0,
+  "mean_precip_sum_1m": 69.2,
+  "mean_precip_sum_3m": 284.8,
   "precip_index_min": 2,
   "precip_index_max": 2,
   "n_regions_with_precip_deficit": 2,
@@ -166,8 +166,8 @@
   "max_vhi_index": 2,
   "discharge": {
     "n_total": 5,
-    "n_low": 2,
-    "n_very_low": 0,
-    "pct_low": 40
+    "n_low": 3,
+    "n_very_low": 1,
+    "pct_low": 60
   }
 }

@@ -2,13 +2,13 @@
   "canton_id": 10,
   "canton_name_de": "Fribourg",
   "canton_name_fr": "Fribourg",
-  "data_timestamp": "2026-10-12T00:00:00",
+  "data_timestamp": "2026-10-13T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 34,
       "region_name_de": "Berner Mittelland",
-      "data_timestamp": "2026-10-12T00:00:00",
+      "data_timestamp": "2026-10-13T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -2.05,
@@ -20,15 +20,15 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 46.5,
-      "precip_sum_3m": 193.1,
+      "precip_sum_1m": 46.4,
+      "precip_sum_3m": 193.0,
       "precip_1m_index": 2,
       "soil_moisture_index": 5,
       "hydro_index": 1,
@@ -37,37 +37,37 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 4,
+      "soil_moisture_index_forecast": 5,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 3,
       "discharge": {
         "n_total": 2,
-        "n_low": 1,
+        "n_low": 2,
         "n_very_low": 1,
-        "pct_low": 50
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2159",
           "station_name": "Belp, Mülimatt (2159)",
-          "current_value": 0.7651428571428571,
-          "low_flow_threshold": 0.981,
+          "current_value": 0.666,
+          "low_flow_threshold": 0.992,
           "min_value": 0.506
         },
         {
           "station_id": "2179",
           "station_name": "Thörishaus, Sensematt (2179)",
-          "current_value": 3.2355714285714288,
-          "low_flow_threshold": 3.028,
-          "min_value": 1.478
+          "current_value": 2.66,
+          "low_flow_threshold": 3.043,
+          "min_value": 1.436
         }
       ]
     },
     {
       "region_id": 36,
       "region_name_de": "Greyerzerland",
-      "data_timestamp": "2026-10-12T00:00:00",
+      "data_timestamp": "2026-10-13T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.42,
@@ -79,7 +79,7 @@
       "pct_critical": 0.19230769230769232,
       "spi_3m_percentile": 7,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -89,7 +89,7 @@
         "overall": "warning"
       },
       "precip_sum_1m": 52.8,
-      "precip_sum_3m": 257.6,
+      "precip_sum_3m": 257.5,
       "precip_1m_index": 2,
       "soil_moisture_index": 5,
       "hydro_index": 2,
@@ -105,22 +105,22 @@
       "discharge": {
         "n_total": 2,
         "n_low": 2,
-        "n_very_low": 0,
+        "n_very_low": 2,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2160",
           "station_name": "Broc, Château d'en bas (2160)",
-          "current_value": 6.180714285714286,
-          "low_flow_threshold": 7.495,
-          "min_value": 3.896
+          "current_value": 4.98,
+          "low_flow_threshold": 7.263,
+          "min_value": 3.744
         },
         {
           "station_id": "2412",
           "station_name": "Vuippens, Château (2412)",
-          "current_value": 0.258,
-          "low_flow_threshold": 0.283,
+          "current_value": 0.149,
+          "low_flow_threshold": 0.286,
           "min_value": 0.122
         }
       ]
@@ -128,7 +128,7 @@
     {
       "region_id": 55,
       "region_name_de": "westliches Mittelland",
-      "data_timestamp": "2026-10-12T00:00:00",
+      "data_timestamp": "2026-10-13T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.37,
@@ -140,7 +140,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 8,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -164,22 +164,22 @@
       "discharge": {
         "n_total": 2,
         "n_low": 2,
-        "n_very_low": 1,
+        "n_very_low": 2,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2034",
           "station_name": "Payerne, Caserne d'aviation (2034)",
-          "current_value": 1.4467142857142856,
-          "low_flow_threshold": 1.672,
-          "min_value": 0.526
+          "current_value": 0.992,
+          "low_flow_threshold": 1.803,
+          "min_value": 0.513
         },
         {
           "station_id": "2369",
           "station_name": "Yvonand, La Mauguettaz (2369)",
-          "current_value": 0.236,
-          "low_flow_threshold": 0.351,
+          "current_value": 0.168,
+          "low_flow_threshold": 0.372,
           "min_value": 0.114
         }
       ]
@@ -200,7 +200,7 @@
     "2": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.9666666666666667,
     "missing_columns": [
       "vhi"
@@ -213,7 +213,7 @@
   "cdi_min_dry": 3,
   "cdi_max_dry": 4,
   "cdi_situation_delta": -1,
-  "mean_precip_sum_1m": 44.7,
+  "mean_precip_sum_1m": 44.6,
   "mean_precip_sum_3m": 207.0,
   "precip_index_min": 2,
   "precip_index_max": 2,
@@ -223,8 +223,8 @@
   "max_vhi_index": 3,
   "discharge": {
     "n_total": 6,
-    "n_low": 5,
-    "n_very_low": 2,
-    "pct_low": 83
+    "n_low": 6,
+    "n_very_low": 5,
+    "pct_low": 100
   }
 }
