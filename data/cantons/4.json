@@ -2,13 +2,13 @@
   "canton_id": 4,
   "canton_name_de": "Uri",
   "canton_name_fr": "Uri",
-  "data_timestamp": "2026-10-16T00:00:00",
+  "data_timestamp": "2026-10-17T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 44,
       "region_name_de": "östliche Zentralschweiz",
-      "data_timestamp": "2026-10-16T00:00:00",
+      "data_timestamp": "2026-10-17T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -2.09,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 1,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -35,7 +35,7 @@
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 4,
+      "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": -1,
@@ -51,28 +51,28 @@
         {
           "station_id": "2084",
           "station_name": "Ingenbohl (2084)",
-          "current_value": 5.71475,
+          "current_value": 5.2992,
           "low_flow_threshold": 7.397,
           "min_value": 2.936
         },
         {
           "station_id": "2300",
           "station_name": "Euthal, Rüti (2300)",
-          "current_value": 0.6012500000000001,
+          "current_value": 0.5519999999999999,
           "low_flow_threshold": 0.64,
           "min_value": 0.07
         },
         {
           "station_id": "2604",
           "station_name": "Biberbrugg (2604)",
-          "current_value": 0.176,
+          "current_value": 0.1628,
           "low_flow_threshold": 0.241,
           "min_value": 0.074
         },
         {
           "station_id": "2609",
           "station_name": "Einsiedeln (2609)",
-          "current_value": 0.30625,
+          "current_value": 0.289,
           "low_flow_threshold": 0.535,
           "min_value": 0.251
         }
@@ -81,7 +81,7 @@
     {
       "region_id": 45,
       "region_name_de": "Urner Alpen",
-      "data_timestamp": "2026-10-16T00:00:00",
+      "data_timestamp": "2026-10-17T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.96,
@@ -93,7 +93,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -124,14 +124,14 @@
         {
           "station_id": "2056",
           "station_name": "Seedorf (2056)",
-          "current_value": 17.00975,
+          "current_value": 16.919400000000003,
           "low_flow_threshold": 24.309,
           "min_value": 15.06
         },
         {
           "station_id": "2276",
           "station_name": "Isenthal (2276)",
-          "current_value": 0.4902499999999999,
+          "current_value": 0.479,
           "low_flow_threshold": 0.797,
           "min_value": 0.475
         }
@@ -140,7 +140,7 @@
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-10-16T00:00:00",
+      "data_timestamp": "2026-10-17T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -2.0,
@@ -152,7 +152,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 2,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -183,7 +183,7 @@
         {
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
-          "current_value": 15.7615,
+          "current_value": 15.6738,
           "low_flow_threshold": 31.22,
           "min_value": 19.771
         }
@@ -206,7 +206,7 @@
     "5": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -216,7 +216,7 @@
   "n_regions_dry": 3,
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
-  "cdi_situation_delta": -1,
+  "cdi_situation_delta": -2,
   "mean_precip_sum_1m": 59.7,
   "mean_precip_sum_3m": 301.0,
   "precip_index_min": 2,
