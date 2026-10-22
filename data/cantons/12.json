@@ -2,17 +2,17 @@
   "canton_id": 12,
   "canton_name_de": "Basel-Stadt",
   "canton_name_fr": "Bâle-Ville",
-  "data_timestamp": "2026-10-21T00:00:00",
+  "data_timestamp": "2026-10-22T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-10-21T00:00:00",
+      "data_timestamp": "2026-10-22T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.46,
-      "soil_moisture_pct": 41.3,
+      "soil_moisture_pct": 60.5,
       "vhi": 46.0,
       "cdi_trend": 1,
       "spi_3m_delta": 0.26,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 6,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,21 +51,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 8.728,
+          "current_value": 7.478666666666666,
           "low_flow_threshold": 4.106,
           "min_value": 1.741
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.5215,
+          "current_value": 0.5403333333333333,
           "low_flow_threshold": 0.587,
           "min_value": 0.188
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.7965,
+          "current_value": 0.691,
           "low_flow_threshold": 0.563,
           "min_value": 0.224
         }
@@ -85,7 +85,7 @@
     "1": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
