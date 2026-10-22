@@ -51,14 +51,14 @@
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 0.9725,
+          "current_value": 0.9724999999999999,
           "low_flow_threshold": 2.028,
           "min_value": 0.984
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 0.3389999999999999,
+          "current_value": 0.33899999999999997,
           "low_flow_threshold": 0.491,
           "min_value": 0.139
         }
@@ -214,7 +214,7 @@
         {
           "station_id": "2351",
           "station_name": "Visp (2351)",
-          "current_value": 14.5235,
+          "current_value": 14.523499999999999,
           "low_flow_threshold": 8.593,
           "min_value": 4.161
         }
@@ -266,7 +266,7 @@
         {
           "station_id": "2346",
           "station_name": "Brig (2346)",
-          "current_value": 31.144,
+          "current_value": 31.144000000000002,
           "low_flow_threshold": 16.385,
           "min_value": 7.753
         }

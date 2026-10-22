@@ -443,7 +443,7 @@
         {
           "station_id": "2263",
           "station_name": "La Punt-Chamues-ch (2263)",
-          "current_value": 1.1055,
+          "current_value": 1.1055000000000001,
           "low_flow_threshold": 1.289,
           "min_value": 0.898
         }

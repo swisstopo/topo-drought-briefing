@@ -110,7 +110,7 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.0099999999999999,
+          "current_value": 0.009999999999999998,
           "low_flow_threshold": 0.409,
           "min_value": 0.168
         },
@@ -124,7 +124,7 @@
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.148,
+          "current_value": 0.14800000000000002,
           "low_flow_threshold": 0.323,
           "min_value": 0.132
         }
@@ -197,7 +197,7 @@
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 3.0855,
+          "current_value": 3.0854999999999997,
           "low_flow_threshold": 4.456,
           "min_value": 1.564
         }

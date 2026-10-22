@@ -332,7 +332,7 @@
         {
           "station_id": "2019",
           "station_name": "Brienzwiler (2019)",
-          "current_value": 19.0665,
+          "current_value": 19.066499999999998,
           "low_flow_threshold": 20.296,
           "min_value": 6.436
         },

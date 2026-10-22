@@ -117,7 +117,7 @@
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 0.108,
+          "current_value": 0.10800000000000001,
           "low_flow_threshold": 0.104,
           "min_value": 0.047
         },
@@ -294,14 +294,14 @@
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 0.9725,
+          "current_value": 0.9724999999999999,
           "low_flow_threshold": 2.028,
           "min_value": 0.984
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 0.3389999999999999,
+          "current_value": 0.33899999999999997,
           "low_flow_threshold": 0.491,
           "min_value": 0.139
         }
