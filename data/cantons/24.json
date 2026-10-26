@@ -2,36 +2,38 @@
   "canton_id": 24,
   "canton_name_de": "Neuchâtel",
   "canton_name_fr": "Neuchâtel",
-  "data_timestamp": "2026-10-25T00:00:00",
+  "data_timestamp": "2026-10-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-10-25T00:00:00",
+      "data_timestamp": "2026-10-26T00:00:00",
       "source": "api",
-      "cdi": 4,
-      "spi_3m": -1.41,
-      "soil_moisture_pct": 58.8,
+      "cdi": 3,
+      "spi_3m": -0.89,
+      "soil_moisture_pct": 80.8,
       "vhi": 50.0,
-      "cdi_trend": 0,
-      "spi_3m_delta": 0.050000000000000044,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.5199999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
-      "spi_3m_percentile": 8,
+      "spi_3m_percentile": 18,
       "quality": {
-        "data_age_days": 1,
-        "coverage_pct": 1.0,
-        "missing_columns": [],
+        "data_age_days": 0,
+        "coverage_pct": 0.9,
+        "missing_columns": [
+          "vhi"
+        ],
         "outlier_flags": [],
         "is_stale": false,
-        "overall": "ok"
+        "overall": "warning"
       },
-      "precip_sum_1m": 83.8,
-      "precip_sum_3m": 204.5,
+      "precip_sum_1m": 118.7,
+      "precip_sum_3m": 237.7,
       "precip_1m_index": 1,
-      "soil_moisture_index": 3,
-      "hydro_index": 4,
+      "soil_moisture_index": 1,
+      "hydro_index": 3,
       "warnlevel": 2,
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
@@ -39,19 +41,19 @@
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": 1,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
         "n_low": 1,
-        "n_very_low": 1,
+        "n_very_low": 0,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 4.051333333333333,
+          "current_value": 4.647142857142858,
           "low_flow_threshold": 6.557,
           "min_value": 1.284
         }
@@ -60,38 +62,38 @@
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-10-25T00:00:00",
+      "data_timestamp": "2026-10-26T00:00:00",
       "source": "api",
-      "cdi": 3,
-      "spi_3m": -1.19,
-      "soil_moisture_pct": 44.2,
+      "cdi": 2,
+      "spi_3m": -0.56,
+      "soil_moisture_pct": 90.0,
       "vhi": 32.0,
-      "cdi_trend": 0,
-      "spi_3m_delta": 0.18000000000000016,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.6299999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 10,
+      "spi_3m_percentile": 26,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 72.8,
-      "precip_sum_3m": 215.9,
+      "precip_sum_1m": 127.8,
+      "precip_sum_3m": 267.3,
       "precip_1m_index": 1,
-      "soil_moisture_index": 4,
-      "hydro_index": 3,
+      "soil_moisture_index": 2,
+      "hydro_index": 1,
       "warnlevel": 2,
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
       "cdi_forecast_week2": 2,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 3,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": 1,
       "vhi_index": 2,
       "discharge": {
         "n_total": 4,
@@ -103,28 +105,28 @@
         {
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
-          "current_value": 8.594,
+          "current_value": 9.727142857142857,
           "low_flow_threshold": 3.636,
           "min_value": 1.872
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 0.1635,
+          "current_value": 0.22285714285714286,
           "low_flow_threshold": 0.104,
           "min_value": 0.047
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
-          "current_value": 5.447500000000001,
+          "current_value": 6.469285714285713,
           "low_flow_threshold": 2.61,
           "min_value": 1.038
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
-          "current_value": 1.1558333333333333,
+          "current_value": 1.3078571428571428,
           "low_flow_threshold": 0.376,
           "min_value": 0.145
         }
@@ -138,37 +140,39 @@
     "1": 2
   },
   "n_regions_by_soil_moisture_index": {
-    "3": 1,
-    "4": 1
+    "1": 1,
+    "2": 1
   },
   "n_regions_by_hydro_index": {
-    "4": 1,
-    "3": 1
+    "3": 1,
+    "1": 1
   },
   "quality": {
-    "data_age_days": 1,
-    "coverage_pct": 1.0,
-    "missing_columns": [],
+    "data_age_days": 0,
+    "coverage_pct": 0.95,
+    "missing_columns": [
+      "vhi"
+    ],
     "outlier_flags": [],
     "is_stale": false,
-    "overall": "ok"
+    "overall": "warning"
   },
   "n_regions_dry": 2,
-  "cdi_min_dry": 3,
-  "cdi_max_dry": 4,
-  "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 78.3,
-  "mean_precip_sum_3m": 210.2,
+  "cdi_min_dry": 2,
+  "cdi_max_dry": 3,
+  "cdi_situation_delta": 0,
+  "mean_precip_sum_1m": 123.2,
+  "mean_precip_sum_3m": 252.5,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
-  "n_regions_with_soil_moisture_deficit": 2,
+  "n_regions_with_soil_moisture_deficit": 1,
   "n_regions_with_vhi_stress": 1,
   "max_vhi_index": 2,
   "discharge": {
     "n_total": 5,
     "n_low": 1,
-    "n_very_low": 1,
+    "n_very_low": 0,
     "pct_low": 20
   }
 }
