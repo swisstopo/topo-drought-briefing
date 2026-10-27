@@ -2,33 +2,33 @@
   "canton_id": 16,
   "canton_name_de": "Appenzell Innerrhoden",
   "canton_name_fr": "Appenzell Rhodes-Intérieures",
-  "data_timestamp": "2026-10-26T00:00:00",
+  "data_timestamp": "2026-10-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-10-26T00:00:00",
+      "data_timestamp": "2026-10-27T00:00:00",
       "source": "api",
       "cdi": 4,
-      "spi_3m": -1.66,
-      "soil_moisture_pct": 69.9,
+      "spi_3m": -1.7,
+      "soil_moisture_pct": 76.1,
       "vhi": 68.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.6900000000000002,
+      "spi_3m_delta": 0.6500000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.25,
-      "spi_3m_percentile": 5,
+      "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 105.2,
-      "precip_sum_3m": 282.1,
+      "precip_sum_1m": 102.3,
+      "precip_sum_3m": 279.1,
       "precip_1m_index": 1,
       "soil_moisture_index": 4,
       "hydro_index": 1,
@@ -51,36 +51,36 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 11.509571428571428,
-          "low_flow_threshold": 9.963,
-          "min_value": 4.182
+          "current_value": 52.955,
+          "low_flow_threshold": 9.723,
+          "min_value": 4.227
         }
       ]
     },
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-10-26T00:00:00",
+      "data_timestamp": "2026-10-27T00:00:00",
       "source": "api",
       "cdi": 5,
-      "spi_3m": -1.73,
-      "soil_moisture_pct": 71.3,
+      "spi_3m": -1.78,
+      "soil_moisture_pct": 76.3,
       "vhi": 37.0,
       "cdi_trend": 0,
-      "spi_3m_delta": 0.6400000000000001,
+      "spi_3m_delta": 0.5900000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.23076923076923078,
-      "spi_3m_percentile": 4,
+      "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 86.0,
-      "precip_sum_3m": 259.6,
+      "precip_sum_1m": 82.7,
+      "precip_sum_3m": 256.4,
       "precip_1m_index": 1,
       "soil_moisture_index": 5,
       "hydro_index": 5,
@@ -96,29 +96,29 @@
       "discharge": {
         "n_total": 3,
         "n_low": 3,
-        "n_very_low": 3,
+        "n_very_low": 2,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 2.6142857142857143,
-          "low_flow_threshold": 6.331,
+          "current_value": 4.958,
+          "low_flow_threshold": 5.998,
           "min_value": 3.639
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 2.7560000000000002,
-          "low_flow_threshold": 4.544,
+          "current_value": 4.107,
+          "low_flow_threshold": 4.409,
           "min_value": 3.18
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 2.1195714285714287,
-          "low_flow_threshold": 3.412,
+          "current_value": 2.06,
+          "low_flow_threshold": 3.327,
           "min_value": 2.169
         }
       ]
@@ -139,7 +139,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -150,8 +150,8 @@
   "cdi_min_dry": 4,
   "cdi_max_dry": 5,
   "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 95.6,
-  "mean_precip_sum_3m": 270.9,
+  "mean_precip_sum_1m": 92.5,
+  "mean_precip_sum_3m": 267.8,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
@@ -161,7 +161,7 @@
   "discharge": {
     "n_total": 4,
     "n_low": 3,
-    "n_very_low": 3,
+    "n_very_low": 2,
     "pct_low": 75
   }
 }
