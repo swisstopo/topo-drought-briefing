@@ -2,13 +2,13 @@
   "canton_id": 15,
   "canton_name_de": "Appenzell Ausserrhoden",
   "canton_name_fr": "Appenzell Rhodes-Extérieures",
-  "data_timestamp": "2026-10-27T00:00:00",
+  "data_timestamp": "2026-10-28T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 47,
       "region_name_de": "Alpstein",
-      "data_timestamp": "2026-10-27T00:00:00",
+      "data_timestamp": "2026-10-28T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.7,
@@ -20,7 +20,7 @@
       "pct_critical": 0.25,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,7 +51,7 @@
         {
           "station_id": "2181",
           "station_name": "Halden (2181)",
-          "current_value": 52.955,
+          "current_value": 36.7565,
           "low_flow_threshold": 9.723,
           "min_value": 4.227
         }
@@ -60,7 +60,7 @@
     {
       "region_id": 51,
       "region_name_de": "Rheintal",
-      "data_timestamp": "2026-10-27T00:00:00",
+      "data_timestamp": "2026-10-28T00:00:00",
       "source": "api",
       "cdi": 5,
       "spi_3m": -1.78,
@@ -72,7 +72,7 @@
       "pct_critical": 0.23076923076923078,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -96,28 +96,28 @@
       "discharge": {
         "n_total": 3,
         "n_low": 3,
-        "n_very_low": 2,
+        "n_very_low": 3,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2139",
           "station_name": "St. Margrethen (2139)",
-          "current_value": 4.958,
+          "current_value": 4.2565,
           "low_flow_threshold": 5.998,
           "min_value": 3.639
         },
         {
           "station_id": "2187",
           "station_name": "Salez (2187)",
-          "current_value": 4.107,
+          "current_value": 3.587,
           "low_flow_threshold": 4.409,
           "min_value": 3.18
         },
         {
           "station_id": "2410",
           "station_name": "Ruggell (2410)",
-          "current_value": 2.06,
+          "current_value": 2.123,
           "low_flow_threshold": 3.327,
           "min_value": 2.169
         }
@@ -139,7 +139,7 @@
     "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -161,7 +161,7 @@
   "discharge": {
     "n_total": 4,
     "n_low": 3,
-    "n_very_low": 2,
+    "n_very_low": 3,
     "pct_low": 75
   }
 }
