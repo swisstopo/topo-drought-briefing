@@ -2,13 +2,13 @@
   "canton_id": 12,
   "canton_name_de": "Basel-Stadt",
   "canton_name_fr": "Bâle-Ville",
-  "data_timestamp": "2026-10-28T00:00:00",
+  "data_timestamp": "2026-10-29T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-10-28T00:00:00",
+      "data_timestamp": "2026-10-29T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.91,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 17,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -39,9 +39,9 @@
       "warnlevel_info_fr": "Danger limité",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 1,
+      "soil_moisture_deficit_delta": 2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
@@ -53,21 +53,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 11.4165,
+          "current_value": 9.624,
           "low_flow_threshold": 4.37,
           "min_value": 1.741
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.887,
+          "current_value": 0.7473333333333333,
           "low_flow_threshold": 0.623,
           "min_value": 0.188
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.6194999999999999,
+          "current_value": 0.5476666666666666,
           "low_flow_threshold": 0.658,
           "min_value": 0.281
         }
@@ -87,7 +87,7 @@
     "1": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.9,
     "missing_columns": [
       "vhi"

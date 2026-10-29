@@ -2,13 +2,13 @@
   "canton_id": 19,
   "canton_name_de": "Aargau",
   "canton_name_fr": "Argovie",
-  "data_timestamp": "2026-10-28T00:00:00",
+  "data_timestamp": "2026-10-29T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-10-28T00:00:00",
+      "data_timestamp": "2026-10-29T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.91,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 17,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -39,9 +39,9 @@
       "warnlevel_info_fr": "Danger limité",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 3,
+      "soil_moisture_index_forecast": 4,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 1,
+      "soil_moisture_deficit_delta": 2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
@@ -53,21 +53,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 11.4165,
+          "current_value": 9.624,
           "low_flow_threshold": 4.37,
           "min_value": 1.741
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.887,
+          "current_value": 0.7473333333333333,
           "low_flow_threshold": 0.623,
           "min_value": 0.188
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.6194999999999999,
+          "current_value": 0.5476666666666666,
           "low_flow_threshold": 0.658,
           "min_value": 0.281
         }
@@ -76,7 +76,7 @@
     {
       "region_id": 33,
       "region_name_de": "Unteres Emmental",
-      "data_timestamp": "2026-10-28T00:00:00",
+      "data_timestamp": "2026-10-29T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -1.02,
@@ -88,7 +88,7 @@
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 13,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -105,9 +105,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 4,
+      "soil_moisture_index_forecast": 5,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 1,
+      "soil_moisture_deficit_delta": 2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
@@ -119,7 +119,7 @@
         {
           "station_id": "2500",
           "station_name": "Ittigen (2500)",
-          "current_value": 0.4925,
+          "current_value": 0.48900000000000005,
           "low_flow_threshold": 0.516,
           "min_value": 0.355
         }
@@ -128,7 +128,7 @@
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-10-28T00:00:00",
+      "data_timestamp": "2026-10-29T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.37,
@@ -140,7 +140,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 7,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -151,7 +151,7 @@
       "precip_sum_3m": 187.9,
       "precip_1m_index": 1,
       "soil_moisture_index": 4,
-      "hydro_index": 5,
+      "hydro_index": 4,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
@@ -171,14 +171,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 1.2825,
+          "current_value": 1.2203333333333335,
           "low_flow_threshold": 2.51,
           "min_value": 1.267
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 1.254,
+          "current_value": 1.2003333333333333,
           "low_flow_threshold": 1.887,
           "min_value": 1.141
         }
@@ -187,7 +187,7 @@
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-10-28T00:00:00",
+      "data_timestamp": "2026-10-29T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.64,
@@ -199,7 +199,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 4,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -230,21 +230,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.0075,
+          "current_value": 0.006999999999999999,
           "low_flow_threshold": 0.426,
           "min_value": 0.155
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.0915,
+          "current_value": 0.09166666666666667,
           "low_flow_threshold": 0.39,
           "min_value": 0.067
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.201,
+          "current_value": 0.19366666666666665,
           "low_flow_threshold": 0.332,
           "min_value": 0.132
         }
@@ -253,7 +253,7 @@
     {
       "region_id": 42,
       "region_name_de": "östliches Mittelland",
-      "data_timestamp": "2026-10-28T00:00:00",
+      "data_timestamp": "2026-10-29T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.52,
@@ -265,7 +265,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 5,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -284,35 +284,35 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 4,
+      "soil_moisture_index_forecast": 5,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 1,
+      "soil_moisture_deficit_delta": 2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
         "n_low": 3,
-        "n_very_low": 1,
+        "n_very_low": 2,
         "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2132",
           "station_name": "Neftenbach (2132)",
-          "current_value": 1.1925,
+          "current_value": 1.1159999999999999,
           "low_flow_threshold": 2.366,
           "min_value": 1.159
         },
         {
           "station_id": "2312",
           "station_name": "Salmsach, Hungerbühl (2312)",
-          "current_value": 0.163,
+          "current_value": 0.17566666666666667,
           "low_flow_threshold": 0.177,
           "min_value": 0.097
         },
         {
           "station_id": "2386",
           "station_name": "Frauenfeld (2386)",
-          "current_value": 0.8919999999999999,
+          "current_value": 0.8289999999999998,
           "low_flow_threshold": 1.229,
           "min_value": 0.509
         }
@@ -333,11 +333,10 @@
   },
   "n_regions_by_hydro_index": {
     "1": 2,
-    "5": 1,
-    "4": 2
+    "4": 3
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.96,
     "missing_columns": [
       "vhi"
@@ -361,7 +360,7 @@
   "discharge": {
     "n_total": 12,
     "n_low": 10,
-    "n_very_low": 6,
+    "n_very_low": 7,
     "pct_low": 83
   }
 }
