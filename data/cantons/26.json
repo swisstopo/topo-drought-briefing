@@ -2,13 +2,13 @@
   "canton_id": 26,
   "canton_name_de": "Jura",
   "canton_name_fr": "Jura",
-  "data_timestamp": "2026-10-31T00:00:00",
+  "data_timestamp": "2026-11-01T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-10-31T00:00:00",
+      "data_timestamp": "2026-11-01T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.91,
@@ -20,7 +20,7 @@
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 17,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -53,21 +53,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 7.736400000000001,
+          "current_value": 7.119833333333333,
           "low_flow_threshold": 4.37,
           "min_value": 1.741
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 0.6016,
+          "current_value": 0.5595,
           "low_flow_threshold": 0.623,
           "min_value": 0.188
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 0.4826,
+          "current_value": 0.46249999999999997,
           "low_flow_threshold": 0.658,
           "min_value": 0.281
         }
@@ -76,7 +76,7 @@
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-10-31T00:00:00",
+      "data_timestamp": "2026-11-01T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -0.82,
@@ -88,7 +88,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 19,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -121,7 +121,7 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 7.564200000000001,
+          "current_value": 7.0425,
           "low_flow_threshold": 6.706,
           "min_value": 1.284
         }
@@ -142,7 +142,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.9,
     "missing_columns": [
       "vhi"
