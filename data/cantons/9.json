@@ -2,43 +2,43 @@
   "canton_id": 9,
   "canton_name_de": "Zug",
   "canton_name_fr": "Zoug",
-  "data_timestamp": "2026-11-01T00:00:00",
+  "data_timestamp": "2026-11-02T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-11-01T00:00:00",
+      "data_timestamp": "2026-11-02T00:00:00",
       "source": "api",
       "cdi": 4,
-      "spi_3m": -1.64,
-      "soil_moisture_pct": 79.6,
+      "spi_3m": -1.54,
+      "soil_moisture_pct": 82.2,
       "vhi": 52.0,
-      "cdi_trend": -1,
-      "spi_3m_delta": 0.6000000000000003,
+      "cdi_trend": 0,
+      "spi_3m_delta": 0.09999999999999987,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 4,
+      "spi_3m_percentile": 6,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 69.3,
-      "precip_sum_3m": 189.3,
+      "precip_sum_1m": 63.8,
+      "precip_sum_3m": 183.4,
       "precip_1m_index": 1,
       "soil_moisture_index": 4,
-      "hydro_index": 4,
+      "hydro_index": 5,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
-      "precip_1m_index_forecast": 2,
+      "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 4,
-      "precip_deficit_delta": 1,
+      "precip_deficit_delta": 0,
       "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
@@ -51,21 +51,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.005333333333333333,
+          "current_value": 0.004857142857142858,
           "low_flow_threshold": 0.426,
           "min_value": 0.155
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.08900000000000001,
+          "current_value": 0.09185714285714286,
           "low_flow_threshold": 0.39,
           "min_value": 0.067
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 0.16783333333333336,
+          "current_value": 0.16271428571428573,
           "low_flow_threshold": 0.332,
           "min_value": 0.132
         }
@@ -82,10 +82,10 @@
     "4": 1
   },
   "n_regions_by_hydro_index": {
-    "4": 1
+    "5": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -96,8 +96,8 @@
   "cdi_min_dry": 4,
   "cdi_max_dry": 4,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 69.3,
-  "mean_precip_sum_3m": 189.3,
+  "mean_precip_sum_1m": 63.8,
+  "mean_precip_sum_3m": 183.4,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
