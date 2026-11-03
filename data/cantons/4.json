@@ -2,33 +2,33 @@
   "canton_id": 4,
   "canton_name_de": "Uri",
   "canton_name_fr": "Uri",
-  "data_timestamp": "2026-11-02T00:00:00",
+  "data_timestamp": "2026-11-03T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 44,
       "region_name_de": "östliche Zentralschweiz",
-      "data_timestamp": "2026-11-02T00:00:00",
+      "data_timestamp": "2026-11-03T00:00:00",
       "source": "api",
       "cdi": 4,
-      "spi_3m": -1.58,
-      "soil_moisture_pct": 98.5,
+      "spi_3m": -1.56,
+      "soil_moisture_pct": 98.4,
       "vhi": 46.0,
       "cdi_trend": 0,
-      "spi_3m_delta": 0.11999999999999988,
+      "spi_3m_delta": 0.1299999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 5,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 103.5,
-      "precip_sum_3m": 306.8,
+      "precip_sum_1m": 105.8,
+      "precip_sum_3m": 309.1,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -43,65 +43,65 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 4,
-        "n_low": 0,
-        "n_very_low": 0,
-        "pct_low": 0
+        "n_low": 2,
+        "n_very_low": 1,
+        "pct_low": 50
       },
       "hydro_stations": [
         {
           "station_id": "2084",
           "station_name": "Ingenbohl (2084)",
-          "current_value": 12.168999999999999,
-          "low_flow_threshold": 6.025,
-          "min_value": 2.253
+          "current_value": 6.337,
+          "low_flow_threshold": 5.716,
+          "min_value": 2.236
         },
         {
           "station_id": "2300",
           "station_name": "Euthal, Rüti (2300)",
-          "current_value": 1.836857142857143,
-          "low_flow_threshold": 0.565,
+          "current_value": 0.565,
+          "low_flow_threshold": 0.562,
           "min_value": 0.196
         },
         {
           "station_id": "2604",
           "station_name": "Biberbrugg (2604)",
-          "current_value": 0.4175714285714286,
+          "current_value": 0.155,
           "low_flow_threshold": 0.233,
-          "min_value": 0.117
+          "min_value": 0.099
         },
         {
           "station_id": "2609",
           "station_name": "Einsiedeln (2609)",
-          "current_value": 0.7732857142857144,
-          "low_flow_threshold": 0.491,
-          "min_value": 0.268
+          "current_value": 0.276,
+          "low_flow_threshold": 0.483,
+          "min_value": 0.183
         }
       ]
     },
     {
       "region_id": 45,
       "region_name_de": "Urner Alpen",
-      "data_timestamp": "2026-11-02T00:00:00",
+      "data_timestamp": "2026-11-03T00:00:00",
       "source": "api",
       "cdi": 4,
-      "spi_3m": -1.87,
-      "soil_moisture_pct": 91.7,
+      "spi_3m": -1.85,
+      "soil_moisture_pct": 90.8,
       "vhi": 38.0,
       "cdi_trend": 0,
-      "spi_3m_delta": -0.040000000000000036,
+      "spi_3m_delta": -0.030000000000000027,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 75.5,
-      "precip_sum_3m": 245.1,
+      "precip_sum_1m": 78.6,
+      "precip_sum_3m": 246.9,
       "precip_1m_index": 1,
       "soil_moisture_index": 3,
       "hydro_index": 2,
@@ -110,57 +110,57 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 2,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": 1,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 2,
       "discharge": {
         "n_total": 2,
-        "n_low": 1,
+        "n_low": 2,
         "n_very_low": 0,
-        "pct_low": 50
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2056",
           "station_name": "Seedorf (2056)",
-          "current_value": 18.48671428571429,
-          "low_flow_threshold": 21.282,
-          "min_value": 12.598
+          "current_value": 14.927,
+          "low_flow_threshold": 20.086,
+          "min_value": 11.447
         },
         {
           "station_id": "2276",
           "station_name": "Isenthal (2276)",
-          "current_value": 0.9261428571428573,
-          "low_flow_threshold": 0.684,
-          "min_value": 0.475
+          "current_value": 0.573,
+          "low_flow_threshold": 0.651,
+          "min_value": 0.441
         }
       ]
     },
     {
       "region_id": 48,
       "region_name_de": "Glarner Alpen",
-      "data_timestamp": "2026-11-02T00:00:00",
+      "data_timestamp": "2026-11-03T00:00:00",
       "source": "api",
       "cdi": 4,
-      "spi_3m": -1.77,
-      "soil_moisture_pct": 95.8,
+      "spi_3m": -1.79,
+      "soil_moisture_pct": 95.6,
       "vhi": 43.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.10999999999999988,
+      "spi_3m_delta": 0.09999999999999987,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 3,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 91.7,
-      "precip_sum_3m": 270.0,
+      "precip_sum_1m": 90.3,
+      "precip_sum_3m": 268.5,
       "precip_1m_index": 1,
       "soil_moisture_index": 2,
       "hydro_index": 4,
@@ -183,8 +183,8 @@
         {
           "station_id": "2104",
           "station_name": "Weesen, Biäsche (2104)",
-          "current_value": 20.800428571428572,
-          "low_flow_threshold": 26.754,
+          "current_value": 20.127,
+          "low_flow_threshold": 24.893,
           "min_value": 18.124
         }
       ]
@@ -207,7 +207,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -218,8 +218,8 @@
   "cdi_min_dry": 4,
   "cdi_max_dry": 4,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 90.2,
-  "mean_precip_sum_3m": 274.0,
+  "mean_precip_sum_1m": 91.6,
+  "mean_precip_sum_3m": 274.8,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
@@ -228,8 +228,8 @@
   "max_vhi_index": 2,
   "discharge": {
     "n_total": 7,
-    "n_low": 2,
-    "n_very_low": 1,
-    "pct_low": 29
+    "n_low": 5,
+    "n_very_low": 2,
+    "pct_low": 71
   }
 }
