@@ -2,25 +2,25 @@
   "canton_id": 23,
   "canton_name_de": "Valais",
   "canton_name_fr": "Valais",
-  "data_timestamp": "2026-11-09T00:00:00",
+  "data_timestamp": "2026-11-10T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 57,
       "region_name_de": "Chablais",
-      "data_timestamp": "2026-11-09T00:00:00",
+      "data_timestamp": "2026-11-10T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.63,
-      "soil_moisture_pct": 92.3,
+      "soil_moisture_pct": 92.0,
       "vhi": 58.0,
       "cdi_trend": 0,
-      "spi_3m_delta": 0.15000000000000002,
+      "spi_3m_delta": 0.16000000000000003,
       "vhi_delta": 0.0,
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 25,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -28,7 +28,7 @@
         "overall": "ok"
       },
       "precip_sum_1m": 82.3,
-      "precip_sum_3m": 286.5,
+      "precip_sum_3m": 286.4,
       "precip_1m_index": 1,
       "soil_moisture_index": 2,
       "hydro_index": 4,
@@ -51,43 +51,43 @@
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 1.3601428571428573,
-          "low_flow_threshold": 2.008,
+          "current_value": 1.438,
+          "low_flow_threshold": 2.062,
           "min_value": 1.041
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 0.284,
-          "low_flow_threshold": 0.559,
-          "min_value": 0.139
+          "current_value": 0.288,
+          "low_flow_threshold": 0.608,
+          "min_value": 0.198
         }
       ]
     },
     {
       "region_id": 58,
       "region_name_de": "Walliser Südalpen",
-      "data_timestamp": "2026-11-09T00:00:00",
+      "data_timestamp": "2026-11-10T00:00:00",
       "source": "api",
       "cdi": 2,
-      "spi_3m": -0.82,
-      "soil_moisture_pct": 87.8,
+      "spi_3m": -0.81,
+      "soil_moisture_pct": 87.5,
       "vhi": 42.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.12,
+      "spi_3m_delta": 0.1299999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 18,
+      "spi_3m_percentile": 19,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 60.7,
-      "precip_sum_3m": 199.9,
+      "precip_sum_1m": 61.0,
+      "precip_sum_3m": 200.2,
       "precip_1m_index": 1,
       "soil_moisture_index": 3,
       "hydro_index": 2,
@@ -102,28 +102,28 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
-        "n_low": 1,
+        "n_low": 0,
         "n_very_low": 0,
-        "pct_low": 100
+        "pct_low": 0
       },
       "hydro_stations": [
         {
           "station_id": "2053",
           "station_name": "Martigny, Pont de Rossettan (2053)",
-          "current_value": 5.266714285714286,
-          "low_flow_threshold": 5.313,
-          "min_value": 3.221
+          "current_value": 5.25,
+          "low_flow_threshold": 5.22,
+          "min_value": 3.179
         }
       ]
     },
     {
       "region_id": 59,
       "region_name_de": "nördliches Wallis",
-      "data_timestamp": "2026-11-09T00:00:00",
+      "data_timestamp": "2026-11-10T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.7,
-      "soil_moisture_pct": 88.4,
+      "soil_moisture_pct": 88.2,
       "vhi": 42.0,
       "cdi_trend": 0,
       "spi_3m_delta": 0.14,
@@ -131,39 +131,39 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 23,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 62.4,
-      "precip_sum_3m": 247.5,
+      "precip_sum_1m": 62.5,
+      "precip_sum_3m": 247.6,
       "precip_1m_index": 1,
       "soil_moisture_index": 2,
       "hydro_index": 1,
       "warnlevel": 4,
       "warnlevel_info_de": "Grosse Gefahr",
       "warnlevel_info_fr": "Danger fort",
-      "cdi_forecast_week2": 3,
+      "cdi_forecast_week2": 2,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 1,
+      "soil_moisture_index_forecast": 2,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
-        "n_low": 0,
+        "n_low": 1,
         "n_very_low": 0,
-        "pct_low": 0
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2630",
           "station_name": "Sion (2630)",
-          "current_value": 0.1167142857142857,
-          "low_flow_threshold": 0.113,
+          "current_value": 0.105,
+          "low_flow_threshold": 0.109,
           "min_value": 0.051
         }
       ]
@@ -171,11 +171,11 @@
     {
       "region_id": 60,
       "region_name_de": "Vispertäler",
-      "data_timestamp": "2026-11-09T00:00:00",
+      "data_timestamp": "2026-11-10T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -0.9,
-      "soil_moisture_pct": 83.1,
+      "soil_moisture_pct": 82.9,
       "vhi": 34.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.030000000000000027,
@@ -183,7 +183,7 @@
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 17,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -200,9 +200,9 @@
       "warnlevel_info_fr": "Danger fort",
       "cdi_forecast_week2": 3,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 4,
+      "soil_moisture_index_forecast": 5,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 0,
+      "soil_moisture_deficit_delta": 1,
       "vhi_index": 2,
       "discharge": {
         "n_total": 1,
@@ -214,8 +214,8 @@
         {
           "station_id": "2351",
           "station_name": "Visp (2351)",
-          "current_value": 14.363285714285714,
-          "low_flow_threshold": 8.484,
+          "current_value": 13.912,
+          "low_flow_threshold": 8.574,
           "min_value": 4.161
         }
       ]
@@ -223,11 +223,11 @@
     {
       "region_id": 61,
       "region_name_de": "Goms",
-      "data_timestamp": "2026-11-09T00:00:00",
+      "data_timestamp": "2026-11-10T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.44,
-      "soil_moisture_pct": 89.1,
+      "soil_moisture_pct": 89.0,
       "vhi": 39.0,
       "cdi_trend": 0,
       "spi_3m_delta": -0.07999999999999985,
@@ -235,7 +235,7 @@
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 6,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -266,8 +266,8 @@
         {
           "station_id": "2346",
           "station_name": "Brig (2346)",
-          "current_value": 9.432857142857143,
-          "low_flow_threshold": 12.488,
+          "current_value": 9.11,
+          "low_flow_threshold": 11.291,
           "min_value": 7.399
         }
       ]
@@ -291,7 +291,7 @@
     "1": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -301,9 +301,9 @@
   "n_regions_dry": 5,
   "cdi_min_dry": 2,
   "cdi_max_dry": 4,
-  "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 68.7,
-  "mean_precip_sum_3m": 231.9,
+  "cdi_situation_delta": -3,
+  "mean_precip_sum_1m": 68.8,
+  "mean_precip_sum_3m": 232.0,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,

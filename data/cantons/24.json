@@ -2,35 +2,35 @@
   "canton_id": 24,
   "canton_name_de": "Neuchâtel",
   "canton_name_fr": "Neuchâtel",
-  "data_timestamp": "2026-11-09T00:00:00",
+  "data_timestamp": "2026-11-10T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-11-09T00:00:00",
+      "data_timestamp": "2026-11-10T00:00:00",
       "source": "api",
       "cdi": 3,
-      "spi_3m": -0.9,
-      "soil_moisture_pct": 74.6,
+      "spi_3m": -0.89,
+      "soil_moisture_pct": 74.2,
       "vhi": 65.0,
       "cdi_trend": 1,
-      "spi_3m_delta": -0.12,
+      "spi_3m_delta": -0.10999999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
       "spi_3m_percentile": 18,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 84.9,
-      "precip_sum_3m": 228.7,
+      "precip_sum_1m": 85.7,
+      "precip_sum_3m": 229.5,
       "precip_1m_index": 1,
-      "soil_moisture_index": 2,
+      "soil_moisture_index": 3,
       "hydro_index": 4,
       "warnlevel": 2,
       "warnlevel_info_de": "Mässige Gefahr",
@@ -39,7 +39,7 @@
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": -2,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
@@ -51,20 +51,20 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 3.1872857142857143,
-          "low_flow_threshold": 6.822,
-          "min_value": 1.278
+          "current_value": 2.943,
+          "low_flow_threshold": 7.069,
+          "min_value": 1.205
         }
       ]
     },
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-11-09T00:00:00",
+      "data_timestamp": "2026-11-10T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -0.79,
-      "soil_moisture_pct": 88.8,
+      "soil_moisture_pct": 88.6,
       "vhi": 68.0,
       "cdi_trend": 1,
       "spi_3m_delta": -0.22000000000000008,
@@ -72,15 +72,15 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 19,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 98.3,
-      "precip_sum_3m": 243.6,
+      "precip_sum_1m": 98.4,
+      "precip_sum_3m": 243.8,
       "precip_1m_index": 1,
       "soil_moisture_index": 3,
       "hydro_index": 3,
@@ -96,37 +96,37 @@
       "discharge": {
         "n_total": 4,
         "n_low": 3,
-        "n_very_low": 1,
+        "n_very_low": 0,
         "pct_low": 75
       },
       "hydro_stations": [
         {
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
-          "current_value": 2.262571428571429,
-          "low_flow_threshold": 3.966,
+          "current_value": 3.056,
+          "low_flow_threshold": 4.736,
           "min_value": 1.859
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 0.07042857142857142,
-          "low_flow_threshold": 0.13,
+          "current_value": 0.076,
+          "low_flow_threshold": 0.168,
           "min_value": 0.045
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
-          "current_value": 1.9385714285714286,
-          "low_flow_threshold": 2.871,
-          "min_value": 0.99
+          "current_value": 1.679,
+          "low_flow_threshold": 3.191,
+          "min_value": 0.886
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
-          "current_value": 0.6524285714285715,
-          "low_flow_threshold": 0.423,
-          "min_value": 0.145
+          "current_value": 0.557,
+          "low_flow_threshold": 0.451,
+          "min_value": 0.154
         }
       ]
     }
@@ -138,15 +138,14 @@
     "1": 2
   },
   "n_regions_by_soil_moisture_index": {
-    "2": 1,
-    "3": 1
+    "3": 2
   },
   "n_regions_by_hydro_index": {
     "4": 1,
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -157,8 +156,8 @@
   "cdi_min_dry": 3,
   "cdi_max_dry": 3,
   "cdi_situation_delta": -4,
-  "mean_precip_sum_1m": 91.6,
-  "mean_precip_sum_3m": 236.1,
+  "mean_precip_sum_1m": 92.1,
+  "mean_precip_sum_3m": 236.7,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
@@ -168,7 +167,7 @@
   "discharge": {
     "n_total": 5,
     "n_low": 4,
-    "n_very_low": 2,
+    "n_very_low": 1,
     "pct_low": 80
   }
 }
