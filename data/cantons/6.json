@@ -2,13 +2,13 @@
   "canton_id": 6,
   "canton_name_de": "Obwalden",
   "canton_name_fr": "Obwald",
-  "data_timestamp": "2026-11-13T00:00:00",
+  "data_timestamp": "2026-11-14T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-11-13T00:00:00",
+      "data_timestamp": "2026-11-14T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.52,
@@ -20,7 +20,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 5,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -51,28 +51,28 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 2.63725,
+          "current_value": 2.8798,
           "low_flow_threshold": 5.443,
           "min_value": 2.093
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.2465,
+          "current_value": 0.6384,
           "low_flow_threshold": 0.109,
           "min_value": 0.021
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 3.8015,
+          "current_value": 4.3744,
           "low_flow_threshold": 4.616,
           "min_value": 2.264
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 8.26525,
+          "current_value": 14.1768,
           "low_flow_threshold": 4.545,
           "min_value": 1.703
         }
@@ -92,7 +92,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
