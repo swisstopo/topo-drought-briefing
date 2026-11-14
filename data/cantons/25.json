@@ -13,7 +13,7 @@
       "cdi": 2,
       "spi_3m": -0.82,
       "soil_moisture_pct": 60.9,
-      "vhi": 50.0,
+      "vhi": null,
       "cdi_trend": 0,
       "spi_3m_delta": -0.15999999999999992,
       "vhi_delta": 0.0,
