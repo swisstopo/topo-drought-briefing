@@ -2,36 +2,38 @@
   "canton_id": 25,
   "canton_name_de": "Genève",
   "canton_name_fr": "Genève",
-  "data_timestamp": "2026-11-15T00:00:00",
+  "data_timestamp": "2026-11-16T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 56,
       "region_name_de": "Genferseebecken",
-      "data_timestamp": "2026-11-15T00:00:00",
+      "data_timestamp": "2026-11-16T00:00:00",
       "source": "api",
-      "cdi": 2,
-      "spi_3m": -0.82,
-      "soil_moisture_pct": 60.9,
+      "cdi": 1,
+      "spi_3m": -0.23,
+      "soil_moisture_pct": 88.4,
       "vhi": null,
-      "cdi_trend": 0,
-      "spi_3m_delta": -0.15999999999999992,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.59,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 18,
+      "spi_3m_percentile": 40,
       "quality": {
-        "data_age_days": 1,
-        "coverage_pct": 1.0,
-        "missing_columns": [],
+        "data_age_days": 0,
+        "coverage_pct": 0.9,
+        "missing_columns": [
+          "vhi"
+        ],
         "outlier_flags": [],
         "is_stale": false,
-        "overall": "ok"
+        "overall": "warning"
       },
-      "precip_sum_1m": 71.0,
-      "precip_sum_3m": 185.9,
+      "precip_sum_1m": 124.8,
+      "precip_sum_3m": 232.2,
       "precip_1m_index": 1,
-      "soil_moisture_index": 3,
-      "hydro_index": 2,
+      "soil_moisture_index": 1,
+      "hydro_index": 1,
       "warnlevel": 1,
       "warnlevel_info_de": "Keine oder geringe Gefahr",
       "warnlevel_info_fr": "Aucun ou faible danger",
@@ -39,7 +41,7 @@
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -2,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
@@ -51,7 +53,7 @@
         {
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
-          "current_value": 1.4986666666666668,
+          "current_value": 1.5664285714285715,
           "low_flow_threshold": 0.898,
           "min_value": 0.334
         }
@@ -65,29 +67,31 @@
     "1": 1
   },
   "n_regions_by_soil_moisture_index": {
-    "3": 1
+    "1": 1
   },
   "n_regions_by_hydro_index": {
-    "2": 1
+    "1": 1
   },
   "quality": {
-    "data_age_days": 1,
-    "coverage_pct": 1.0,
-    "missing_columns": [],
+    "data_age_days": 0,
+    "coverage_pct": 0.9,
+    "missing_columns": [
+      "vhi"
+    ],
     "outlier_flags": [],
     "is_stale": false,
-    "overall": "ok"
+    "overall": "warning"
   },
-  "n_regions_dry": 1,
-  "cdi_min_dry": 2,
-  "cdi_max_dry": 2,
-  "cdi_situation_delta": -1,
-  "mean_precip_sum_1m": 71.0,
-  "mean_precip_sum_3m": 185.9,
+  "n_regions_dry": 0,
+  "cdi_min_dry": null,
+  "cdi_max_dry": null,
+  "cdi_situation_delta": 0,
+  "mean_precip_sum_1m": 124.8,
+  "mean_precip_sum_3m": 232.2,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
-  "n_regions_with_soil_moisture_deficit": 1,
+  "n_regions_with_soil_moisture_deficit": 0,
   "n_regions_with_vhi_stress": 0,
   "max_vhi_index": 1,
   "discharge": {
