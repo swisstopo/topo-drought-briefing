@@ -20,7 +20,7 @@
       "pct_critical": 0.19230769230769232,
       "spi_3m_percentile": 34,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -81,7 +81,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 32,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -156,7 +156,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 28,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -217,7 +217,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 40,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -271,7 +271,7 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 50,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -332,7 +332,7 @@
     "1": 5
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 0.9,
     "missing_columns": [
       "vhi"
