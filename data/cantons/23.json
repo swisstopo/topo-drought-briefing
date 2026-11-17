@@ -2,25 +2,25 @@
   "canton_id": 23,
   "canton_name_de": "Valais",
   "canton_name_fr": "Valais",
-  "data_timestamp": "2026-11-16T00:00:00",
+  "data_timestamp": "2026-11-17T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 57,
       "region_name_de": "Chablais",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": -0.08,
-      "soil_moisture_pct": 97.8,
+      "spi_3m": -0.02,
+      "soil_moisture_pct": 98.1,
       "vhi": null,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.55,
+      "spi_3m_delta": 0.61,
       "vhi_delta": 0.0,
       "pct_critical": 0.1346153846153846,
-      "spi_3m_percentile": 50,
+      "spi_3m_percentile": 52,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -29,8 +29,8 @@
         "is_stale": false,
         "overall": "warning"
       },
-      "precip_sum_1m": 153.0,
-      "precip_sum_3m": 330.6,
+      "precip_sum_1m": 158.9,
+      "precip_sum_3m": 336.5,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -53,35 +53,35 @@
         {
           "station_id": "2203",
           "station_name": "Aigle (2203)",
-          "current_value": 3.952428571428572,
-          "low_flow_threshold": 2.062,
+          "current_value": 3.342,
+          "low_flow_threshold": 2.046,
           "min_value": 1.041
         },
         {
           "station_id": "2486",
           "station_name": "Vevey, Copet (2486)",
-          "current_value": 1.6304285714285716,
-          "low_flow_threshold": 0.608,
-          "min_value": 0.198
+          "current_value": 3.988,
+          "low_flow_threshold": 0.614,
+          "min_value": 0.257
         }
       ]
     },
     {
       "region_id": 58,
       "region_name_de": "Walliser Südalpen",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": -0.41,
-      "soil_moisture_pct": 97.5,
+      "spi_3m": -0.34,
+      "soil_moisture_pct": 97.2,
       "vhi": 43.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.4000000000000001,
+      "spi_3m_delta": 0.47000000000000003,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 34,
+      "spi_3m_percentile": 37,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -90,8 +90,8 @@
         "is_stale": false,
         "overall": "warning"
       },
-      "precip_sum_1m": 112.8,
-      "precip_sum_3m": 225.6,
+      "precip_sum_1m": 117.7,
+      "precip_sum_3m": 230.5,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -114,8 +114,8 @@
         {
           "station_id": "2053",
           "station_name": "Martigny, Pont de Rossettan (2053)",
-          "current_value": 5.835857142857143,
-          "low_flow_threshold": 5.22,
+          "current_value": 6.008,
+          "low_flow_threshold": 5.116,
           "min_value": 3.179
         }
       ]
@@ -123,27 +123,27 @@
     {
       "region_id": 59,
       "region_name_de": "nördliches Wallis",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": -0.56,
-      "soil_moisture_pct": 97.7,
+      "spi_3m": -0.49,
+      "soil_moisture_pct": 97.6,
       "vhi": 46.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.1399999999999999,
+      "spi_3m_delta": 0.20999999999999996,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
-      "spi_3m_percentile": 27,
+      "spi_3m_percentile": 31,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 119.4,
-      "precip_sum_3m": 254.2,
+      "precip_sum_1m": 125.5,
+      "precip_sum_3m": 260.3,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -166,8 +166,8 @@
         {
           "station_id": "2630",
           "station_name": "Sion (2630)",
-          "current_value": 0.231,
-          "low_flow_threshold": 0.109,
+          "current_value": 0.258,
+          "low_flow_threshold": 0.108,
           "min_value": 0.051
         }
       ]
@@ -175,27 +175,27 @@
     {
       "region_id": 60,
       "region_name_de": "Vispertäler",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 2,
-      "spi_3m": -0.85,
-      "soil_moisture_pct": 92.7,
+      "spi_3m": -0.87,
+      "soil_moisture_pct": 92.2,
       "vhi": 42.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.050000000000000044,
+      "spi_3m_delta": 0.030000000000000027,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
-      "spi_3m_percentile": 18,
+      "spi_3m_percentile": 17,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 93.6,
-      "precip_sum_3m": 191.8,
+      "precip_sum_1m": 92.4,
+      "precip_sum_3m": 190.7,
       "precip_1m_index": 1,
       "soil_moisture_index": 2,
       "hydro_index": 1,
@@ -210,44 +210,44 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 1,
-        "n_low": 0,
+        "n_low": 1,
         "n_very_low": 0,
-        "pct_low": 0
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2351",
           "station_name": "Visp (2351)",
-          "current_value": 11.385571428571428,
-          "low_flow_threshold": 8.574,
-          "min_value": 4.161
+          "current_value": 6.304,
+          "low_flow_threshold": 8.827,
+          "min_value": 4.502
         }
       ]
     },
     {
       "region_id": 61,
       "region_name_de": "Goms",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 3,
-      "spi_3m": -1.43,
-      "soil_moisture_pct": 96.7,
+      "spi_3m": -1.42,
+      "soil_moisture_pct": 96.2,
       "vhi": 47.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.010000000000000009,
+      "spi_3m_delta": 0.020000000000000018,
       "vhi_delta": 0.0,
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 7,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 104.7,
-      "precip_sum_3m": 231.9,
+      "precip_sum_1m": 105.6,
+      "precip_sum_3m": 232.7,
       "precip_1m_index": 1,
       "soil_moisture_index": 2,
       "hydro_index": 2,
@@ -270,9 +270,9 @@
         {
           "station_id": "2346",
           "station_name": "Brig (2346)",
-          "current_value": 9.920857142857143,
-          "low_flow_threshold": 11.291,
-          "min_value": 7.399
+          "current_value": 9.317,
+          "low_flow_threshold": 10.583,
+          "min_value": 7.372
         }
       ]
     }
@@ -292,7 +292,7 @@
     "2": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.96,
     "missing_columns": [
       "vhi"
@@ -305,8 +305,8 @@
   "cdi_min_dry": 2,
   "cdi_max_dry": 3,
   "cdi_situation_delta": 3,
-  "mean_precip_sum_1m": 116.7,
-  "mean_precip_sum_3m": 246.8,
+  "mean_precip_sum_1m": 120.0,
+  "mean_precip_sum_3m": 250.1,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
@@ -315,8 +315,8 @@
   "max_vhi_index": 1,
   "discharge": {
     "n_total": 6,
-    "n_low": 1,
+    "n_low": 2,
     "n_very_low": 0,
-    "pct_low": 17
+    "pct_low": 33
   }
 }

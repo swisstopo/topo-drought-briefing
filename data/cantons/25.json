@@ -2,25 +2,25 @@
   "canton_id": 25,
   "canton_name_de": "Genève",
   "canton_name_fr": "Genève",
-  "data_timestamp": "2026-11-16T00:00:00",
+  "data_timestamp": "2026-11-17T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 56,
       "region_name_de": "Genferseebecken",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": -0.23,
-      "soil_moisture_pct": 88.4,
+      "spi_3m": -0.2,
+      "soil_moisture_pct": 92.0,
       "vhi": null,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.59,
+      "spi_3m_delta": 0.6199999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 40,
+      "spi_3m_percentile": 42,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -29,8 +29,8 @@
         "is_stale": false,
         "overall": "warning"
       },
-      "precip_sum_1m": 124.8,
-      "precip_sum_3m": 232.2,
+      "precip_sum_1m": 126.9,
+      "precip_sum_3m": 234.2,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -53,9 +53,9 @@
         {
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
-          "current_value": 1.5664285714285715,
-          "low_flow_threshold": 0.898,
-          "min_value": 0.334
+          "current_value": 2.042,
+          "low_flow_threshold": 0.98,
+          "min_value": 0.365
         }
       ]
     }
@@ -73,7 +73,7 @@
     "1": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.9,
     "missing_columns": [
       "vhi"
@@ -86,8 +86,8 @@
   "cdi_min_dry": null,
   "cdi_max_dry": null,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 124.8,
-  "mean_precip_sum_3m": 232.2,
+  "mean_precip_sum_1m": 126.9,
+  "mean_precip_sum_3m": 234.2,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,

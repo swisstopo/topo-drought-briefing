@@ -2,33 +2,33 @@
   "canton_id": 6,
   "canton_name_de": "Obwalden",
   "canton_name_fr": "Obwald",
-  "data_timestamp": "2026-11-16T00:00:00",
+  "data_timestamp": "2026-11-17T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 3,
-      "spi_3m": -1.15,
-      "soil_moisture_pct": 97.9,
+      "spi_3m": -1.12,
+      "soil_moisture_pct": 98.0,
       "vhi": 59.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.3700000000000001,
+      "spi_3m_delta": 0.3999999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.09615384615384616,
-      "spi_3m_percentile": 10,
+      "spi_3m_percentile": 11,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 98.4,
-      "precip_sum_3m": 260.1,
+      "precip_sum_1m": 100.5,
+      "precip_sum_3m": 262.2,
       "precip_1m_index": 1,
       "soil_moisture_index": 2,
       "hydro_index": 2,
@@ -43,37 +43,37 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 4,
-        "n_low": 2,
-        "n_very_low": 1,
-        "pct_low": 50
+        "n_low": 1,
+        "n_very_low": 0,
+        "pct_low": 25
       },
       "hydro_stations": [
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 3.2600000000000002,
-          "low_flow_threshold": 5.443,
+          "current_value": 4.269,
+          "low_flow_threshold": 5.68,
           "min_value": 2.093
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 0.5004285714285713,
-          "low_flow_threshold": 0.109,
+          "current_value": 0.181,
+          "low_flow_threshold": 0.113,
           "min_value": 0.021
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 4.219857142857143,
-          "low_flow_threshold": 4.616,
-          "min_value": 2.264
+          "current_value": 4.374,
+          "low_flow_threshold": 4.366,
+          "min_value": 2.051
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 12.894000000000002,
-          "low_flow_threshold": 4.545,
+          "current_value": 8.152,
+          "low_flow_threshold": 4.955,
           "min_value": 1.703
         }
       ]
@@ -92,7 +92,7 @@
     "2": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -103,8 +103,8 @@
   "cdi_min_dry": 3,
   "cdi_max_dry": 3,
   "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 98.4,
-  "mean_precip_sum_3m": 260.1,
+  "mean_precip_sum_1m": 100.5,
+  "mean_precip_sum_3m": 262.2,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
@@ -113,8 +113,8 @@
   "max_vhi_index": 1,
   "discharge": {
     "n_total": 4,
-    "n_low": 2,
-    "n_very_low": 1,
-    "pct_low": 50
+    "n_low": 1,
+    "n_very_low": 0,
+    "pct_low": 25
   }
 }

@@ -2,25 +2,25 @@
   "canton_id": 21,
   "canton_name_de": "Ticino",
   "canton_name_fr": "Tessin",
-  "data_timestamp": "2026-11-16T00:00:00",
+  "data_timestamp": "2026-11-17T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 62,
       "region_name_de": "Westliches Tessin",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": -0.55,
-      "soil_moisture_pct": 97.4,
+      "spi_3m": -0.56,
+      "soil_moisture_pct": 97.2,
       "vhi": 65.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.04999999999999993,
+      "spi_3m_delta": 0.039999999999999925,
       "vhi_delta": 0.0,
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 24,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -29,15 +29,15 @@
         "is_stale": false,
         "overall": "warning"
       },
-      "precip_sum_1m": 144.2,
-      "precip_sum_3m": 381.5,
+      "precip_sum_1m": 143.3,
+      "precip_sum_3m": 380.6,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
       "warnlevel": 1,
       "warnlevel_info_de": "Keine oder geringe Gefahr",
       "warnlevel_info_fr": "Aucun ou faible danger",
-      "cdi_forecast_week2": 1,
+      "cdi_forecast_week2": 2,
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": 0,
@@ -53,35 +53,35 @@
         {
           "station_id": "2244",
           "station_name": "Klusmatten (2244)",
-          "current_value": 0.22114285714285714,
-          "low_flow_threshold": 0.264,
+          "current_value": 0.207,
+          "low_flow_threshold": 0.258,
           "min_value": 0.154
         },
         {
           "station_id": "2605",
           "station_name": "Lavertezzo, Campiòi (2605)",
-          "current_value": 3.538,
-          "low_flow_threshold": 2.906,
-          "min_value": 1.212
+          "current_value": 3.151,
+          "low_flow_threshold": 2.908,
+          "min_value": 1.07
         }
       ]
     },
     {
       "region_id": 63,
       "region_name_de": "Nordtessin",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 3,
-      "spi_3m": -0.6,
-      "soil_moisture_pct": 98.2,
+      "spi_3m": -0.61,
+      "soil_moisture_pct": 97.9,
       "vhi": null,
       "cdi_trend": 0,
-      "spi_3m_delta": 0.030000000000000027,
+      "spi_3m_delta": 0.020000000000000018,
       "vhi_delta": 0.0,
       "pct_critical": 0.019230769230769232,
-      "spi_3m_percentile": 26,
+      "spi_3m_percentile": 25,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -90,11 +90,65 @@
         "is_stale": false,
         "overall": "warning"
       },
-      "precip_sum_1m": 113.6,
-      "precip_sum_3m": 329.0,
+      "precip_sum_1m": 113.1,
+      "precip_sum_3m": 328.5,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 4,
+      "warnlevel": 1,
+      "warnlevel_info_de": "Keine oder geringe Gefahr",
+      "warnlevel_info_fr": "Aucun ou faible danger",
+      "cdi_forecast_week2": 3,
+      "precip_1m_index_forecast": 1,
+      "soil_moisture_index_forecast": 1,
+      "precip_deficit_delta": 0,
+      "soil_moisture_deficit_delta": 0,
+      "vhi_index": 1,
+      "discharge": {
+        "n_total": 1,
+        "n_low": 1,
+        "n_very_low": 1,
+        "pct_low": 100
+      },
+      "hydro_stations": [
+        {
+          "station_id": "2494",
+          "station_name": "Pollegio, Campagna (2494)",
+          "current_value": 5.876,
+          "low_flow_threshold": 11.974,
+          "min_value": 6.448
+        }
+      ]
+    },
+    {
+      "region_id": 64,
+      "region_name_de": "Östliches Tessin",
+      "data_timestamp": "2026-11-17T00:00:00",
+      "source": "api",
+      "cdi": 1,
+      "spi_3m": -0.16,
+      "soil_moisture_pct": 95.8,
+      "vhi": null,
+      "cdi_trend": -1,
+      "spi_3m_delta": 0.1,
+      "vhi_delta": 0.0,
+      "pct_critical": 0.0,
+      "spi_3m_percentile": 42,
+      "quality": {
+        "data_age_days": 0,
+        "coverage_pct": 0.9,
+        "missing_columns": [
+          "vhi"
+        ],
+        "outlier_flags": [],
+        "is_stale": false,
+        "overall": "warning"
+      },
+      "precip_sum_1m": 117.9,
+      "precip_sum_3m": 437.6,
+      "precip_1m_index": 1,
+      "soil_moisture_index": 1,
+      "hydro_index": 1,
       "warnlevel": 1,
       "warnlevel_info_de": "Keine oder geringe Gefahr",
       "warnlevel_info_fr": "Aucun ou faible danger",
@@ -112,64 +166,10 @@
       },
       "hydro_stations": [
         {
-          "station_id": "2494",
-          "station_name": "Pollegio, Campagna (2494)",
-          "current_value": 8.672857142857142,
-          "low_flow_threshold": 11.419,
-          "min_value": 6.19
-        }
-      ]
-    },
-    {
-      "region_id": 64,
-      "region_name_de": "Östliches Tessin",
-      "data_timestamp": "2026-11-16T00:00:00",
-      "source": "api",
-      "cdi": 1,
-      "spi_3m": -0.16,
-      "soil_moisture_pct": 96.2,
-      "vhi": null,
-      "cdi_trend": -1,
-      "spi_3m_delta": 0.1,
-      "vhi_delta": 0.0,
-      "pct_critical": 0.0,
-      "spi_3m_percentile": 42,
-      "quality": {
-        "data_age_days": 1,
-        "coverage_pct": 0.9,
-        "missing_columns": [
-          "vhi"
-        ],
-        "outlier_flags": [],
-        "is_stale": false,
-        "overall": "warning"
-      },
-      "precip_sum_1m": 118.4,
-      "precip_sum_3m": 438.1,
-      "precip_1m_index": 1,
-      "soil_moisture_index": 1,
-      "hydro_index": 1,
-      "warnlevel": 1,
-      "warnlevel_info_de": "Keine oder geringe Gefahr",
-      "warnlevel_info_fr": "Aucun ou faible danger",
-      "cdi_forecast_week2": 1,
-      "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 1,
-      "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 0,
-      "vhi_index": 1,
-      "discharge": {
-        "n_total": 1,
-        "n_low": 0,
-        "n_very_low": 0,
-        "pct_low": 0
-      },
-      "hydro_stations": [
-        {
           "station_id": "2420",
           "station_name": "Lumino, Sassello (2420)",
-          "current_value": 8.76757142857143,
-          "low_flow_threshold": 8.382,
+          "current_value": 5.463,
+          "low_flow_threshold": 8.371,
           "min_value": 4.245
         }
       ]
@@ -177,11 +177,11 @@
     {
       "region_id": 65,
       "region_name_de": "Sottoceneri",
-      "data_timestamp": "2026-11-16T00:00:00",
+      "data_timestamp": "2026-11-17T00:00:00",
       "source": "api",
       "cdi": 1,
       "spi_3m": -0.04,
-      "soil_moisture_pct": 96.7,
+      "soil_moisture_pct": 96.4,
       "vhi": null,
       "cdi_trend": 0,
       "spi_3m_delta": 0.1,
@@ -189,7 +189,7 @@
       "pct_critical": 0.0,
       "spi_3m_percentile": 47,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -198,8 +198,8 @@
         "is_stale": false,
         "overall": "warning"
       },
-      "precip_sum_1m": 147.7,
-      "precip_sum_3m": 495.3,
+      "precip_sum_1m": 145.7,
+      "precip_sum_3m": 493.3,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -214,31 +214,31 @@
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
-        "n_low": 2,
+        "n_low": 3,
         "n_very_low": 0,
-        "pct_low": 67
+        "pct_low": 100
       },
       "hydro_stations": [
         {
           "station_id": "2321",
           "station_name": "Pregassona (2321)",
-          "current_value": 1.017,
-          "low_flow_threshold": 0.912,
-          "min_value": 0.456
+          "current_value": 0.911,
+          "low_flow_threshold": 0.932,
+          "min_value": 0.483
         },
         {
           "station_id": "2349",
           "station_name": "Chiasso, Ponte di Polenta (2349)",
-          "current_value": 0.152,
-          "low_flow_threshold": 0.183,
-          "min_value": 0.034
+          "current_value": 0.119,
+          "low_flow_threshold": 0.177,
+          "min_value": 0.036
         },
         {
           "station_id": "2461",
           "station_name": "Magliaso, Ponte (2461)",
-          "current_value": 0.3335714285714286,
-          "low_flow_threshold": 0.416,
-          "min_value": 0.144
+          "current_value": 0.299,
+          "low_flow_threshold": 0.429,
+          "min_value": 0.149
         }
       ]
     }
@@ -257,7 +257,7 @@
     "4": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.9,
     "missing_columns": [
       "vhi"
@@ -269,9 +269,9 @@
   "n_regions_dry": 1,
   "cdi_min_dry": 3,
   "cdi_max_dry": 3,
-  "cdi_situation_delta": -1,
-  "mean_precip_sum_1m": 131.0,
-  "mean_precip_sum_3m": 411.0,
+  "cdi_situation_delta": 2,
+  "mean_precip_sum_1m": 130.0,
+  "mean_precip_sum_3m": 410.0,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
@@ -280,8 +280,8 @@
   "max_vhi_index": 1,
   "discharge": {
     "n_total": 7,
-    "n_low": 4,
-    "n_very_low": 0,
-    "pct_low": 57
+    "n_low": 6,
+    "n_very_low": 1,
+    "pct_low": 86
   }
 }
