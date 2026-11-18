@@ -2,17 +2,17 @@
   "canton_id": 25,
   "canton_name_de": "Genève",
   "canton_name_fr": "Genève",
-  "data_timestamp": "2026-11-17T00:00:00",
+  "data_timestamp": "2026-11-18T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 56,
       "region_name_de": "Genferseebecken",
-      "data_timestamp": "2026-11-17T00:00:00",
+      "data_timestamp": "2026-11-18T00:00:00",
       "source": "api",
       "cdi": 1,
       "spi_3m": -0.2,
-      "soil_moisture_pct": 92.0,
+      "soil_moisture_pct": 92.3,
       "vhi": null,
       "cdi_trend": -1,
       "spi_3m_delta": 0.6199999999999999,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 42,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -53,7 +53,7 @@
         {
           "station_id": "2432",
           "station_name": "Ecublens, Les Bois (2432)",
-          "current_value": 2.042,
+          "current_value": 3.309,
           "low_flow_threshold": 0.98,
           "min_value": 0.365
         }
@@ -73,7 +73,7 @@
     "1": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.9,
     "missing_columns": [
       "vhi"
