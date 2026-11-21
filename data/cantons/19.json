@@ -13,14 +13,14 @@
       "cdi": 1,
       "spi_3m": -0.24,
       "soil_moisture_pct": 90.5,
-      "vhi": 52.0,
+      "vhi": 59.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.58,
       "vhi_delta": 0.0,
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 40,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -79,14 +79,14 @@
       "cdi": 3,
       "spi_3m": -0.66,
       "soil_moisture_pct": 94.0,
-      "vhi": 54.0,
+      "vhi": 59.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.26,
       "vhi_delta": 0.0,
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 23,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -133,14 +133,14 @@
       "cdi": 3,
       "spi_3m": -0.8,
       "soil_moisture_pct": 93.0,
-      "vhi": 50.0,
+      "vhi": 56.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.3899999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 19,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -194,14 +194,14 @@
       "cdi": 3,
       "spi_3m": -0.72,
       "soil_moisture_pct": 94.5,
-      "vhi": 49.0,
+      "vhi": 60.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.5800000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 23,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -260,14 +260,14 @@
       "cdi": 2,
       "spi_3m": -0.42,
       "soil_moisture_pct": 89.0,
-      "vhi": 48.0,
+      "vhi": 62.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.9100000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 31,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -336,7 +336,7 @@
     "3": 2
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 0.96,
     "missing_columns": [
       "vhi"

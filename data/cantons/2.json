@@ -13,14 +13,14 @@
       "cdi": 3,
       "spi_3m": -0.66,
       "soil_moisture_pct": 94.0,
-      "vhi": 54.0,
+      "vhi": 59.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.26,
       "vhi_delta": 0.0,
       "pct_critical": 0.07692307692307693,
       "spi_3m_percentile": 23,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -67,14 +67,14 @@
       "cdi": 3,
       "spi_3m": -0.86,
       "soil_moisture_pct": 94.7,
-      "vhi": 53.0,
+      "vhi": 56.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.4700000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 20,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -126,14 +126,14 @@
       "cdi": 2,
       "spi_3m": -0.61,
       "soil_moisture_pct": 97.3,
-      "vhi": 56.0,
+      "vhi": 55.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.39,
       "vhi_delta": 0.0,
       "pct_critical": 0.15384615384615385,
       "spi_3m_percentile": 24,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -185,14 +185,14 @@
       "cdi": 3,
       "spi_3m": -0.8,
       "soil_moisture_pct": 93.0,
-      "vhi": 50.0,
+      "vhi": 56.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.3899999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 19,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -253,7 +253,7 @@
       "pct_critical": 0.1346153846153846,
       "spi_3m_percentile": 17,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -298,14 +298,14 @@
       "cdi": 3,
       "spi_3m": -1.43,
       "soil_moisture_pct": 98.9,
-      "vhi": 55.0,
+      "vhi": 54.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.06000000000000005,
       "vhi_delta": 0.0,
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 7,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -367,7 +367,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 0.9666666666666667,
     "missing_columns": [
       "vhi"

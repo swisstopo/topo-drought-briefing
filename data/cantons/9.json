@@ -13,14 +13,14 @@
       "cdi": 3,
       "spi_3m": -0.72,
       "soil_moisture_pct": 94.5,
-      "vhi": 49.0,
+      "vhi": 60.0,
       "cdi_trend": -1,
       "spi_3m_delta": 0.5800000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 23,
       "quality": {
-        "data_age_days": 0,
+        "data_age_days": 1,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -85,7 +85,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 0,
+    "data_age_days": 1,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
