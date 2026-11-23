@@ -2,36 +2,36 @@
   "canton_id": 6,
   "canton_name_de": "Obwalden",
   "canton_name_fr": "Obwald",
-  "data_timestamp": "2026-11-22T00:00:00",
+  "data_timestamp": "2026-11-23T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-11-22T00:00:00",
+      "data_timestamp": "2026-11-23T00:00:00",
       "source": "api",
-      "cdi": 3,
-      "spi_3m": -1.12,
-      "soil_moisture_pct": 98.0,
+      "cdi": 1,
+      "spi_3m": -0.26,
+      "soil_moisture_pct": 99.2,
       "vhi": 52.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.3999999999999999,
+      "spi_3m_delta": 0.8600000000000001,
       "vhi_delta": 0.0,
       "pct_critical": 0.09615384615384616,
-      "spi_3m_percentile": 11,
+      "spi_3m_percentile": 38,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 100.5,
-      "precip_sum_3m": 262.2,
+      "precip_sum_1m": 180.6,
+      "precip_sum_3m": 319.5,
       "precip_1m_index": 1,
-      "soil_moisture_index": 2,
-      "hydro_index": 2,
+      "soil_moisture_index": 1,
+      "hydro_index": 1,
       "warnlevel": 2,
       "warnlevel_info_de": "Mässige Gefahr",
       "warnlevel_info_fr": "Danger limité",
@@ -39,7 +39,7 @@
       "precip_1m_index_forecast": 1,
       "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": -1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
         "n_total": 4,
@@ -51,28 +51,28 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 5.976666666666667,
+          "current_value": 6.3845714285714275,
           "low_flow_threshold": 5.68,
           "min_value": 2.093
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 1.1661666666666668,
+          "current_value": 1.2202857142857144,
           "low_flow_threshold": 0.113,
           "min_value": 0.021
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 5.703833333333333,
+          "current_value": 5.869428571428571,
           "low_flow_threshold": 4.366,
           "min_value": 2.051
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 25.889333333333337,
+          "current_value": 26.605857142857143,
           "low_flow_threshold": 4.955,
           "min_value": 1.703
         }
@@ -86,29 +86,29 @@
     "1": 1
   },
   "n_regions_by_soil_moisture_index": {
-    "2": 1
+    "1": 1
   },
   "n_regions_by_hydro_index": {
-    "2": 1
+    "1": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
     "is_stale": false,
     "overall": "ok"
   },
-  "n_regions_dry": 1,
-  "cdi_min_dry": 3,
-  "cdi_max_dry": 3,
-  "cdi_situation_delta": -2,
-  "mean_precip_sum_1m": 100.5,
-  "mean_precip_sum_3m": 262.2,
+  "n_regions_dry": 0,
+  "cdi_min_dry": null,
+  "cdi_max_dry": null,
+  "cdi_situation_delta": 0,
+  "mean_precip_sum_1m": 180.6,
+  "mean_precip_sum_3m": 319.5,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
-  "n_regions_with_soil_moisture_deficit": 1,
+  "n_regions_with_soil_moisture_deficit": 0,
   "n_regions_with_vhi_stress": 0,
   "max_vhi_index": 1,
   "discharge": {

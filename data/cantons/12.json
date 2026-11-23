@@ -2,33 +2,33 @@
   "canton_id": 12,
   "canton_name_de": "Basel-Stadt",
   "canton_name_fr": "Bâle-Ville",
-  "data_timestamp": "2026-11-22T00:00:00",
+  "data_timestamp": "2026-11-23T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-11-22T00:00:00",
+      "data_timestamp": "2026-11-23T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": -0.24,
-      "soil_moisture_pct": 90.5,
+      "spi_3m": 0.1,
+      "soil_moisture_pct": 95.6,
       "vhi": 58.0,
-      "cdi_trend": -1,
-      "spi_3m_delta": 0.58,
+      "cdi_trend": 0,
+      "spi_3m_delta": 0.33999999999999997,
       "vhi_delta": 0.0,
       "pct_critical": 0.038461538461538464,
-      "spi_3m_percentile": 40,
+      "spi_3m_percentile": 54,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 110.3,
-      "precip_sum_3m": 234.0,
+      "precip_sum_1m": 137.5,
+      "precip_sum_3m": 259.4,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -51,21 +51,21 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 17.54116666666667,
+          "current_value": 19.890000000000004,
           "low_flow_threshold": 5.475,
           "min_value": 2.008
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 2.9515,
+          "current_value": 3.513714285714286,
           "low_flow_threshold": 1.013,
           "min_value": 0.193
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 2.4861666666666666,
+          "current_value": 2.9948571428571427,
           "low_flow_threshold": 0.886,
           "min_value": 0.269
         }
@@ -85,7 +85,7 @@
     "1": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -96,8 +96,8 @@
   "cdi_min_dry": null,
   "cdi_max_dry": null,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 110.3,
-  "mean_precip_sum_3m": 234.0,
+  "mean_precip_sum_1m": 137.5,
+  "mean_precip_sum_3m": 259.4,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
