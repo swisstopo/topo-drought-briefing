@@ -2,33 +2,33 @@
   "canton_id": 26,
   "canton_name_de": "Jura",
   "canton_name_fr": "Jura",
-  "data_timestamp": "2026-11-23T00:00:00",
+  "data_timestamp": "2026-11-24T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 31,
       "region_name_de": "östlicher Jura",
-      "data_timestamp": "2026-11-23T00:00:00",
+      "data_timestamp": "2026-11-24T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": 0.1,
-      "soil_moisture_pct": 95.6,
+      "spi_3m": 0.09,
+      "soil_moisture_pct": 96.3,
       "vhi": 58.0,
       "cdi_trend": 0,
-      "spi_3m_delta": 0.33999999999999997,
+      "spi_3m_delta": 0.32999999999999996,
       "vhi_delta": 0.0,
       "pct_critical": 0.038461538461538464,
       "spi_3m_percentile": 54,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 137.5,
-      "precip_sum_3m": 259.4,
+      "precip_sum_1m": 136.5,
+      "precip_sum_3m": 258.3,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -51,22 +51,22 @@
         {
           "station_id": "2106",
           "station_name": "Münchenstein, Hofmatt (2106)",
-          "current_value": 19.890000000000004,
-          "low_flow_threshold": 5.475,
+          "current_value": 75.847,
+          "low_flow_threshold": 6.34,
           "min_value": 2.008
         },
         {
           "station_id": "2202",
           "station_name": "Liestal (2202)",
-          "current_value": 3.513714285714286,
-          "low_flow_threshold": 1.013,
+          "current_value": 14.023,
+          "low_flow_threshold": 1.139,
           "min_value": 0.193
         },
         {
           "station_id": "2485",
           "station_name": "Boncourt, Frontière (2485)",
-          "current_value": 2.9948571428571427,
-          "low_flow_threshold": 0.886,
+          "current_value": 15.846,
+          "low_flow_threshold": 1.183,
           "min_value": 0.269
         }
       ]
@@ -74,27 +74,27 @@
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-11-23T00:00:00",
+      "data_timestamp": "2026-11-24T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": 0.11,
-      "soil_moisture_pct": 93.9,
+      "spi_3m": 0.06,
+      "soil_moisture_pct": 94.7,
       "vhi": 60.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.7,
+      "spi_3m_delta": 0.6499999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
-      "spi_3m_percentile": 55,
+      "spi_3m_percentile": 53,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 176.8,
-      "precip_sum_3m": 317.9,
+      "precip_sum_1m": 171.7,
+      "precip_sum_3m": 312.8,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -117,8 +117,8 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 40.33714285714285,
-          "low_flow_threshold": 8.004,
+          "current_value": 106.4,
+          "low_flow_threshold": 9.515,
           "min_value": 1.205
         }
       ]
@@ -137,7 +137,7 @@
     "1": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -148,8 +148,8 @@
   "cdi_min_dry": null,
   "cdi_max_dry": null,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 157.2,
-  "mean_precip_sum_3m": 288.6,
+  "mean_precip_sum_1m": 154.1,
+  "mean_precip_sum_3m": 285.6,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,

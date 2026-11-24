@@ -2,33 +2,33 @@
   "canton_id": 24,
   "canton_name_de": "Neuchâtel",
   "canton_name_fr": "Neuchâtel",
-  "data_timestamp": "2026-11-23T00:00:00",
+  "data_timestamp": "2026-11-24T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 53,
       "region_name_de": "Freiberge",
-      "data_timestamp": "2026-11-23T00:00:00",
+      "data_timestamp": "2026-11-24T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": 0.11,
-      "soil_moisture_pct": 93.9,
+      "spi_3m": 0.06,
+      "soil_moisture_pct": 94.7,
       "vhi": 60.0,
       "cdi_trend": -1,
-      "spi_3m_delta": 0.7,
+      "spi_3m_delta": 0.6499999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.11538461538461539,
-      "spi_3m_percentile": 55,
+      "spi_3m_percentile": 53,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 176.8,
-      "precip_sum_3m": 317.9,
+      "precip_sum_1m": 171.7,
+      "precip_sum_3m": 312.8,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -51,8 +51,8 @@
         {
           "station_id": "2370",
           "station_name": "Le Noirmont, La Goule (2370)",
-          "current_value": 40.33714285714285,
-          "low_flow_threshold": 8.004,
+          "current_value": 106.4,
+          "low_flow_threshold": 9.515,
           "min_value": 1.205
         }
       ]
@@ -60,27 +60,27 @@
     {
       "region_id": 54,
       "region_name_de": "westlicher Jura",
-      "data_timestamp": "2026-11-23T00:00:00",
+      "data_timestamp": "2026-11-24T00:00:00",
       "source": "api",
       "cdi": 1,
-      "spi_3m": 0.63,
-      "soil_moisture_pct": 99.5,
+      "spi_3m": 0.49,
+      "soil_moisture_pct": 99.7,
       "vhi": 60.0,
       "cdi_trend": 0,
-      "spi_3m_delta": 1.04,
+      "spi_3m_delta": 0.8999999999999999,
       "vhi_delta": 0.0,
       "pct_critical": 0.057692307692307696,
-      "spi_3m_percentile": 76,
+      "spi_3m_percentile": 70,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
         "is_stale": false,
         "overall": "ok"
       },
-      "precip_sum_1m": 250.6,
-      "precip_sum_3m": 402.8,
+      "precip_sum_1m": 233.2,
+      "precip_sum_3m": 385.3,
       "precip_1m_index": 1,
       "soil_moisture_index": 1,
       "hydro_index": 1,
@@ -103,29 +103,29 @@
         {
           "station_id": "2378",
           "station_name": "Orbe, Le Chalet (2378)",
-          "current_value": 30.982142857142858,
-          "low_flow_threshold": 5.146,
+          "current_value": 68.842,
+          "low_flow_threshold": 6.206,
           "min_value": 1.834
         },
         {
           "station_id": "2458",
           "station_name": "Valangin (2458)",
-          "current_value": 1.7578571428571428,
-          "low_flow_threshold": 0.221,
+          "current_value": 3.717,
+          "low_flow_threshold": 0.258,
           "min_value": 0.045
         },
         {
           "station_id": "2480",
           "station_name": "Boudry (2480)",
-          "current_value": 32.18114285714286,
-          "low_flow_threshold": 3.532,
+          "current_value": 71.677,
+          "low_flow_threshold": 3.901,
           "min_value": 0.886
         },
         {
           "station_id": "2493",
           "station_name": "Gland, Route Suisse (2493)",
-          "current_value": 4.956857142857143,
-          "low_flow_threshold": 0.543,
+          "current_value": 10.353,
+          "low_flow_threshold": 0.658,
           "min_value": 0.178
         }
       ]
@@ -144,7 +144,7 @@
     "1": 2
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 1.0,
     "missing_columns": [],
     "outlier_flags": [],
@@ -155,8 +155,8 @@
   "cdi_min_dry": null,
   "cdi_max_dry": null,
   "cdi_situation_delta": 0,
-  "mean_precip_sum_1m": 213.7,
-  "mean_precip_sum_3m": 360.4,
+  "mean_precip_sum_1m": 202.4,
+  "mean_precip_sum_3m": 349.1,
   "precip_index_min": 1,
   "precip_index_max": 1,
   "n_regions_with_precip_deficit": 0,
