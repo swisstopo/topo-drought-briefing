@@ -2,13 +2,13 @@
   "canton_id": 3,
   "canton_name_de": "Luzern",
   "canton_name_fr": "Lucerne",
-  "data_timestamp": "2026-11-25T00:00:00",
+  "data_timestamp": "2026-11-26T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 37,
       "region_name_de": "Oberaargau",
-      "data_timestamp": "2026-11-25T00:00:00",
+      "data_timestamp": "2026-11-26T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -0.37,
@@ -20,7 +20,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 35,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -39,9 +39,9 @@
       "warnlevel_info_fr": "Aucun ou faible danger",
       "cdi_forecast_week2": 4,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 4,
+      "soil_moisture_index_forecast": 5,
       "precip_deficit_delta": 0,
-      "soil_moisture_deficit_delta": 2,
+      "soil_moisture_deficit_delta": 3,
       "vhi_index": 1,
       "discharge": {
         "n_total": 2,
@@ -53,14 +53,14 @@
         {
           "station_id": "2450",
           "station_name": "Zofingen (2450)",
-          "current_value": 15.4985,
+          "current_value": 12.087333333333333,
           "low_flow_threshold": 2.829,
           "min_value": 1.429
         },
         {
           "station_id": "2471",
           "station_name": "Murgenthal, Walliswil (2471)",
-          "current_value": 7.8075,
+          "current_value": 6.192,
           "low_flow_threshold": 1.938,
           "min_value": 1.078
         }
@@ -69,7 +69,7 @@
     {
       "region_id": 39,
       "region_name_de": "Freiamt",
-      "data_timestamp": "2026-11-25T00:00:00",
+      "data_timestamp": "2026-11-26T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -0.45,
@@ -81,7 +81,7 @@
       "pct_critical": 0.057692307692307696,
       "spi_3m_percentile": 32,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -114,21 +114,21 @@
         {
           "station_id": "2416",
           "station_name": "Hitzkirch, Richensee (2416)",
-          "current_value": 0.25,
+          "current_value": 0.2733333333333334,
           "low_flow_threshold": 0.567,
           "min_value": 0.145
         },
         {
           "station_id": "2417",
           "station_name": "Oberkirch (2417)",
-          "current_value": 0.30000000000000004,
+          "current_value": 0.315,
           "low_flow_threshold": 0.481,
           "min_value": 0.076
         },
         {
           "station_id": "ZH572",
           "station_name": "Dietikon (ZH572)",
-          "current_value": 2.4715,
+          "current_value": 2.0046666666666666,
           "low_flow_threshold": 0.43,
           "min_value": 0.144
         }
@@ -137,7 +137,7 @@
     {
       "region_id": 40,
       "region_name_de": "westliche Zentralschweiz",
-      "data_timestamp": "2026-11-25T00:00:00",
+      "data_timestamp": "2026-11-26T00:00:00",
       "source": "api",
       "cdi": 1,
       "spi_3m": -0.47,
@@ -149,7 +149,7 @@
       "pct_critical": 0.09615384615384616,
       "spi_3m_percentile": 30,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -180,28 +180,28 @@
         {
           "station_id": "2102",
           "station_name": "Sarnen (2102)",
-          "current_value": 10.4815,
+          "current_value": 10.548666666666668,
           "low_flow_threshold": 6.011,
           "min_value": 2.093
         },
         {
           "station_id": "2436",
           "station_name": "Alpnach, Chilch Erli (2436)",
-          "current_value": 1.365,
+          "current_value": 1.08,
           "low_flow_threshold": 0.106,
           "min_value": 0.021
         },
         {
           "station_id": "2481",
           "station_name": "Buochs, Flugplatz (2481)",
-          "current_value": 7.8145,
+          "current_value": 7.058,
           "low_flow_threshold": 4.148,
           "min_value": 1.82
         },
         {
           "station_id": "2634",
           "station_name": "Emmen (2634)",
-          "current_value": 60.341499999999996,
+          "current_value": 47.02633333333333,
           "low_flow_threshold": 4.865,
           "min_value": 1.703
         }
@@ -223,7 +223,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.9333333333333332,
     "missing_columns": [
       "vhi"
