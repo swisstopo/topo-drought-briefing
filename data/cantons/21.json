@@ -2,13 +2,13 @@
   "canton_id": 21,
   "canton_name_de": "Ticino",
   "canton_name_fr": "Tessin",
-  "data_timestamp": "2026-11-26T00:00:00",
+  "data_timestamp": "2026-11-27T00:00:00",
   "source": "api",
   "regions": [
     {
       "region_id": 62,
       "region_name_de": "Westliches Tessin",
-      "data_timestamp": "2026-11-26T00:00:00",
+      "data_timestamp": "2026-11-27T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -1.05,
@@ -20,7 +20,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 13,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -53,14 +53,14 @@
         {
           "station_id": "2244",
           "station_name": "Klusmatten (2244)",
-          "current_value": 0.213,
+          "current_value": 0.215,
           "low_flow_threshold": 0.237,
           "min_value": 0.145
         },
         {
           "station_id": "2605",
           "station_name": "Lavertezzo, Campiòi (2605)",
-          "current_value": 2.4139999999999997,
+          "current_value": 2.69425,
           "low_flow_threshold": 2.738,
           "min_value": 1.07
         }
@@ -69,7 +69,7 @@
     {
       "region_id": 63,
       "region_name_de": "Nordtessin",
-      "data_timestamp": "2026-11-26T00:00:00",
+      "data_timestamp": "2026-11-27T00:00:00",
       "source": "api",
       "cdi": 4,
       "spi_3m": -1.05,
@@ -81,7 +81,7 @@
       "pct_critical": 0.019230769230769232,
       "spi_3m_percentile": 14,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 1.0,
         "missing_columns": [],
         "outlier_flags": [],
@@ -112,7 +112,7 @@
         {
           "station_id": "2494",
           "station_name": "Pollegio, Campagna (2494)",
-          "current_value": 9.530666666666667,
+          "current_value": 9.780249999999999,
           "low_flow_threshold": 12.216,
           "min_value": 7.19
         }
@@ -121,7 +121,7 @@
     {
       "region_id": 64,
       "region_name_de": "Östliches Tessin",
-      "data_timestamp": "2026-11-26T00:00:00",
+      "data_timestamp": "2026-11-27T00:00:00",
       "source": "api",
       "cdi": 2,
       "spi_3m": -1.09,
@@ -133,7 +133,7 @@
       "pct_critical": 0.0,
       "spi_3m_percentile": 13,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -166,7 +166,7 @@
         {
           "station_id": "2420",
           "station_name": "Lumino, Sassello (2420)",
-          "current_value": 6.6066666666666665,
+          "current_value": 7.5235,
           "low_flow_threshold": 7.795,
           "min_value": 3.341
         }
@@ -175,7 +175,7 @@
     {
       "region_id": 65,
       "region_name_de": "Sottoceneri",
-      "data_timestamp": "2026-11-26T00:00:00",
+      "data_timestamp": "2026-11-27T00:00:00",
       "source": "api",
       "cdi": 3,
       "spi_3m": -0.96,
@@ -187,7 +187,7 @@
       "pct_critical": 0.0,
       "spi_3m_percentile": 17,
       "quality": {
-        "data_age_days": 1,
+        "data_age_days": 0,
         "coverage_pct": 0.9,
         "missing_columns": [
           "vhi"
@@ -204,11 +204,11 @@
       "warnlevel": 1,
       "warnlevel_info_de": "Keine oder geringe Gefahr",
       "warnlevel_info_fr": "Aucun ou faible danger",
-      "cdi_forecast_week2": 2,
+      "cdi_forecast_week2": 1,
       "precip_1m_index_forecast": 1,
-      "soil_moisture_index_forecast": 2,
+      "soil_moisture_index_forecast": 1,
       "precip_deficit_delta": -1,
-      "soil_moisture_deficit_delta": 1,
+      "soil_moisture_deficit_delta": 0,
       "vhi_index": 1,
       "discharge": {
         "n_total": 3,
@@ -220,21 +220,21 @@
         {
           "station_id": "2321",
           "station_name": "Pregassona (2321)",
-          "current_value": 0.9586666666666668,
+          "current_value": 1.09625,
           "low_flow_threshold": 0.951,
           "min_value": 0.553
         },
         {
           "station_id": "2349",
           "station_name": "Chiasso, Ponte di Polenta (2349)",
-          "current_value": 0.19499999999999998,
+          "current_value": 0.602,
           "low_flow_threshold": 0.18,
           "min_value": 0.044
         },
         {
           "station_id": "2461",
           "station_name": "Magliaso, Ponte (2461)",
-          "current_value": 0.32133333333333336,
+          "current_value": 0.38549999999999995,
           "low_flow_threshold": 0.431,
           "min_value": 0.183
         }
@@ -256,7 +256,7 @@
     "3": 1
   },
   "quality": {
-    "data_age_days": 1,
+    "data_age_days": 0,
     "coverage_pct": 0.925,
     "missing_columns": [
       "vhi"
@@ -268,7 +268,7 @@
   "n_regions_dry": 4,
   "cdi_min_dry": 2,
   "cdi_max_dry": 4,
-  "cdi_situation_delta": -2,
+  "cdi_situation_delta": -3,
   "mean_precip_sum_1m": 43.5,
   "mean_precip_sum_3m": 265.2,
   "precip_index_min": 2,
